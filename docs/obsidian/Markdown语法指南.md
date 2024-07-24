@@ -1007,7 +1007,7 @@ Obsidian里的
 
 #### 示范
 
-鲁迅原名是什么[[1]](https://publish.obsidian.md/#fn-1-ffba9afff4b2ba29)，浙江哪里人[[2]](https://publish.obsidian.md/#fn-2-ffba9afff4b2ba29)
+鲁迅原名是什么[[1|1]](https://publish.obsidian.md/#fn-1-ffba9afff4b2ba29)，浙江哪里人[[2|2]](https://publish.obsidian.md/#fn-2-ffba9afff4b2ba29)
 
 ## 11. 拓展文本格式标记
 
@@ -1928,7 +1928,7 @@ classDiagram
 ```md
 > [!note] 这是一个callout标题
 > 这里是callout里的内容
-> [[#20 Callout blocks|callout]]内部支持双链
+> [[Markdown语法指南#20 Callout blocks|callout]]内部支持双链
 > - 同样支持==MD语法==
 ```
 
