@@ -1,31 +1,35 @@
 # LanguageChain v 0.2 学习记录
 
-- [[#1 LangChain是什么|1 LangChain是什么]]
-- [[#2 LangChain Expression Language (LCEL)|2 LangChain Expression Language (LCEL)]]
-	- [[#2 LangChain Expression Language (LCEL)#2.1 Runnable 接口|2.1 Runnable 接口]]
-- [[#3 Model I/O|3 Model I/O]]
-	- [[#3 Model I/O#3.1 Prompt Templates|3.1 Prompt Templates]]
-	- [[#3 Model I/O#3.2 Language Model|3.2 Language Model]]
-	- [[#3 Model I/O#3.3 Output Parsers|3.3 Output Parsers]]
-	- [[#3 Model I/O#3.4 模型的结构化输出|3.4 模型的结构化输出]]
-- [[#4 Use case（Q&A with RAG）|4 Use case（Q&A with RAG）]]
-- [[#5 Agent|5 Agent]]
-	- [[#5 Agent#5.1 Tools（Function Calling）|5.1 Tools（Function Calling）]]
-	- [[#5 Agent#5.2 Agent|5.2 Agent]]
-	- [[#5 Agent#5.3 AgentExecutor|5.3 AgentExecutor]]
-	- [[#5 Agent#5.4 SQLAgent|5.4 SQLAgent]]
-- [[#6 Memory|6 Memory]]
-	- [[#6 Memory#6.1 ConversationBufferMemory（对话缓存记忆）|6.1 ConversationBufferMemory（对话缓存记忆）]]
-	- [[#6 Memory#6.2 ConversationBufferWindowMemory（对话缓存窗口记忆）|6.2 ConversationBufferWindowMemory（对话缓存窗口记忆）]]
-	- [[#6 Memory#6.3 ConversationTokenBufferMemory（对话token缓存记忆）|6.3 ConversationTokenBufferMemory（对话token缓存记忆）]]
-	- [[#6 Memory#6.4 ConversationSummaryMemory（对话摘要缓存记忆）|6.4 ConversationSummaryMemory（对话摘要缓存记忆）]]
-- [[#7 LangChain 评估方法|7 LangChain 评估方法]]
-- [[#8 LangGraph|8 LangGraph]]
-- [[#9 LangSmith|9 LangSmith]]
+- [[#LangChain 是什么|LangChain 是什么]]
+- [[#LangChain Expression Language (LCEL)|LangChain Expression Language (LCEL)]]
+	- [[#LangChain Expression Language (LCEL)#Runnable 接口|Runnable 接口]]
+- [[#Model I/O|Model I/O]]
+	- [[#Model I/O#Prompt Templates|Prompt Templates]]
+	- [[#Model I/O#Language Model|Language Model]]
+	- [[#Model I/O#Output Parsers|Output Parsers]]
+		- [[#Output Parsers#PydanticOutputParser|PydanticOutputParser]]
+		- [[#Output Parsers#JsonOutputParser：|JsonOutputParser：]]
+		- [[#Output Parsers#StructuredOutputParser|StructuredOutputParser]]
+		- [[#Output Parsers#模型的结构化输出|模型的结构化输出]]
+- [[#Use case（Q&A with RAG）|Use case（Q&A with RAG）]]
+- [[#Agent|Agent]]
+	- [[#Agent#Tools（Function Calling）|Tools（Function Calling）]]
+	- [[#Agent#Agent|Agent]]
+	- [[#Agent#AgentExecutor|AgentExecutor]]
+	- [[#Agent#SQLAgent|SQLAgent]]
+- [[#Memory|Memory]]
+	- [[#Memory#ConversationBufferMemory（对话缓存记忆）|ConversationBufferMemory（对话缓存记忆）]]
+	- [[#Memory#ConversationBufferWindowMemory（对话缓存窗口记忆）|ConversationBufferWindowMemory（对话缓存窗口记忆）]]
+	- [[#Memory#ConversationTokenBufferMemory（对话 token 缓存记忆）|ConversationTokenBufferMemory（对话 token 缓存记忆）]]
+	- [[#Memory#ConversationSummaryMemory（对话摘要缓存记忆）|ConversationSummaryMemory（对话摘要缓存记忆）]]
+- [[#LangChain 评估方法|LangChain 评估方法]]
+- [[#LangGraph|LangGraph]]
+- [[#LangSmith|LangSmith]]
+
 
 [LangChain (github.com)](https://github.com/langchain-ai)
 
-## 1 LangChain 是什么
+## LangChain 是什么
 
 >[LangChain核心组成 - 掘金 (juejin.cn)](https://juejin.cn/post/7340093152862076928)
 
@@ -42,7 +46,7 @@ LangChain 的模块组成：`Model I/O`（与语言模型进行接口）、`Retr
 快速安装：
 ![[LangChain]]
 
-## 2 LangChain Expression Language (LCEL)
+## LangChain Expression Language (LCEL)
 
 LangChain 应用程序的核心构建模块是 LLMChain。它结合了三个方面:
 
@@ -101,7 +105,7 @@ os.environ["LANGCHAIN_API_KEY"] = "..."
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 ```
 
-### 2.1 Runnable 接口
+### Runnable 接口
 
 标准接口包括：
 `stream`：流回响应块（流式调用）
@@ -118,7 +122,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 各种组件的输入输出格式：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/98bcd9fe38a0457a9248265aac50cfd0.png)
 
-## 3 Model I/O
+## Model I/O
 
 首先我们从最基本面的部分讲起，Model I/O 指的是和 LLM 直接进行交互的过程。
 
@@ -129,7 +133,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
  * Prompt Templates: 提供语言模型的指令。这控制了语言模型的输出，因此了解如何构建提示和不同的提示策略至关重要。
  * Output Parsers: 将 LLM 的原始响应转换为更易处理的格式，使得在下游使用输出变得容易。
 
-### 3.1 Prompt Templates
+### Prompt Templates
 
 ![[Prompt Engineering]]
 
@@ -305,7 +309,7 @@ input_variables=['input'] messages=[SystemMessagePromptTemplate(prompt=PromptTem
 ①基于文本余弦相似度的 `MaxMarginalRelevanceExampleSelector` 和 `SemanticSimilarityExampleSelector` 需要对 examples 进行 embedding 所以需要使用到 OpenAI 的 API 或其他本地 Embeddings 模型，选择最相似的 example。
 ② `NGramOverlapExampleSelector` 根据 ngram 重叠分数，根据与输入最相似的 example 来选择示例并对其进行排序。ngram 重叠分数是 0.0 到 1.0 之间的浮点数（含 0.0 和 1.0）。
 
-### 3.2 Language Model
+### Language Model
 
 当前 LLM 发展现状：`Online LLM` 全面领先于 `Opensource LLM`。
 
@@ -339,7 +343,7 @@ messages = [
 chat.invoke(messages)
 ```
 
-### 3.3 Output Parsers
+### Output Parsers
 
 `langchain.output_parsers` 中的各种解析器，通常我们希望 Language Model 的输出是固定的格式，以支持我们解析其输出为结构化数据，LangChain 将这一诉求所需的功能抽象成了 Output Parser 这一组件，并提供了一系列的预定义 Output Parser，如最常用的 `StructuredOutputParser`, `PydanticOutputParser`，`JsonOutputParser`，以及在 LLM 输出无法解析时发挥作用的 `Auto-fixing parser` 和 `Retry parser` 等。
 
@@ -502,11 +506,11 @@ The output should be a markdown code snippet formatted in the following schema, 
 }
 ```
 
-#### 3.4 模型的结构化输出
+#### 模型的结构化输出
 
 ![[LangChain 从模型返回结构化数据#LangChain从模型返回结构化数据]]
 
-## 4 Use case（Q&A with RAG）
+## Use case（Q&A with RAG）
 
 LLM 支持的最强大的应用程序之一是复杂的问答 （Q&A） 聊天机器人。这些应用程序可以回答有关特定源信息的问题。这些应用使用一种称为检索增强生成 （RAG） 的技术。（RAG 是一种利用 `外部数据库` 增强 LLM 知识的技术）
 
@@ -524,9 +528,9 @@ LLM 支持的最强大的应用程序之一是复杂的问答 （Q&A） 聊天�
 	1. `Retrieve`：给定用户输入，使用 Retriever 从存储中检索相关的分割。
 	2. `Generate`：ChatModel / LLM 使用包含问题和检索到的数据的提示生成答案
 
-## 5 Agent
+## Agent
 
-### 5.1 Tools（Function Calling）
+### Tools（Function Calling）
 
 工具是代理调用的函数。这里有两个重要的考虑因素：一是让代理能访问到正确的工具，二是以最有帮助的方式描述这些工具。如果你没有给代理提供正确的工具，它将无法完成任务。如果你没有正确地描述工具，代理将不知道如何使用它们。LangChain 提供了一系列的工具，同时你也可以定义自己的工具，或者将函数转换为 tool。
 
@@ -654,7 +658,7 @@ LLM 支持的最强大的应用程序之一是复杂的问答 （Q&A） 聊天�
 
 ![[LangChain 工具自定义#继承 BaseTool 类自定义工具]]
 
-### 5.2 Agent
+### Agent
 
 Agent 可以看做在 Chain 的基础上，进一步整合 Tool 的高级模块。与 Chain 相比，Agent 具有两个新增的能力：思考链和工具箱。**能根据环境变化更新计划，使决策更加健壮**。思考链释放了大模型的规划和调度潜能，是 Agent 的关键创新，Agent 定义了工具的标准接口，以实现无缝集成。与 Chain 直接调用模块 Runnable 相比，它只关心 tool 输入和输出，tool 内部实现对 Agent 透明，工具箱大大扩展了 Agent 的外部知识来源，使其离真正的通用智能更近一步。
 
@@ -681,7 +685,7 @@ LangChain 中的 SQL Agent 的类型为 ReAct Agent。
 
 使用 `LLM`、`Prompts` 和 `Tools` 来初始化 Agent。Agent 负责接收输入并决定采取什么操作。至关重要的是，Agent 不执行这些操作，这是由 AgentExecutor 完成的（下一步）。
 
-### 5.3 AgentExecutor
+### AgentExecutor
 
 **代理执行器（AgentExecutor）**：代理执行器是代理的运行环境，它调用代理并执行代理选择的操作。执行器也负责处理多种复杂情况，包括处理代理选择了不存在的工具的情况、处理工具出错的情况、处理代理产生的无法解析成工具调用的输出的情况，以及在代理决策和工具调用进行观察和日志记录。AgentExecuter 负责迭代运行 Agent，**直至满足设定的停止条件**，这使得 Agent 能够像生物一样循环处理信息和任务。
 
@@ -843,13 +847,13 @@ AgentExecutor 由一个 Agent 和 Tool 的集合组成。AgentExecutor 负责调
         )
 ```
 
-### 5.4 SQLAgent
+### SQLAgent
 
 ![[SQLAgent based GLM]]
 
 Agent 是无记忆的。这意味着它不记得以前的交互。为了给它记忆，我们需要传入 `history_message`。
 
-## 6 Memory
+## Memory
 
 当我们在使用大型语言模型进行聊天对话时，**大型语言模型本身实际上是无状态的。语言模型本身并不记得到目前为止的历史对话**。每次调用 API 结点都是独立的。
 
@@ -865,7 +869,7 @@ Agent 是无记忆的。这意味着它不记得以前的交互。为了给它�
 * **Conversation summary memory**： 这种类型的 Memory 会随着 Chat 的进行创建对话的摘要，并将当前摘要存储在 Memory 中，用于后续对话的 history 提示；这种 memory 方案对长会话非常有用，但频繁的总结摘要会耗费大量的 token
 * **Conversation Summary Buffer Memory**： 结合了 buffer memory 和 summary memory 的策略，依旧会在内存中保留最后的一些 Chat 记录作为 buffer，并在 buffer 的总 token 数达到预置的上限后，对所有 Chat 记录总结摘要作为 SystemMessage 并清理其它历史 Messages；这种 memory 方案结合了 buffer memory 和 summary memory 的优点，既不会频繁地总结摘要消耗 token，也不会让 buffer 缺失过多信息
 
-### 6.1 ConversationBufferMemory（对话缓存记忆）
+### ConversationBufferMemory（对话缓存记忆）
 
 ConversationBufferMemory 是一个最简单的记忆组件，他不对数据结构和获取算法做任何讲过，就是简单的原进原出。
 
@@ -894,7 +898,7 @@ AI: Of course, I'd be happy to help with customer support! What specific issue a
 """
 ```
 
-### 6.2 ConversationBufferWindowMemory（对话缓存窗口记忆）
+### ConversationBufferWindowMemory（对话缓存窗口记忆）
 
 随着对话变得越来越长，所需的内存量也变得非常长。将大量的 tokens 发送到 LLM 的成本，也会变得更加昂贵, 这也就是为什么 API 的调用费用，通常是基于它需要处理的 tokens 数量而收费的。
 
@@ -921,7 +925,7 @@ AI: Of course, I can help with that! What specific issue are you experiencing wi
 """
 ```
 
-### 6.3 ConversationTokenBufferMemory（对话 token 缓存记忆）
+### ConversationTokenBufferMemory（对话 token 缓存记忆）
 
 使用对话 token 缓存记忆，内存将限制保存的 token 数量。如果 token 数量超出指定数目，它会切掉这个对话的早期部分以保留与最近的交流相对应的 token 数量，但不超过 token 限制。
 
@@ -948,7 +952,7 @@ the AI responds positively and asks what kind of customer support Sam needs.
 """
 ```
 
-### 6.4 ConversationSummaryMemory（对话摘要缓存记忆）
+### ConversationSummaryMemory（对话摘要缓存记忆）
 
 这种 Memory 的想法是，不是将内存限制为基于最近对话的固定数量的 token 或固定数量的对话次数窗口，而是使用 LLM 编写到目前为止历史对话的摘要，并将其保存
 
@@ -975,11 +979,11 @@ the AI responds positively and asks what kind of customer support Sam needs.
 """
 ```
 
-## 7 LangChain 评估方法
+## LangChain 评估方法
 
 ![[LangChain 评估方法#LangChain 评估的方法 Evaluation]]
 
-## 8 LangGraph
+## LangGraph
 
 LangGraph 是 LangChain 的扩展，旨在通过将步骤建模为图中的边和节点，使用 LLM 构建健壮且有状态的多角色应用程序。
 
@@ -991,7 +995,7 @@ LangGraph 原理解析
 
 [LATS：比ToT和ReAct更强的大模型思维框架（LangGraph代码实现+拆解）_如何实现lats](https://blog.csdn.net/Attitude93/article/details/138491682)
 
-## 9 LangSmith
+## LangSmith
 
 LangSmith 允许您密切跟踪、监控和评估 LLM 应用程序。它与 LangChain 无缝集成，您可以在构建过程中使用它来检查和调试链的各个步骤。
 
