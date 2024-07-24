@@ -420,6 +420,6 @@ answer = structured_llm.invoke('你好')
 
 ```
 
-![[./LangChain 从模型返回结构化数据|LangChain 从模型返回结构化数据]]
+![LangChain 从模型返回结构化数据](./LangChain%20%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E6%8D%AE.md)
 
 ---
