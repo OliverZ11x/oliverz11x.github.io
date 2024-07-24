@@ -2,17 +2,17 @@
 
 ## 目录
 
-- [简介](#简介)
-- [环境配置](#环境配置)
-- [代码详解](#代码详解)
-	- [设置环境变量](#设置环境变量)
-	- [初始化数据库](#初始化数据库)
-	- [初始化聊天模型](#初始化聊天模型)
-	- [初始化工具包](#初始化工具包)
-	- [创建代理执行器](#创建代理执行器)
-	- [创建提示模板](#创建提示模板)
-- [运行主程序](#运行主程序)
-- [结果测试](#结果测试)
+- [简介](SQLAgent%2520based%2520GLM.md##%E7%AE%80%E4%BB%8B)
+- [环境配置](SQLAgent%2520based%2520GLM.md##%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
+- [代码详解](SQLAgent%2520based%2520GLM.md##%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3)
+	- [设置环境变量](SQLAgent%2520based%2520GLM.md##%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F)
+	- [初始化数据库](SQLAgent%2520based%2520GLM.md##%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93)
+	- [初始化聊天模型](SQLAgent%2520based%2520GLM.md##%E5%88%9D%E5%A7%8B%E5%8C%96%E8%81%8A%E5%A4%A9%E6%A8%A1%E5%9E%8B)
+	- [初始化工具包](SQLAgent%2520based%2520GLM.md##%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B7%A5%E5%85%B7%E5%8C%85)
+	- [创建代理执行器](SQLAgent%2520based%2520GLM.md##%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%90%86%E6%89%A7%E8%A1%8C%E5%99%A8)
+	- [创建提示模板](SQLAgent%2520based%2520GLM.md##%E5%88%9B%E5%BB%BA%E6%8F%90%E7%A4%BA%E6%A8%A1%E6%9D%BF)
+- [运行主程序](SQLAgent%2520based%2520GLM.md##%E8%BF%90%E8%A1%8C%E4%B8%BB%E7%A8%8B%E5%BA%8F)
+- [结果测试](SQLAgent%2520based%2520GLM.md##%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%95)
 
 ## 简介
 
@@ -420,6 +420,6 @@ answer = structured_llm.invoke('你好')
 
 ```
 
-![[LangChain 从模型返回结构化数据]]
+![[./LangChain 从模型返回结构化数据|LangChain 从模型返回结构化数据]]
 
 ---
