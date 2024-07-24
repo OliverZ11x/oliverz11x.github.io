@@ -31,4 +31,4 @@
 
 这些步骤将帮助您有效地管理Conda环境，删除不再需要的环境。有关更多详细信息，您可以参考官方的 [Conda管理环境文档](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment)。
 
-![[../01attachment/Pasted image 20240719094749.png|Pasted image 20240719094749.png]]
+![Pasted image 20240719094749.png](../01attachment/Pasted%20image%2020240719094749.png)
