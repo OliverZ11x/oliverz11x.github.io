@@ -6,17 +6,17 @@
 
 点击 上面的倒三角 -->other -->clickhouse
 
-![1718250413682.png](../01attachment/1718250413682.png)
+![[1718250413682.png]]
 
-![Pasted image 20240613114344.png](../01attachment/Pasted%20image%2020240613114344.png)
+![[Pasted image 20240613114344.png]]
 
 首次连接需要下载相关的驱动，点击“编辑驱动设置”
 
-![Pasted image 20240613115010.png](../01attachment/Pasted%20image%2020240613115010.png)
+![[Pasted image 20240613115010.png]]
 
 点击“下载/更新”
 
-![1718250693029.jpg](../01attachment/1718250693029.jpg)
+![[1718250693029.jpg]]
 
 下载完成后，点击“确定” 
 
@@ -120,5 +120,5 @@ PRIMARY KEY date
 ORDER BY date
 SETTINGS index_granularity = 8192;
 
-![Pasted image 20240613115647.png](../01attachment/Pasted%20image%2020240613115647.png)
+![[Pasted image 20240613115647.png]]
 

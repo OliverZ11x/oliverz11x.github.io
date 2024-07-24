@@ -62,9 +62,9 @@ LangChain 试图解决这两个问题。目前提供的解决方案是初步的�
 
 ### 评估结果
 
-![Pasted image 20240624164720.png](../../01attachment/Pasted%20image%2020240624164720.png)
+![[Pasted image 20240624164720.png]]
 
-![Pasted image 20240624171839.png](../../01attachment/Pasted%20image%2020240624171839.png)
+![[Pasted image 20240624171839.png]]
 
 [模型效果测试，返回为空 · Issue #1205 · tencentmusic/supersonic (github.com)](https://github.com/tencentmusic/supersonic/issues/1205)
 

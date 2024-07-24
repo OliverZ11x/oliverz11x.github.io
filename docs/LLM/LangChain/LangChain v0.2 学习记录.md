@@ -1,30 +1,31 @@
 # LanguageChain v 0.2 学习记录
 
-- [LangChain 是什么](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#LangChain%20是什么)
-- [LangChain Expression Language (LCEL)](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#LangChain%20Expression%20Language%20(LCEL))
-	- [Runnable 接口](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#LangChain%20Expression%20Language%20(LCEL))
-- [Model I/O](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Model%20I/O)
-	- [Prompt Templates](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Model%20I/O)
-	- [Language Model](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Model%20I/O)
-	- [Output Parsers](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Model%20I/O)
-		- [PydanticOutputParser](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Output%20Parsers)
-		- [JsonOutputParser：](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Output%20Parsers)
-		- [StructuredOutputParser](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Output%20Parsers)
-		- [模型的结构化输出](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Output%20Parsers)
-- [Use case（Q&A with RAG）](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Use%20case（Q&A%20with%20RAG）)
-- [Agent](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Agent)
-	- [Tools（Function Calling）](.md#Agent#Tools（Function Calling）)
-	- [Agent](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Agent)
-	- [AgentExecutor](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Agent)
-	- [SQLAgent](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Agent)
-- [Memory](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Memory)
-	- [ConversationBufferMemory（对话缓存记忆）](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Memory)
-	- [ConversationBufferWindowMemory（对话缓存窗口记忆）](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Memory)
-	- [ConversationTokenBufferMemory（对话 token 缓存记忆）](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Memory)
-	- [ConversationSummaryMemory（对话摘要缓存记忆）](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#Memory)
-- [LangChain 评估方法](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#LangChain%20评估方法)
-- [LangGraph](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#LangGraph)
-- [LangSmith](LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md#LangSmith)
+- [[#LangChain 是什么|LangChain 是什么]]
+- [[#LangChain Expression Language (LCEL)|LangChain Expression Language (LCEL)]]
+	- [[#LangChain Expression Language (LCEL)#Runnable 接口|Runnable 接口]]
+- [[#Model I/O|Model I/O]]
+	- [[#Model I/O#Prompt Templates|Prompt Templates]]
+	- [[#Model I/O#Language Model|Language Model]]
+	- [[#Model I/O#Output Parsers|Output Parsers]]
+		- [[#Output Parsers#PydanticOutputParser|PydanticOutputParser]]
+		- [[#Output Parsers#JsonOutputParser：|JsonOutputParser：]]
+		- [[#Output Parsers#StructuredOutputParser|StructuredOutputParser]]
+		- [[#Output Parsers#模型的结构化输出|模型的结构化输出]]
+- [[#Use case（Q&A with RAG）|Use case（Q&A with RAG）]]
+- [[#Agent|Agent]]
+	- [[#Agent#Tools（Function Calling）|Tools（Function Calling）]]
+	- [[#Agent#Agent|Agent]]
+	- [[#Agent#AgentExecutor|AgentExecutor]]
+	- [[#Agent#SQLAgent|SQLAgent]]
+- [[#Memory|Memory]]
+	- [[#Memory#ConversationBufferMemory（对话缓存记忆）|ConversationBufferMemory（对话缓存记忆）]]
+	- [[#Memory#ConversationBufferWindowMemory（对话缓存窗口记忆）|ConversationBufferWindowMemory（对话缓存窗口记忆）]]
+	- [[#Memory#ConversationTokenBufferMemory（对话 token 缓存记忆）|ConversationTokenBufferMemory（对话 token 缓存记忆）]]
+	- [[#Memory#ConversationSummaryMemory（对话摘要缓存记忆）|ConversationSummaryMemory（对话摘要缓存记忆）]]
+- [[#LangChain 评估方法|LangChain 评估方法]]
+- [[#LangGraph|LangGraph]]
+- [[#LangSmith|LangSmith]]
+
 
 [LangChain (github.com)](https://github.com/langchain-ai)
 
@@ -34,7 +35,7 @@
 
 LangChain 是一个基于 `LLM` 开发应用程序的框架，把调用 LLM 的过程组成一条链的形式，具体要执行哪些函数是由 LLM 的推理结果决定的。（区别于传统程序是写死的）同时 LangChain 也是一个丰富的工具生态系统的一部分，我们可以在此框架集成并在其之上构建自己的 Agent。
 
-![Agent 构成](https://img-blog.csdnimg.cn/direct/92395956fe6f4648b8acdb887c30d5f7.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/92395956fe6f4648b8acdb887c30d5f7.png)
 
 LangChain 的模块组成：`Model I/O`（与语言模型进行接口）、`Retriever`（与特定于应用程序的数据进行接口）、`Memory`（在 Pipeline 运行期间保持记忆状态）、`Chain`（构建调用序列链条）、`Agent`（让管道根据高级指令选择使用哪些工具）、`Callback`（记录和流式传输任何管道的中间步骤）
 
@@ -43,7 +44,7 @@ LangChain 的模块组成：`Model I/O`（与语言模型进行接口）、`Retr
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/3627f0b8fbf543ce969de0f7e142a18e.png)
 
 快速安装：
-![LangChain](../../%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LangChain.md)
+![[LangChain]]
 
 ## LangChain Expression Language (LCEL)
 
@@ -134,7 +135,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 
 ### Prompt Templates
 
-![Prompt Engineering](./Prompt%20Engineering.md)
+![[Prompt Engineering]]
 
 在 LangChain 中的相关组件主要有 `Prompt Template` 和 `Example selectors`，以及后面会提到的辅助/补充 Prompt 的一些其它组件
 
@@ -467,7 +468,9 @@ prompt = PromptTemplate(
     template="answer the users question as best as possible.\n{format_instructions}\n{question}",
     input_variables=["question"],
     partial_variables={
-    
+            
+   
+     
      "format_instructions": format_instructions},
 )
 print(prompt)
@@ -505,7 +508,7 @@ The output should be a markdown code snippet formatted in the following schema, 
 
 #### 模型的结构化输出
 
-![LangChain 从模型返回结构化数据 > LangChain从模型返回结构化数据](./LangChain%20%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E6%8D%AE.md#LangChain从模型返回结构化数据)
+![[LangChain 从模型返回结构化数据#LangChain从模型返回结构化数据]]
 
 ## Use case（Q&A with RAG）
 
@@ -653,7 +656,7 @@ LLM 支持的最强大的应用程序之一是复杂的问答 （Q&A） 聊天�
     # {'query': {'title': 'Query', 'type': 'string'}}
 ```
 
-![LangChain 工具自定义 > 继承 BaseTool 类自定义工具](./LangChain%20%E5%B7%A5%E5%85%B7%E8%87%AA%E5%AE%9A%E4%B9%89.md#继承%20BaseTool%20类自定义工具)
+![[LangChain 工具自定义#继承 BaseTool 类自定义工具]]
 
 ### Agent
 
@@ -846,7 +849,7 @@ AgentExecutor 由一个 Agent 和 Tool 的集合组成。AgentExecutor 负责调
 
 ### SQLAgent
 
-![SQLAgent based GLM](./SQLAgent%20based%20GLM.md)
+![[SQLAgent based GLM]]
 
 Agent 是无记忆的。这意味着它不记得以前的交互。为了给它记忆，我们需要传入 `history_message`。
 
@@ -978,7 +981,7 @@ the AI responds positively and asks what kind of customer support Sam needs.
 
 ## LangChain 评估方法
 
-![LangChain 评估方法 > LangChain 评估的方法 Evaluation](./LangChain%20%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95.md#LangChain%20评估的方法%20Evaluation)
+![[LangChain 评估方法#LangChain 评估的方法 Evaluation]]
 
 ## LangGraph
 
