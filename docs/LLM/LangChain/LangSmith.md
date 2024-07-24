@@ -4,18 +4,18 @@
 > [LangSmith 教程 | Langchain v0.1](https://langchain114.com/docs/langsmith/walkthrough/)
 > [Evaluation | 🦜️🛠️ LangSmith ~ 评估 | 🦜️🛠️ LangSmith (langchain.com)](https://docs.smith.langchain.com/concepts/evaluation#agents)
 
-- [[#构建 LangChain 和 LangSmith 优化链的示例代码|构建 LangChain 和 LangSmith 优化链的示例代码]]
-	- [[#构建 LangChain 和 LangSmith 优化链的示例代码#评估 LLM 应用|评估 LLM 应用]]
-	- [[#构建 LangChain 和 LangSmith 优化链的示例代码#创建数据集|创建数据集]]
-	- [[#构建 LangChain 和 LangSmith 优化链的示例代码#定义衡量标准|定义衡量标准]]
-	- [[#构建 LangChain 和 LangSmith 优化链的示例代码#运行评估|运行评估]]
-- [[#评估 SQLAgent based LangGraph|评估 SQLAgent based LangGraph]]
-	- [[#评估 SQLAgent based LangGraph#评估 Agent 最终响应|评估 Agent 最终响应]]
-		- [[#评估 Agent 最终响应#创建数据集|创建数据集]]
-		- [[#评估 Agent 最终响应#定义衡量标准|定义衡量标准]]
-		- [[#评估 Agent 最终响应#运行评估|运行评估]]
-	- [[#评估 SQLAgent based LangGraph#评估 Agent 的单个步骤|评估 Agent 的单个步骤]]
-	- [[#评估 SQLAgent based LangGraph#评估一个 Agent 的轨迹|评估一个 Agent 的轨迹]]
+- [构建 LangChain 和 LangSmith 优化链的示例代码](LangSmith.md#构建%20LangChain%20和%20LangSmith%20优化链的示例代码)
+	- [评估 LLM 应用](LangSmith.md#构建%20LangChain%20和%20LangSmith%20优化链的示例代码)
+	- [创建数据集](LangSmith.md#构建%20LangChain%20和%20LangSmith%20优化链的示例代码)
+	- [定义衡量标准](LangSmith.md#构建%20LangChain%20和%20LangSmith%20优化链的示例代码)
+	- [运行评估](LangSmith.md#构建%20LangChain%20和%20LangSmith%20优化链的示例代码)
+- [评估 SQLAgent based LangGraph](LangSmith.md#评估%20SQLAgent%20based%20LangGraph)
+	- [评估 Agent 最终响应](LangSmith.md#评估%20SQLAgent%20based%20LangGraph)
+		- [创建数据集](LangSmith.md#评估%20Agent%20最终响应)
+		- [定义衡量标准](LangSmith.md#评估%20Agent%20最终响应)
+		- [运行评估](LangSmith.md#评估%20Agent%20最终响应)
+	- [评估 Agent 的单个步骤](LangSmith.md#评估%20SQLAgent%20based%20LangGraph)
+	- [评估一个 Agent 的轨迹](LangSmith.md#评估%20SQLAgent%20based%20LangGraph)
 
 Langsmith 是一种记录和评估通过 LangChain 构建的 LLM 应用的工具。它可以帮助我们更好地调整提示词等中间过程，从而优化应用效果。
 
@@ -184,7 +184,7 @@ experiment_results = evaluate(
 
 在工作台查看评估结果：
 
-![[Pasted image 20240718145736.png]]
+![Pasted image 20240718145736.png](../../01attachment/Pasted%20image%2020240718145736.png)
 
 ## 评估 SQLAgent based LangGraph
 
@@ -325,7 +325,7 @@ experiment_results = evaluate(
 ```
 
 在工作台查看评估结果：
-![[Pasted image 20240718161101.png]]
+![Pasted image 20240718161101.png](../../01attachment/Pasted%20image%2020240718161101.png)
 
 ### 评估 Agent 的单个步骤
 
