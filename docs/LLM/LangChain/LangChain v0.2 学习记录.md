@@ -26,7 +26,6 @@
 - [[#LangGraph|LangGraph]]
 - [[#LangSmith|LangSmith]]
 
-
 [LangChain (github.com)](https://github.com/langchain-ai)
 
 ## LangChain 是什么
@@ -35,7 +34,7 @@
 
 LangChain 是一个基于 `LLM` 开发应用程序的框架，把调用 LLM 的过程组成一条链的形式，具体要执行哪些函数是由 LLM 的推理结果决定的。（区别于传统程序是写死的）同时 LangChain 也是一个丰富的工具生态系统的一部分，我们可以在此框架集成并在其之上构建自己的 Agent。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/92395956fe6f4648b8acdb887c30d5f7.png)
+![Agent 构成](https://img-blog.csdnimg.cn/direct/92395956fe6f4648b8acdb887c30d5f7.png)
 
 LangChain 的模块组成：`Model I/O`（与语言模型进行接口）、`Retriever`（与特定于应用程序的数据进行接口）、`Memory`（在 Pipeline 运行期间保持记忆状态）、`Chain`（构建调用序列链条）、`Agent`（让管道根据高级指令选择使用哪些工具）、`Callback`（记录和流式传输任何管道的中间步骤）
 
@@ -468,9 +467,7 @@ prompt = PromptTemplate(
     template="answer the users question as best as possible.\n{format_instructions}\n{question}",
     input_variables=["question"],
     partial_variables={
-            
-   
-     
+    
      "format_instructions": format_instructions},
 )
 print(prompt)
