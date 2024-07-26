@@ -9,7 +9,7 @@ This template gives you an easy (and automated) way to publish your Obsidian not
 With this template, you get these **out-of-the-box**:
 
 - an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
-![](./docs/01attachment/2021-11-22-22-49-26.png)
+![[IMG-2024-07-26-18-20.png]]
 - get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
 - Toggle between light and dark mode
 - Blog folder
@@ -17,8 +17,7 @@ With this template, you get these **out-of-the-box**:
 ## Quick start
 
 1. Create a **new github repository using this template**. Click the green button at the top or use [this link](https://github.com/jobindjohn/obsidian-publish-mkdocs/generate).
-
-![](./docs/01attachment/2021-11-22-22-54-02.png)
+![[IMG-2024-07-26-18-20-1.png]]
 
 2. **Give a name** to your repository. By default your notes will be published at `<https://username.github.io/repo-name/>`
 	 - Copy only the `main` branch while creating the repo from the template

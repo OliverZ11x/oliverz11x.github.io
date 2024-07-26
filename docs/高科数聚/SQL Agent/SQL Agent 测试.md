@@ -80,3 +80,15 @@
 - **冲突**：当历史消息中的信息与工具查询所得的实时数据不一致时，SQLAgent 需要解决这种冲突，以确保回答的准确性和一致性。
 
 SQLAgent 在处理用户请求时，需要同时参考历史消息和实时数据。当历史消息中的信息与工具查询结果之间存在不一致或冲突时，如何协调和解决这种冲突是一个需要重点关注的问题。解决方案应确保最终提供给用户的信息是最新且准确的，同时也需要考虑历史消息中的上下文和背景信息。
+
+### SQLAgent 数据库连接问题
+
+```json
+{'tools': {'messages': [ToolMessage(content='Error: DatabaseException(HTTPException("Code: 47. DB::Exception: Missing columns: \'-30 day\' \'now\' while processing query: \'SELECT province, avg(daily_inventory_count) AS avg_inventory FROM (SELECT province, city, district, brand, manufacturer, series, date AS date_day, daily_arrival_count, daily_release_count, daily_inventory_count, aged_vehicles_count, total_days_in_inventory, total_turnover_days, cumulative_release_count_30days, inventory_depth, avg_turnover_days, aged_vehicle_ratio, market_share, brand_competitiveness, guide_price FROM ridehub.ads_ridehub_inventory HAVING date_day >= DATE(now, `-30 day`)) AS ads_ridehub_inventory_view WHERE date_day >= DATE(now, `-30 day`) GROUP BY province ORDER BY avg_inventory DESC LIMIT 1\', required columns: \'province\' \'now\' \'date_day\' \'daily_inventory_count\' \'-30 day\', maybe you meant: \'province\', \'date_day\' or \'daily_inventory_count\'. (UNKNOWN_IDENTIFIER) (version 23.8.9.1)\\n"))\n Please fix your mistakes.', name='sql_db_query', tool_call_id='call_20240726113440218292de01d448b3')]}} 
+---- 
+{'agent': {'messages': [AIMessage(content='很抱歉，由于系统错误，我无法直接使用日期函数来查询最近一个月内哪个省份的车辆库存数量最多。我需要您提供具体的日期范围，例如起始日期和结束日期，以便我能够正确地构造查询。您能提供这些信息吗？', response_metadata={'finish_reason': 'stop', 'model_name': 'glm-4'}, id='run-e4aec7ed-6d7a-4169-9335-25956cc9d6ec-0')]}} 
+----
+```
+
+SQLAgent 在处理用户请求时可能会遇到数据库连接问题。如果 SQLAgent 在处理用户请求时遇到任何其他数据库连接问题，可能需要进一步排查和解决这些问题，以确保提供给用户的信息是准确和及时的。
+
