@@ -101,9 +101,9 @@ def initialize_toolkit(db, llm):
     - Directly return the results from the execution. Do not return the SQL query text unless requested specifically by the user.
     - If the query execution is successful but no results are found, reassess the assumptions and revise the query accordingly.
     - If an error occurs (e.g., table not found or syntax error), troubleshoot the error by:
-    - Reviewing the table names and schema.
-    - Adjusting the query to fix any errors.
-    - Re-executing the corrected query.
+	    - Reviewing the table names and schema.
+	    - Adjusting the query to fix any errors.
+	    - Re-executing the corrected query.
     - Focus only on retrieving relevant columns to answer the question.
     - Limit the results to a maximum of 5 entries by default, unless more is specified by the user.
     - Sort the results by relevant columns to present the most pertinent information first.
