@@ -6,17 +6,17 @@
 
 点击 上面的倒三角 -->other -->clickhouse
 
-![[1718250413682.png]]
+![[IMG-2024-07-29-17-23.png]]
 
-![[Pasted image 20240613114344.png]]
+![[IMG-2024-07-29-17-23-1.png]]
 
 首次连接需要下载相关的驱动，点击“编辑驱动设置”
 
-![[Pasted image 20240613115010.png]]
+![[IMG-2024-07-29-17-23-2.png]]
 
 点击“下载/更新”
 
-![[1718250693029.jpg]]
+![[docs/01attachment/docs/DBeaver/DBeaver/IMG-2024-07-29-17-24.png]]
 
 下载完成后，点击“确定” 
 
@@ -119,6 +119,4 @@ ENGINE = MergeTree
 PRIMARY KEY date
 ORDER BY date
 SETTINGS index_granularity = 8192;
-
-![[Pasted image 20240613115647.png]]
 

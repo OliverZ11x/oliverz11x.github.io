@@ -184,7 +184,7 @@ experiment_results = evaluate(
 
 在工作台查看评估结果：
 
-![[Pasted image 20240718145736.png]]
+![[docs/01attachment/docs/日志/2024-07-18-4/IMG-2024-07-29-17-05.png]]
 
 ## 评估 SQLAgent based LangGraph
 
@@ -325,7 +325,7 @@ experiment_results = evaluate(
 ```
 
 在工作台查看评估结果：
-![[Pasted image 20240718161101.png]]
+![[docs/01attachment/docs/LLM/LangChain/LangSmith/IMG-2024-07-29-17-20.png]]
 
 ### 评估 Agent 的单个步骤
 

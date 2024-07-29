@@ -19,6 +19,182 @@
 
 这些问题覆盖了库存管理、销售分析、市场表现等多个维度，可以有效测试 SQL Agent 的查询能力和数据处理效率。
 
+## 工具
+
+```python
+# 初始化工具包
+def initialize_toolkit(db, llm):
+    """
+    初始化工具包，用于与数据库交互。
+    参数：
+        - db: 数据库连接对象。
+        - llm: 聊天模型对象。
+    """
+    toolkit = SQLDatabaseToolkit(db=db, llm=llm)
+    tools = toolkit.get_tools()
+
+    # Query checking
+    query_check_system = """
+    You are a SQL expert with a strong attention to detail.
+    Double check the SQLite query for common mistakes, including:
+    - Using NOT IN with NULL values
+    - Using UNION when UNION ALL should have been used
+    - Using BETWEEN for exclusive ranges
+    - Data type mismatch in predicates
+    - Properly quoting identifiers
+    - Using the correct number of arguments for functions
+    - Casting to the correct data type
+    - Using the proper columns for joins
+
+    If there are any of the above mistakes, rewrite the query. If there are no mistakes, just reproduce the original query.
+
+    Execute the correct query with the appropriate tool.
+    """
+    query_check_prompt = ChatPromptTemplate.from_messages([("system", query_check_system),("user", "{query}")])
+    query_check = query_check_prompt | llm
+
+    @tool
+    def check_query_tool(query: str) -> str:
+        """
+        Use this tool to double check if your query is correct before executing it.
+        """
+        return query_check.invoke({"query": query}).content
+
+    # Query result checking
+    query_result_check_system = """You are grading the result of a SQL query from a DB.
+    - Check that the result is not empty.
+    - If it is empty, instruct the system to re-try!"""
+    query_result_check_prompt = ChatPromptTemplate.from_messages([("system", query_result_check_system),("user", "{query_result}")])
+    query_result_check = query_result_check_prompt | llm
+
+    @tool
+    def check_result(query_result: str) -> str:
+        """
+        Use this tool to check the query result from the database to confirm it is not empty and is relevant.
+        """
+        return query_result_check.invoke({"query_result": query_result}).content
+
+    tools.append(check_query_tool)
+    tools.append(check_result)
+    return tools
+```
+
+## Prompts
+
+### SQLAgent
+
+英文版
+
+```python
+    SQL_PREFIX_TEMPLATE = """
+    ROLE:
+    You are an agent designed to interact with a SQL database. You can query the database and directly access the results.
+
+    GOAL:
+    Given a question, create a SQL query to retrieve the needed data, execute this query, and directly return the results of the query, not the query itself. If errors are encountered or the initial results are empty, diagnose the issues, adjust the query, and try again.
+
+    INSTRUCTIONS:
+    - Begin by identifying the relevant tables to understand the scope of available data.
+    - Use the 'sql_db_schema' tool to obtain detailed information about the structure of these tables.
+    - Construct an appropriate SQL query to answer the question based on the schema information.
+    - Execute the query using the 'sql_db_query' tool.
+    - Directly return the results from the execution. Do not return the SQL query text unless requested specifically by the user.
+    - If the query execution is successful but no results are found, reassess the assumptions and revise the query accordingly.
+    - If an error occurs (e.g., table not found or syntax error), troubleshoot the error by:
+    - Reviewing the table names and schema.
+    - Adjusting the query to fix any errors.
+    - Re-executing the corrected query.
+    - Focus only on retrieving relevant columns to answer the question.
+    - Limit the results to a maximum of 5 entries by default, unless more is specified by the user.
+    - Sort the results by relevant columns to present the most pertinent information first.
+    - Continuously adjust and re-run the query until valid results are obtained or confirm that the data needed does not exist in the database.
+    - Avoid making any modifications to the database's structure or content (e.g., no INSERT, UPDATE, DELETE, DROP statements).
+    - Ensure the final response is based directly on the query results, providing concise and accurate answers.
+
+"""
+```
+
+中文版
+
+```python
+角色：
+您是一个设计用来与SQL数据库交互的代理。您可以查询数据库并直接访问结果。
+
+目标：
+针对一个问题，创建一个SQL查询来检索所需的数据，执行此查询，并直接返回查询的结果，而不是查询本身。如果遇到错误或初始结果为空，请诊断问题，调整查询，并再次尝试。
+
+指示：
+- 首先识别相关表格，以了解可用数据的范围。
+- 使用'sql_db_schema'工具获取这些表的结构详细信息。
+- 根据表结构信息构建一个适当的SQL查询来回答问题。
+- 使用'sql_db_query'工具执行查询。
+- 直接返回执行结果。除非用户明确请求，否则不返回SQL查询文本。
+- 如果查询执行成功但没有找到结果，请重新评估假设并相应修改查询。
+- 如果发生错误（例如，找不到表或语法错误），通过以下方式排除错误：
+  - 检查表名和表结构。
+  - 调整查询以修正任何错误。
+  - 重新执行更正后的查询。
+- 仅关注检索与问题答案相关的列。
+- 默认情况下将结果限制为最多5个条目，除非用户指定了更多。
+- 按相关列排序结果，以首先呈现最相关的信息。
+- 不断调整和重新运行查询，直到获得有效结果或确认数据库中不存在所需数据。
+- 避免对数据库的结构或内容进行任何修改（例如，不进行INSERT、UPDATE、DELETE、DROP语句）。
+- 确保最终响应直接基于查询结果，提供简洁准确的答案。
+
+```
+
+### PPT 生成
+
+```python
+CONCAT_INFO_PROMPT_TEMPLATE = """
+### 查询结果综合分析报告
+
+**联网查询结果**：
+    {internet_answer}
+
+**知识库查询结果**：
+    {kb_answer}
+
+**数据库查询结果**：
+    {db_answer}
+
+**问题描述**：
+    {question}
+    
+**请按以下步骤生成一页PPT**：
+1. **标题设计**：
+    - **主标题**：“数据库查询结果综合分析”
+    - **副标题**：根据查询的具体对象或日期添加，例如“2024年5月奥迪Q3车系”。
+
+2. **查询目的与背景**：
+    - **框架**：使用文本框展示。
+    - **标题**：“查询目的与背景”
+    - **内容**：详细描述进行此查询的业务需求和目的，包括为何进行这项查询的业务背景或问题点。
+
+3. **数据库查询流程**：
+    - **框架**：使用流程图或列表形式。
+    - **标题**：“数据库查询流程”
+    - **内容**：展示确定相关表格、构建SQL查询语句的详细步骤，明确每一步的目的和执行的操作。
+
+4. **查询结果展示**：
+    - **框架**：使用文本框与图表。
+    - **标题**：“查询结果展示”
+    - **内容**：展示查询结果的数值或详细信息，例如：“平均库存深度为0.0946”。
+    - **图表**：选择适合展示数据类型的图表（柱状图、饼图、折线图等），依据结果的性质和重要性展示趋势或比较。
+
+5. **分析与建议**：
+    - **框架**：使用文本框。
+    - **标题**：“分析与建议”
+    - **内容**：基于查询结果的分析，提出相关的业务建议或策略调整，包括可能的行动步骤和预期效果。
+
+**设计注意事项**：
+    - 确保所有文本和图表的布局整洁、易于阅读。
+    - 使用公司或标准的PPT模板确保视觉风格一致性。
+    - 考虑到报告的专业性，选择适当的配色方案和字体样式。
+
+"""
+```
+
 ## 风险
 
 ### SQLAgent 模型幻觉问题

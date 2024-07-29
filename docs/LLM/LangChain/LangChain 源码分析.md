@@ -5,17 +5,17 @@
 ## 各大语言模型继承类对比
 
 各个LLM中类的差别用红框标注，其余base部分函数功能相同
-![[Pasted image 20240624104959.png]]
+![[docs/01attachment/docs/LLM/LangChain/LangChain 源码分析/IMG-2024-07-29-17-20.png]]
 
 **ChatOpenAI**
-![[Pasted image 20240626095159.png]]
+![[IMG-2024-07-29-17-20-1.png]]
 
 **azure_openai**:
-![[Pasted image 20240626095327.png]]
+![[IMG-2024-07-29-17-21.png]]
 
 ## 基类语言模型接口
 
-![[Pasted image 20240624105423.png]]
+![[IMG-2024-07-29-17-21-1.png]]
 语言模型的接口或基类，`BaseLanguageModel`，它定义了一系列与语言模型交互的方法。下面是对每个方法功能的解释：
 
 1. **generate_prompt(prompts: List[PromptValue], stop: Optional[List[str]], callbacks: Callbacks): LLMResult**
@@ -69,5 +69,5 @@
 # [promptTemplate模块源码剖析](https://www.zhihu.com/zvideo/1663740505211957248)
 
 Chat
-![[Pasted image 20240626104949.png]]
+![[IMG-2024-07-29-17-21-2.png]]
 
