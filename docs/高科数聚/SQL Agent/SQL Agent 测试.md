@@ -199,6 +199,9 @@ CONCAT_INFO_PROMPT_TEMPLATE = """
 
 ### SQLAgent 模型幻觉问题
 
+1. 时间的定义，当我问 5 月的时候需要确定是哪一年的 5 月，而不是直接自定义查询。其次当我问 5 月的时候，5 月的范围是从 5 月 1 日到 5 月 31 日，还是其他的，需要确定。
+2. 对于品牌，厂商，车系的区分和把控不准确。例如，品牌为奥迪的车，车系会有很多种，制造车的厂商也会有好几个。
+
 ```json
 {'agent': {'messages': [AIMessage(content='', additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_202407251605165b07ab0af7294099', 'function': {'arguments': '{}', 'name': 'sql_db_list_tables'}, 'type': 'function'}]}, response_metadata={'finish_reason': 'tool_callstool_calls', 'model_name': 'glm-4glm-4'}, id='run-a4c46c80-d57d-4710-a257-258f1289b28c-0', tool_calls=[{'name': 'sql_db_list_tables', 'args': {}, 'id': 'call_202407251605165b07ab0af7294099', 'type': 'tool_call'}])]}}
 ----
