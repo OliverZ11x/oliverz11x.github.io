@@ -2,6 +2,16 @@ site_name: Oliver Z11
 
 theme:
     name: 'material'
+    # font:
+    #   text: Noto Sans Simplified Chinese
+    
+    features:
+      - navigation.tabs
+      # - navigation.sections
+      - navigation.instant
+      - navigation.instant.prefetch
+      - navigation.instant.progress
+
     palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -24,12 +34,11 @@ theme:
 # Extensions
 markdown_extensions:
   - footnotes
-  # - attr_list
+  - attr_list
   - pymdownx.arithmatex:
       generic: true
-  # - pymdownx.superfences
-  # - pymdownx.details
-  # - pymdownx.magiclink
+  - pymdownx.details
+  - pymdownx.magiclink
   - pymdownx.tasklist:
       custom_checkbox: true
   - def_list
@@ -50,17 +59,17 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - blog
-  - rss:
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
+  # - blog
+  # - rss:
+  #     match_path: Blog/posts/.* 
+  #     date_from_meta:
+  #       as_creation: date
+  #     categories:
+  #       - categories
+  #       - tags
 
 extra_javascript:
-  - 01ataachment/javascripts/mathjax.js
+  - 01attachment/javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js 
@@ -72,5 +81,21 @@ extra:
       link: https://github.com/OliverZ11x
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/zhao.shi.yi/
-    
+
+  analytics: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+
 copyright: Born Originally & Die Distinctly.
