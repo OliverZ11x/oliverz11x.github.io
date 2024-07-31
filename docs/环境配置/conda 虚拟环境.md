@@ -48,7 +48,7 @@ conda list --revision
 4. 卸载当前环境中的包并重新安装旧版本。运行以下命令：
 
 ```shell
-conda install -n [环境名称] —-revision [版本号]
+conda install —-revision [版本号]
 ```
 
 5. 这将卸载当前环境中的所有包，并重新安装指定版本的包。
@@ -89,6 +89,36 @@ conda env create -f environment.yml
 ```
 
 这将创建一个新的 conda 环境，并使用提供的 YAML 文件安装所有依赖关系。
+
+## Conda 换源
+
+执行以下命令来配置阿里云镜像源：
+
+```shell
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+```
+
+如果你想要确认是否已经切换成功，可以查看 `.condarc` 文件或者执行以下命令：
+
+```shell
+conda config --show
+```
+
+重置为默认 conda 镜像源：
+
+```shell
+conda config --remove-key channels
+conda config --add channels defaults
+```
+
+### 国内常用镜像源
+
+- **清华大学：** https://pypi.tuna.tsinghua.edu.cn/simple/
+- **阿里云：** http://mirrors.aliyun.com/pypi/simple/
+- **中国科技大学：** https://pypi.mirrors.ustc.edu.cn/simple/
+- **豆瓣 (douban)：** http://pypi.douban.com/simple/
+- **中国科学技术大学：** http://pypi.mirrors.ustc.edu.cn/simple/
 
 ## 额外信息
 
