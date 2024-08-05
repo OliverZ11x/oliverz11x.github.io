@@ -132,7 +132,7 @@ With this template, you get these **out-of-the-box**:
 5. Commit and **push** the changes. Github actions will take care of the rest, publishing your notes using [MkDocs](https://www.mkdocs.org/), with the [Material theme](https://squidfunk.github.io/mkdocs-material/).
 6. Go to `Settings > Pages` and select the select the **Source** as your `gh-pages` branch.
 
-![[docs/01attachment/docs/Technic/obsidian/Obsidian网页发布/IMG-2024-07-31-15-50-2.png]] ![[2021-11-22-22-52-49.png]]
+![[docs/01attachment/docs/Technic/obsidian/Obsidian网页发布/IMG-2024-07-31-15-50-2.png]]
 
 **Not working for you?** Open an [issue](https://github.com/jobindjohn/obsidian-publish-mkdocs/issues/new/choose) and let me know what went wrong.
 
