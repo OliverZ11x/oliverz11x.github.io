@@ -1,3 +1,8 @@
+---
+title: transformer
+date created: 2024年7月31日,星期三,上午,11:15:59
+date modified: 2024年8月6日,星期二,下午,2:29:00
+---
 ![](docs/01attachment/docs/Work/求职知识储备/transformer/IMG-2024-07-31-15-50.png)
 为什么要对qkv进行投影？
 不投影attention层没有可训练参数，会让相同的qkv点积，导致每个词的注意力都在自己身上。

@@ -1,3 +1,9 @@
+---
+title: DBeaver进行数据探查
+date created: 2024年7月31日,星期三,上午,11:15:58
+date modified: 2024年8月6日,星期二,下午,2:28:20
+---
+
 # DBeaver进行数据探查
 
 ## 连接clickhouse
