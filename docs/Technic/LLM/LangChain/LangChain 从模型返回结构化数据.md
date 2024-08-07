@@ -1,3 +1,9 @@
+---
+title: LangChain 结构化数据
+date created: 2024年7月31日,星期三,上午,11:15:58
+date modified: 2024年8月7日,星期三,下午,5:56:18
+---
+
 # LangChain从模型返回结构化数据
 
 >[如何从模型返回结构化数据 | 🦜️🔗 LangChain](https://python.langchain.com/v0.2/docs/how_to/structured_output/#using-pydanticoutputparser)

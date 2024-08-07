@@ -1,3 +1,8 @@
+---
+title: Prompt Engineering
+date created: 2024年7月31日,星期三,上午,11:15:58
+date modified: 2024年8月7日,星期三,晚上,6:01:45
+---
 # Prompt Engineering
 
 Prompt指用户的一系列指令和输入，是决定Language Model输出内容的唯一输入，主要用于帮助模型理解上下文，并生成相关和连贯的输出，如回答问题、拓写句子和总结问题。

@@ -1,3 +1,8 @@
+---
+title: SQLAgent based GLM
+date created: 2024年7月31日,星期三,上午,11:15:58
+date modified: 2024年8月7日,星期三,晚上,6:01:36
+---
 # 使用手册：与 SQL 数据库交互的 Agent
 
 ## 目录

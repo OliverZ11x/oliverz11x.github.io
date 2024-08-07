@@ -1,3 +1,9 @@
+---
+title: LangChain 源码分析
+date created: 2024年7月31日,星期三,上午,11:15:58
+date modified: 2024年8月7日,星期三,下午,5:53:46
+---
+
 # LangChain 源码分析
 
 [chatmodels模块介绍](https://www.zhihu.com/zvideo/1661208710797172736)

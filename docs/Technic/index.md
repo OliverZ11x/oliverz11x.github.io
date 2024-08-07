@@ -1,5 +1,7 @@
 ---
 title: Technic
+date created: 2024年8月6日,星期二,上午,11:19:08
+date modified: 2024年8月7日,星期三,上午,10:49:18
 ---
 
 ## 概要
@@ -19,7 +21,7 @@ title: Technic
 		- [LangChain 评估方法](./LLM/LangChain/LangChain%20%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95.md)
 		- [LangChain 源码分析](./LLM/LangChain/LangChain%20%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)
 		- [LangChain v0.2 学习记录](./LLM/LangChain/LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
-		- [LangSmith](./LLM/LangChain/LangSmith.md)
+		- [LangSmith 学习记录](LangSmith%20学习记录.md)
 		- [Prompt Engineering](./LLM/LangChain/Prompt%20Engineering.md)
 		- [SQLAgent based GLM](./LLM/LangChain/SQLAgent%20based%20GLM.md)
 	- **NLP**

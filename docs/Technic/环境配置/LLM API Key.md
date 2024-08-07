@@ -1,3 +1,8 @@
+---
+date created: 2024年8月5日,星期一,下午,2:52:48
+date modified: 2024年8月7日,星期三,下午,2:29:02
+---
+
 ## OpenAI
 
 https://api.chatanywhere.com.cn
@@ -15,5 +20,11 @@ API key: `1140131bf4f94e75b3927e82589058af`
 ### Gpt-4 o-mini
 
 https://oliverz11ai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview
+
+API key: `1140131bf4f94e75b3927e82589058af`
+
+### text-embedding-3-small
+
+https://oliverz11ai.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2023-05-15
 
 API key: `1140131bf4f94e75b3927e82589058af`

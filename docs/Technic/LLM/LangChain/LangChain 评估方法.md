@@ -1,3 +1,9 @@
+---
+title: LangChain 评估方法
+date created: 2024年7月31日,星期三,上午,11:15:58
+date modified: 2024年8月7日,星期三,下午,5:53:39
+---
+
 # LangChain 评估的方法 Evaluation
 
 这部分文档涵盖了我们在 LangChain 中对评估的处理方式和思考方式，包括对内部链式操作/代理的评估，以及我们建议构建在 LangChain 之上的人如何进行评估的方法。
