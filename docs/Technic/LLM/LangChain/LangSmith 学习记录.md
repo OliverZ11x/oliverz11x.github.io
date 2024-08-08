@@ -1,9 +1,8 @@
 ---
-title: "# LangSmith 学习记录"
+title: LangSmith 学习记录
 date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月7日,星期三,下午,5:54:43
+date modified: 2024年8月7日,星期三,晚上,6:22:34
 ---
-
 # LangSmith：评估 LLM 应用能力的工具
 
 > [如何使用 LangChain 和 LangSmith 优化链-CSDN博客](https://blog.csdn.net/wangjiansui/article/details/140329613)

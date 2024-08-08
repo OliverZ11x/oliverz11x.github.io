@@ -1,14 +1,13 @@
 ---
 title: TimesFM 环境配置
 date created: 2024年7月31日,星期三,上午,11:15:59
-date modified: 2024年8月6日,星期二,下午,2:50:53
+date modified: 2024年8月8日,星期四,下午,2:06:15
 ---
-
 ## Condition
 
 TimesFM 环境[要求严苛](https://github.com/google-research/timesfm/issues/1)，需要在 X 86 架构下的 Linux 系统中运行，如需在 windows 环境中运行 TImesFM 可以使用 WSL 2 创建 Linux 环境。
 
-![[Win10 安装 WSL2-Ubuntu 并配置 anaconda]]
+![[WSL2-Ubuntu 环境配置]]
 
 ## Python 环境配置
 
@@ -25,7 +24,7 @@ pip install timesfm
 ```
 
 > [!NOTE]
-> 注意请不要使用清华源等国内镜像源（这些包国内镜像站上搜不到，只能去 [http://pypi.org](https://link.zhihu.com/?target=http%3A//pypi.org) 官方镜象站找），如果出现网络问题请参考 [[Win10 安装 WSL2-Ubuntu 并配置 anaconda#配置 VPN（可选）|配置 VPN]]
+> 注意请不要使用清华源等国内镜像源（这些包国内镜像站上搜不到，只能去 [http://pypi.org](https://link.zhihu.com/?target=http%3A//pypi.org) 官方镜象站找），如果出现网络问题请参考 [[WSL2-Ubuntu 环境配置#配置 VPN（可选）|配置 VPN]]
 
 ## 模型测试
 

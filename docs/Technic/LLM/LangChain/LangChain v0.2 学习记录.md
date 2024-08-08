@@ -48,7 +48,7 @@ LangChain 的模块组成：`Model I/O`（与语言模型进行接口）、`Retr
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/3627f0b8fbf543ce969de0f7e142a18e.png)
 
 快速安装：
-![[LangChain]]
+![[LangChain 环境配置]]
 
 ## LangChain Expression Language (LCEL)
 

@@ -1,3 +1,7 @@
+---
+date created: 2024年7月31日,星期三,上午,11:15:59
+date modified: 2024年8月8日,星期四,下午,2:26:04
+---
 
 [【保姆级教程】Windows安装CUDA及cuDNN_windows安装cudnn-CSDN博客](https://blog.csdn.net/qq_40968179/article/details/128996692)
 
@@ -6,15 +10,17 @@
 [使用虚拟环境conda安装不同版本的cuda，cudnn，pytorch_conda安装cuda-CSDN博客](https://blog.csdn.net/qq_42537872/article/details/132322398)
 
 系统自带 Nvidia 驱动，请勿卸载：
-![[docs/01attachment/docs/Technic/环境配置/CUDA 环境配置/IMG-2024-07-31-15-50.png]]
+
+![[IMG-2024-07-31-15-50-12.png]]
 
 ## 升级 CUDA 驱动
 
 在 cmd 中用 `nvidia-smi` 命令查看 CUDA 版本为 12.6，因此，CUDA 12.0 以下的版本应该都可以安装。
-![[docs/01attachment/docs/Technic/环境配置/CUDA 环境配置/IMG-2024-07-31-15-50-1.png]]
+
+![[IMG-2024-07-31-15-50-14.png]]
 
 如果需要升级驱动，打开 Nvidia Geforce experience，点击驱动程序更新驱动，即可安装更高版本的 CUDA。
-![[docs/01attachment/docs/Technic/环境配置/CUDA 环境配置/IMG-2024-07-31-15-50-2.png]]
+![[IMG-2024-07-31-15-50-13.png]]
 
 ## Conda installation CUDA
 

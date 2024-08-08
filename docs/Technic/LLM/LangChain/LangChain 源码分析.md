@@ -1,9 +1,8 @@
 ---
 title: LangChain 源码分析
 date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月7日,星期三,下午,5:53:46
+date modified: 2024年8月8日,星期四,下午,2:32:15
 ---
-
 # LangChain 源码分析
 
 [chatmodels模块介绍](https://www.zhihu.com/zvideo/1661208710797172736)
@@ -11,17 +10,17 @@ date modified: 2024年8月7日,星期三,下午,5:53:46
 ## 各大语言模型继承类对比
 
 各个LLM中类的差别用红框标注，其余base部分函数功能相同
-![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2024-07-31-15-50.png]]
+![[IMG-2024-08-08-14-31-34.png]]
 
 **ChatOpenAI**
-![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2024-07-31-15-50-1.png]]
+![[IMG-2024-08-08-14-31-34-1.png]]
 
 **azure_openai**:
-![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2024-07-31-15-50-2.png]]
+![[IMG-2024-08-08-14-31-34-2.png]]
 
 ## 基类语言模型接口
 
-![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2024-07-31-15-50-3.png]]
+![[IMG-2024-08-08-14-31-34-3.png]]
 语言模型的接口或基类，`BaseLanguageModel`，它定义了一系列与语言模型交互的方法。下面是对每个方法功能的解释：
 
 1. **generate_prompt(prompts: List[PromptValue], stop: Optional[List[str]], callbacks: Callbacks): LLMResult**
@@ -75,5 +74,5 @@ date modified: 2024年8月7日,星期三,下午,5:53:46
 # [promptTemplate模块源码剖析](https://www.zhihu.com/zvideo/1663740505211957248)
 
 Chat
-![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2024-07-31-15-50-4.png]]
+![[IMG-2024-08-08-14-31-34-4.png]]
 

@@ -5,9 +5,11 @@ tags:
   - SQLAgent
   - LangChain
 date created: 2024年8月7日,星期三,下午,3:34:17
-date modified: 2024年8月7日,星期三,晚上,6:01:37
+date modified: 2024年8月8日,星期四,上午,9:55:41
 ---
 # RAG 增强 SQLAgent
+
+>[Enhancing SQL Agents with Retrieval Augmented Generation (RAG) | by Luc Nguyen | Medium](https://medium.com/@lucnguyen_61589/enhancing-sql-agents-with-retrieval-augmented-generation-rag-e20dbd8bb685)
 
 - [[#背景|背景]]
 - [[#技术内容描述|技术内容描述]]
@@ -338,11 +340,11 @@ if __name__ == "__main__":
 
 ## 问题
 
-### 问题 1：智谱 embedding
+### 1. 智谱 embedding
 
 目前的实现中未能集成智谱的 embedding 模型，而是用的 Azure 的 embedding 模型，尚未清楚如何在 langchain 中调用智谱的 embedding 模型，有待查阅。
 
-### 问题 2：RAG 技术与 SQLAgent 的集成
+### 2. RAG 技术与 SQLAgent 的集成
 
 尽管已经实现了使用 RAG 技术检索相关内容的功能，但似乎 SQLAgent 并未能有效记忆或利用这些检索到的知识来优化用户的查询问题。这表明在 RAG 技术与 SQLAgent 的集成过程中可能存在信息传递或持久化的问题。
 

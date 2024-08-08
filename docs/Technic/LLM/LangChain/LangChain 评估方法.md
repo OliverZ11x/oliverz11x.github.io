@@ -1,9 +1,8 @@
 ---
 title: LangChain 评估方法
 date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月7日,星期三,下午,5:53:39
+date modified: 2024年8月8日,星期四,下午,2:32:40
 ---
-
 # LangChain 评估的方法 Evaluation
 
 这部分文档涵盖了我们在 LangChain 中对评估的处理方式和思考方式，包括对内部链式操作/代理的评估，以及我们建议构建在 LangChain 之上的人如何进行评估的方法。
@@ -68,9 +67,9 @@ LangChain 试图解决这两个问题。目前提供的解决方案是初步的�
 
 ### 评估结果
 
-![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 评估方法/IMG-2024-07-31-15-50.png]]
+![[IMG-2024-08-08-14-32-32.png]]
 
-![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 评估方法/IMG-2024-07-31-15-50-1.png]]
+![[IMG-2024-08-08-14-32-32-1.png]]
 
 [模型效果测试，返回为空 · Issue #1205 · tencentmusic/supersonic (github.com)](https://github.com/tencentmusic/supersonic/issues/1205)
 
