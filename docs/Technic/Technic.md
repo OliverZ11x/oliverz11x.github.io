@@ -1,7 +1,7 @@
 ---
 title: Technic
 date created: 2024年8月6日,星期二,上午,11:19:08
-date modified: 2024年8月8日,星期四,下午,2:39:09
+date modified: 2024年8月8日,星期四,下午,4:22:08
 ---
 ## Menu
 
@@ -34,7 +34,7 @@ date modified: 2024年8月8日,星期四,下午,2:39:09
 	- [常用 Git 命令](./obsidian/%E5%B8%B8%E7%94%A8%20Git%20%E5%91%BD%E4%BB%A4.md)
 	- [双链测试](./obsidian/%E5%8F%8C%E9%93%BE%E6%B5%8B%E8%AF%95.md)
 	- [Markdown 语法指南](./obsidian/Markdown%20%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97.md)
+	- [Obsidian 标签](./obsidian/Obsidian%20%E6%A0%87%E7%AD%BE.md)
 	- [Obsidian 网页发布](./obsidian/Obsidian%20%E7%BD%91%E9%A1%B5%E5%8F%91%E5%B8%83.md)
-	- [PPT](./obsidian/PPT.md)
 
 %% End Waypoint %%

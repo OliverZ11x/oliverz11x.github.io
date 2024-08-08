@@ -1,9 +1,8 @@
 ---
-title: DBeaver进行数据探查
+title: DBeaver 数据探查
 date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月6日,星期二,下午,2:28:20
+date modified: 2024年8月8日,星期四,下午,3:09:08
 ---
-
 # DBeaver进行数据探查
 
 ## 连接clickhouse
@@ -12,17 +11,17 @@ date modified: 2024年8月6日,星期二,下午,2:28:20
 
 点击 上面的倒三角 -->other -->clickhouse
 
-![[docs/01attachment/docs/Work/高科数聚/DBeaver/DBeaver/IMG-2024-07-31-15-50.png]]
+![[IMG-2024-08-08-15-08-58.png]]
 
-![[docs/01attachment/docs/Work/高科数聚/DBeaver/DBeaver/IMG-2024-07-31-15-50-1.png]]
+![[IMG-2024-08-08-15-08-58-1.png]]
 
 首次连接需要下载相关的驱动，点击“编辑驱动设置”
 
-![[docs/01attachment/docs/Work/高科数聚/DBeaver/DBeaver/IMG-2024-07-31-15-50-2.png]]
+![[IMG-2024-08-08-15-08-58-2.png]]
 
 点击“下载/更新”
 
-![[docs/01attachment/docs/Work/高科数聚/DBeaver/DBeaver/IMG-2024-07-31-15-50-3.png]]
+![[IMG-2024-08-08-15-08-58-3.png]]
 
 下载完成后，点击“确定” 
 

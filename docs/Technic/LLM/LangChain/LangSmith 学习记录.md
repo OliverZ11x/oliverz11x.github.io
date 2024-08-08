@@ -1,7 +1,7 @@
 ---
 title: LangSmith 学习记录
 date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月7日,星期三,晚上,6:22:34
+date modified: 2024年8月8日,星期四,下午,4:35:35
 ---
 # LangSmith：评估 LLM 应用能力的工具
 
@@ -9,18 +9,18 @@ date modified: 2024年8月7日,星期三,晚上,6:22:34
 > [LangSmith 教程 | Langchain v0.1](https://langchain114.com/docs/langsmith/walkthrough/)
 > [Evaluation | 🦜️🛠️ LangSmith ~ 评估 | 🦜️🛠️ LangSmith (langchain.com)](https://docs.smith.langchain.com/concepts/evaluation#agents)
 
-- [[#构建 LangChain 和 LangSmith 优化链的示例代码|构建 LangChain 和 LangSmith 优化链的示例代码]]
-	- [[#构建 LangChain 和 LangSmith 优化链的示例代码#评估 LLM 应用|评估 LLM 应用]]
-	- [[#构建 LangChain 和 LangSmith 优化链的示例代码#创建数据集|创建数据集]]
-	- [[#构建 LangChain 和 LangSmith 优化链的示例代码#定义衡量标准|定义衡量标准]]
-	- [[#构建 LangChain 和 LangSmith 优化链的示例代码#运行评估|运行评估]]
-- [[#评估 SQLAgent based LangGraph|评估 SQLAgent based LangGraph]]
-	- [[#评估 SQLAgent based LangGraph#评估 Agent 最终响应|评估 Agent 最终响应]]
-		- [[#评估 Agent 最终响应#创建数据集|创建数据集]]
-		- [[#评估 Agent 最终响应#定义衡量标准|定义衡量标准]]
-		- [[#评估 Agent 最终响应#运行评估|运行评估]]
-	- [[#评估 SQLAgent based LangGraph#评估 Agent 的单个步骤|评估 Agent 的单个步骤]]
-	- [[#评估 SQLAgent based LangGraph#评估一个 Agent 的轨迹|评估一个 Agent 的轨迹]]
+- [构建 LangChain 和 LangSmith 优化链的示例代码](#%E6%9E%84%E5%BB%BA%20LangChain%20%E5%92%8C%20LangSmith%20%E4%BC%98%E5%8C%96%E9%93%BE%E7%9A%84%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81)
+	- [评估 LLM 应用](#%E8%AF%84%E4%BC%B0%20LLM%20%E5%BA%94%E7%94%A8)
+	- [创建数据集](#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E9%9B%86)
+	- [定义衡量标准](#%E5%AE%9A%E4%B9%89%E8%A1%A1%E9%87%8F%E6%A0%87%E5%87%86)
+	- [运行评估](#%E8%BF%90%E8%A1%8C%E8%AF%84%E4%BC%B0)
+- [评估 SQLAgent based LangGraph](#%E8%AF%84%E4%BC%B0%20SQLAgent%20based%20LangGraph)
+	- [评估 Agent 最终响应](#%E8%AF%84%E4%BC%B0%20Agent%20%E6%9C%80%E7%BB%88%E5%93%8D%E5%BA%94)
+		- [创建数据集](#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E9%9B%86)
+		- [定义衡量标准](#%E5%AE%9A%E4%B9%89%E8%A1%A1%E9%87%8F%E6%A0%87%E5%87%86)
+		- [运行评估](#%E8%BF%90%E8%A1%8C%E8%AF%84%E4%BC%B0)
+	- [评估 Agent 的单个步骤](#%E8%AF%84%E4%BC%B0%20Agent%20%E7%9A%84%E5%8D%95%E4%B8%AA%E6%AD%A5%E9%AA%A4)
+	- [评估一个 Agent 的轨迹](#%E8%AF%84%E4%BC%B0%E4%B8%80%E4%B8%AA%20Agent%20%E7%9A%84%E8%BD%A8%E8%BF%B9)
 
 Langsmith 是一种记录和评估通过 LangChain 构建的 LLM 应用的工具。它可以帮助我们更好地调整提示词等中间过程，从而优化应用效果。
 

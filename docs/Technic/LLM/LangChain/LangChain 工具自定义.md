@@ -1,9 +1,8 @@
 ---
 title: LangChain 工具自定义
 date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月7日,星期三,下午,2:50:32
+date modified: 2024年8月8日,星期四,下午,3:52:22
 ---
-
 # LangChain 自定义工具
 
 - [构建多参数的自定义 LangChain 工具](https://blog.csdn.net/Alex_StarSky/article/details/136574640?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-136574640-blog-137740363.235^v43^pc_blog_bottom_relevance_base2&spm=1001.2101.3001.4242.1&utm_relevant_index=3)

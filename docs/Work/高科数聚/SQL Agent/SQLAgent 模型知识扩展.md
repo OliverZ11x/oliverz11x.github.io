@@ -1,10 +1,9 @@
 ---
 title: SQLAgent 模型知识扩展
 tags:
-  - SQLAgent
-  - 高科数聚
+  - in-progress
 date created: 2024年1月1日,星期一,上午,10:19:52
-date modified: 2024年8月7日,星期三,晚上,6:03:41
+date modified: 2024年8月8日,星期四,下午,4:16:36
 ---
 ## Supersonic 的实现原理
 

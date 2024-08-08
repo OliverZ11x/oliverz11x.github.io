@@ -1,37 +1,35 @@
 ---
 title: LangChain v0.2 学习记录
 date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月7日,星期三,晚上,6:04:08
+date modified: 2024年8月8日,星期四,下午,4:35:55
 ---
 # LanguageChain v0.2 学习记录
 
-- [[#LangChain 是什么|LangChain 是什么]]
-- [[#LangChain Expression Language (LCEL)|LangChain Expression Language (LCEL)]]
-	- [[#LangChain Expression Language (LCEL)#Runnable 接口|Runnable 接口]]
-- [[#Model I/O|Model I/O]]
-	- [[#Model I/O#Prompt Templates|Prompt Templates]]
-	- [[#Model I/O#Language Model|Language Model]]
-	- [[#Model I/O#Output Parsers|Output Parsers]]
-		- [[#Output Parsers#PydanticOutputParser|PydanticOutputParser]]
-		- [[#Output Parsers#JsonOutputParser：|JsonOutputParser：]]
-		- [[#Output Parsers#StructuredOutputParser|StructuredOutputParser]]
-		- [[#Output Parsers#模型的结构化输出|模型的结构化输出]]
-- [[#Use case（Q&A with RAG）|Use case（Q&A with RAG）]]
-- [[#Agent|Agent]]
-	- [[#Agent#Tools（Function Calling）|Tools（Function Calling）]]
-	- [[#Agent#Agent|Agent]]
-	- [[#Agent#AgentExecutor|AgentExecutor]]
-	- [[#Agent#SQLAgent|SQLAgent]]
-- [[#Memory|Memory]]
-	- [[#Memory#ConversationBufferMemory（对话缓存记忆）|ConversationBufferMemory（对话缓存记忆）]]
-	- [[#Memory#ConversationBufferWindowMemory（对话缓存窗口记忆）|ConversationBufferWindowMemory（对话缓存窗口记忆）]]
-	- [[#Memory#ConversationTokenBufferMemory（对话 token 缓存记忆）|ConversationTokenBufferMemory（对话 token 缓存记忆）]]
-	- [[#Memory#ConversationSummaryMemory（对话摘要缓存记忆）|ConversationSummaryMemory（对话摘要缓存记忆）]]
-- [[#LangChain 评估方法|LangChain 评估方法]]
-- [[#LangGraph|LangGraph]]
-- [[#LangSmith|LangSmith]]
-
-[LangChain (github.com)](https://github.com/langchain-ai)
+- [LangChain 是什么](#LangChain%20%E6%98%AF%E4%BB%80%E4%B9%88)
+- [LangChain Expression Language (LCEL)](#LangChain%20Expression%20Language%20(LCEL))
+	- [Runnable 接口](#Runnable%20%E6%8E%A5%E5%8F%A3)
+- [Model I/O](#Model%20I/O)
+	- [Prompt Templates](#Prompt%20Templates)
+	- [Language Model](#Language%20Model)
+	- [Output Parsers](#Output%20Parsers)
+		- [PydanticOutputParser](#PydanticOutputParser)
+		- [JsonOutputParser：](#JsonOutputParser%EF%BC%9A)
+		- [StructuredOutputParser](#StructuredOutputParser)
+		- [模型的结构化输出](#%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BB%93%E6%9E%84%E5%8C%96%E8%BE%93%E5%87%BA)
+- [Use case（Q&A with RAG）](#Use%20case%EF%BC%88Q&A%20with%20RAG%EF%BC%89)
+- [Agent](#Agent)
+	- [Tools（Function Calling）](#Tools%EF%BC%88Function%C2%A0Calling%EF%BC%89)
+	- [Agent](#Agent)
+	- [AgentExecutor](#AgentExecutor)
+	- [SQLAgent](#SQLAgent)
+- [Memory](#Memory)
+	- [ConversationBufferMemory（对话缓存记忆）](#ConversationBufferMemory%EF%BC%88%E5%AF%B9%E8%AF%9D%E7%BC%93%E5%AD%98%E8%AE%B0%E5%BF%86%EF%BC%89)
+	- [ConversationBufferWindowMemory（对话缓存窗口记忆）](#ConversationBufferWindowMemory%EF%BC%88%E5%AF%B9%E8%AF%9D%E7%BC%93%E5%AD%98%E7%AA%97%E5%8F%A3%E8%AE%B0%E5%BF%86%EF%BC%89)
+	- [ConversationTokenBufferMemory（对话 token 缓存记忆）](#ConversationTokenBufferMemory%EF%BC%88%E5%AF%B9%E8%AF%9D%20token%20%E7%BC%93%E5%AD%98%E8%AE%B0%E5%BF%86%EF%BC%89)
+	- [ConversationSummaryMemory（对话摘要缓存记忆）](#ConversationSummaryMemory%EF%BC%88%E5%AF%B9%E8%AF%9D%E6%91%98%E8%A6%81%E7%BC%93%E5%AD%98%E8%AE%B0%E5%BF%86%EF%BC%89)
+- [LangChain 评估方法](#LangChain%20%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95)
+- [LangGraph](#LangGraph)
+- [LangSmith](#LangSmith)
 
 ## LangChain 是什么
 

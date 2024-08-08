@@ -1,34 +1,32 @@
 ---
 title: RAG 增强 SQLAgent
 tags:
-  - RAG
-  - SQLAgent
-  - LangChain
+  - in-progress
 date created: 2024年8月7日,星期三,下午,3:34:17
-date modified: 2024年8月8日,星期四,上午,9:55:41
+date modified: 2024年8月8日,星期四,晚上,6:24:06
 ---
 # RAG 增强 SQLAgent
 
 >[Enhancing SQL Agents with Retrieval Augmented Generation (RAG) | by Luc Nguyen | Medium](https://medium.com/@lucnguyen_61589/enhancing-sql-agents-with-retrieval-augmented-generation-rag-e20dbd8bb685)
 
-- [[#背景|背景]]
-- [[#技术内容描述|技术内容描述]]
-	- [[#技术内容描述#1. RAG 增强 SQLAgent 的概念|1. RAG 增强 SQLAgent 的概念]]
-	- [[#技术内容描述#2. Langchain 框架和 FAISS Vector DB|2. Langchain 框架和 FAISS Vector DB]]
-- [[#代码编写流程|代码编写流程]]
-	- [[#代码编写流程#1. 环境设置|1. 环境设置]]
-	- [[#代码编写流程#2. 准备文档|2. 准备文档]]
-	- [[#代码编写流程#3. 创建向量数据库|3. 创建向量数据库]]
-	- [[#代码编写流程#4. 创建 SQLAgentRAGRetriever 检索工具|4. 创建 SQLAgentRAGRetriever 检索工具]]
-	- [[#代码编写流程#5. 重定义 SQLAgent|5. 重定义 SQLAgent]]
-	- [[#代码编写流程#6. 初始化工具包|6. 初始化工具包]]
-	- [[#代码编写流程#7. 连接数据库|7. 连接数据库]]
-	- [[#代码编写流程#8. 测试|8. 测试]]
-- [[#结论|结论]]
-- [[#问题|问题]]
-	- [[#问题#问题 1：智谱 embedding|问题 1：智谱 embedding]]
-	- [[#问题#问题 2：RAG 技术与 SQLAgent 的集成|问题 2：RAG 技术与 SQLAgent 的集成]]
-- [[#完整代码|完整代码]]
+- [背景](#%E8%83%8C%E6%99%AF)
+- [技术内容描述](#%E6%8A%80%E6%9C%AF%E5%86%85%E5%AE%B9%E6%8F%8F%E8%BF%B0)
+	- [1. RAG 增强 SQLAgent 的概念](#1.%20RAG%20%E5%A2%9E%E5%BC%BA%20SQLAgent%20%E7%9A%84%E6%A6%82%E5%BF%B5)
+	- [2. Langchain 框架和 FAISS Vector DB](#2.%20Langchain%20%E6%A1%86%E6%9E%B6%E5%92%8C%20FAISS%20Vector%20DB)
+- [代码编写流程](#%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%B5%81%E7%A8%8B)
+	- [1. 环境设置](#1.%20%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE)
+	- [2. 准备文档](#2.%20%E5%87%86%E5%A4%87%E6%96%87%E6%A1%A3)
+	- [3. 创建向量数据库](#3.%20%E5%88%9B%E5%BB%BA%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93)
+	- [4. 创建 SQLAgentRAGRetriever 检索工具](#4.%20%E5%88%9B%E5%BB%BA%20SQLAgentRAGRetriever%20%E6%A3%80%E7%B4%A2%E5%B7%A5%E5%85%B7)
+	- [5. 重定义 SQLAgent](#5.%20%E9%87%8D%E5%AE%9A%E4%B9%89%20SQLAgent)
+	- [6. 初始化工具包](#6.%20%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B7%A5%E5%85%B7%E5%8C%85)
+	- [7. 连接数据库](#7.%20%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93)
+	- [8. 测试](#8.%20%E6%B5%8B%E8%AF%95)
+- [结论](#%E7%BB%93%E8%AE%BA)
+- [问题](#%E9%97%AE%E9%A2%98)
+	- [1. 智谱 embedding](#1.%20%E6%99%BA%E8%B0%B1%20embedding)
+	- [2. RAG 技术与 SQLAgent 的集成](#2.%20RAG%20%E6%8A%80%E6%9C%AF%E4%B8%8E%20SQLAgent%20%E7%9A%84%E9%9B%86%E6%88%90)
+- [完整代码](#%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)
 
 ## 背景
 

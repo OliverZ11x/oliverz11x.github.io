@@ -1,19 +1,18 @@
 ---
-title: 大模型
+title: LLM 模型概述
 date created: 2024年7月31日,星期三,上午,11:15:59
-date modified: 2024年8月6日,星期二,下午,2:29:01
+date modified: 2024年8月8日,星期四,下午,3:07:42
 ---
-
 # 大模型
 
 看一下围绕大模型的应用场景和人才需求：
-![](docs/01attachment/docs/Work/高科数聚/月会/IMG-2024-07-31-15-50.png)
+![](IMG-2024-08-08-15-05-06.png)
 
 Prompt工程：基于提示词对大模型的使用，会问问题就行。
 
 基于大模型的应用：在大模型生态之上做业务层产品。AI主播、AINPC、AI小助手。。。之前是会调API就行。现在有了GPTs，连调用API都可以不用了，动动嘴就可以实现应用生成。
 
-![](docs/01attachment/docs/Work/求职知识储备/LLM模型学习概述/IMG-2024-07-31-15-50-1.png)
+![](IMG-2024-08-08-15-05-06-1.png)
 
 - **私有知识库**：给大模型配个“资料袋”——大模型外挂向量数据库/知识图谱。
 - **AI Agent**：给大模型“大脑”装上记忆体、手和脚，让它可以作为智能体进行决策和工作。
@@ -60,7 +59,7 @@ github：https://github.com/langchain-ai/langchain
 
 ChatGLM2-6B在保留了初代模型对话流畅、部署门槛较低等众多优秀特性的基础之上，具有更强大的性能、支持更长的上下文、更强的推理能力的特点，是Poor流选手的福音。各种尺寸的模型需要消耗的资源：
 
-![](docs/01attachment/docs/Work/求职知识储备/LLM模型学习概述/IMG-2024-07-31-15-50-2.png)
+![](IMG-2024-08-08-15-05-06-2.png)
 
 项目地址：[GitHub - THUDM/ChatGLM2-6B: ChatGLM2-6B: An Open Bilingual Chat LLM | 开源双语对话语言模型](https://github.com/THUDM/ChatGLM2-6B)
 
@@ -89,7 +88,7 @@ Transformer是一个引入了 Self-attention 机制的模型，它是大语言�
 
 这张图清晰地展示了LLM的3个分支：
 
-![](docs/01attachment/docs/Work/求职知识储备/LLM模型学习概述/IMG-2024-07-31-15-50-3.png)
+![](IMG-2024-08-08-15-05-06-3.png)
 
 - encoder-only：BERT
 - encoder-decoder：T5, GLM-130B, UL2

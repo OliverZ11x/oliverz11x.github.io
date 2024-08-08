@@ -1,3 +1,7 @@
+---
+date created: 2024年7月31日,星期三,上午,11:15:58
+date modified: 2024年8月8日,星期四,下午,4:36:18
+---
 [Hello! · Transformers快速入门](https://transformers.run/)
 
 [课程简介 - Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/zh-CN/chapter0/1?fw=pt)

@@ -1,3 +1,7 @@
+---
+date created: 2024年7月31日,星期三,上午,11:15:58
+date modified: 2024年8月8日,星期四,下午,4:36:23
+---
 [Transformer 模型 · Transformers快速入门](https://transformers.run/c1/transformer/)
 
 ![transformer 模型架构图](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/transformers.svg)
