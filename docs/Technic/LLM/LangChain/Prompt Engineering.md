@@ -1,7 +1,7 @@
 ---
 title: Prompt Engineering
-date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月8日,星期四,下午,4:27:08
+date created: 2024/7/31 11:15
+date modified: 2024/8/9 14:44
 ---
 # Prompt Engineering
 

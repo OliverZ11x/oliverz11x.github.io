@@ -6,8 +6,8 @@ social:
 hide:
   - toc
   - navigation
-date created: 2024年8月6日,星期二,上午,10:52:49
-date modified: 2024年8月8日,星期四,晚上,6:20:25
+date created: 2024年Aug6th,Tuesday,am,10:52:49
+date modified: 2024年Aug9th,Friday,pm,2:33:53
 ---
 ## Welcome to Thoughts.
 

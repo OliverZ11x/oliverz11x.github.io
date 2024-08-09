@@ -1,7 +1,7 @@
 ---
 title: LangChain 结构化数据
-date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月8日,星期四,下午,4:26:26
+date created: 2024/7/31 11:15
+date modified: 2024/8/9 14:44
 ---
 # LangChain从模型返回结构化数据
 

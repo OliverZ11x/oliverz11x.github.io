@@ -1,13 +1,13 @@
 ---
 title: RAG 增强 SQLAgent
+date created: 2024/8/7 15:34
+date modified: 2024/8/9 14:49
 tags:
   - in-progress
-date created: 2024年8月7日,星期三,下午,3:34:17
-date modified: 2024年8月8日,星期四,晚上,6:24:06
 ---
 # RAG 增强 SQLAgent
 
->[Enhancing SQL Agents with Retrieval Augmented Generation (RAG) | by Luc Nguyen | Medium](https://medium.com/@lucnguyen_61589/enhancing-sql-agents-with-retrieval-augmented-generation-rag-e20dbd8bb685)
+> [Enhancing SQL Agents with Retrieval Augmented Generation (RAG) | by Luc Nguyen | Medium](https://medium.com/@lucnguyen_61589/enhancing-sql-agents-with-retrieval-augmented-generation-rag-e20dbd8bb685)
 
 - [背景](#%E8%83%8C%E6%99%AF)
 - [技术内容描述](#%E6%8A%80%E6%9C%AF%E5%86%85%E5%AE%B9%E6%8F%8F%E8%BF%B0)
@@ -30,9 +30,12 @@ date modified: 2024年8月8日,星期四,晚上,6:24:06
 
 ## 背景
 
-在处理复杂的数据库查询任务时，尽管现有的 SQLAgent 可以处理标准的数据检索需求，但它们通常缺乏处理更复杂、更具语境性问题的能力。特别是在面对模型不理解的业务知识时，传统 SQLAgent 的功能就显得力不从心。在这种情况下，引入了 RAG（Retrieval Augmented Generation）技术，旨在通过补充外部知识来增强 SQLAgent 的智能，从而使其能够理解并处理更加复杂的查询。
+[[SuperSonic]] 项目不仅限于简单的 LLM 调用，而是通过引入 [[Supersonic#Semantic Layer|Semantic Layer]] 和 [[Supersonic#Schema Mapper|Schema Mapper]]
+等组件，使得系统能够更好地理解和处理复杂的业务语义。即使在特定行业中有特定术语（如“BBA”代表宝马、奔驰、奥迪），SuperSonic 也能通过这些机制实现准确的语义映射，从而提供可靠的查询结果。通过这些设计，SuperSonic 系统能够在面对复杂的业务场景时，依然保持高效、可靠的 SQL 生成能力。这种系统化的工程思路提供了比单纯依赖 LLM 更强的稳定性和可扩展性。
 
-例如，Supersonic 项目尝试通过建立知识图谱和链接到外部数据源来实现类似的功能，尽管之前的测试效果并不理想，但其基本理念为我们提供了宝贵的参考。比如，通过将“BBA”这一简称与“宝马（BMW）、奔驰（Mercedes-Benz）、奥迪（Audi）”这些品牌关联起来，帮助模型理解行业特定的术语。
+相比于设计复杂的 Semantic Layer 和 Schema Mapper，RAG 技术的引入能够在短期内快速增强 [[LangChain v0.2 学习记录#SQLAgent|SQLAgent]] 的功能。RAG 的优势在于它能够动态地引入相关领域的外部知识，而不必预先设计复杂的语义映射和管理系统。这种方法既能提升系统的灵活性，又能降低实现的复杂度，尤其适合需要快速迭代和优化的场景。
+
+在处理复杂的数据库查询任务时，尽管现有的 SQLAgent 可以处理标准的数据检索需求，但它们通常缺乏处理更复杂、更具语境性问题的能力。特别是在面对模型不理解的业务知识时，传统 SQLAgent 的功能就显得力不从心。在这种情况下，引入了 RAG（Retrieval Augmented Generation）技术，旨在通过补充外部知识来增强 SQLAgent 的智能，从而使其能够理解并处理更加复杂的查询。
 
 ## 技术内容描述
 
