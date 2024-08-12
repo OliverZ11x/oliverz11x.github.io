@@ -1,7 +1,7 @@
 ---
 title: Technic
-date created: 2024年8月6日,星期二,上午,11:19:08
-date modified: 2024年8月8日,星期四,下午,4:22:08
+date created: 2024/8/6 11:19
+date modified: 2024/8/12 10:17
 ---
 ## Menu
 

@@ -1,13 +1,13 @@
 ---
 title: Home
+date created: 2024/8/6 10:52
+date modified: 2024/8/12 17:10
 social:
   cards_layout_options:
     title: Documentation that simply works
 hide:
   - toc
   - navigation
-date created: 2024年Aug6th,Tuesday,am,10:52:49
-date modified: 2024年Aug9th,Friday,pm,2:33:53
 ---
 ## Welcome to Thoughts.
 

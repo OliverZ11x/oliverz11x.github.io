@@ -1,7 +1,7 @@
 ---
 title: LangChain 环境配置
-date created: 2024年7月31日,星期三,上午,11:15:59
-date modified: 2024年8月8日,星期四,下午,2:28:30
+date created: 2024/7/31 11:15
+date modified: 2024/8/12 14:40
 ---
 ## 创建新的虚拟环境
 

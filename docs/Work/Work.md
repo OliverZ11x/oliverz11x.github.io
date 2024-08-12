@@ -1,13 +1,15 @@
 ---
 title: Work
-date created: 2024年Aug6th,Tuesday,am,11:18:50
-date modified: 2024年Aug9th,Friday,pm,2:33:52
+date created: 2024/8/6 11:18
+date modified: 2024/8/12 13:49
 ---
 ## Menu
 
 %% Begin Waypoint %%
 
 - **高科数聚**
+	- **舆情分析**
+		- [方法探查](./%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/%E8%88%86%E6%83%85%E5%88%86%E6%9E%90/%E6%96%B9%E6%B3%95%E6%8E%A2%E6%9F%A5.md)
 	- [月会](./%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/%E6%9C%88%E4%BC%9A.md)
 	- **[DBeaver](./%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/DBeaver/DBeaver.md)**
 	- **SQLAgent**
