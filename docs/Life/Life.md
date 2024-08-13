@@ -8,7 +8,9 @@ date modified: 2024年8月9日,星期五,上午,10:09:16
 %% Begin Waypoint %%
 
 - **读书**
-	- [八次危机-随记](./%E8%AF%BB%E4%B9%A6/%E5%85%AB%E6%AC%A1%E5%8D%B1%E6%9C%BA-%E9%9A%8F%E8%AE%B0.md)
+	- [八次危机](./%E8%AF%BB%E4%B9%A6/%E5%85%AB%E6%AC%A1%E5%8D%B1%E6%9C%BA.md)
+	- [分析与思考](./%E8%AF%BB%E4%B9%A6/%E5%88%86%E6%9E%90%E4%B8%8E%E6%80%9D%E8%80%83.md)
+	- [资本论：政治经济学的批判](./%E8%AF%BB%E4%B9%A6/%E8%B5%84%E6%9C%AC%E8%AE%BA%EF%BC%9A%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E6%89%B9%E5%88%A4.md)
 - **旅游**
 	- [贵州](./%E6%97%85%E6%B8%B8/%E8%B4%B5%E5%B7%9E.md)
 	- [贵州漂流](./%E6%97%85%E6%B8%B8/%E8%B4%B5%E5%B7%9E%E6%BC%82%E6%B5%81.md)

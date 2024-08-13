@@ -1,9 +1,8 @@
 ---
 title: SQLAgent 模型知识扩展
-tags:
-  - in-progress
+tags: []
 date created: 2024/8/5 10:19
-date modified: 2024/8/9 18:22
+date modified: 2024/8/13 17:36
 ---
 ## [[Supersonic]]
 

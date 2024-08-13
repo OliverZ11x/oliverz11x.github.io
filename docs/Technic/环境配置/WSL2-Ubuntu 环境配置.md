@@ -1,9 +1,9 @@
 ---
 title: WSL2-Ubuntu 安装
+date created: 2024/7/31 11:15
+date modified: 2024/8/13 17:27
 aliases:
   - Win10 安装 WSL2-Ubuntu 并配置 anaconda
-date created: 2024年7月31日,星期三,上午,11:15:59
-date modified: 2024年8月9日,星期五,下午,2:20:55
 ---
 
 [Win10 安装WSL2-Ubuntu并配置anaconda_win10安装wsl并下载anconda-CSDN博客](https://blog.csdn.net/cosmic_potato/article/details/129135605)

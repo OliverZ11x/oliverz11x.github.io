@@ -1,6 +1,6 @@
 ---
-date created: 2024年7月31日,星期三,上午,11:15:59
-date modified: 2024年8月8日,星期四,下午,2:26:04
+date created: 2024/7/31 11:15
+date modified: 2024/8/13 9:48
 ---
 
 [【保姆级教程】Windows安装CUDA及cuDNN_windows安装cudnn-CSDN博客](https://blog.csdn.net/qq_40968179/article/details/128996692)
