@@ -1,7 +1,8 @@
 ---
 date created: 2024/7/31 11:15
-date modified: 2024/8/15 10:21
+date modified: 2024/8/15 14:5
 ---
+
 [Hello! · Transformers快速入门](https://transformers.run/)
 
 [课程简介 - Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/zh-CN/chapter0/1?fw=pt)
@@ -49,6 +50,7 @@ print(result)
 ```
 
 实际上它的背后经过了三个步骤：
+
 1. 预处理 (preprocessing)，将原始文本转换为模型可以接受的输入格式；
 2. 将处理好的输入送入模型；
 3. 对模型的输出进行后处理 (postprocessing)，将其转换为人类方便阅读的格式。
@@ -211,4 +213,3 @@ tensor([[-1.5607,  1.6123],
 ```
 
 在 `padding=True, truncation=True` 设置下，同一个 batch 中的序列都会 padding 到相同的长度，并且大于模型最大接受长度的序列会被自动截断。
-

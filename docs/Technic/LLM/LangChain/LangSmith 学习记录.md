@@ -1,7 +1,7 @@
 ---
 title: LangSmith 学习记录
 date created: 2024/7/31 11:15
-date modified: 2024/8/9 14:44
+date modified: 2024/8/15 14:5
 ---
 # LangSmith：评估 LLM 应用能力的工具
 
@@ -84,6 +84,7 @@ except Exception as e:
 ```
 
 创建后，可以在 LangSmith UI 中找到并查看 QA 示例数据集中的五个新示例。
+
 ![QA Example Dataset]()
 
 ### 定义衡量标准
@@ -330,6 +331,7 @@ experiment_results = evaluate(
 ```
 
 在工作台查看评估结果：
+
 ![[IMG-2024-08-07-17-54.png]]
 
 ### 评估 Agent 的单个步骤

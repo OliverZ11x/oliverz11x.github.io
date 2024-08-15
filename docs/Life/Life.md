@@ -1,7 +1,7 @@
 ---
 title: Life
 date created: 2024/8/6 11:20
-date modified: 2024/8/15 10:21
+date modified: 2024/8/15 14:5
 ---
 ## Menu
 
@@ -10,6 +10,7 @@ date modified: 2024/8/15 10:21
 - **读书**
 	- [八次危机](./%E8%AF%BB%E4%B9%A6/%E5%85%AB%E6%AC%A1%E5%8D%B1%E6%9C%BA.md)
 	- [分析与思考](./%E8%AF%BB%E4%B9%A6/%E5%88%86%E6%9E%90%E4%B8%8E%E6%80%9D%E8%80%83.md)
+	- [苏东七国私有化的观察与思考](./%E8%AF%BB%E4%B9%A6/%E8%8B%8F%E4%B8%9C%E4%B8%83%E5%9B%BD%E7%A7%81%E6%9C%89%E5%8C%96%E7%9A%84%E8%A7%82%E5%AF%9F%E4%B8%8E%E6%80%9D%E8%80%83.md)
 	- [资本论：政治经济学的批判](./%E8%AF%BB%E4%B9%A6/%E8%B5%84%E6%9C%AC%E8%AE%BA%EF%BC%9A%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E6%89%B9%E5%88%A4.md)
 - **旅游**
 	- [贵州](./%E6%97%85%E6%B8%B8/%E8%B4%B5%E5%B7%9E.md)

@@ -2,7 +2,7 @@
 title: RAG 增强 SQLAgent
 tags: []
 date created: 2024/8/7 15:34
-date modified: 2024/8/13 17:36
+date modified: 2024/8/15 14:5
 ---
 # RAG 增强 SQLAgent
 
@@ -30,6 +30,7 @@ date modified: 2024/8/13 17:36
 ## 背景
 
 [[SuperSonic]] 项目不仅限于简单的 LLM 调用，而是通过引入 [[Supersonic#Semantic Layer|Semantic Layer]] 和 [[Supersonic#Schema Mapper|Schema Mapper]]
+
 等组件，使得系统能够更好地理解和处理复杂的业务语义。即使在特定行业中有特定术语（如“BBA”代表宝马、奔驰、奥迪），SuperSonic 也能通过这些机制实现准确的语义映射，从而提供可靠的查询结果。通过这些设计，SuperSonic 系统能够在面对复杂的业务场景时，依然保持高效、可靠的 SQL 生成能力。这种系统化的工程思路提供了比单纯依赖 LLM 更强的稳定性和可扩展性。
 
 相比于设计复杂的 Semantic Layer 和 Schema Mapper，RAG 技术的引入能够在短期内快速增强 [[LangChain v0.2 学习记录#SQLAgent|SQLAgent]] 的功能。RAG 的优势在于它能够动态地引入相关领域的外部知识，而不必预先设计复杂的语义映射和管理系统。这种方法既能提升系统的灵活性，又能降低实现的复杂度，尤其适合需要快速迭代和优化的场景。
@@ -349,6 +350,7 @@ if __name__ == "__main__":
 尽管已经实现了使用 RAG 技术检索相关内容的功能，但似乎 SQLAgent 并未能有效记忆或利用这些检索到的知识来优化用户的查询问题。这表明在 RAG 技术与 SQLAgent 的集成过程中可能存在信息传递或持久化的问题。
 
 目前考虑以下改进：
+
 - **改进工具调用逻辑：** 确保在 SQLAgent 中调用相关工具（如 `SQLAgentRAGRetriever`）时，能够将检索到的信息有效地用于查询优化或问题重新表述。可以在工具调用后添加一个步骤，用于分析和整合检索结果，进一步细化或修改即将执行的 SQL 查询。
 - 工具传参调用
 

@@ -1,7 +1,7 @@
 ---
 title: WSL2-Ubuntu 安装
 date created: 2024/7/31 11:15
-date modified: 2024/8/13 17:27
+date modified: 2024/8/15 11:1
 aliases:
   - Win10 安装 WSL2-Ubuntu 并配置 anaconda
 ---
@@ -13,9 +13,11 @@ aliases:
 ### 检查 windows 版本
 
 必须运行 Windows 10 版本 2004 及更高版本（内部版本 19041 及更高版本），检查步骤如下：
+
 1. Win+R 打开 winver
 
 	![[IMG-2024-08-08-14-28-37.png]]
+
 2. 查看版本号，内部版本需大于 19041
 	![[IMG-2024-08-08-14-28-37-1.png]]
 3. 如果是早先的版本建议更新下
@@ -138,7 +140,7 @@ conda install cudnn
 mv /mnt/d/Ubuntu/anaconda/Anaconda3-2024.05-Linux-x86_64.sh /home/oliver/download/
 ```
 
-3. 进入 `home/cxy/download` 中运行如下代码进行安装
+3. 进入 `home/OliverZ11/download` 中运行如下代码进行安装
 
 ```shell
 $ bash Anaconda3-2024.05-Linux-x86_64.sh
@@ -147,8 +149,11 @@ $ bash Anaconda3-2024.05-Linux-x86_64.sh
 4. 提示输入 yes 同意条款，输入 yes 同意安装路径
 
 Do you wish to update your shell profile to automatically initialize conda?
+
 This will activate conda on startup and change the command prompt when activated.
+
 If you'd prefer that conda's base environment not be activated on startup,
+
    run the following command when conda is activated:
 
 ```shell

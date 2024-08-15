@@ -1,7 +1,7 @@
 ---
 title: LangChain 源码分析
 date created: 2024/7/31 11:15
-date modified: 2024/8/9 14:44
+date modified: 2024/8/15 14:5
 ---
 # LangChain 源码分析
 
@@ -10,6 +10,7 @@ date modified: 2024/8/9 14:44
 ## 各大语言模型继承类对比
 
 各个LLM中类的差别用红框标注，其余base部分函数功能相同
+
 ![[IMG-2024-08-08-14-31-34.png]]
 
 **ChatOpenAI**
@@ -21,6 +22,7 @@ date modified: 2024/8/9 14:44
 ## 基类语言模型接口
 
 ![[IMG-2024-08-08-14-31-34-3.png]]
+
 语言模型的接口或基类，`BaseLanguageModel`，它定义了一系列与语言模型交互的方法。下面是对每个方法功能的解释：
 
 1. **generate_prompt(prompts: List[PromptValue], stop: Optional[List[str]], callbacks: Callbacks): LLMResult**
@@ -62,6 +64,7 @@ date modified: 2024/8/9 14:44
 对象实例()，-> __call()___.
 
 总结:
+
 1. 实例化chatpenAI对象，使用@root_validator()功能，调用validate_environment函数初始化: 获取参数配置，实例化openai接口对象
 2. 对象实例()，-> __call()___，作为执行入口
 3. 对用户的输入进行数据格式的封装
@@ -74,5 +77,5 @@ date modified: 2024/8/9 14:44
 # [promptTemplate模块源码剖析](https://www.zhihu.com/zvideo/1663740505211957248)
 
 Chat
-![[IMG-2024-08-08-14-31-34-4.png]]
 
+![[IMG-2024-08-08-14-31-34-4.png]]

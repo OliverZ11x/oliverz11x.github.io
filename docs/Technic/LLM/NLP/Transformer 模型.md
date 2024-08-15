@@ -1,7 +1,8 @@
 ---
 date created: 2024/7/31 11:15
-date modified: 2024/8/15 10:21
+date modified: 2024/8/15 14:5
 ---
+
 [Transformer 模型 · Transformers快速入门](https://transformers.run/c1/transformer/)
 
 ![transformer 模型架构图](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/transformers.svg)
@@ -18,6 +19,7 @@ date modified: 2024/8/15 10:21
    - Encoder 的输出是整个源序列 (source sequence) 经过 Encoder 处理后的上下文表示 (contextual representation)。这些表示提供了源序列的全局信息，帮助 Decoder 在生成目标序列时参考源序列的内容。
 
 总结起来，Transformer Decoder 的输入可以表示为：
+
 - 在训练时：`[目标序列的已生成部分,  Encoder 的输出]`
 - 在推理时：`[当前生成的目标序列部分,  Encoder 的输出]`
 

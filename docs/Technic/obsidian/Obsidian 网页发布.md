@@ -1,7 +1,7 @@
 ---
 title: Obsidian 网页发布
 date created: 2024/7/31 11:15
-date modified: 2024/8/9 18:22
+date modified: 2024/8/15 14:5
 ---
 # Obsidian+Github Page搭建个人网页
 
@@ -32,6 +32,7 @@ Demo / docs: [docs.obsidianweb.net](https://docs.obsidianweb.net/)
 ### Initiate an Export
 
 There are three main ways to initiate an export.
+
 Using the [ribbon icon](https://docs.obsidianweb.net/getting-started/1.-ribbon-icon.html), [commands](https://docs.obsidianweb.net/getting-started/3.-commands.html), or [context menus](https://docs.obsidianweb.net/getting-started/2.-context-menus.html)
 
 #### Modifying Exports
@@ -120,6 +121,7 @@ With this template, you get these **out-of-the-box**:
 - an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
 
 ![[IMG-2024-08-08-14-37-40.png]]
+
 - get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
 - Toggle between light and dark mode
 - Blog folder

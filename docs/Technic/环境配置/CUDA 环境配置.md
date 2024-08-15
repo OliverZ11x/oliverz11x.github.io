@@ -1,6 +1,6 @@
 ---
 date created: 2024/7/31 11:15
-date modified: 2024/8/13 9:48
+date modified: 2024/8/15 10:57
 ---
 
 [【保姆级教程】Windows安装CUDA及cuDNN_windows安装cudnn-CSDN博客](https://blog.csdn.net/qq_40968179/article/details/128996692)
@@ -20,6 +20,7 @@ date modified: 2024/8/13 9:48
 ![[IMG-2024-07-31-15-50-14.png]]
 
 如果需要升级驱动，打开 Nvidia Geforce experience，点击驱动程序更新驱动，即可安装更高版本的 CUDA。
+
 ![[IMG-2024-07-31-15-50-13.png]]
 
 ## Conda installation CUDA

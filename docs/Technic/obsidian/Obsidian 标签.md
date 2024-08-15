@@ -1,8 +1,9 @@
 ---
 title: Obsidian 标签
 date created: 2024/8/8 15:44
-date modified: 2024/8/9 18:20
+date modified: 2024/8/15 14:5
 ---
+
 [究竟怎么使用标签来管理文件呢？ - 经验分享 - Obsidian 中文论坛](https://forum-zh.obsidian.md/t/topic/440/8)
 
 ### 核心标签建议

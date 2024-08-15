@@ -1,7 +1,7 @@
 ---
 title: LangChain v0.2 学习记录
 date created: 2024/7/31 11:15
-date modified: 2024/8/9 14:44
+date modified: 2024/8/15 14:5
 ---
 # LanguageChain v0.2 学习记录
 
@@ -46,6 +46,7 @@ LangChain 的模块组成：`Model I/O`（与语言模型进行接口）、`Retr
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/3627f0b8fbf543ce969de0f7e142a18e.png)
 
 快速安装：
+
 ![[LangChain 环境配置]]
 
 ## LangChain Expression Language (LCEL)
@@ -110,18 +111,27 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 ### Runnable 接口
 
 标准接口包括：
+
 `stream`：流回响应块（流式调用）
+
 `invoke`：在输入上调用链（单次调用）
+
 `batch`：在输入列表上调用链（批调用）
 
 这些也有相应的异步方法：
+
 `astream`：异步流回响应块
+
 `ainvoke`：在输入异步上调用链
+
 `abatch`：在输入列表上调用异步链
+
 `astream_log`：除了最终响应之外，还实时流回发生的中间步骤
+
 `astream_events`：链中发生的 betalangchain-core 流事件（ 0.1.14 中引入）
 
 各种组件的输入输出格式：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/98bcd9fe38a0457a9248265aac50cfd0.png)
 
 ## Model I/O
@@ -129,6 +139,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 首先我们从最基本面的部分讲起，Model I/O 指的是和 LLM 直接进行交互的过程。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/454a9a710e694a7f82347d4d91413b30.png)
+
 在 langchain 的 Model I/O 这一流程中，LangChain 抽象的组件主要有三个：
 
  * Language models: 语言模型是核心推理引擎。要使用 LangChain，您需要了解不同类型的语言模型以及如何使用它们。
@@ -308,7 +319,9 @@ input_variables=['input'] messages=[SystemMessagePromptTemplate(prompt=PromptTem
 ```
 
 除基于长度的 `LengthBasedExampleSelector` 之外：
+
 ①基于文本余弦相似度的 `MaxMarginalRelevanceExampleSelector` 和 `SemanticSimilarityExampleSelector` 需要对 examples 进行 embedding 所以需要使用到 OpenAI 的 API 或其他本地 Embeddings 模型，选择最相似的 example。
+
 ② `NGramOverlapExampleSelector` 根据 ngram 重叠分数，根据与输入最相似的 example 来选择示例并对其进行排序。ngram 重叠分数是 0.0 到 1.0 之间的浮点数（含 0.0 和 1.0）。
 
 ### Language Model

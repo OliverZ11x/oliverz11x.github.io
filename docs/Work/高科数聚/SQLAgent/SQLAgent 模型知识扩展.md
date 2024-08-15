@@ -2,7 +2,7 @@
 title: SQLAgent 模型知识扩展
 tags: []
 date created: 2024/8/5 10:19
-date modified: 2024/8/13 17:36
+date modified: 2024/8/15 13:55
 ---
 ## [[Supersonic]]
 
@@ -31,6 +31,7 @@ date modified: 2024/8/13 17:36
 ### **管理 SQL 知识**
 
 在使用 DMS Data Copilot 时，为避免 AI 出错，DMS 引入了**知识库**和**相似查询**机制。如下图所示：
+
 ![](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/4106989071/p776687.png)
 
 #### **管理业务知识**
@@ -53,6 +54,7 @@ date modified: 2024/8/13 17:36
 - **调整业务知识**
 
 	如果业务知识不正确，您可在 SQL 引用的知识库区域，单击**编辑**。
+
 	![](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/4106989071/p776345.png)
 
 #### **管理相似 SQL**

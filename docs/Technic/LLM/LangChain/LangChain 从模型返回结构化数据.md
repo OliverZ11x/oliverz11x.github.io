@@ -1,7 +1,7 @@
 ---
 title: LangChain 结构化数据
 date created: 2024/7/31 11:15
-date modified: 2024/8/9 14:44
+date modified: 2024/8/15 14:5
 ---
 # LangChain从模型返回结构化数据
 
@@ -499,6 +499,7 @@ chain.invoke({"query": query})
 ## 风险
 
 当模型结构化输出方法应用于Agent类型数据时
+
 - langchain_core库构建的模型结构化输出方法(with_structured_output)缺少bind_tools属性，无法适配Langgraph库构建的react_agent。这一问题限制了SQLAgent的功能和应用范围。
 - 结构化输出模块的设计需要更高的灵活性，以应对复杂查询结果的多样性和不确定性。需要进一步扩展和优化pydantic模型，提升其适用性。
 - 研究并解决langchain_core库与Langgraph库之间的兼容性问题，特别是bind_tools属性缺失的问题。尝试找到替代方案或进行库的调整，以确保SQLAgent的功能完整性。

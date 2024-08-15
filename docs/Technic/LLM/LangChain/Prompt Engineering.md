@@ -1,7 +1,7 @@
 ---
 title: Prompt Engineering
 date created: 2024/7/31 11:15
-date modified: 2024/8/9 14:44
+date modified: 2024/8/15 14:5
 ---
 # Prompt Engineering
 
@@ -36,20 +36,24 @@ Prompt指用户的一系列指令和输入，是决定Language Model输出内容
 ## Model Limitations
 
 Hallucination:
+
 Makes statements that sound plausible but are not true
 
 Reducing hallucinations:
+
 First find relevant information, then answer the question based on the relevant information.
 
 ## Iterativa Prompt Development
 
 Prompt guidelines
+
 - Be clear and specific
 - Analyze why result does not give desired output.
 - Refine the idea and the prompt
 - Repeat
 
 Iterative Process
+
 - Try something
 - Analyze where the result does not give what you want
 - Clarify instructions, give more time to think
@@ -58,7 +62,9 @@ Iterative Process
 ## 学习视频资料
 
 [第1集 引言_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Z14y1Z7LJ?p=1&vd_source=40b0488ec89d5fe7f6accdb468d377dc)
+
 [第2集 指南_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Z14y1Z7LJ?p=2&vd_source=40b0488ec89d5fe7f6accdb468d377dc)
+
 [第3集 迭代_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Z14y1Z7LJ?p=3&vd_source=40b0488ec89d5fe7f6accdb468d377dc)
 
 ---
@@ -92,20 +98,24 @@ Iterative Process
 ## 模型局限性
 
 幻觉：
+
 做出听起来合理但不真实的陈述
 
 减少幻觉：
+
 首先找到相关信息，然后根据相关信息回答问题。
 
 ## 迭代提示开发
 
 提示指南
+
 - 清晰和具体
 - 分析为什么结果没有给出预期的输出。
 - 提炼想法和提示
 - 重复
 
 迭代过程
+
 - 尝试一些方法
 - 分析结果为什么没有达到预期
 - 澄清指示，给予更多思考时间

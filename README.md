@@ -1,6 +1,6 @@
 ---
 date created: 2024/7/24 18:32
-date modified: 2024/8/13 18:30
+date modified: 2024/8/15 10:54
 ---
 
 MkDocs template [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
@@ -14,6 +14,7 @@ With this template, you get these **out-of-the-box**:
 - an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
 
 ![[IMG-2024-08-08-14-37-40.png]]
+
 - get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
 - Toggle between light and dark mode
 - Blog folder
