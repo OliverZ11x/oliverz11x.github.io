@@ -16,6 +16,8 @@ date modified: 2024/8/12 10:17
 	- [TimesFM 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/TimesFM%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [WSL2-Ubuntu 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 - **LLM**
+	- **文本分类**
+		- [文本数据标注 doccano](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%20doccano.md)
 	- **LangChain**
 		- [LangChain 从模型返回结构化数据](./LLM/LangChain/LangChain%20%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E6%8D%AE.md)
 		- [LangChain 工具自定义](./LLM/LangChain/LangChain%20%E5%B7%A5%E5%85%B7%E8%87%AA%E5%AE%9A%E4%B9%89.md)
