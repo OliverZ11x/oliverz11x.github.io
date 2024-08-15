@@ -1,7 +1,7 @@
 ---
 title: Life
-date created: 2024年8月6日,星期二,上午,11:20:20
-date modified: 2024年8月9日,星期五,上午,10:09:16
+date created: 2024/8/6 11:20
+date modified: 2024/8/15 10:21
 ---
 ## Menu
 

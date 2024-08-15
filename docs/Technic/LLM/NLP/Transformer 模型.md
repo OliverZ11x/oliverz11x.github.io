@@ -1,6 +1,6 @@
 ---
-date created: 2024年7月31日,星期三,上午,11:15:58
-date modified: 2024年8月8日,星期四,下午,4:36:23
+date created: 2024/7/31 11:15
+date modified: 2024/8/15 10:21
 ---
 [Transformer 模型 · Transformers快速入门](https://transformers.run/c1/transformer/)
 
