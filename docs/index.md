@@ -1,10 +1,7 @@
 ---
 title: Home
 date created: 2024/8/6 10:52
-date modified: 2024/8/12 17:10
-social:
-  cards_layout_options:
-    title: Documentation that simply works
+date modified: 2024/8/19 11:2
 hide:
   - toc
   - navigation

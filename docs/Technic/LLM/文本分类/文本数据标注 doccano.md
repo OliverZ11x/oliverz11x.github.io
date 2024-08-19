@@ -1,6 +1,6 @@
 ---
 date created: 2024/8/15 16:5
-date modified: 2024/8/15 17:10
+date modified: 2024/8/19 11:0
 ---
 # Paddlenlp 之 UIE 分类模型【以情感倾向分析、新闻分类为例】
 

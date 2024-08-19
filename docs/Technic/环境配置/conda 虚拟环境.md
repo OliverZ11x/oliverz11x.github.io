@@ -1,13 +1,14 @@
 ---
 date created: 2024/7/31 11:15
-date modified: 2024/8/15 10:57
+date modified: 2024/8/19 16:33
 ---
-
-- [[#Conda 环境移除|Conda 环境移除]]
-- [[#Conda 环境回滚|Conda 环境回滚]]
-- [[#Conda 环境复制|Conda 环境复制]]
-- [[#Conda 环境迁移|Conda 环境迁移]]
-- [[#额外信息|额外信息]]
+- [Conda 环境移除](#Conda%20%E7%8E%AF%E5%A2%83%E7%A7%BB%E9%99%A4)
+- [Conda 环境回滚](#Conda%20%E7%8E%AF%E5%A2%83%E5%9B%9E%E6%BB%9A)
+- [Conda 环境复制](#Conda%20%E7%8E%AF%E5%A2%83%E5%A4%8D%E5%88%B6)
+- [Conda 环境迁移](#Conda%20%E7%8E%AF%E5%A2%83%E8%BF%81%E7%A7%BB)
+- [Conda 换源](#Conda%20%E6%8D%A2%E6%BA%90)
+	- [国内常用镜像源](#%E5%9B%BD%E5%86%85%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F%E6%BA%90)
+- [额外信息](#%E9%A2%9D%E5%A4%96%E4%BF%A1%E6%81%AF)
 
 ## Conda 环境移除
 
@@ -140,3 +141,9 @@ conda update -n base -c defaults conda
 Python 版本包搜索
 
 [Search results · PyPI](https://pypi.org/search/)
+
+git clone https://myusername:mypassword@github.com/user/repo.git
+
+Myusername : `OliverZ11x`
+
+Mypassword : [Personal Access Tokens (Classic) (github.com)](https://github.com/settings/tokens)
