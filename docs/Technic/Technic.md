@@ -8,6 +8,7 @@ date modified: 2024/8/19 17:7
 %% Begin Waypoint %%
 
 - **环境配置**
+	- [未命名](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E6%9C%AA%E5%91%BD%E5%90%8D.md)
 	- [conda 虚拟环境](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/conda%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83.md)
 	- [CUDA 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/CUDA%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [LangChain 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LangChain%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)

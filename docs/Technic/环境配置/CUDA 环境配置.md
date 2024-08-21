@@ -1,6 +1,6 @@
 ---
 date created: 2024/7/31 11:15
-date modified: 2024/8/15 10:57
+date modified: 2024/8/21 15:24
 ---
 
 [【保姆级教程】Windows安装CUDA及cuDNN_windows安装cudnn-CSDN博客](https://blog.csdn.net/qq_40968179/article/details/128996692)
@@ -26,6 +26,10 @@ date modified: 2024/8/15 10:57
 ## Conda installation CUDA
 
 [CUDA Installation Guide for Linux (nvidia.com)](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#conda-overview)
+
+[如何在conda虚拟环境中安装不同版本的CUDA和cuDNN (baidu.com)](https://cloud.baidu.com/article/3173953)
+
+[Win10系统下使用anaconda在虚拟环境下安装CUDA及CUDNN-阿里云开发者社区 (aliyun.com)](https://developer.aliyun.com/article/1209157)
 
 ## Wsl Ubuntu 22.04 cuda 12.5 卸载
 
