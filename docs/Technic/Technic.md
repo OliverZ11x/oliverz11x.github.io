@@ -8,12 +8,12 @@ date modified: 2024/8/19 17:7
 %% Begin Waypoint %%
 
 - **环境配置**
-	- [未命名](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E6%9C%AA%E5%91%BD%E5%90%8D.md)
 	- [conda 虚拟环境](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/conda%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83.md)
 	- [CUDA 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/CUDA%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [LangChain 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LangChain%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [LLM API Key](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LLM%20API%20Key.md)
 	- [Mkdocs 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Mkdocs%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
+	- [paddlepaddle 安装](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/paddlepaddle%20%E5%AE%89%E8%A3%85.md)
 	- [TimesFM 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/TimesFM%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [WSL2-Ubuntu 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 - **LLM**
@@ -28,6 +28,7 @@ date modified: 2024/8/19 17:7
 		- [LangSmith 学习记录](./LLM/LangChain/LangSmith%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
 		- [Prompt Engineering](./LLM/LangChain/Prompt%20Engineering.md)
 		- [RAG 增强 SQLAgent](./LLM/LangChain/RAG%20%E5%A2%9E%E5%BC%BA%20SQLAgent.md)
+		- [SQLAgent 流式输出](./LLM/LangChain/SQLAgent%20%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA.md)
 		- [SQLAgent based GLM](./LLM/LangChain/SQLAgent%20based%20GLM.md)
 	- **NLP**
 		- [Hugging Face Transformers](./LLM/NLP/Hugging%20Face%20Transformers.md)
