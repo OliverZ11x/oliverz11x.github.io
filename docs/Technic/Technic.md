@@ -18,6 +18,9 @@ date modified: 2024/8/23 16:52
 	- [WSL2-Ubuntu 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 - **LLM**
 	- **文本分类**
+		- [模型预测](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%A8%A1%E5%9E%8B%E9%A2%84%E6%B5%8B.md)
+		- [文本分类任务 Label Studio 使用指南](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%BB%BB%E5%8A%A1%20Label%20Studio%20%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
+		- [文本清洗和文本分割](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%B8%85%E6%B4%97%E5%92%8C%E6%96%87%E6%9C%AC%E5%88%86%E5%89%B2.md)
 		- [文本数据标注 doccano](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%20doccano.md)
 	- **LangChain**
 		- [LangChain 从模型返回结构化数据](./LLM/LangChain/LangChain%20%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E6%8D%AE.md)
