@@ -1,0 +1,3539 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../2024-08-06/">
+      
+      
+        <link rel="next" href="../2024-08-08/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
+    
+    
+      
+        <title>2024-08-07 - Oliver Z11</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#enhancing-sql-agents-with-retrieval-augmented-generation-rag" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Oliver Z11" class="md-header__button md-logo" aria-label="Oliver Z11" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Oliver Z11
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2024-08-07
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Life/Life/" class="md-tabs__link">
+          
+  
+  Life
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../2024-08-05/" class="md-tabs__link">
+          
+  
+  Log
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Technic/Technic/" class="md-tabs__link">
+          
+  
+  Technic
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Work/Work/" class="md-tabs__link">
+          
+  
+  Work
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Oliver Z11" class="md-nav__button md-logo" aria-label="Oliver Z11" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Oliver Z11
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Life
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Life
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/Life/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Life
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    旅游
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            旅游
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E6%97%85%E6%B8%B8/%E4%B9%9D%E9%A1%B6%E5%B1%B1%E5%BE%92%E6%AD%A5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    九顶山徒步
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E6%97%85%E6%B8%B8/%E5%9B%9B%E5%B7%9D%E7%BE%8E%E9%99%A2%E7%BE%8E%E6%9C%AF%E9%A6%86%2B%E8%BF%9C%E5%B1%B1%E6%9C%89%E7%AA%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    四川美院美术馆+远山有窑
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E6%97%85%E6%B8%B8/%E6%97%85%E6%B8%B8%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    旅游情绪管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E6%97%85%E6%B8%B8/%E8%B4%B5%E5%B7%9E/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    贵州
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E6%97%85%E6%B8%B8/%E8%B4%B5%E5%B7%9E%E6%BC%82%E6%B5%81/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    贵州漂流
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E6%97%85%E6%B8%B8/%E9%87%91%E5%88%80%E5%B3%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    金刀峡
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    读书
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            读书
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E8%AF%BB%E4%B9%A6/%E5%85%AB%E6%AC%A1%E5%8D%B1%E6%9C%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    八次危机
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E8%AF%BB%E4%B9%A6/%E5%88%86%E6%9E%90%E4%B8%8E%E6%80%9D%E8%80%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    分析与思考
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E8%AF%BB%E4%B9%A6/%E8%8B%8F%E4%B8%9C%E4%B8%83%E5%9B%BD%E7%A7%81%E6%9C%89%E5%8C%96%E7%9A%84%E8%A7%82%E5%AF%9F%E4%B8%8E%E6%80%9D%E8%80%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    苏东七国私有化的观察与思考
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E8%AF%BB%E4%B9%A6/%E8%B5%84%E6%9C%AC%E8%AE%BA%EF%BC%9A%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E6%89%B9%E5%88%A4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    资本论：政治经济学的批判
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    食谱
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            食谱
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Life/%E9%A3%9F%E8%B0%B1/%E6%BB%91%E8%9B%8B%E7%89%9B%E8%82%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    食材
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Log
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Log
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024-08-05
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024-08-06
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2024-08-07
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-08/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 08
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 09
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-19/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-20/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-21/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 21
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-22/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 22
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-23/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 23
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-26/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 26
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-27/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 27
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-28/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 28
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 29
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2024-08-30/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 08 30
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Technic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Technic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/Technic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Technic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    LLM
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            LLM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    LangChain
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            LangChain
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LangChain v0.2 学习记录
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/LangChain%20%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E6%8D%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LangChain 结构化数据
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/LangChain%20%E5%B7%A5%E5%85%B7%E8%87%AA%E5%AE%9A%E4%B9%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LangChain 工具自定义
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/LangChain%20%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LangChain 源码分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/LangChain%20%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LangChain 评估方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/LangSmith%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LangSmith 学习记录
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/Prompt%20Engineering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompt Engineering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/RAG%20%E5%A2%9E%E5%BC%BA%20SQLAgent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RAG 增强 SQLAgent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/SQLAgent%20based%20GLM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQLAgent based GLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/LangChain/SQLAgent%20%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQLAgent 流式输出
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    NLP
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            NLP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/NLP/Hugging%20Face%20Transformers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hugging Face Transformers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/NLP/Transformer%20%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformer 模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    文本分类
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            文本分类
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%BB%BB%E5%8A%A1%20Label%20Studio%20%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本分类任务 Label Studio 使用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%20doccano/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paddlenlp 之 UIE 分类模型【以情感倾向分析、新闻分类为例】
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%B8%85%E6%B4%97%E5%92%8C%E6%96%87%E6%9C%AC%E5%88%86%E5%89%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本清洗和文本分割
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%A8%A1%E5%9E%8B%E9%A2%84%E6%B5%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模型预测
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Obsidian
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Obsidian
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/obsidian/Markdown%20%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown 语法指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/obsidian/Obsidian%20%E6%A0%87%E7%AD%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obsidian 标签
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/obsidian/Obsidian%20%E7%BD%91%E9%A1%B5%E5%8F%91%E5%B8%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obsidian 网页发布
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/obsidian/%E4%BF%9D%E5%AD%98%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    保存知识
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/obsidian/%E5%8F%8C%E9%93%BE%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    双链测试
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/obsidian/%E5%B8%B8%E7%94%A8%20Git%20%E5%91%BD%E4%BB%A4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用 Git 命令
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    环境配置
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            环境配置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/CUDA%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CUDA 环境配置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LLM%20API%20Key/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM API Key
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LangChain%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LangChain 环境配置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Mkdocs%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mkdocs 环境配置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/TimesFM%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TimesFM 环境配置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WSL2-Ubuntu 安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/conda%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conda 虚拟环境
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/paddlepaddle%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paddlepaddle 安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Work
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Work
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/Work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Work
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    求职知识储备
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            求职知识储备
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/LLM%20%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM 模型概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E6%96%87%E6%9C%AC%E7%BC%96%E7%A0%81/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本编码
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    面试技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    面试算法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    高科数聚
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            高科数聚
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3_1" id="__nav_5_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DBeaver
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            DBeaver
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/DBeaver/DBeaver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBeaver 数据探查
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3_2" id="__nav_5_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SQLAgent
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            SQLAgent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/SQLAgent%20%E6%A8%A1%E5%9E%8B%E7%9F%A5%E8%AF%86%E6%89%A9%E5%B1%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQLAgent 模型知识扩展
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/SQLAgent%20%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQLAgent 测试
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/Supersonic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supersonic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/%E8%BD%A6%E6%99%BA%E8%A7%81/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    车智见
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/%E8%BD%A6%E9%80%9A%E6%B1%87%E6%95%B0%E6%8D%AE%E6%8E%A2%E6%9F%A5%E4%B8%8E%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    车通汇数据探查与分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3_3" id="__nav_5_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    舆情分析
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            舆情分析
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/%E8%88%86%E6%83%85%E5%88%86%E6%9E%90/%E5%9F%BA%E4%BA%8E%E6%A3%80%E7%B4%A2%E7%9A%84%E5%A4%9A%E5%B1%82%E6%AC%A1%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基于检索的多层次文本分类
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/%E8%88%86%E6%83%85%E5%88%86%E6%9E%90/%E6%96%B9%E6%B3%95%E6%8E%A2%E6%9F%A5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    方法探查
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/%E8%88%86%E6%83%85%E5%88%86%E6%9E%90/%E9%9B%B6%E6%A0%B7%E6%9C%AC%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E5%BA%94%E7%94%A8%EF%BC%9A%E5%9F%BA%E4%BA%8EUTC%E7%9A%84%E8%88%86%E6%83%85%E6%A0%B7%E6%9C%AC%E5%88%86%E7%B1%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    零样本文本分类应用：基于UTC的舆情样本分类
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p>Here's an improved SQLAgent with RAG (Retrieval-Augmented Generation) prompt designed to make the agent more efficient in retrieving relevant information from a database and utilizing external knowledge to enhance query accuracy and relevance. The prompt incorporates the tools you specified and includes a mechanism to search the RAG before executing SQL queries.</p>
+<hr />
+<p><strong>角色描述</strong>：
+您是一位智能代理，专注于与 SQL 数据库交互并使用 RAG 技术来增强信息检索。您的目标是准确地回答用户的问题，通过查询数据库并结合外部知识来提供全面的答案。</p>
+<p><strong>任务目标</strong>：
+- 使用 RAG 检索相关背景信息，以提高 SQL 查询的准确性和上下文理解。
+- 根据用户的问题创建并执行 SQL 查询，直接返回查询的结果。
+- 处理错误或空结果，通过调整查询或 RAG 检索内容来改进答案。</p>
+<p><strong>工具描述</strong>：
+- <strong>QuerySQLDataBaseTool</strong>：输入详细且正确的 SQL 查询，输出来自数据库的结果。如果查询不正确，则返回错误消息。
+- <strong>InfoSQLDatabaseTool</strong>：输入以逗号分隔的表名列表，输出这些表的模式和示例行。
+- <strong>ListSQLDatabaseTool</strong>：列出可用的数据库表。
+- <strong>QuerySQLCheckerTool</strong>：在执行 SQL 查询之前，检查查询的正确性。
+- <strong>check_query_tool</strong>：再次检查查询是否正确。
+- <strong>check_result</strong>：检查数据库的查询结果，以确认结果不为空且相关。
+- <strong>SQLAgentRAGRetriever</strong>：输入 SQL 查询或关键字，使用 RAG 检索相关上下文和定义，以增强查询理解。</p>
+<p><strong>执行步骤</strong>：</p>
+<ol>
+<li><strong>问题理解</strong>：</li>
+<li>分析用户的问题，以确定需要检索的信息。</li>
+<li>
+<p>使用 <code>SQLAgentRAGRetriever</code> 工具搜索相关的上下文和定义，以提供额外的背景知识。</p>
+</li>
+<li>
+<p><strong>数据库表识别</strong>：</p>
+</li>
+<li>使用 <code>ListSQLDatabaseTool</code> 列出数据库中的所有可用表。</li>
+<li>
+<p>选择与问题相关的表，并使用 <code>InfoSQLDatabaseTool</code> 获取这些表的结构和示例数据。</p>
+</li>
+<li>
+<p><strong>查询构建与检查</strong>：</p>
+</li>
+<li>利用 RAG 检索的背景信息和表结构信息，构建一个合适的 SQL 查询。</li>
+<li>
+<p>使用 <code>QuerySQLCheckerTool</code> 检查查询的正确性，并进行必要的修正。</p>
+</li>
+<li>
+<p><strong>查询执行</strong>：</p>
+</li>
+<li>使用 <code>QuerySQLDataBaseTool</code> 执行经过验证的 SQL 查询。</li>
+<li>
+<p>使用 <code>check_result</code> 工具确认查询结果是否为空或不相关。</p>
+</li>
+<li>
+<p><strong>错误处理与查询调整</strong>：</p>
+</li>
+<li>如果查询返回错误或结果为空，重新评估假设，调整查询并再次尝试。</li>
+<li>
+<p>检查表名、字段名和语法错误，通过调整查询解决问题。</p>
+</li>
+<li>
+<p><strong>结果返回</strong>：</p>
+</li>
+<li>限制结果为最多 5 个条目，除非用户指定了更多。</li>
+<li>按相关列排序结果，以便首先呈现最相关的信息。</li>
+<li>
+<p>返回简洁准确的答案，不提供 SQL 查询文本，除非用户明确请求。</p>
+</li>
+<li>
+<p><strong>安全与约束</strong>：</p>
+</li>
+<li>避免对数据库的结构或内容进行任何修改（例如，不进行 INSERT、UPDATE、DELETE、DROP 语句）。</li>
+<li>确保响应符合信息安全和隐私保护政策。</li>
+</ol>
+<hr />
+<p>This prompt is designed to ensure that the SQLAgent efficiently retrieves the necessary information while integrating additional context from the RAG system, thereby enhancing the overall accuracy and relevance of the responses. Adjustments can be made to tailor the prompt further based on specific requirements or use cases. Let me know if you need any further customization or details!</p>
+<hr />
+<p>参考以上文档，帮我写一篇 RAG 增强 SQLAgent 的中文文档，包含该技术选择背景，技术内容描述，代码编写流程，请参考 SQLAgent_RAG. Ipynb 的实现步骤和 url 的技术描述其背景是：</p>
+<p>怎么对模型不理解的业务知识进行补充，可以参考 supersonic 的一些实现原理举个例子，怎么让模型知道 BBA 指的是宝马奔驰奥迪 Supersonic 有做这个功能，但是之前测试的效果不太好，可以优先参考一下实现方法，也可以再看看其他的资料有可能不是一对一的关系哈，有可能有很多种描述：bba : BBA :</p>
+<p>Langchain 框架下 FAISS 的 Vector DB 的搭建，编写相关技术和项目进展的文档。</p>
+<h1 id="enhancing-sql-agents-with-retrieval-augmented-generation-rag">Enhancing SQL Agents with Retrieval Augmented Generation (RAG)<a class="headerlink" href="#enhancing-sql-agents-with-retrieval-augmented-generation-rag" title="Permanent link">&para;</a></h1>
+<p><em>In the previous blog</em> <a href="https://medium.com/@lucnguyen_61589/revolutionize-your-data-exploration-unveiling-the-power-of-langchain-bd9f18d97532"><em>post</em></a> <em>, we delved into the process of constructing an SQL Agent to help us answer questions by querying data in the database. In this article, let’s explore how to enhance the capabilities of your SQL Agent by incorporating advanced analytics functions. Imagine that the Agent is not only capable of providing basic statistical numbers, such as the average amount of money a customer paid, but also has the ability to offer more advanced and intriguing insights. This includes tasks like identifying similarities between users or products in the database or determining the route path of users who frequently cancel their memberships. Let’s discuss how to achieve these advanced functionalities.</em></p>
+<h1 id="teradatas-advanced-analytics-function">Teradata’s Advanced Analytics function<a class="headerlink" href="#teradatas-advanced-analytics-function" title="Permanent link">&para;</a></h1>
+<p>Unlike other databases, Teradata stands out by offering a plethora of advanced analytics functions, spanning from Data Cleaning and Data Exploration to Model Training, Text Analytics, and Path and Pattern Analysis functions.</p>
+<p>The distinctive feature is that all these functions can seamlessly run <strong><em>in-database</em></strong>, eliminating the need for you to set up separate environments. When you execute these functions, they are processed directly within the database, ensuring high performance.</p>
+<p><img alt="" src="https://miro.medium.com/v2/resize:fit:700/1*xYzFXeL346gdSrGOBH4GYw.png" /></p>
+<p>Tables</p>
+<p>For instance, consider two tables in the database: <code>UserHistory</code> and <code>UserHistoryReferences</code>. Using the <code>TD_VectorDistance</code> function, you can find similar users between these tables. The query syntax is as follows:</p>
+<p>SELECT target_id, reference_id, distancetype, CAST (distance AS DECIMAL (36,8)) AS distance</p>
+<p>FROM TD_VECTORDISTANCE (</p>
+<div class="language-text highlight"><pre><span></span><code>ON target_mobile_data_dense AS TargetTable
+
+ON ref_mobile_data_dense AS ReferenceTable DIMENSION
+
+USING
+
+    TargetIDColumn (&#39;userid&#39;)
+
+    TargetFeatureColumns (&#39;CallDuration&#39;,&#39;DataCounter&#39;,&#39;SMS&#39;)
+
+    RefIDColumn (&#39;userid&#39;)
+
+    RefFeatureColumns (&#39;CallDuration&#39;,&#39;DataCounter&#39;,&#39;SMS&#39;)
+
+    DistanceMeasure (&#39;cosine&#39;)
+
+    TopK (2)
+</code></pre></div>
+<p>) AS dt ORDER BY 3,1,2,4;</p>
+<p>And here are result from DB:</p>
+<p>Target_ID Reference_ID DistanceType Distance</p>
+<hr />
+<p>1 5 cosine 0.45486518</p>
+<p>1 7 cosine 0.32604815</p>
+<p>2 5 cosine 0.02608923</p>
+<p>2 7 cosine 0.00797609</p>
+<p>3 5 cosine 0.02415054</p>
+<p>3 7 cosine 0.00337338</p>
+<p>4 5 cosine 0.43822243</p>
+<p>4 7 cosine 0.31184844</p>
+<p>For Teradata’s advanced analytics details, check the documentation at <a href="https://docs.teradata.com/r/Enterprise_IntelliFlex_VMware/Database-Analytic-Functions/Model-Training-Functions/TD_VectorDistance/Example-TD_VectorDistance-Using-Euclidean-Manhattan-and-Cosine">here</a>.</p>
+<h1 id="retrieval-augmented-generation-rag">Retrieval Augmented Generation (RAG)<a class="headerlink" href="#retrieval-augmented-generation-rag" title="Permanent link">&para;</a></h1>
+<p>To facilitate your agent’s understanding of how to use these functions, I propose employing a technique known as Retrieval Augmented Generation (RAG).</p>
+<p><img alt="" src="https://miro.medium.com/v2/resize:fit:700/1*YHlGZVYBfqjxQpfOPDuSeA.png" /></p>
+<p>This approach aids in locating relevant instructions based on the query. For instance, if I ask my agent to assist me in finding similar users based on the tables <code>UserHistory</code> and <code>UserHistoryReferences</code>, RAG will efficiently return the appropriate syntax and examples related to this request.</p>
+<p><img alt="" src="https://miro.medium.com/v2/resize:fit:352/1*r8tTw3H0EVBgTSr0PW1q2Q.png" /></p>
+<p>Syntax Instruction</p>
+<p>For optimal performance of the SQL Agent, Syntax Instructions should contain two essential pieces of information. First, include the <strong><em>syntax</em></strong> with explanations for each parameter. Second, and most importantly, <strong><em>provide examples</em></strong>. The more examples you provide, the more accurate the SQL syntax generated by the Agent will be.</p>
+<h1 id="lets-construct-rag"><strong>Let’s Construct RAG</strong><a class="headerlink" href="#lets-construct-rag" title="Permanent link">&para;</a></h1>
+<p>To create a RAG system, begin by preparing documents. Convert these documents into vectors and save them in a Vector Database, which we’ll refer to as Vector DB. In this example, I’ll be using a Vector DB named FAISS.</p>
+<p><img alt="" src="https://miro.medium.com/v2/resize:fit:700/1*txghkf_2GKzQTX9a3x7G4g.png" /></p>
+<h1 id="import-require-lib">Import require lib<a class="headerlink" href="#import-require-lib" title="Permanent link">&para;</a></h1>
+<p>From langchain. Embeddings import OpenAIEmbeddings</p>
+<p>From langchain. Vectorstores import FAISS</p>
+<p>Start by reviewing the documentation provided by Teradata. First, prepare syntax instructions that include explanations and examples.</p>
+<p>Syntax_1 = """</p>
+<p>Syntax Description :</p>
+<div class="language-text highlight"><pre><span></span><code>TD_VectorDistance () …
+</code></pre></div>
+<p>Example :</p>
+<div class="language-text highlight"><pre><span></span><code>TD_VectorDistance ( … )
+</code></pre></div>
+<p>"""</p>
+<p>Syntax_2 = """</p>
+<p>…</p>
+<p>"""</p>
+<p>Syntax_3 = """</p>
+<p>…</p>
+<p>"""</p>
+<p>Next, leverage various Open Source models from platforms like Hugging Face or OpenAI Embedding Service. In this instance, I utilized OpenAI for this task.</p>
+<p>Embedding_function = OpenAIEmbeddings (openai_api_key=os. Getenv ("OPENAI_API"))</p>
+<p>Finally, with the assistance of Langchain and the FAISS Database, you can complete the process with just few line of code</p>
+<p>Technical_list = [syntax_1, syntax_2, syntax_3, .. Syntax_n]</p>
+<p>Db = FAISS. From_texts (technical_list, embedding_function)</p>
+<p>You can easily search for relevant documents in the database using the simple code below. For instance, if you’re looking for the syntax used to calculate similarity, the following code will return the exact syntax you prepared in the previous step that is relevant to your query:</p>
+<p>Db. Similarity_search ("Calculate similarity")[0]</p>
+<h1 id="integrating-rag-with-sql-agent"><strong>Integrating RAG with SQL Agent</strong><a class="headerlink" href="#integrating-rag-with-sql-agent" title="Permanent link">&para;</a></h1>
+<p>We have already covered how to create an SQL Agent in a previous <a href="https://medium.com/@lucnguyen_61589/revolutionize-your-data-exploration-unveiling-the-power-of-langchain-bd9f18d97532">blog</a> post. If you are not familiar with the process, please refer to that blog. Additionally, we have discussed creating a RAG to retrieve relevant syntax instruction information. Now, let’s explore how to integrate these two components seamlessly.</p>
+<p><img alt="" src="https://miro.medium.com/v2/resize:fit:700/1*-3Uxj-2NzU2rRhdZqT604A.png" /></p>
+<p>RAG as a tool</p>
+<p>In this <a href="https://medium.com/@lucnguyen_61589/understanding-the-magic-deconstructing-langchains-sql-agent-667881b9e209">blog</a>, I’ve detailed how the SQL Agent utilizes tools like <code>sql_db_list_tables</code> to interact with the database. Now, my concept is to designate RAG as another tool. This allows the SQL Agent to decide when to explore relevant documents and identify the most suitable keywords for searching when needed.</p>
+<h2 id="create-customize-tool"><strong>Create customize tool</strong><a class="headerlink" href="#create-customize-tool" title="Permanent link">&para;</a></h2>
+<p>To create a custom tool using Langchain, extend the <code>BaseTool</code> class provided by Langchain and customize the <code>_run</code> function as follows. It's crucial to keep the description clear to ensure that the SQL Agent understands the tool's purpose.</p>
+<p>From langchain. Tools import BaseTool</p>
+<p>From typing import Optional</p>
+<p>From langchain. Callback_manager import CallbackManagerForToolRun, AsyncCallbackManagerForToolRun</p>
+<h1 id="define-retriever">Define retriever<a class="headerlink" href="#define-retriever" title="Permanent link">&para;</a></h1>
+<p>Retriever = db. As_retriever ()</p>
+<h1 id="define-customize-tool">Define customize tool<a class="headerlink" href="#define-customize-tool" title="Permanent link">&para;</a></h1>
+<p>Class TeradataSearchTool (BaseTool):</p>
+<div class="language-text highlight"><pre><span></span><code>Name = &quot;teradata_search_tool&quot;
+
+Description = &quot;Input to this tool is a keyword such as binning or bucketing, similarity, moving average. Output is an instruction on how to use Teradata Syntax with examples to improve queries.&quot;
+
+def _run(        self, query: str, run_manager: Optional[CallbackManagerForToolRun] = None    ) -&gt; str:  
+    &quot;&quot;&quot;Use the tool.&quot;&quot;&quot;  
+    global retriever  
+    relevant_doc = retriever.get_relevant_documents(query)  
+    if len(relevant_doc) == 0 or len(query) == 0:  
+        return &quot;There are no Teradata syntax examples to be used in this scenario.&quot;  
+    else:  
+        return relevant_doc[0].page_content
+
+async def _arun(        self, query: str, run_manager: Optional[AsyncCallbackManagerForToolRun] = None    ) -&gt; str:  
+    &quot;&quot;&quot;Use the tool asynchronously.&quot;&quot;&quot;  
+    raise NotImplementedError(&quot;custom_search does not support async&quot;)
+</code></pre></div>
+<h1 id="init-teradata-search-tool">Init teradata search tool<a class="headerlink" href="#init-teradata-search-tool" title="Permanent link">&para;</a></h1>
+<p>Teradata_search_tool = TeradataSearchTool ()</p>
+<h2 id="create-sql-agent-with-customize-tools"><strong>Create SQL Agent with customize tools</strong><a class="headerlink" href="#create-sql-agent-with-customize-tools" title="Permanent link">&para;</a></h2>
+<p>After defining the Teradata Search tool, you can create an SQL Agent using the following code. Additionally, you can include the <code>teradata_search_tool</code> created in the previous step in the <code>extra_tools</code> section.</p>
+<h1 id="step-4-create-agent-executor">Step 4. Create Agent Executor<a class="headerlink" href="#step-4-create-agent-executor" title="Permanent link">&para;</a></h1>
+<p>Sql_agent = create_sql_agent (</p>
+<div class="language-text highlight"><pre><span></span><code>Llm=model,
+
+Toolkit=toolkit,
+
+Verbose=True,
+
+Agent_type=AgentType. ZERO_SHOT_REACT_DESCRIPTION,
+
+Extra_tools=[teradata_search_tool],
+
+Prefix=prefix,
+
+Suffix=suffix
+</code></pre></div>
+<p>)</p>
+<h2 id="finally-test-it"><strong>Finally, test it</strong><a class="headerlink" href="#finally-test-it" title="Permanent link">&para;</a></h2>
+<p>Agent_executor. Run ("Identify user similarities by analyzing the 'UserHistory' table using 'UserHistoryReference' as the reference table, focusing on attributes CallDuration, DataCounter, and SMS")</p>
+<p>When I ask the agent to help me identify user similarities by analyzing the ‘UserHistory’ table using ‘UserHistoryReference’ as the reference table, with a focus on attributes such as CallDuration, DataCounter, and SMS, here are the results.</p>
+<p><img alt="" src="https://miro.medium.com/v2/resize:fit:614/1*S1-rsXSMs9qrWIYIIORzkg.png" /></p>
+<p>Result from Agent</p>
+<h1 id="conclusion"><strong>Conclusion</strong><a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h1>
+<p>By combining SQL Agent with RAG, we elevate the power of the LLM model to the next level. This approach enables the creation of another RAG that empowers your agent to answer questions based on both structured data and text data. However, it’s essential to acknowledge that there are still some issues related to token limits. In the next blog, I will delve into the discussion on fine-tuning the model to enable your agent to perform the same tasks without relying on RAG.</p>
+<p>You can find full code <a href="https://github.com/easyautoml/teradata/blob/main/03_SQLAgent_RAG/01_SQLAgent_RAG.ipynb">here</a>!</p>
+<hr />
+<p>下面是上述 Python 脚本的实现流程，详细说明每个步骤及其目的。这段代码主要用于创建一个使用 SQL 代理和 RAG（Retrieval-Augmented Generation）方法来增强 SQL 查询的系统。</p>
+<h2 id="_1">实现流程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h4 id="1">1. 环境设置<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">os</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">quote_plus</span> <span class="k">as</span> <span class="n">urlquote</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span> <span class="nn">langchain_openai</span> <span class="kn">import</span> <span class="n">OpenAIEmbeddings</span><span class="p">,</span> <span class="n">AzureOpenAIEmbeddings</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kn">from</span> <span class="nn">langchain.vectorstores</span> <span class="kn">import</span> <span class="n">FAISS</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kn">from</span> <span class="nn">langchain.prompts.chat</span> <span class="kn">import</span> <span class="n">ChatPromptTemplate</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kn">from</span> <span class="nn">langchain.llms.openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kn">from</span> <span class="nn">langchain.schema.runnable</span> <span class="kn">import</span> <span class="n">RunnablePassthrough</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kn">from</span> <span class="nn">langchain.agents.agent_toolkits</span> <span class="kn">import</span> <span class="n">SQLDatabaseToolkit</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="kn">from</span> <span class="nn">langchain.sql_database</span> <span class="kn">import</span> <span class="n">SQLDatabase</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="kn">from</span> <span class="nn">langchain.agents.mrkl.base</span> <span class="kn">import</span> <span class="n">ZeroShotAgent</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="kn">from</span> <span class="nn">langchain.agents.mrkl.prompt</span> <span class="kn">import</span> <span class="n">FORMAT_INSTRUCTIONS</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="kn">from</span> <span class="nn">langchain.memory</span> <span class="kn">import</span> <span class="n">VectorStoreRetrieverMemory</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="kn">from</span> <span class="nn">langchain.agents.agent</span> <span class="kn">import</span> <span class="n">AgentExecutor</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="kn">from</span> <span class="nn">langchain.chains.llm</span> <span class="kn">import</span> <span class="n">LLMChain</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="kn">from</span> <span class="nn">langchain.agents.agent_toolkits.sql.prompt</span> <span class="kn">import</span> <span class="p">(</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="n">SQL_FUNCTIONS_SUFFIX</span><span class="p">,</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="n">SQL_PREFIX</span><span class="p">,</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="n">SQL_SUFFIX</span><span class="p">,</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">)</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="kn">from</span> <span class="nn">langchain_core.messages</span> <span class="kn">import</span> <span class="n">AIMessage</span><span class="p">,</span> <span class="n">HumanMessage</span><span class="p">,</span> <span class="n">SystemMessage</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="kn">from</span> <span class="nn">langchain_community.utilities.sql_database</span> <span class="kn">import</span> <span class="n">SQLDatabase</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="kn">from</span> <span class="nn">langchain_community.agent_toolkits</span> <span class="kn">import</span> <span class="n">SQLDatabaseToolkit</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="kn">from</span> <span class="nn">langchain_core.prompts</span> <span class="kn">import</span> <span class="n">ChatPromptTemplate</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="kn">from</span> <span class="nn">langchain.tools</span> <span class="kn">import</span> <span class="n">BaseTool</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="kn">from</span> <span class="nn">langchain.callbacks.manager</span> <span class="kn">import</span> <span class="p">(</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="n">AsyncCallbackManagerForToolRun</span><span class="p">,</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    <span class="n">CallbackManagerForToolRun</span><span class="p">,</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="p">)</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="kn">from</span> <span class="nn">langchain.agents</span> <span class="kn">import</span> <span class="n">create_sql_agent</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="kn">from</span> <span class="nn">langchain.agents.types</span> <span class="kn">import</span> <span class="n">AgentType</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="kn">from</span> <span class="nn">langchain_openai</span> <span class="kn">import</span> <span class="n">AzureChatOpenAI</span><span class="p">,</span> <span class="n">ChatOpenAI</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="kn">from</span> <span class="nn">langgraph.prebuilt</span> <span class="kn">import</span> <span class="n">create_react_agent</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="kn">from</span> <span class="nn">langgraph.checkpoint.sqlite</span> <span class="kn">import</span> <span class="n">SqliteSaver</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="c1"># Set API keys and environment variables</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;OPENAI_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;20a8e1c4c5348d62eaaa64beabbd2fa0.34ZWDCTkvM5o7PDp&quot;</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;AZURE_OPENAI_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;1140131bf4f94e75b3927e82589058af&quot;</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;AZURE_OPENAI_ENDPOINT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;https://oliverz11ai.openai.azure.com/&quot;</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="c1"># LangSmith</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;LANGCHAIN_PROJECT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Evaluate_SQLAgent_RAG&quot;</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;LANGCHAIN_TRACING_V2&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;true&quot;</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;LANGCHAIN_API_KEY&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;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&quot;</span>
+</span></code></pre></div>
+<h5 id="_2">步骤描述<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>导入库和模块：</strong> 从各种库中导入必要的模块，包括 <code>langchain_openai</code>, <code>langchain.vectorstores</code>, <code>langchain.prompts.chat</code>, <code>langchain.llms.openai</code>, 以及其他相关的工具包和模块。</li>
+<li><strong>设置环境变量：</strong> 使用 <code>os.environ</code> 设置 API 密钥和其他配置参数，包括 OpenAI 和 Azure 的 API 密钥和端点。</li>
+</ul>
+<h5 id="_3">目的<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>准备工作环境：</strong> 设置所需的环境变量，确保代码能够正确访问 API 服务，并导入所有必要的库以支持后续的操作。</li>
+</ul>
+<h4 id="2">2. 准备文档<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Prepare Documents</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">autosight_knowledge</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="s2">1. 车系与车型</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="s2">- **定义**：车系是由同一汽车品牌生产的一系列车型组成的，这些车型通常具有相似的设计和技术特点。</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="s2">- **例子**：例如，宝马3系包括了多种车型，如宝马320i、325i等。</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="s2">- **关系**：车型是车系的具体实现，每个车型具有独特的配置和性能参数。</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="s2">2. 经销商</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="s2">- **定义**：汽车经销商是指获得汽车品牌授权，进行汽车销售及相关服务的商业实体。</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="s2">- **功能**：经销商不仅负责车辆销售，还提供售后服务、配件销售和车辆维修等服务。</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="s2">- **网络**：大多数品牌通过经销商网络进行销售，这些网络遍布各地，以覆盖更广泛的市场。</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="s2">3. 厂商</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="s2">- **定义**：汽车厂商是指设计、制造并销售汽车的公司或企业集团。</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="s2">- **品牌归属**：一家厂商可能拥有多个汽车品牌。例如，大众集团拥有大众、奥迪、斯柯达等多个品牌。</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="s2">- **产品线**：厂商通常会根据市场需求和技术发展，调整其产品线和生产策略。</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="s2">4. 品牌</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="s2">- **定义**：汽车品牌是指一系列由特定厂商制造的汽车，这些汽车具有共同的标志和市场定位。</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="s2">- **市场影响**：品牌影响力可以显著影响消费者的购买决策，品牌形象和知名度是核心竞争力之一。</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="s2">- **品牌多样性**：例如，丰田旗下拥有丰田和雷克萨斯等品牌，各自定位不同市场和消费层次。</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="s2">5. 实体关系</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="s2">- **品牌与厂商**：品牌是厂商的一部分，厂商负责品牌的战略定位和市场推广。</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="s2">- **车系与品牌**：车系直接关联到特定品牌，是品牌产品多样性的体现。</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="s2">- **经销商与厂商**：经销商与厂商之间存在合作关系，厂商通过经销商网络推广和销售产品。</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="s2">6. 实体定义</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="s2">- **BBA**：通常指的是德国三大豪华汽车品牌：宝马（BMW）、奔驰（Mercedes-Benz）和奥迪（Audi）。</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="s2">7. 同义词与常用表达</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="s2">- **BBA**：宝马、奔驰和奥迪</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="s2">- **bba**：常用于非正式或口语交流中，指同样的品牌组合</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="s2">- **德系三强**：指的是同样的三个品牌，强调其在德国及全球市场的领先地位</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="s2">- **豪华品牌集团**：可能用于描述这三个品牌在高端市场的集合</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="s2">8. 品牌特点</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="s2">- **宝马（BMW）**：以驾驶体验和动力性能著称。</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="s2">- **奔驰（Mercedes-Benz）**：以舒适性和技术创新闻名。</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="s2">- **奥迪（Audi）**：以现代设计和全轮驱动技术（如quattro）为特色。</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="s2">9. 市场定位与战略</span>
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="s2">- 每个品牌的市场策略、目标消费群体和主要竞争优势。</span>
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="s2">10. 关联实体</span>
+</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="s2">- **关系到其他德国品牌**：例如保时捷（Porsche），虽然不属于BBA，但在某些文献或讨论中可能会被提及作比较。</span>
+</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="s2">&quot;&quot;&quot;</span>
+</span></code></pre></div>
+<h5 id="_4">步骤描述<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>定义知识库：</strong> 定义一个名为 <code>autosight_knowledge</code> 的字符串，其中包含关于汽车品牌和市场的知识。</li>
+</ul>
+<h5 id="_5">目的<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>提供语义检索的基础：</strong> 该知识库将用于语义检索，以增强后续的 SQL 查询操作，支持 RAG 过程。</li>
+</ul>
+<h4 id="3">3. 创建向量数据库<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Create Vector DB</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">technical_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">autosight_knowledge</span><span class="p">]</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># AzureOpenAIEmbeddings class parameters</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">embedding_function</span> <span class="o">=</span> <span class="n">AzureOpenAIEmbeddings</span><span class="p">(</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">azure_deployment</span><span class="o">=</span><span class="s2">&quot;text-embedding-3-small&quot;</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">openai_api_version</span><span class="o">=</span><span class="s2">&quot;2023-05-15&quot;</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># Load it into FAISS</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">db</span> <span class="o">=</span> <span class="n">FAISS</span><span class="o">.</span><span class="n">from_texts</span><span class="p">(</span><span class="n">technical_list</span><span class="p">,</span> <span class="n">embedding_function</span><span class="p">)</span>
+</span></code></pre></div>
+<h5 id="_6">步骤描述<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>初始化知识列表：</strong> 将 <code>autosight_knowledge</code> 包装成 <code>technical_list</code>。</li>
+<li><strong>设置嵌入函数：</strong> 使用 <code>AzureOpenAIEmbeddings</code> 创建文本嵌入。</li>
+<li><strong>创建 FAISS 向量数据库：</strong> 将知识列表嵌入并加载到 FAISS 向量数据库中。</li>
+</ul>
+<h5 id="_7">目的<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>实现快速检索：</strong> FAISS（Facebook AI Similarity Search）向量数据库用于实现快速的语义检索，使得在大规模数据中查找相关信息更加高效。</li>
+</ul>
+<h4 id="4-tearadata">4. 创建 Tearadata 检索工具<a class="headerlink" href="#4-tearadata" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Create Tearadata Search Tool</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">retriever</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">as_retriever</span><span class="p">()</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">class</span> <span class="nc">SQLAgentRAGRetriever</span><span class="p">(</span><span class="n">BaseTool</span><span class="p">):</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;sqlagent_rag_retriever&quot;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Input to this tool is a SQL query or keyword. Output is a retrieval of related context and definitions to enhance the understanding of the query using RAG.&quot;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">run_manager</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">CallbackManagerForToolRun</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Use the tool to retrieve relevant documents based on the query.&quot;&quot;&quot;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        <span class="k">global</span> <span class="n">retriever</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="n">relevant_docs</span> <span class="o">=</span> <span class="n">retriever</span><span class="o">.</span><span class="n">get_relevant_documents</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">relevant_docs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">query</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>            <span class="k">return</span> <span class="s2">&quot;No relevant context found for the provided query.&quot;</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>            <span class="k">return</span> <span class="n">relevant_docs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">page_content</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">_arun</span><span class="p">(</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">run_manager</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">AsyncCallbackManagerForToolRun</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Use the tool asynchronously to retrieve context. Currently not supported.&quot;&quot;&quot;</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Asynchronous retrieval is not supported for this tool.&quot;</span><span class="p">)</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="n">sqlagent_rag_retriever</span> <span class="o">=</span> <span class="n">SQLAgentRAGRetriever</span><span class="p">()</span>
+</span></code></pre></div>
+<h5 id="_8">步骤描述<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>转换为检索器：</strong> 使用 <code>db.as_retriever()</code> 将 FAISS 数据库转换为检索器。</li>
+<li><strong>定义 SQLAgentRAGRetriever 类：</strong> 创建一个工具类，用于从向量数据库中检索相关文档。</li>
+<li><strong><code>_run</code> 方法：</strong> 实现同步检索，根据输入查询从知识库中检索相关内容。</li>
+<li><strong><code>_arun</code> 方法：</strong> 定义异步检索方法，目前未实现。</li>
+</ul>
+<h5 id="_9">目的<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>增强查询理解：</strong> 提供一个工具用于检索与查询相关的背景知识和定义，以增强对查询的理解，并支持 RAG 方法。</li>
+</ul>
+<h4 id="5-sql">5. 重定义 SQL 代理<a class="headerlink" href="#5-sql" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Redefine SQL Agent</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Create system message</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">def</span> <span class="nf">create_system_message_v2</span><span class="p">():</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="sd">    Create system message for guiding the agent on how to respond.</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">SQL_PREFIX_TEMPLATE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="s2">    角色：</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="s2">    您是一个设计用来与SQL数据库交互的代理。您可以查询数据库并直接访问结果。</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="s2">    目标：</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="s2">    针对一个问题，首先进行RAG检索收集完整信息，然后创建一个SQL查询来检索所需的数据，执行此查询，并直接返回查询的结果，而不是查询本身。如果遇到错误或初始结果为空，请诊断问题，调整查询，并再次尝试。</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="s2">    指示：</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="s2">    - 首先进行RAG检索收集完整信息优化问题</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="s2">    - 然后识别相关表格，以了解可用数据的范围。</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="s2">    - 使用&#39;sql_db_schema&#39;工具获取这些表的结构详细信息。</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="s2">    - 根据表结构信息构建一个适当的SQL查询来回答问题。</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="s2">    - 使用&#39;sql_db_query&#39;工具执行查询。</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="s2">    - 直接返回执行结果。除非用户明确请求，否则不返回SQL查询文本。</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="s2">    - 如果查询执行成功但没有找到结果，请重新评估假设并相应修改查询。</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="s2">    - 如果发生错误（例如，找不到表或语法错误），通过以下方式排除错误：</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="s2">        - 检查表名和表结构。</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="s2">        - 调整查询以修正任何错误。</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="s2">        - 重新执行更正后的查询。</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="s2">    - 仅关注检索与问题答案相关的列。</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="s2">    - 默认情况下将结果限制为最多5个条目，除非用户指定了更多。</span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="s2">    - 按相关列排序结果，以首先呈现最相关的信息。</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="s2">    - 不断调整和重新运行查询，直到获得有效结果或确认数据库中不存在所需数据。</span>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="s2">    - 避免对数据库的结构或内容进行任何修改（例如，不进行INSERT、UPDATE、DELETE、DROP语句）。</span>
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="s2">    - 确保最终响应直接基于查询结果，提供简洁准确的答案。</span>
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="s2">    &quot;&quot;&quot;</span>
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a>    <span class="k">return</span> <span class="n">SystemMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">SQL_PREFIX_TEMPLATE</span><span class="p">)</span>
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a>
+</span><span id="__span-4-36"><a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="k">def</span> <span class="nf">create_system_message</span><span class="p">():</span>
+</span><span id="__span-4-37"><a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>    <span class="n">SQL_PREFIX_TEMPLATE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="s2">    ROLE:</span>
+</span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="s2">    You are an agent designed to interact with a SQL database. You can query the database and directly access the results.</span>
+</span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a>
+</span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="s2">    GOAL:</span>
+</span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="s2">    Given a question, create a SQL query to retrieve the needed data, execute this query, and directly return the results of the query, not the query itself. If errors are encountered or the initial results are empty, diagnose the issues, adjust the query, and try again.</span>
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a>
+</span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="s2">    INSTRUCTIONS:</span>
+</span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="s2">    - Begin by identifying the relevant tables to understand the scope of available data.</span>
+</span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="s2">    - Use the &#39;sql_db_schema&#39; tool to obtain detailed information about the structure of these tables.</span>
+</span><span id="__span-4-47"><a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="s2">    - Construct an appropriate SQL query to answer the question based on the schema information.</span>
+</span><span id="__span-4-48"><a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a><span class="s2">    - Execute the query using the &#39;sql_db_query&#39; tool.</span>
+</span><span id="__span-4-49"><a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a><span class="s2">    - Directly return the results from the execution. Do not return the SQL query text unless requested specifically by the user.</span>
+</span><span id="__span-4-50"><a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a><span class="s2">    - If the query execution is successful but no results are found, reassess the assumptions and revise the query accordingly.</span>
+</span><span id="__span-4-51"><a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a><span class="s2">    - If an error occurs (e.g., table not found or syntax error), troubleshoot the error by:</span>
+</span><span id="__span-4-52"><a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a><span class="s2">        - Reviewing the table names and schema.</span>
+</span><span id="__span-4-53"><a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a><span class="s2">        - Adjusting the query to fix any errors.</span>
+</span><span id="__span-4-54"><a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a><span class="s2">        - Re-executing the corrected query.</span>
+</span><span id="__span-4-55"><a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a><span class="s2">    - Focus only on retrieving relevant columns to answer the question.</span>
+</span><span id="__span-4-56"><a id="__codelineno-4-56" name="__codelineno-4-56" href="#__codelineno-4-56"></a><span class="s2">    - Limit the results to a maximum of 5 entries by default, unless more is specified by the user.</span>
+</span><span id="__span-4-57"><a id="__codelineno-4-57" name="__codelineno-4-57" href="#__codelineno-4-57"></a><span class="s2">    - Sort the results by relevant columns to present the most pertinent information first.</span>
+</span><span id="__span-4-58"><a id="__codelineno-4-58" name="__codelineno-4-58" href="#__codelineno-4-58"></a><span class="s2">    - Continuously adjust and re-run the query until valid results are obtained or confirm that the data needed does not exist in the database.</span>
+</span><span id="__span-4-59"><a id="__codelineno-4-59" name="__codelineno-4-59" href="#__codelineno-4-59"></a><span class="s2">    - Avoid making any modifications to the database&#39;s structure or content (e.g., no INSERT, UPDATE, DELETE, DROP statements).</span>
+</span><span id="__span-4-60"><a id="__codelineno-4-60" name="__codelineno-4-60" href="#__codelineno-4-60"></a><span class="s2">    - Ensure the final response is based directly on the query results, providing concise and accurate answers.</span>
+</span><span id="__span-4-61"><a id="__codelineno-4-61" name="__codelineno-4-61" href="#__codelineno-4-61"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-62"><a id="__codelineno-4-62" name="__codelineno-4-62" href="#__codelineno-4-62"></a>    <span class="k">return</span> <span class="n">SystemMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">SQL_PREFIX_TEMPLATE</span><span class="p">)</span>
+</span></code></pre></div>
+<h5 id="_10">步骤描述<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>创建系统消息：</strong> 定义两个函数 <code>create_system_message_v 2</code> 和 <code>create_system_message</code>，为 SQL 代理提供操作指导。</li>
+</ul>
+<h5 id="_11">目的<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>指导代理行为：</strong> 通过系统消息向代理提供关于如何处理 SQL 查询的详细指导，包括如何诊断和修复错误、调整查询，以及如何返回结果。</li>
+</ul>
+<h4 id="6">6. 初始化工具包<a class="headerlink" href="#6" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Initialize Toolkit</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">def</span> <span class="nf">initialize_toolkit</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">llm</span><span class="p">):</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="sd">    Initialize the toolkit for interacting with the database.</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="sd">    Args:</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="sd">        - db: Database connection object.</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="sd">        - llm: Chat model object.</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="n">toolkit</span> <span class="o">=</span> <span class="n">SQLDatabaseToolkit</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="n">tools</span> <span class="o">=</span> <span class="n">toolkit</span><span class="o">.</span><span class="n">get_tools</span><span class="p">()</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="c1"># Query checking</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    <span class="n">query_check_system</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="s2">    You are a SQL expert with a strong attention to detail.</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="s2">    Double check the SQLite query for common mistakes, including:</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="s2">    - Using NOT IN with NULL values</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="s2">    - Using UNION when UNION ALL should have been used</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="s2">    - Using BETWEEN for exclusive ranges</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="s2">    - Data type mismatch in predicates</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="s2">    - Properly quoting identifiers</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="s2">    - Using the correct number of arguments for functions</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="s2">    - Casting to the correct data type</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="s2">    - Using the proper columns for joins</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="s2">    If there are any of the above mistakes, rewrite the query. If there are no mistakes, just reproduce the original query.</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="s2">    Execute the correct query with the appropriate tool.</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="s2">    &quot;&quot;&quot;</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>    <span class="n">query_check_prompt</span> <span class="o">=</span> <span class="n">ChatPromptTemplate</span><span class="o">.</span><span class="n">from_messages</span><span class="p">([(</span><span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="n">query_check_system</span><span class="p">),(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">{query}</span><span class="s2">&quot;</span><span class="p">)])</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>    <span class="n">query_check</span> <span class="o">=</span> <span class="n">query_check_prompt</span> <span class="o">|</span> <span class="n">llm</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>    <span class="nd">@tool</span>
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>    <span class="k">def</span> <span class="nf">check_query_tool</span><span class="p">(</span><span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="sd">        Use this tool to double check if your query is correct before executing it.</span>
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>        <span class="k">return</span> <span class="n">query_check</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">query</span><span class="p">})</span><span class="o">.</span><span class="n">content</span>
+</span><span id="__span-5-38"><a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>
+</span><span id="__span-5-39"><a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a>    <span class="c1"># Query result checking</span>
+</span><span id="__span-5-40"><a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a>    <span class="n">query_result_check_system</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;You are grading the result of a SQL query from a DB.</span>
+</span><span id="__span-5-41"><a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a><span class="s2">    - Check that the result is not empty.</span>
+</span><span id="__span-5-42"><a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a><span class="s2">    - If it is empty, instruct the system to re-try!&quot;&quot;&quot;</span>
+</span><span id="__span-5-43"><a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a>    <span class="n">query_result_check_prompt</span> <span class="o">=</span> <span class="n">ChatPromptTemplate</span><span class="o">.</span><span class="n">from_messages</span><span class="p">([(</span><span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="n">query_result_check_system</span><span class="p">),(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">{query_result}</span><span class="s2">&quot;</span><span class="p">)])</span>
+</span><span id="__span-5-44"><a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a>    <span class="n">query_result_check</span> <span class="o">=</span> <span class="n">query_result_check_prompt</span> <span class="o">|</span> <span class="n">llm</span>
+</span><span id="__span-5-45"><a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a>
+</span><span id="__span-5-46"><a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a>    <span class="nd">@tool</span>
+</span><span id="__span-5-47"><a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a>    <span class="k">def</span> <span class="nf">check_result</span><span class="p">(</span><span class="n">query_result</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-5-48"><a id="__codelineno-5-48" name="__codelineno-5-48" href="#__codelineno-5-48"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-5-49"><a id="__codelineno-5-49" name="__codelineno-5-49" href="#__codelineno-5-49"></a><span class="sd">        Use this tool to check the query result from the database to confirm it is not empty and is relevant.</span>
+</span><span id="__span-5-50"><a id="__codelineno-5-50" name="__codelineno-5-50" href="#__codelineno-5-50"></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="__span-5-51"><a id="__codelineno-5-51" name="__codelineno-5-51" href="#__codelineno-5-51"></a>        <span class="k">return</span> <span class="n">query_result_check</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;query_result&quot;</span><span class="p">:</span> <span class="n">query_result</span><span class="p">})</span><span class="o">.</span><span class="n">content</span>
+</span><span id="__span-5-52"><a id="__codelineno-5-52" name="__codelineno-5-52" href="#__codelineno-5-52"></a>
+</span><span id="__span-5-53"><a id="__codelineno-5-53" name="__codelineno-5-53" href="#__codelineno-5-53"></a>    <span class="n">tools</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">check_query_tool</span><span class="p">)</span>
+</span><span id="__span-5-54"><a id="__codelineno-5-54" name="__codelineno-5-54" href="#__codelineno-5-54"></a>    <span class="n">tools</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">check_result</span><span class="p">)</span>
+</span><span id="__span-5-55"><a id="__codelineno-5-55" name="__codelineno-5-55" href="#__codelineno-5-55"></a>    <span class="n">tools</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sqlagent_rag_retriever</span><span class="p">)</span>
+</span><span id="__span-5-56"><a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a>    <span class="k">return</span> <span class="n">tools</span>
+</span></code></pre></div>
+<h5 id="_12">步骤描述<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>初始化工具包：</strong> 创建一个函数 <code>initialize_toolkit</code>，用于初始化与数据库交互的工具包。</li>
+<li><strong>查询检查：</strong> 使用 <code>query_check_prompt</code> 创建一个工具来检查 SQL 查询中的常见错误。</li>
+<li><strong>查询结果检查：</strong> 使用 <code>query_result_check_prompt</code> 创建一个工具来验证查询结果是否为空。</li>
+</ul>
+<h5 id="_13">目的<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>确保查询准确性：</strong> 通过自动化工具检查 SQL 查询和查询结果，确保查询的准确性和有效性，减少手动检查的负担。</li>
+</ul>
+<h4 id="7">7. 连接数据库<a class="headerlink" href="#7" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Connect to the database</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">def</span> <span class="nf">connectToTheDatabase</span><span class="p">(</span><span class="n">connect_name</span> <span class="o">=</span> <span class="s1">&#39;autosight_model&#39;</span><span class="p">):</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="c1"># ClickHouse database connection parameters</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="n">db_config</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s2">&quot;autosight_read_only&quot;</span><span class="p">,</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s1">&#39;password&#39;</span><span class="p">:</span> <span class="s1">&#39;DFb7734HBdfBB33&#39;</span><span class="p">,</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        <span class="s1">&#39;host&#39;</span><span class="p">:</span> <span class="s1">&#39;cc-2ze66w4q0tsjnd3b6.public.clickhouse.ads.aliyuncs.com&#39;</span><span class="p">,</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        <span class="s1">&#39;port&#39;</span><span class="p">:</span> <span class="mi">8123</span><span class="p">,</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>        <span class="s1">&#39;db&#39;</span><span class="p">:</span> <span class="s1">&#39;autosight_model&#39;</span><span class="p">,</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>        <span class="s1">&#39;db_type&#39;</span><span class="p">:</span> <span class="s1">&#39;clickhouse&#39;</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="p">}</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="n">db_type</span> <span class="o">=</span> <span class="n">db_config</span><span class="p">[</span><span class="s1">&#39;db_type&#39;</span><span class="p">]</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="n">db_user</span> <span class="o">=</span> <span class="n">db_config</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>    <span class="n">db_password</span> <span class="o">=</span> <span class="n">db_config</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">]</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    <span class="n">db_host</span> <span class="o">=</span> <span class="n">db_config</span><span class="p">[</span><span class="s1">&#39;host&#39;</span><span class="p">]</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    <span class="n">db_port</span> <span class="o">=</span> <span class="n">db_config</span><span class="p">[</span><span class="s1">&#39;port&#39;</span><span class="p">]</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    <span class="n">db_name</span> <span class="o">=</span> <span class="n">db_config</span><span class="p">[</span><span class="s1">&#39;db&#39;</span><span class="p">]</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    <span class="c1"># db_name = connect_name</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>    <span class="n">db</span> <span class="o">=</span> <span class="n">SQLDatabase</span><span class="o">.</span><span class="n">from_uri</span><span class="p">(</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>        <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">db_type</span><span class="si">}</span><span class="s1">://</span><span class="si">{</span><span class="n">db_user</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">urlquote</span><span class="p">(</span><span class="n">db_password</span><span class="p">)</span><span class="si">}</span><span class="s1">@</span><span class="si">{</span><span class="n">db_host</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">db_port</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">db_name</span><span class="si">}</span><span class="s1">?charset=utf8&#39;</span><span class="p">,</span> <span class="n">view_support</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>    <span class="k">return</span> <span class="n">db</span>
+</span></code></pre></div>
+<h5 id="_14">步骤描述<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>定义数据库连接参数：</strong> 使用 <code>db_config</code> 字典定义数据库连接参数，包括用户、密码、主机、端口和数据库名称。</li>
+<li><strong>创建数据库连接：</strong> 使用 <code>SQLDatabase. From_uri</code> 创建一个数据库连接对象。</li>
+</ul>
+<h5 id="_15">目的<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>建立数据库连接：</strong> 通过提供数据库连接参数，确保代码能够正确连接到指定的数据库。</li>
+</ul>
+<h4 id="8">8. 测试<a class="headerlink" href="#8" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Test</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="n">db_test</span> <span class="o">=</span> <span class="n">connectToTheDatabase</span><span class="p">()</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="c1"># Define LLM model</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="n">chat_model</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;GLM-4&quot;</span><span class="p">,</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="n">openai_api_base</span><span class="o">=</span><span class="s2">&quot;https://open.bigmodel.cn/api/paas/v4&quot;</span><span class="p">,</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>        <span class="n">streaming</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>        <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="p">)</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    <span class="c1"># Setting connection to db and SQL Toolkits</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>    <span class="n">tools</span> <span class="o">=</span> <span class="n">initialize_toolkit</span><span class="p">(</span><span class="n">db_test</span><span class="p">,</span> <span class="n">chat_model</span><span class="p">)</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>    <span class="n">system_message</span> <span class="o">=</span> <span class="n">create_system_message_v2</span><span class="p">()</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>    <span class="n">memory</span> <span class="o">=</span> <span class="n">SqliteSaver</span><span class="o">.</span><span class="n">from_conn_string</span><span class="p">(</span><span class="s2">&quot;:memory:&quot;</span><span class="p">)</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>    <span class="n">agent_executor</span> <span class="o">=</span> <span class="n">create_react_agent</span><span class="p">(</span><span class="n">chat_model</span><span class="p">,</span> <span class="n">tools</span><span class="p">,</span> <span class="n">state_modifier</span><span class="o">=</span><span class="n">system_message</span><span class="p">,</span> <span class="n">checkpointer</span><span class="o">=</span><span class="n">memory</span><span class="p">)</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>    <span class="n">question</span> <span class="o">=</span> <span class="s2">&quot;BBA五月份的平均库存深度是多少？&quot;</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>    <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>        <span class="s2">&quot;configurable&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>            <span class="c1"># Checkpoints accessed by thread ID</span>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>            <span class="s2">&quot;thread_id&quot;</span><span class="p">:</span> <span class="s1">&#39;bob&#39;</span><span class="p">,</span>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>        <span class="p">}</span>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>    <span class="p">}</span>
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>    <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">agent_executor</span><span class="o">.</span><span class="n">stream</span><span class="p">(</span>
+</span><span id="__span-7-29"><a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>        <span class="p">{</span><span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">question</span><span class="p">)]},</span> <span class="n">config</span>
+</span><span id="__span-7-30"><a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>    <span class="p">):</span>
+</span><span id="__span-7-31"><a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+</span><span id="__span-7-32"><a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h5 id="_16">步骤描述<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>连接数据库：</strong> 使用 <code>connectToTheDatabase</code> 函数建立数据库连接。</li>
+<li><strong>定义 LLM 模型：</strong> 使用 <code>ChatOpenAI</code> 初始化聊天模型。</li>
+<li><strong>初始化工具和代理：</strong> 调用 <code>initialize_toolkit</code> 和 <code>create_react_agent</code> 函数，准备好工具和代理执行器。</li>
+<li><strong>执行测试查询：</strong> 定义一个测试问题，并通过 <code>agent_executor. Stream</code> 执行查询，输出结果。</li>
+</ul>
+<h5 id="_17">目的<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>验证系统功能：</strong> 通过实际测试，验证系统的各个部分是否正常工作，包括数据库连接、查询执行、结果检索和输出。</li>
+</ul>
+<hr />
+<h3 id="_18">总结<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>此代码实现了一个结合 SQL 代理和 RAG 方法的系统，通过一系列步骤，包括环境设置、知识库准备、向量数据库创建、工具初始化、数据库连接和测试执行，形成了一个完整的工作流程。该系统能够处理自然语言查询，利用知识库增强理解，并通过 SQL 查询从数据库中检索相关数据。</p>
+<p>8 月 6 日工作</p>
+<ol>
+<li>调研了领域适应技术，命名实体识别（NER）技术，知识图谱构建等优化方法，其中通过 RAG 增强 SQLAgent 方法较其他方法可行性高</li>
+<li>
+<ol>
+<li>开始着手 langchain 框架下 FAISS 的 Vector DB 的搭建。</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>文档的初步编写</li>
+</ol>
+</li>
+</ol>
+<p>8 月 7 日工作</p>
+<ol>
+<li>整理了一份 SQLAgent 模型知识扩展的文档，主要通过 RAG 增强 SQLAgent。但现在主要存在两个问题，一是未能集成智谱的 embedding 模型，二是 SQLAgent 并未能有效记忆或利用这些检索到的知识来优化用户的查询问题。接下来准备针对这两个问题进行改进。</li>
+<li>完成了 RAG 增强 SQLAgent 文档的编写</li>
+</ol>
+<p>这里是你 8 月 7 日的工作日志草稿：</p>
+<hr />
+<p><strong>所属部门:</strong> 平台技术组</p>
+<p><strong>日报属期:</strong> 2024-08-07</p>
+<p><strong>今日工作进展与成果:</strong>
+1. 整理了一份关于通过 RAG 增强 SQLAgent 的模型知识扩展文档。当前主要面临两个问题：一是未能集成智谱的 embedding 模型，二是 SQLAgent 并未能有效记忆或利用这些检索到的知识来优化用户的查询问题。计划针对这两个问题进行改进。
+2. 完成了 RAG 增强 SQLAgent 文档的编写，该文档详细记录了增强过程及当前存在的挑战。</p>
+<p><strong>风险同步及今日思考:</strong>
+1. 提高 SQLAgent 通过检索知识优化用户的查询问题能力是接下来的关键任务，这可能需要更多的技术探索和测试。
+2. 对于现有的技术问题，需要继续与技术团队合作，寻找更有效的解决方案。</p>
+<p><strong>明日（工作日）计划:</strong>
+1. 研究并测试不同的方法来提高 SQLAgent 有效记忆或利用这些检索到的知识来优化用户的查询问题
+2. 探索 Supersonic 模型业务知识增强方法</p>
+<hr />
+<p>请确认这份日志的内容是否准确，或者需要添加其他详细信息。</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Born Originally & Die Distinctly.
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/OliverZ11x" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/zhao.shi.yi/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.af256bd8.min.js"></script>
+      
+        <script src="../../01attachment/javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
