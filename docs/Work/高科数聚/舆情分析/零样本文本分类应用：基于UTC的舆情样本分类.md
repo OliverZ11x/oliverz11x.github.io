@@ -1,6 +1,6 @@
 ---
 date created: 2024/8/29 14:23
-date modified: 2024/8/29 17:48
+date modified: 2024/8/30 16:56
 ---
 
 > [!note] 代码地址
@@ -259,7 +259,7 @@ label-studio start
 
 将导出的文件重命名为 `label_studio.json` 后，放入 `./data` 目录下。通过 [label_studio.py](./label_studio.py) 脚本可转为 UTC 的数据格式。
 
-在数据转换阶段，还需要提供标签候选信息，放在 `./data/label.txt` 文件中，每个标签占一行。例如在医疗意图分类中，标签候选为 ``["病情诊断", "治疗方案", "病因分析", "指标解读", "就医建议", "疾病表述", "后果表述", "注意事项", "功效作用", "医疗费用", "其他"]``，也可通过 ``options`` 参数直接进行配置。
+在数据转换阶段，还需要提供标签候选信息，放在 `./data/label.txt` 文件中，每个标签占一行，也可通过 ``options`` 参数直接进行配置。
 
 ```shell
 python label_studio.py \
@@ -300,6 +300,43 @@ python label_studio.py \
     --load_best_model_at_end  True \
     --save_total_limit 1 \
     --save_plm
+```
+
+模型微调效果：
+
+```json
+[2024-08-28 18:06:28,191] [    INFO] - ***** Running training *****
+[2024-08-28 18:06:28,191] [    INFO] -   Num examples = 16
+[2024-08-28 18:06:28,191] [    INFO] -   Num Epochs = 20
+[2024-08-28 18:06:28,191] [    INFO] -   Instantaneous batch size per device = 2
+[2024-08-28 18:06:28,191] [    INFO] -   Total train batch size (w. parallel, distributed & accumulation) = 16
+[2024-08-28 18:06:28,192] [    INFO] -   Gradient Accumulation steps = 8
+[2024-08-28 18:06:28,192] [    INFO] -   Total optimization steps = 20.0
+[2024-08-28 18:06:28,192] [    INFO] -   Total num train samples = 320.0
+[2024-08-28 18:06:28,193] [    INFO] -   Number of trainable parameters = 118026368
+[2024-08-28 18:19:56,302] [    INFO] - loss: 1.5980545,
+									   learning_rate: 5e-06, 
+									   global_step: 10, 
+									   interval_runtime: 808.1082,
+									   interval_samples_per_second: 0.198,
+									   interval_steps_per_second: 0.012, 
+									   epoch: 10.0
+[2024-08-28 18:19:56,303] [    INFO] - ***** Running Evaluation *****
+[2024-08-28 18:19:56,303] [    INFO] -   Num examples = 2
+[2024-08-28 18:19:56,303] [    INFO] -   Total prediction steps = 1
+[2024-08-28 18:19:56,303] [    INFO] -   Pre device batch size = 2
+[2024-08-28 18:19:56,303] [    INFO] -   Total Batch size = 2
+[2024-08-28 18:19:59,371] [    INFO] - eval_loss: 0.030200611799955368, 											   eval_micro_f1: 1.0,
+									   eval_macro_f1: 1.0,
+									   eval_runtime: 3.0676,
+									   eval_samples_per_second: 0.652,
+									   eval_steps_per_second: 0.326,
+									   epoch: 10.0
+[2024-08-28 18:19:59,372] [    INFO] - Saving model checkpoint to ./checkpoint/model_best/checkpoint-10
+[2024-08-28 18:19:59,372] [    INFO] - Trainer.model is not a `PretrainedModel`, only saving its state dict.
+[2024-08-28 18:20:03,880] [    INFO] - tokenizer config file saved in ./checkpoint/model_best/checkpoint-10/tokenizer_config.json
+[2024-08-28 18:20:03,881] [    INFO] - Special tokens file saved in ./checkpoint/model_best/checkpoint-10/special_tokens_map.json
+[2024-08-28 18:20:03,887] [    INFO] - Configuration saved in ./checkpoint/model_best/checkpoint-10/plm/config.json
 ```
 
 ### 模型预测
