@@ -8,13 +8,18 @@ date modified: 2024/10/12 15:44
 %% Begin Waypoint %%
 
 - **环境配置**
+	- [密钥](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E5%AF%86%E9%92%A5.md)
 	- [conda 虚拟环境](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/conda%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83.md)
 	- [CUDA 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/CUDA%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
+	- [Git 环境变量](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Git%20%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.md)
 	- [LangChain 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LangChain%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [LLM API Key](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LLM%20API%20Key.md)
 	- [Mkdocs 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Mkdocs%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
+	- [Office激活](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Office%E6%BF%80%E6%B4%BB.md)
 	- [paddlepaddle 安装](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/paddlepaddle%20%E5%AE%89%E8%A3%85.md)
 	- [TimesFM 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/TimesFM%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
+	- [Ubuntu24 Docker](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Ubuntu24%20Docker.md)
+	- [Unsloth 项目安装](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Unsloth%20%E9%A1%B9%E7%9B%AE%E5%AE%89%E8%A3%85.md)
 	- [WSL2-Ubuntu 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 - **LLM**
 	- **文本分类**
@@ -22,6 +27,7 @@ date modified: 2024/10/12 15:44
 		- [文本分类任务 Label Studio 使用指南](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%BB%BB%E5%8A%A1%20Label%20Studio%20%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
 		- [文本清洗和文本分割](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%B8%85%E6%B4%97%E5%92%8C%E6%96%87%E6%9C%AC%E5%88%86%E5%89%B2.md)
 		- [文本数据标注 doccano](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%20doccano.md)
+	- [hf上传模型](./LLM/hf%E4%B8%8A%E4%BC%A0%E6%A8%A1%E5%9E%8B.md)
 	- **LangChain**
 		- [LangChain 从模型返回结构化数据](./LLM/LangChain/LangChain%20%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E6%8D%AE.md)
 		- [LangChain 工具自定义](./LLM/LangChain/LangChain%20%E5%B7%A5%E5%85%B7%E8%87%AA%E5%AE%9A%E4%B9%89.md)
@@ -33,6 +39,7 @@ date modified: 2024/10/12 15:44
 		- [RAG 增强 SQLAgent](./LLM/LangChain/RAG%20%E5%A2%9E%E5%BC%BA%20SQLAgent.md)
 		- [SQLAgent 流式输出](./LLM/LangChain/SQLAgent%20%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA.md)
 		- [SQLAgent based GLM](./LLM/LangChain/SQLAgent%20based%20GLM.md)
+	- [Manus AI](./LLM/Manus%20AI.md)
 	- **NLP**
 		- [Hugging Face Transformers](./LLM/NLP/Hugging%20Face%20Transformers.md)
 		- [Transformer 模型](./LLM/NLP/Transformer%20%E6%A8%A1%E5%9E%8B.md)

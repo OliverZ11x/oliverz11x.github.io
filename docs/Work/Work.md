@@ -30,5 +30,13 @@ date modified: 2024/8/12 13:49
 	- [文本编码](./%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E6%96%87%E6%9C%AC%E7%BC%96%E7%A0%81.md)
 	- [DeepSeek](./%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/DeepSeek.md)
 	- [LLM 模型学习概述](./%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/LLM%20%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0.md)
+- **赛丰科技**
+	- [计算资源](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E8%AE%A1%E7%AE%97%E8%B5%84%E6%BA%90.md)
+	- [数据集构建](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E6%95%B0%E6%8D%AE%E9%9B%86%E6%9E%84%E5%BB%BA.md)
+	- **文献**
+		- [Comet](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E6%96%87%E7%8C%AE/Comet.md)
+	- [Azure Flux 环境配置](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/Azure%20Flux%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
+	- [DeepSeek-R1微调数据集](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/DeepSeek-R1%E5%BE%AE%E8%B0%83%E6%95%B0%E6%8D%AE%E9%9B%86.md)
+	- [Microsoft资格认证](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/Microsoft%E8%B5%84%E6%A0%BC%E8%AE%A4%E8%AF%81.md)
 
 %% End Waypoint %%
