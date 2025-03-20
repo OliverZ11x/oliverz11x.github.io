@@ -8,7 +8,6 @@ date modified: 2024/10/12 15:44
 %% Begin Waypoint %%
 
 - **环境配置**
-	- [密钥](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E5%AF%86%E9%92%A5.md)
 	- [conda 虚拟环境](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/conda%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83.md)
 	- [CUDA 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/CUDA%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [Git 环境变量](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Git%20%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.md)
