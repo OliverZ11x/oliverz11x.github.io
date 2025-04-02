@@ -1,7 +1,15 @@
 ---
 date created: 2025/3/17 11:35
-date modified: 2025/3/17 13:20
+date modified: 2025/4/2 9:37
 ---
+
+![[Azure Flux 环境配置]]
+
+![[Unsloth 项目安装]]
+
+CMD ["uvicorn", "src.main: app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+
+uvicorn src.main: app --host", "0.0.0.0 --port", "8000
 
 在 Ubuntu 24 上使用 VS Code 部署 Docker，可以按照以下步骤进行：
 
@@ -20,8 +28,11 @@ sudo apt install -y ca-certificates curl gnupg
 
 ```bash
 sudo install -m 0755 -d /etc/apt/keyrings
+
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo tee /etc/apt/keyrings/docker.asc > /dev/null
+
 sudo chmod a+r /etc/apt/keyrings/docker.asc
+
 ```
 
 ### **（3）添加 Docker 仓库**

@@ -11,17 +11,17 @@ date modified: 2024/8/15 14:5
 
 各个LLM中类的差别用红框标注，其余base部分函数功能相同
 
-![[IMG-2024-08-08-14-31-34.png]]
+![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2025-03-26-11-58-35.png]]
 
 **ChatOpenAI**
-![[IMG-2024-08-08-14-31-34-1.png]]
+![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2025-03-26-11-58-35-1.png]]
 
 **azure_openai**:
-![[IMG-2024-08-08-14-31-34-2.png]]
+![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2025-03-26-11-58-35-2.png]]
 
 ## 基类语言模型接口
 
-![[IMG-2024-08-08-14-31-34-3.png]]
+![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2025-03-26-11-58-35-3.png]]
 
 语言模型的接口或基类，`BaseLanguageModel`，它定义了一系列与语言模型交互的方法。下面是对每个方法功能的解释：
 
@@ -78,4 +78,4 @@ date modified: 2024/8/15 14:5
 
 Chat
 
-![[IMG-2024-08-08-14-31-34-4.png]]
+![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 源码分析/IMG-2025-03-26-11-58-35-4.png]]

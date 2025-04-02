@@ -31,12 +31,30 @@ date modified: 2024/8/12 13:49
 	- [DeepSeek](./%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/DeepSeek.md)
 	- [LLM 模型学习概述](./%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/LLM%20%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0.md)
 - **赛丰科技**
+	- **保密考试**
+		- [笔记](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E4%BF%9D%E5%AF%86%E8%80%83%E8%AF%95/%E7%AC%94%E8%AE%B0.md)
 	- [计算资源](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E8%AE%A1%E7%AE%97%E8%B5%84%E6%BA%90.md)
+	- [模型训练](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83.md)
+	- [涉台报告生成prompt](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E6%B6%89%E5%8F%B0%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90prompt.md)
+	- [生成式人工智能（大语言模型）上线备案表](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%EF%BC%88%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%EF%BC%89%E4%B8%8A%E7%BA%BF%E5%A4%87%E6%A1%88%E8%A1%A8.md)
+	- **[示例](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E7%A4%BA%E4%BE%8B/%E7%A4%BA%E4%BE%8B.md)**
+
 	- [数据集构建](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E6%95%B0%E6%8D%AE%E9%9B%86%E6%9E%84%E5%BB%BA.md)
 	- **文献**
 		- [Comet](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E6%96%87%E7%8C%AE/Comet.md)
+	- [用户输入指导](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%8C%87%E5%AF%BC.md)
+	- [重要安排](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E9%87%8D%E8%A6%81%E5%AE%89%E6%8E%92.md)
 	- [Azure Flux 环境配置](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/Azure%20Flux%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [DeepSeek-R1微调数据集](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/DeepSeek-R1%E5%BE%AE%E8%B0%83%E6%95%B0%E6%8D%AE%E9%9B%86.md)
+	- [huggingface企业版](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/huggingface%E4%BC%81%E4%B8%9A%E7%89%88.md)
 	- [Microsoft资格认证](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/Microsoft%E8%B5%84%E6%A0%BC%E8%AE%A4%E8%AF%81.md)
+	- [minio](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/minio.md)
+	- **pdf**
+
+	- [Qwen2.5-7B-Instruct 微调](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/Qwen2.5-7B-Instruct%20%E5%BE%AE%E8%B0%83.md)
+	- **RAG**
+		- [GraphRAG 知识图谱提取和增强流程](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/RAG/GraphRAG%20%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%8F%90%E5%8F%96%E5%92%8C%E5%A2%9E%E5%BC%BA%E6%B5%81%E7%A8%8B.md)
+		- [Lazy Graph RAG](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/RAG/Lazy%20Graph%20RAG.md)
+		- [RAG 方案对大模型的优化](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/RAG/RAG%20%E6%96%B9%E6%A1%88%E5%AF%B9%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E5%8C%96.md)
 
 %% End Waypoint %%

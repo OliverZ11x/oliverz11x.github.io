@@ -207,7 +207,7 @@ date modified: 2025/3/4 18:3
    plt.show()
    ```
 
-![[IMG-2024-08-29-15-44-54.png]]
+![[docs/01attachment/docs/Technic/LLM/文本分类/文本清洗和文本分割/IMG-2025-03-26-11-58-35.png]]
 
 ### 标签制作 (基于 Label Studio)
 

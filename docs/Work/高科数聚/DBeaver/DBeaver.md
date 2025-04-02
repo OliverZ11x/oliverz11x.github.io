@@ -11,17 +11,17 @@ date modified: 2024/8/15 14:5
 
 点击 上面的倒三角 -->other -->clickhouse
 
-![[IMG-2024-08-08-15-08-58.png]]
+![[docs/01attachment/docs/Work/高科数聚/DBeaver/DBeaver/IMG-2025-03-26-11-58-37.png]]
 
-![[IMG-2024-08-08-15-08-58-1.png]]
+![[docs/01attachment/docs/Work/高科数聚/DBeaver/DBeaver/IMG-2025-03-26-11-58-37-1.png]]
 
 首次连接需要下载相关的驱动，点击“编辑驱动设置”
 
-![[IMG-2024-08-08-15-08-58-2.png]]
+![[docs/01attachment/docs/Work/高科数聚/DBeaver/DBeaver/IMG-2025-03-26-11-58-37-2.png]]
 
 点击“下载/更新”
 
-![[IMG-2024-08-08-15-08-58-3.png]]
+![[docs/01attachment/docs/Work/高科数聚/DBeaver/DBeaver/IMG-2025-03-26-11-58-37-3.png]]
 
 下载完成后，点击“确定” 
 

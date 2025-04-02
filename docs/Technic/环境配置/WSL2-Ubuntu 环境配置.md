@@ -1,7 +1,7 @@
 ---
 title: WSL2-Ubuntu 安装
 date created: 2024/7/31 11:15
-date modified: 2024/8/15 11:1
+date modified: 2025/3/31 19:28
 aliases:
   - Win10 安装 WSL2-Ubuntu 并配置 anaconda
 ---
@@ -16,16 +16,16 @@ aliases:
 
 1. Win+R 打开 winver
 
-	![[IMG-2024-08-08-14-28-37.png]]
+	![[docs/01attachment/docs/Technic/环境配置/WSL2-Ubuntu 环境配置/IMG-2025-03-26-11-58-35.png]]
 
 2. 查看版本号，内部版本需大于 19041
-	![[IMG-2024-08-08-14-28-37-1.png]]
+	![[docs/01attachment/docs/Technic/环境配置/WSL2-Ubuntu 环境配置/IMG-2025-03-26-11-58-35-1.png]]
 3. 如果是早先的版本建议更新下
 
 ### WSL 2 的安装
 
 1. 打开控制面板->程序->启用或关闭 Windows 功能>适用于 Linux 的 Windows 子系统和虚拟机平台
-	![[IMG-2024-08-08-14-28-37-2.png]]
+	![[docs/01attachment/docs/Technic/环境配置/WSL2-Ubuntu 环境配置/IMG-2025-03-26-11-58-35-2.png]]
 2. 重启系统
 3. 在管理员模式下打开 PowerShell，输入如下命令
 
@@ -110,10 +110,10 @@ sudo apt-get -y update && sudo apt-get -y upgrade
 在系统上安装 Windows NVIDIA GPU 驱动程序后，CUDA 将在 WSL 2 中可用。安装在 Windows 主机上的 CUDA 驱动程序将作为存根存储在 WSL 2 中，因此**用户不得在 WSL 2 中安装任何 NVIDIA GPU Linux 驱动程序**。这里必须==非常小心==，因为默认的 CUDA 工具包附带一个驱动程序，并且很容易使用默认安装覆盖 WSL 2 NVIDIA 驱动程序。我们建议开发人员使用 [CUDA 工具包下载](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0)页面中提供的单独的 CUDA 工具包用于 WSL 2 （Ubuntu），以避免这种覆盖。此 WSL-Ubuntu CUDA 工具包安装程序不会覆盖已映射到 WSL 2 环境中的 NVIDIA 驱动程序。
 
 1. 输入 `nvidia-smi`，显示当前驱动版本。
-	![[IMG-2024-08-08-14-28-37-3.png]]
+	![[docs/01attachment/docs/Technic/环境配置/WSL2-Ubuntu 环境配置/IMG-2025-03-26-11-58-35-3.png]]
 2. 根据[驱动版本、python 版本和 tensorflow 版本](https://tensorflow.google.cn/install/source?hl=en#gpu)安装 [cuda 11.2](https://developer.nvidia.com/cuda-11.2.0-download-archive?target_os=Linux&target_arch=x86_64&target_distro=WSLUbuntu&target_version=20&target_type=debnetwork)，cuda 版本号需要低于驱动版本号，如果驱动版本过低，请[[CUDA 环境配置#升级 CUDA 驱动|升级 CUDA 驱动]]。安装错误，请[[CUDA 环境配置#Wsl Ubuntu 22.04 cuda 12.5 卸载|卸载驱动]]重新安装。
 3. 检查是否安装好 `nvcc -V` 输出结果：
-	![[IMG-2024-08-08-14-28-37-4.png]]
+	![[docs/01attachment/docs/Technic/环境配置/WSL2-Ubuntu 环境配置/IMG-2025-03-26-11-58-35-4.png]]
 	安装完毕之后，`nvcc -V` 有可能还是报没安装 CUDA-Toolkit，先去 `/usr/local/cuda/bin` 看一眼有没有 nvcc 的可执行文件，如果有的话打开 `vi ~/.bashrc`，把 cuda 的 bin 目录加到 PATH，也就是把下面这行加到. Bashrc 中, 然后使用 `source ~/.bashrc` 重新读取配置文件
 
 ```shell
@@ -128,12 +128,12 @@ export PATH=$PATH:/usr/local/cuda/bin
 conda install cudnn
 ```
 
-![[IMG-2024-08-08-14-28-38.png]]
+![[docs/01attachment/docs/Technic/环境配置/WSL2-Ubuntu 环境配置/IMG-2025-03-26-11-58-35-5.png]]
 
 ### Anaconda 安装
 
 1. 进入 [网址](https://repo.anaconda.com/archive/)手动下载 anaconda 安装包到 `D:\Ubuntu\anaconda` 中
-	![[IMG-2024-08-08-14-28-38-1.png]]
+	![[docs/01attachment/docs/Technic/环境配置/WSL2-Ubuntu 环境配置/IMG-2025-03-26-11-58-35-6.png]]
 2. 激活虚拟环境，复制安装包到虚拟环境中
 
 ```shell

@@ -332,7 +332,7 @@ experiment_results = evaluate(
 
 在工作台查看评估结果：
 
-![[IMG-2024-08-07-17-54.png]]
+![[docs/01attachment/docs/Technic/LLM/LangChain/LangSmith 学习记录/IMG-2025-03-26-11-58-35.png]]
 
 ### 评估 Agent 的单个步骤
 

@@ -1,6 +1,6 @@
 ---
 date created: 2025/3/13 10:33
-date modified: 2025/3/18 11:9
+date modified: 2025/4/2 9:36
 ---
 ### Azure 安装 cuda 驱动
 
@@ -83,7 +83,7 @@ Sft：
 创建进程
 
 ```shell
-Screen -S rl
+screen -S rl
 ```
 
 Ctrl+A+D 退出该进程
@@ -93,7 +93,7 @@ Ctrl+A+D 退出该进程
 进入该进程
 
 ```shell
-Screen -r
+screen -r
 ```
 
 1. 训练医学推理大语言模型。

@@ -67,9 +67,9 @@ LangChain 试图解决这两个问题。目前提供的解决方案是初步的�
 
 ### 评估结果
 
-![[IMG-2024-08-08-14-32-32.png]]
+![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 评估方法/IMG-2025-03-26-11-58-35.png]]
 
-![[IMG-2024-08-08-14-32-32-1.png]]
+![[docs/01attachment/docs/Technic/LLM/LangChain/LangChain 评估方法/IMG-2025-03-26-11-58-35-1.png]]
 
 [模型效果测试，返回为空 · Issue #1205 · tencentmusic/supersonic (github.com)](https://github.com/tencentmusic/supersonic/issues/1205)
 
