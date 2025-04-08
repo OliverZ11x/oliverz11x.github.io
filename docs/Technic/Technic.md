@@ -1,13 +1,15 @@
 ---
 title: Technic
 date created: 2024/8/6 11:19
-date modified: 2025/4/2 9:38
+date modified: 2025/4/8 10:24
 ---
 ## Menu
 
 %% Begin Waypoint %%
 
+- [更新 NVCC](./%E6%9B%B4%E6%96%B0%20NVCC.md)
 - **环境配置**
+	- [Azure Flux 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Azure%20Flux%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [conda 虚拟环境](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/conda%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83.md)
 	- [CUDA 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/CUDA%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
 	- [Git 环境变量](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Git%20%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.md)
@@ -20,8 +22,8 @@ date modified: 2025/4/2 9:38
 	- [Ubuntu24 Docker](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Ubuntu24%20Docker.md)
 	- [Unsloth 项目安装](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Unsloth%20%E9%A1%B9%E7%9B%AE%E5%AE%89%E8%A3%85.md)
 	- [WSL2-Ubuntu 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
-- [未命名](./%E6%9C%AA%E5%91%BD%E5%90%8D.md)
 - [Docker](./Docker.md)
+- [Kubernetes](./Kubernetes.md)
 - [Linux Ubuntu](./Linux%20Ubuntu.md)
 - **LLM**
 	- **文本分类**
@@ -45,6 +47,7 @@ date modified: 2025/4/2 9:38
 	- **NLP**
 		- [Hugging Face Transformers](./LLM/NLP/Hugging%20Face%20Transformers.md)
 		- [Transformer 模型](./LLM/NLP/Transformer%20%E6%A8%A1%E5%9E%8B.md)
+- [NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）](./NVIDIA%20%E9%A9%B1%E5%8A%A8%E3%80%81CUDA%20Toolkit%20%E4%B8%8E%20NVCC%20%E5%85%A8%E9%9D%A2%E7%90%86%E8%A7%A3%E7%AC%94%E8%AE%B0%EF%BC%88Ubuntu%20%E7%B3%BB%E7%BB%9F%EF%BC%89.md)
 - **obsidian**
 	- [保存知识](./obsidian/%E4%BF%9D%E5%AD%98%E7%9F%A5%E8%AF%86.md)
 	- [常用 Git 命令](./obsidian/%E5%B8%B8%E7%94%A8%20Git%20%E5%91%BD%E4%BB%A4.md)
@@ -52,5 +55,8 @@ date modified: 2025/4/2 9:38
 	- [Markdown 语法指南](./obsidian/Markdown%20%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97.md)
 	- [Obsidian 标签](./obsidian/Obsidian%20%E6%A0%87%E7%AD%BE.md)
 	- [Obsidian 网页发布](./obsidian/Obsidian%20%E7%BD%91%E9%A1%B5%E5%8F%91%E5%B8%83.md)
+- [Ubuntu apt](./Ubuntu%20apt.md)
+- [vLLM 双卡A6000部署](./vLLM%20%E5%8F%8C%E5%8D%A1A6000%E9%83%A8%E7%BD%B2.md)
+- [VScode github copilot使用指南](./VScode%20github%20copilot%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
 
 %% End Waypoint %%

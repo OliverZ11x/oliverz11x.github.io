@@ -1,11 +1,18 @@
 ---
 date created: 2025/3/27 14:53
-date modified: 2025/3/27 17:23
+date modified: 2025/4/7 14:58
 ---
+
+```python
+Access Key
+j45mMkM1otecJk98UsXQ
+Secret Key
+qZCLgKl6QwOLmZLb8CVINWGkqI0sWh5S47DXnJFV
+```
 
 `admin`
 
-`by@123456`
+`By@123456`
 
 运行 MinIO 客户端后，你可以使用 `mc` 命令与 MinIO 服务进行交互，比如创建存储桶、上传/下载文件、设置访问权限等。以下是详细的使用方法：
 

@@ -1,10 +1,16 @@
 ---
 date created: 2025/3/13 10:33
-date modified: 2025/4/2 9:36
+date modified: 2025/4/2 10:11
 ---
-### Azure 安装 cuda 驱动
+### Ubuntu 安装 cuda 驱动
+
+Ubuntu 打包 NVIDIA 专有驱动程序。 这些驱动程序直接来自 NVIDIA，只是由 Ubuntu 打包，以便系统可以自动管理这些驱动程序。 从另一个源下载和安装驱动程序可能会导致系统损坏。 此外，安装第三方驱动程序需要在启用了 TrustedLaunch 和安全启动的 VM 上执行额外步骤。 他们要求用户为系统添加新的计算机所有者密钥才能启动。 来自 Ubuntu 的驱动程序由 Canonical 签名，适用于安全启动。
 
 [适用于 Linux 的 Azure N 系列 GPU 驱动程序安装 - Azure Virtual Machines | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/virtual-machines/linux/n-series-driver-setup#ubuntu)
+
+[从 NVIDIA 下载并安装 CUDA 工具包，获取特定于每个版本的完整路径，自行选择和驱动对应的cuda-toolkit-x-x](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=24.04&target_type=deb_network)
+
+### Azure 虚拟机 `H100` 区别
 
 Azure H100 虚拟机支持 **两种不同版本的 H100 GPU**，分别是 **H100 NVL** 和 **H100 PCIe**，具体取决于所选的虚拟机系列：
 

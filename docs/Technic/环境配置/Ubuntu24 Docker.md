@@ -1,15 +1,17 @@
 ---
 date created: 2025/3/17 11:35
-date modified: 2025/4/2 9:37
+date modified: 2025/4/7 13:34
 ---
 
-![[Azure Flux 环境配置]]
+![[Azure Flux 环境配置#Ubuntu 安装 cuda 驱动]]
+
+![[Linux Ubuntu#Ubuntu 创建 python 虚拟环境]]
 
 ![[Unsloth 项目安装]]
 
-CMD ["uvicorn", "src.main: app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
-
-uvicorn src.main: app --host", "0.0.0.0 --port", "8000
+```shell
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
 
 在 Ubuntu 24 上使用 VS Code 部署 Docker，可以按照以下步骤进行：
 
@@ -20,7 +22,6 @@ uvicorn src.main: app --host", "0.0.0.0 --port", "8000
 ### **（1）更新系统并安装必要依赖**
 
 ```bash
-sudo apt update && sudo apt upgrade -y
 sudo apt install -y ca-certificates curl gnupg
 ```
 
@@ -32,7 +33,6 @@ sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo tee /etc/apt/keyrings/docker.asc > /dev/null
 
 sudo chmod a+r /etc/apt/keyrings/docker.asc
-
 ```
 
 ### **（3）添加 Docker 仓库**
