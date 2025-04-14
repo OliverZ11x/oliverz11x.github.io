@@ -1,0 +1,5454 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../%E6%B6%89%E5%8F%B0%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90prompt/">
+      
+      
+        <link rel="next" href="../%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%8C%87%E5%AF%BC/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>用户输入指导 1 - Oliver Z11</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Oliver Z11" class="md-header__button md-logo" aria-label="Oliver Z11" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Oliver Z11
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              用户输入指导 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Life/Life/" class="md-tabs__link">
+          
+  
+  
+  Life
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Log/2025-03-11/" class="md-tabs__link">
+          
+  
+  
+  Log
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Research/%E5%A4%A7%E8%AE%BA%E6%96%87/%E5%9F%BA%E4%BA%8E%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%B8%AD%E5%BF%83%E5%8A%A8%E8%84%89%E5%8E%8B%E9%87%8D%E6%9E%84%E7%A0%94%E7%A9%B6/" class="md-tabs__link">
+          
+  
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Technic/AI%20Search/" class="md-tabs__link">
+          
+  
+  
+  Technic
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Work/" class="md-tabs__link">
+          
+  
+  
+  Work
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Oliver Z11" class="md-nav__button md-logo" aria-label="Oliver Z11" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Oliver Z11
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Life
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Life
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/Life/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Life
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    旅游
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            旅游
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E6%97%85%E6%B8%B8/%E4%B9%9D%E9%A1%B6%E5%B1%B1%E5%BE%92%E6%AD%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    九顶山徒步
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E6%97%85%E6%B8%B8/%E4%BA%91%E5%8D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    丽江
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E6%97%85%E6%B8%B8/%E5%9B%9B%E5%B7%9D%E7%BE%8E%E9%99%A2%E7%BE%8E%E6%9C%AF%E9%A6%86%2B%E8%BF%9C%E5%B1%B1%E6%9C%89%E7%AA%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    四川美院美术馆+远山有窑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E6%97%85%E6%B8%B8/%E6%97%85%E6%B8%B8%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    旅游情绪管理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E6%97%85%E6%B8%B8/%E6%B5%B7%E5%8D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    海南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E6%97%85%E6%B8%B8/%E8%B4%B5%E5%B7%9E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    贵州
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E6%97%85%E6%B8%B8/%E8%B4%B5%E5%B7%9E%E6%BC%82%E6%B5%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    贵州漂流
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E6%97%85%E6%B8%B8/%E9%87%91%E5%88%80%E5%B3%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    金刀峡
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    读书
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            读书
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E8%AF%BB%E4%B9%A6/%E5%85%AB%E6%AC%A1%E5%8D%B1%E6%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    八次危机
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E8%AF%BB%E4%B9%A6/%E5%88%86%E6%9E%90%E4%B8%8E%E6%80%9D%E8%80%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    分析与思考
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E8%AF%BB%E4%B9%A6/%E8%8B%8F%E4%B8%9C%E4%B8%83%E5%9B%BD%E7%A7%81%E6%9C%89%E5%8C%96%E7%9A%84%E8%A7%82%E5%AF%9F%E4%B8%8E%E6%80%9D%E8%80%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    苏东七国私有化的观察与思考
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E8%AF%BB%E4%B9%A6/%E8%B5%84%E6%9C%AC%E8%AE%BA%EF%BC%9A%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E6%89%B9%E5%88%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资本论：政治经济学的批判
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    随记
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            随记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    鹏鹏
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            鹏鹏
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E9%9A%8F%E8%AE%B0/%E9%B9%8F%E9%B9%8F/v1%20%E5%B0%8F%E5%AD%A6%E7%94%9F%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7%E6%95%99%E8%82%B2%E5%AE%9E%E6%96%BD%E9%80%94%E5%BE%84%E5%8F%8A%E5%85%B6%E5%B9%B2%E9%A2%84%E6%8E%AA%E6%96%BD%E7%A0%94%E7%A9%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开题报告
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E9%9A%8F%E8%AE%B0/%E9%B9%8F%E9%B9%8F/%E5%88%9D%E7%A8%BF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    初稿
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E9%9A%8F%E8%AE%B0/%E9%B9%8F%E9%B9%8F/%E5%8E%9F%E7%A8%BF%20%E5%B0%8F%E5%AD%A6%E7%94%9F%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7%E6%95%99%E8%82%B2%E5%AE%9E%E6%96%BD%E9%80%94%E5%BE%84%E5%8F%8A%E5%85%B6%E5%B9%B2%E9%A2%84%E6%8E%AA%E6%96%BD%E7%A0%94%E7%A9%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    原稿 小学生心理健康教育实施途径及其干预措施研究
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E9%9A%8F%E8%AE%B0/%E9%B9%8F%E9%B9%8F/%E5%8F%82%E8%80%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    一、当前我国学校心理问题预警与干预机制存在的问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E9%9A%8F%E8%AE%B0/%E9%B9%8F%E9%B9%8F/%E6%95%B0%E6%8D%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数据
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E9%9A%8F%E8%AE%B0/%E9%B9%8F%E9%B9%8F/%E8%AE%BA%E6%96%87%E5%A4%A7%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论文大纲
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    食谱
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            食谱
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Life/%E9%A3%9F%E8%B0%B1/%E6%BB%91%E8%9B%8B%E7%89%9B%E8%82%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    食材
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Log
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Log
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 12
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 13
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 14
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 15
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 16
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 17
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 18
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 19
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 20
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 24
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    美国与台湾贸易谈判分析报告
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 26
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 27
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-03-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 03 31
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-04-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 04 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-04-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 04 03
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-04-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 04 08
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-04-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 04 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-04-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 04 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Log/2025-04-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    附件二
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Research
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    大论文
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            大论文
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Research/%E5%A4%A7%E8%AE%BA%E6%96%87/%E5%9F%BA%E4%BA%8E%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%B8%AD%E5%BF%83%E5%8A%A8%E8%84%89%E5%8E%8B%E9%87%8D%E6%9E%84%E7%A0%94%E7%A9%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    摘要
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technic
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Technic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/AI%20Search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Search
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/Docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/Kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kubernetes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/Linux%20Ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Ubuntu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/NVIDIA%20%E9%A9%B1%E5%8A%A8%E3%80%81CUDA%20Toolkit%20%E4%B8%8E%20NVCC%20%E5%85%A8%E9%9D%A2%E7%90%86%E8%A7%A3%E7%AC%94%E8%AE%B0%EF%BC%88Ubuntu%20%E7%B3%BB%E7%BB%9F%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/Technic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/Ubuntu%20apt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ubuntu apt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/VScode%20github%20copilot%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VScode github copilot使用指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/vLLM%20%E5%8F%8C%E5%8D%A1A6000%E9%83%A8%E7%BD%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    vLLM 双卡A6000部署
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E6%9B%B4%E6%96%B0%20NVCC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    更新 NVCC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_11" id="__nav_5_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    LLM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_11">
+            <span class="md-nav__icon md-icon"></span>
+            LLM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/Manus%20AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manus AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/hf%E4%B8%8A%E4%BC%A0%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hf上传模型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_11_3" id="__nav_5_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    LangChain
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            LangChain
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/LangChain%20v0.2%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LangChain v0.2 学习记录
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/LangChain%20%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E6%8D%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LangChain 结构化数据
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/LangChain%20%E5%B7%A5%E5%85%B7%E8%87%AA%E5%AE%9A%E4%B9%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LangChain 工具自定义
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/LangChain%20%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LangChain 源码分析
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/LangChain%20%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LangChain 评估方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/LangSmith%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LangSmith 学习记录
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/Prompt%20Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prompt Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/RAG%20%E5%A2%9E%E5%BC%BA%20SQLAgent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RAG 增强 SQLAgent
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/SQLAgent%20based%20GLM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLAgent based GLM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/LangChain/SQLAgent%20%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLAgent 流式输出
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_11_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_11_4" id="__nav_5_11_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    NLP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_11_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_11_4">
+            <span class="md-nav__icon md-icon"></span>
+            NLP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/NLP/Hugging%20Face%20Transformers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hugging Face Transformers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/NLP/Transformer%20%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transformer 模型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_11_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_11_5" id="__nav_5_11_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    文本分类
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_11_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_11_5">
+            <span class="md-nav__icon md-icon"></span>
+            文本分类
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%BB%BB%E5%8A%A1%20Label%20Studio%20%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文本分类任务 Label Studio 使用指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%20doccano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Paddlenlp 之 UIE 分类模型【以情感倾向分析、新闻分类为例】
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E6%B8%85%E6%B4%97%E5%92%8C%E6%96%87%E6%9C%AC%E5%88%86%E5%89%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文本清洗和文本分割
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%A8%A1%E5%9E%8B%E9%A2%84%E6%B5%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    模型预测
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_12" id="__nav_5_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Obsidian
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_12">
+            <span class="md-nav__icon md-icon"></span>
+            Obsidian
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/obsidian/Markdown%20%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Markdown 语法指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/obsidian/Obsidian%20%E6%A0%87%E7%AD%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Obsidian 标签
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/obsidian/Obsidian%20%E7%BD%91%E9%A1%B5%E5%8F%91%E5%B8%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Obsidian 网页发布
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/obsidian/%E4%BF%9D%E5%AD%98%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    保存知识
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/obsidian/%E5%8F%8C%E9%93%BE%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    双链测试
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/obsidian/%E5%B8%B8%E7%94%A8%20Git%20%E5%91%BD%E4%BB%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常用 Git 命令
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    环境配置
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_13">
+            <span class="md-nav__icon md-icon"></span>
+            环境配置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Azure%20Flux%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Azure Flux 环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/CUDA%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CUDA 环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Git%20%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git 环境变量
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LLM%20API%20Key/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LLM API Key
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/LangChain%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LangChain 环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Mkdocs%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mkdocs 环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Office%E6%BF%80%E6%B4%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Office激活
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/TimesFM%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TimesFM 环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Ubuntu24%20Docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ubuntu24 Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Unsloth%20%E9%A1%B9%E7%9B%AE%E5%AE%89%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Unsloth 项目安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WSL2-Ubuntu 安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/conda%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conda 虚拟环境
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Technic/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/paddlepaddle%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Paddlepaddle 安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Work
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Work
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Work
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    求职知识储备
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            求职知识储备
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/DeepSeek/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepSeek
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/LLM%20%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LLM 模型概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E6%96%87%E6%9C%AC%E7%BC%96%E7%A0%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文本编码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E6%B1%82%E8%81%8C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    求职
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E7%A7%8B%E6%8B%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    秋招
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E9%87%8D%E5%BA%86%E9%89%B4%E8%B6%8A%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-%E6%98%A5%E6%8B%9B%E5%A4%8D%E4%B9%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    重庆鉴越科技有限公司 春招复习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0%E8%A6%81%E7%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    面试复习要点
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    面试技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B1%82%E8%81%8C%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    面试算法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    赛丰科技
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            赛丰科技
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeepSeek-R1%E5%BE%AE%E8%B0%83%E6%95%B0%E6%8D%AE%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepSeek R1微调数据集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Microsoft%E8%B5%84%E6%A0%BC%E8%AE%A4%E8%AF%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Microsoft资格认证
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Qwen2.5-7B-Instruct%20%E5%BE%AE%E8%B0%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Qwen2.5 7B Instruct 微调
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface%E4%BC%81%E4%B8%9A%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Huggingface企业版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Minio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E6%8D%AE%E9%9B%86%E6%9E%84%E5%BB%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数据集构建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B%20api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    本地模型 api
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A8%A1%E5%9E%8B%E4%B8%8A%E7%BA%BF%E5%A4%87%E6%A1%88%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    模型上线备案表
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A8%A1%E5%9E%8B%E5%AE%89%E5%85%A8%E8%AF%84%E4%BC%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    模型安全评估
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Qwen-14B-instruct 基座模型微调
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B6%89%E5%8F%B0%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    涉台报告生成prompt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    用户输入指导 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    用户输入指导 1
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户输入指导扩展版：AI搜索与热点新闻功能详解
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="用户输入指导扩展版：AI搜索与热点新闻功能详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、AI搜索板块
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、AI搜索板块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 简洁模式（全网数据抓取）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 高级模式（语义分析报告）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 深入模式（多维度深度解读）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、热点新闻板块
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、热点新闻板块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 新闻摘要生成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 深度对话分析
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、组合应用技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、组合应用技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例：中美AI技术竞争追踪
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、效率提升技巧
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%8C%87%E5%AF%BC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    用户输入指导
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AE%A1%E7%AE%97%E8%B5%84%E6%BA%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    计算资源
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%87%8D%E8%A6%81%E5%AE%89%E6%8E%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    重要安排
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_16" id="__nav_6_3_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    RAG
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_16">
+            <span class="md-nav__icon md-icon"></span>
+            RAG
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RAG/GraphRAG%20%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%8F%90%E5%8F%96%E5%92%8C%E5%A2%9E%E5%BC%BA%E6%B5%81%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GraphRAG 知识图谱提取和增强流程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RAG/Lazy%20Graph%20RAG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lazy Graph RAG
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RAG/RAG%20%E6%96%B9%E6%A1%88%E5%AF%B9%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E5%8C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RAG 方案对大模型的优化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_17" id="__nav_6_3_17_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    人事
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_17">
+            <span class="md-nav__icon md-icon"></span>
+            人事
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%BA%E4%BA%8B/%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    笔记
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_18" id="__nav_6_3_18_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    文献
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_18">
+            <span class="md-nav__icon md-icon"></span>
+            文献
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%96%87%E7%8C%AE/Comet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    万卡集群真实部署，已节省数百万 GPU 小时！MoE 通信优化技术 COMET 开源
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_19" id="__nav_6_3_19_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    示例
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_19">
+            <span class="md-nav__icon md-icon"></span>
+            示例
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A4%BA%E4%BE%8B/%E7%A4%BA%E4%BE%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    示例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    高科数聚
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            高科数聚
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4_1" id="__nav_6_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DBeaver
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            DBeaver
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/DBeaver/DBeaver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DBeaver 数据探查
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/DBeaver/%E9%A2%84%E6%B5%8B%E6%A8%A1%E5%9E%8B%E7%82%B9%E4%BD%8D%E9%80%89%E5%8F%96-CJ%E5%BA%93%E5%AD%98-0731/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    预测模型点位选取-CJ库存-0731
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4_2" id="__nav_6_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    SQLAgent
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            SQLAgent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/SQLAgent%20%E6%A8%A1%E5%9E%8B%E7%9F%A5%E8%AF%86%E6%89%A9%E5%B1%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLAgent 模型知识扩展
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/SQLAgent%20%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLAgent 测试
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/Supersonic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supersonic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/%E8%BD%A6%E6%99%BA%E8%A7%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    车智见
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/SQLAgent/%E8%BD%A6%E9%80%9A%E6%B1%87%E6%95%B0%E6%8D%AE%E6%8E%A2%E6%9F%A5%E4%B8%8E%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    车通汇数据探查与分析
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4_3" id="__nav_6_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    舆情分析
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            舆情分析
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/%E8%88%86%E6%83%85%E5%88%86%E6%9E%90/%E5%9F%BA%E4%BA%8E%E6%A3%80%E7%B4%A2%E7%9A%84%E5%A4%9A%E5%B1%82%E6%AC%A1%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    基于检索的多层次文本分类
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/%E8%88%86%E6%83%85%E5%88%86%E6%9E%90/%E6%96%B9%E6%B3%95%E6%8E%A2%E6%9F%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    方法探查
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%AB%98%E7%A7%91%E6%95%B0%E8%81%9A/%E8%88%86%E6%83%85%E5%88%86%E6%9E%90/%E9%9B%B6%E6%A0%B7%E6%9C%AC%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E5%BA%94%E7%94%A8%EF%BC%9A%E5%9F%BA%E4%BA%8EUTC%E7%9A%84%E8%88%86%E6%83%85%E6%A0%B7%E6%9C%AC%E5%88%86%E7%B1%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    零样本文本分类应用：基于UTC的舆情样本分类
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户输入指导扩展版：AI搜索与热点新闻功能详解
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="用户输入指导扩展版：AI搜索与热点新闻功能详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、AI搜索板块
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、AI搜索板块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 简洁模式（全网数据抓取）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 高级模式（语义分析报告）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 深入模式（多维度深度解读）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、热点新闻板块
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、热点新闻板块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 新闻摘要生成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 深度对话分析
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、组合应用技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、组合应用技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      案例：中美AI技术竞争追踪
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、效率提升技巧
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>用户输入指导 1</h1>
+
+<hr />
+<h2 id="ai"><strong>用户输入指导扩展版：AI搜索与热点新闻功能详解</strong><a class="headerlink" href="#ai" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="ai_1"><strong>一、AI搜索板块</strong><a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="1"><strong>1. 简洁模式（全网数据抓取）</strong><a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<p><strong>功能定位</strong>：快速获取全网最新数据，适合基础事实核查或实时信息查询
+<strong>技术方法</strong>：
+- 结合**5W1H框架**明确搜索目标
+- 使用**表格/列表**结构化输出
+- 启用**全网搜索**获取最新数据</p>
+<p><strong>示例：</strong>
+<strong>用户提问（优化前）</strong>
+"俄乌战争最新进展"
+<strong>优化提问（应用方法）</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">作为数据分析师</span><span class="err">，</span><span class="n">请用表格整理2024年8月俄乌战争的三项关键进展</span><span class="err">，</span><span class="n">需包含</span><span class="err">：</span>  
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="mf">1.</span> <span class="n">时间</span><span class="err">（</span><span class="n">精确到日</span><span class="err">）</span>  
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="mf">2.</span> <span class="n">地点</span><span class="err">（</span><span class="n">具体城市</span><span class="o">/</span><span class="n">战线</span><span class="err">）</span>  
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="mf">3.</span> <span class="n">军事行动类型</span><span class="err">（</span><span class="n">如空袭</span><span class="o">/</span><span class="n">反攻</span><span class="err">）</span>  
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="mf">4.</span> <span class="n">数据支持</span><span class="err">（</span><span class="n">部队规模</span><span class="o">/</span><span class="n">装备数量</span><span class="err">）</span>  
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">要求</span><span class="err">：</span><span class="n">从全球主流媒体抓取最新24小时数据</span>  
+</span></code></pre></div>
+<p><strong>系统响应示例</strong></p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gs">**背景**</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>1.1 全球AI芯片市场概况与增长趋势  
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>全球AI芯片市场在过去几年中呈现出显著的增长趋势，预计到2024年市场规模将达到数百亿美元。根据相关研究报告，AI芯片的市场增长主要受到人工智能技术的广泛应用驱动，包括自动驾驶、智能机器人和自然语言处理等领域的需求增加。此外，各地区的市场占比也有所不同，北美和亚太地区占据了主要份额，而欧洲和其他地区的增长潜力也在逐步显现。
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>1.2 主要厂商份额分析  
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>英伟达和AMD作为国际AI芯片市场的主要玩家，表现出强劲的市场竞争力。英伟达凭借其在GPU领域的技术优势，继续占据市场的主导地位，而AMD则通过优化制程技术和推出高性能产品逐步扩大市场份额。与此同时，中国企业在AI芯片领域的参与度也在不断提升，部分企业通过技术创新和政策支持，展现出较强的竞争力。这种市场格局的变化反映了全球AI芯片市场的多样化发展趋势。
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="gs">**竞争分析**</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>2.1 英伟达技术路线详情  
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>英伟达在AI芯片领域的技术路线以先进制程技术为核心，其最新产品采用了台积电的5nm制程技术，显著提升了芯片的算力和能效表现。该公司还通过优化架构设计和支持深度学习框架，进一步巩固了其在高性能计算领域的领导地位。此外，英伟达的产品在能耗方面表现出色，适用于数据中心和边缘计算等应用场景。
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>2.2 AMD技术路线详解  
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>AMD在AI芯片领域的技术路线聚焦于主流制程技术的突破，其最新产品采用了台积电的7nm制程技术，展现出较高的性价比优势。通过不断优化芯片架构，AMD的产品在算力表现上逐步缩小与英伟达的差距，同时在能耗优化方面也取得了显著进展。这使得AMD在中端市场和特定应用领域中具有较强的竞争力。
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>2.3 中国企业技术路线解读  
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>中国企业在AI芯片领域的技术路线主要集中于自主研发和制程技术的突破。尽管在制程技术上仍面临一定的挑战，但部分企业已经实现了14nm及以下节点的量产，并在算力和能耗优化方面取得了显著成果。此外，中国企业还通过加强与国内外科研机构的合作，推动技术创新，以应对国际竞争压力。这些努力使得中国企业在AI芯片市场中逐步提升了竞争力。
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="gs">**预测**</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>3.1 潜在市场变化因素之一：技术进步  
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>技术进步将成为影响2025年AI芯片市场格局的关键因素之一。新制程技术的引入，例如3nm及以下节点，有望显著提升芯片的算力和能效表现，从而推动市场需求的进一步增长。此外，AI芯片架构的创新也将为行业带来新的发展机遇，可能改变现有的市场竞争态势。
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>3.2 潜在市场变化因素之二：政策及投资支持  
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>各国政府对AI芯片产业的政策支持和投资力度将对市场格局产生深远影响。例如，美国通过《芯片法案》加大对半导体行业的扶持力度，而中国也在积极推进国家级科技项目以支持AI芯片技术研发。这些政策和投资不仅有助于提升本国企业的竞争力，还可能加速全球AI芯片市场的技术创新和产业布局调整。
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>3.3 潜在市场变化因素之三：需求趋势变化  
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>随着人工智能技术的不断成熟，AI芯片在不同领域的应用需求呈现出多样化趋势。例如，自动驾驶、智能制造和医疗健康等领域对高性能AI芯片的需求不断增加。此外，边缘计算的快速发展也推动了低功耗、高效率芯片的市场需求。这些需求趋势的变化将直接影响2025年AI芯片市场的竞争格局和技术方向。
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="gs">**总结**</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="k">-</span><span class="w"> </span>总结全文关键点  
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>2024年全球AI芯片市场呈现出蓬勃发展的态势，主要受人工智能技术的广泛应用推动。英伟达和AMD作为国际主要厂商，通过先进的制程技术和架构创新保持市场领导地位，同时中国企业通过自主研发和政策助力显现出显著竞争力。在技术竞争方面，制程节点成为核心竞争指标，英伟达采用5nm领先，AMD在性价比领域占优，而中国企业以突破性成果追赶。此外，2025年的市场格局主要受到技术进步、新政扶持和需求变化等因素共同驱动。其中，3nm制程技术和边缘计算的发展对市场格局的潜在影响尤为显著。
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="k">-</span><span class="w"> </span>结论与展望  
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>未来的AI芯片市场将进一步向技术密集型领域转型，同时多样化需求将引导企业加速创新和提高研发效率。各国政策支持将加剧国际竞争，同时推动技术共享和合作的可能性。在这一发展轨迹下，预计全球AI芯片产业将在2025年进入新技术引领与需求驱动的高速发展阶段，为智能化社会建设奠定坚实基础。
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="gs">**附录**</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="k">1.</span> Gartner全球人工智能芯片市场报告  
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>   链接：[https://www.gartner.com](https://www.gartner.com)  
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="k">2.</span> IDC 2024年AI芯片市场预测  
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>   链接：[https://www.idc.com](https://www.idc.com)  
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="k">3.</span> 各国统计局半导体产业数据汇总  
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>   链接：[政府官网数据](https://gov.data.org)
+</span></code></pre></div>
+<hr />
+<h4 id="2"><strong>2. 高级模式（语义分析报告）</strong><a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<p><strong>功能定位</strong>：跨平台信息整合与趋势分析，适合商业决策支持
+<strong>技术方法</strong>：
+- 指定**分析师角色**增强专业性
+- 使用**三段式结构**（背景-分析-预测）
+- 要求**数据溯源**（引用至少3个信源）</p>
+<p><strong>示例：</strong>
+<strong>用户提问（优化前）</strong>
+"AI芯片市场趋势"
+<strong>优化提问（应用方法）</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">假设你是半导体行业分析师</span><span class="err">，</span><span class="n">请按以下结构生成报告</span><span class="err">：</span>  
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">[</span><span class="n">背景</span><span class="p">]</span> <span class="mi">2024</span><span class="n">年全球AI芯片市场规模与主要厂商份额</span>  
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">[</span><span class="n">竞争分析</span><span class="p">]</span> <span class="n">英伟达</span><span class="o">/</span><span class="n">AMD</span><span class="o">/</span><span class="n">中国企业的技术路线对比</span><span class="err">（</span><span class="n">制程</span><span class="o">/</span><span class="n">算力</span><span class="o">/</span><span class="n">能耗</span><span class="err">）</span>  
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">[</span><span class="n">预测</span><span class="p">]</span> <span class="mi">2025</span><span class="n">年市场格局变化的三个潜在因素</span>  
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">要求</span><span class="err">：</span>  
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="mf">1.</span> <span class="n">引用Gartner</span><span class="o">/</span><span class="n">IDC</span><span class="o">/</span><span class="n">各国统计局数据</span>  
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="mf">2.</span> <span class="n">关键数据用加粗标记</span>  
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="mf">3.</span> <span class="n">生成后附参考资料链接</span>  
+</span></code></pre></div>
+<p><strong>系统响应示例</strong></p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gs">**背景**</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>1.1 全球AI芯片市场概况与增长趋势  
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>全球AI芯片市场在过去几年中呈现出显著的增长趋势，预计到2024年市场规模将达到数百亿美元。根据相关研究报告，AI芯片的市场增长主要受到人工智能技术的广泛应用驱动，包括自动驾驶、智能机器人和自然语言处理等领域的需求增加。此外，各地区的市场占比也有所不同，北美和亚太地区占据了主要份额，而欧洲和其他地区的增长潜力也在逐步显现。
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>1.2 主要厂商份额分析  
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>英伟达和AMD作为国际AI芯片市场的主要玩家，表现出强劲的市场竞争力。英伟达凭借其在GPU领域的技术优势，继续占据市场的主导地位，而AMD则通过优化制程技术和推出高性能产品逐步扩大市场份额。与此同时，中国企业在AI芯片领域的参与度也在不断提升，部分企业通过技术创新和政策支持，展现出较强的竞争力。这种市场格局的变化反映了全球AI芯片市场的多样化发展趋势。
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="gs">**竞争分析**</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>2.1 英伟达技术路线详情  
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>英伟达在AI芯片领域的技术路线以先进制程技术为核心，其最新产品采用了台积电的5nm制程技术，显著提升了芯片的算力和能效表现。该公司还通过优化架构设计和支持深度学习框架，进一步巩固了其在高性能计算领域的领导地位。此外，英伟达的产品在能耗方面表现出色，适用于数据中心和边缘计算等应用场景。
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>2.2 AMD技术路线详解  
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>AMD在AI芯片领域的技术路线聚焦于主流制程技术的突破，其最新产品采用了台积电的7nm制程技术，展现出较高的性价比优势。通过不断优化芯片架构，AMD的产品在算力表现上逐步缩小与英伟达的差距，同时在能耗优化方面也取得了显著进展。这使得AMD在中端市场和特定应用领域中具有较强的竞争力。
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>2.3 中国企业技术路线解读  
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>中国企业在AI芯片领域的技术路线主要集中于自主研发和制程技术的突破。尽管在制程技术上仍面临一定的挑战，但部分企业已经实现了14nm及以下节点的量产，并在算力和能耗优化方面取得了显著成果。此外，中国企业还通过加强与国内外科研机构的合作，推动技术创新，以应对国际竞争压力。这些努力使得中国企业在AI芯片市场中逐步提升了竞争力。
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="gs">**预测**</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>3.1 潜在市场变化因素之一：技术进步  
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>技术进步将成为影响2025年AI芯片市场格局的关键因素之一。新制程技术的引入，例如3nm及以下节点，有望显著提升芯片的算力和能效表现，从而推动市场需求的进一步增长。此外，AI芯片架构的创新也将为行业带来新的发展机遇，可能改变现有的市场竞争态势。
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>3.2 潜在市场变化因素之二：政策及投资支持  
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>各国政府对AI芯片产业的政策支持和投资力度将对市场格局产生深远影响。例如，美国通过《芯片法案》加大对半导体行业的扶持力度，而中国也在积极推进国家级科技项目以支持AI芯片技术研发。这些政策和投资不仅有助于提升本国企业的竞争力，还可能加速全球AI芯片市场的技术创新和产业布局调整。
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>3.3 潜在市场变化因素之三：需求趋势变化  
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>随着人工智能技术的不断成熟，AI芯片在不同领域的应用需求呈现出多样化趋势。例如，自动驾驶、智能制造和医疗健康等领域对高性能AI芯片的需求不断增加。此外，边缘计算的快速发展也推动了低功耗、高效率芯片的市场需求。这些需求趋势的变化将直接影响2025年AI芯片市场的竞争格局和技术方向。
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="gs">**总结**</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="k">-</span><span class="w"> </span>总结全文关键点  
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>2024年全球AI芯片市场呈现出蓬勃发展的态势，主要受人工智能技术的广泛应用推动。英伟达和AMD作为国际主要厂商，通过先进的制程技术和架构创新保持市场领导地位，同时中国企业通过自主研发和政策助力显现出显著竞争力。在技术竞争方面，制程节点成为核心竞争指标，英伟达采用5nm领先，AMD在性价比领域占优，而中国企业以突破性成果追赶。此外，2025年的市场格局主要受到技术进步、新政扶持和需求变化等因素共同驱动。其中，3nm制程技术和边缘计算的发展对市场格局的潜在影响尤为显著。
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="k">-</span><span class="w"> </span>结论与展望  
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>未来的AI芯片市场将进一步向技术密集型领域转型，同时多样化需求将引导企业加速创新和提高研发效率。各国政策支持将加剧国际竞争，同时推动技术共享和合作的可能性。在这一发展轨迹下，预计全球AI芯片产业将在2025年进入新技术引领与需求驱动的高速发展阶段，为智能化社会建设奠定坚实基础。
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="gs">**附录**</span>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="k">1.</span> Gartner全球人工智能芯片市场报告  
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>   链接：[https://www.gartner.com](https://www.gartner.com)  
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="k">2.</span> IDC 2024年AI芯片市场预测  
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>   链接：[https://www.idc.com](https://www.idc.com)  
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="k">3.</span> 各国统计局半导体产业数据汇总  
+</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>   链接：[政府官网数据](https://gov.data.org)
+</span></code></pre></div>
+<hr />
+<h4 id="3"><strong>3. 深入模式（多维度深度解读）</strong><a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<p><strong>功能定位</strong>：复杂问题全景分析，适合战略研究场景
+<strong>技术方法</strong>：
+- 限定**研究机构身份**（如兰德公司研究员）
+- 采用**分层输出结构**（宏观-中观-微观）
+- 启用**多轮追问**自动延伸分析维度</p>
+<p><strong>示例：</strong>
+<strong>用户提问（优化前）</strong>
+"太空军事化风险"
+<strong>优化提问（应用方法）</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">作为兰德公司战略研究员</span><span class="err">，</span><span class="n">请按以下要求撰写评估报告</span><span class="err">：</span>  
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">一</span><span class="err">、</span><span class="n">宏观层面</span><span class="err">（</span><span class="mi">800</span><span class="n">字</span><span class="err">）</span>  
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="o">-</span> <span class="n">主要国家太空军事能力矩阵对比</span><span class="err">（</span><span class="n">美</span><span class="o">/</span><span class="n">中</span><span class="o">/</span><span class="n">俄</span><span class="o">/</span><span class="n">欧盟</span><span class="err">）</span>  
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="o">-</span> <span class="n">国际条约体系有效性分析</span>  
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">二</span><span class="err">、</span><span class="n">中观层面</span><span class="err">（</span><span class="mi">500</span><span class="n">字</span><span class="err">）</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="o">-</span> <span class="n">低轨道卫星军事化应用典型案例</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="o">-</span> <span class="n">反卫星武器技术发展路线图</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">三</span><span class="err">、</span><span class="n">微观层面</span><span class="err">（</span><span class="mi">300</span><span class="n">字</span><span class="err">）</span>  
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="o">-</span> <span class="mi">2024</span><span class="n">年SpaceX星链计划的军事合作进展</span>  
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">附加要求</span><span class="err">：</span>  
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="mf">1.</span> <span class="n">每部分包含风险评级</span><span class="err">（</span><span class="n">低</span><span class="o">/</span><span class="n">中</span><span class="o">/</span><span class="n">高</span><span class="err">）</span>  
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="mf">2.</span> <span class="n">自动生成3个延伸分析问题供后续讨论</span>  
+</span></code></pre></div>
+<p><strong>系统响应示例</strong>
+<img alt="IMG-2025-04-10-10-32-59.png" src="../../../01attachment/docs/Work/%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%8C%87%E5%AF%BC%201/IMG-2025-04-10-10-32-59.png" /></p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="gs">**宏观层面**</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>1.1 主要国家太空军事能力矩阵对比（美/中/俄/欧盟）
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>美国在太空军事能力方面处于领先地位，其空军部长巴巴拉·巴雷特曾指出，通过数字工程设计的飞机、武器和卫星技术，美国未来的空天技术将显著提高生产效率。此外，美国在成熟军事科技领域仍保持优势&lt;a href=&quot;http://www.china.com.cn/node_7235570.htm&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;p&gt;&lt;img src=&quot;http://images.china.cn/site1000/2025-04/10/117816057_b5a91ae3-a00b-4e78-9ce2-806276b62076.jpg&quot;&gt;&lt;/p&gt;。
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>中国则在多个行业快速崛起，尤其是在人工智能和数字化方面，显现出强大的技术竞争力。中国的太空自主访问能力和数字革命对欧洲构成挑战&lt;a href=&quot;http://www.oliannews.com/channel/caijing.html&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>俄罗斯的太空军事能力在其军事现代化改革中有所体现，特别是在北极地区的作战能力提升方面。俄罗斯计划通过更多武器装备投资来支持其现代化国防结构&lt;a href=&quot;http://www.oliannews.com/caijing/2023/11-01/383699.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>欧盟在太空领域的影响力虽有，但整体上未能与中美两国抗衡。其在太空自主访问和数字革命方面面临着巨大挑战&lt;a href=&quot;http://www.oliannews.com/caijing/2023/07-20/381949.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>1.2 国际条约体系有效性分析
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>国际条约体系在太空军事化领域的有效性面临挑战。联合国毒品和犯罪问题办公室强调数据在国际政策制定中的重要性，这种数据驱动的方式也适用于太空治理，以识别和分析趋势&lt;a href=&quot;http://www.oliannews.com/caijing/2023/07-18/381907.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>然而，现有条约如《外层空间条约》在应对现代太空军事化问题上显得不足。中美竞争加剧，尤其是在太空自主访问和技术竞争领域，进一步削弱了条约的约束力&lt;a href=&quot;http://www.oliannews.com/caijing/2023/06-09/381055.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>此外，欧洲的研究活动，如Ifri的欧洲太空治理倡议，试图通过跨国合作来增强条约的执行力，但仍面临技术和战略上的挑战&lt;a href=&quot;http://www.oliannews.com/caijing/2023/05-17/380574.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="gs">**中观层面**</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>2.1 低轨道卫星军事化应用典型案例
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>低轨道卫星的军事化应用已经成为现代战争的重要组成部分。例如，美国空军部长巴巴拉·巴雷特曾提到未来的空天技术将包括数字工程设计的卫星，以提高生产效率和军事效能&lt;a href=&quot;http://www.china.com.cn/node_7235570.htm&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;&lt;p&gt;&lt;img src=&quot;http://images.china.cn/site1000/2025-04/10/117816057_b5a91ae3-a00b-4e78-9ce2-806276b62076.jpg&quot;&gt;&lt;/p&gt;。
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>中国在低轨道卫星领域也展现了快速崛起的能力，尤其是在人工智能和数字化技术的结合方面，这些技术为其军事化应用提供了新的可能性&lt;a href=&quot;http://www.oliannews.com/channel/caijing.html&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>俄罗斯和欧盟虽然在低轨道卫星军事化应用方面有所发展，但与中美相比仍存在技术差距。俄罗斯的军事现代化改革和欧盟的技术合作计划为其提供了一定的支持，但整体竞争力有限&lt;a href=&quot;http://www.oliannews.com/caijing/2023/11-01/383699.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>2.2 反卫星武器技术发展路线图
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>反卫星武器技术的发展在全球范围内呈现出多样化的趋势。美国在这一领域继续保持领先，其军事技术的成熟度和数字工程设计能力为反卫星武器的研发提供了坚实基础&lt;a href=&quot;http://www.china.com.cn/node_7235570.htm&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;&lt;p&gt;&lt;img src=&quot;http://images.china.cn/site1000/2025-04/10/117816057_b5a91ae3-a00b-4e78-9ce2-806276b62076.jpg&quot;&gt;&lt;/p&gt;。
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>中国的技术进步尤其是在人工智能和数字化领域，为其反卫星武器的研发提供了重要支持。中国的快速崛起在多个行业中显现出强大的竞争力，这对全球技术格局产生了深远影响&lt;a href=&quot;http://www.oliannews.com/channel/caijing.html&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;12&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>
+</span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>俄罗斯则通过军事现代化改革和北极地区的作战能力提升，逐步增强其在反卫星武器领域的技术储备。未来的武器装备投资计划也为其提供了进一步发展的可能性&lt;a href=&quot;http://www.oliannews.com/caijing/2023/11-01/383699.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;13&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-38"><a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>
+</span><span id="__span-5-39"><a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a>欧盟在反卫星武器技术方面的研究活动较为有限，其整体技术能力仍无法与中美两国抗衡。欧洲的太空治理倡议试图通过跨国合作来弥补这一不足，但面临技术和战略上的挑战&lt;a href=&quot;http://www.oliannews.com/caijing/2023/07-20/381949.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;14&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-40"><a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a>
+</span><span id="__span-5-41"><a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a><span class="gs">**微观层面**</span>
+</span><span id="__span-5-42"><a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a>
+</span><span id="__span-5-43"><a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a>3.1 2024年SpaceX星链计划的军事合作进展
+</span><span id="__span-5-44"><a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a>
+</span><span id="__span-5-45"><a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a>SpaceX的星链计划在2024年的军事合作进展备受关注。该计划旨在通过低轨道卫星网络提供全球互联网覆盖，同时为军事通信和数据传输提供支持。美国在这一领域的技术领先地位为星链计划的军事化应用提供了重要基础&lt;a href=&quot;http://www.china.com.cn/node_7235570.htm&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;15&lt;/sup&gt;&lt;/a&gt;&lt;p&gt;&lt;img src=&quot;http://images.china.cn/site1000/2025-04/10/117816057_b5a91ae3-a00b-4e78-9ce2-806276b62076.jpg&quot;&gt;&lt;/p&gt;。
+</span><span id="__span-5-46"><a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a>
+</span><span id="__span-5-47"><a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a>此外，星链计划的军事合作可能进一步增强美国在全球技术竞争中的优势，尤其是在与中国和俄罗斯的太空军事化竞争中。中国的快速技术崛起和俄罗斯的军事现代化改革为星链计划的未来发展提供了新的挑战和合作机会&lt;a href=&quot;http://www.oliannews.com/channel/caijing.html&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;16&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-48"><a id="__codelineno-5-48" name="__codelineno-5-48" href="#__codelineno-5-48"></a>
+</span><span id="__span-5-49"><a id="__codelineno-5-49" name="__codelineno-5-49" href="#__codelineno-5-49"></a><span class="gs">**风险评级**</span>
+</span><span id="__span-5-50"><a id="__codelineno-5-50" name="__codelineno-5-50" href="#__codelineno-5-50"></a>
+</span><span id="__span-5-51"><a id="__codelineno-5-51" name="__codelineno-5-51" href="#__codelineno-5-51"></a>4.1 宏观层面的风险评级
+</span><span id="__span-5-52"><a id="__codelineno-5-52" name="__codelineno-5-52" href="#__codelineno-5-52"></a>
+</span><span id="__span-5-53"><a id="__codelineno-5-53" name="__codelineno-5-53" href="#__codelineno-5-53"></a>在宏观层面，主要国家的太空军事能力矩阵对比显示出显著的技术差距。美国和中国的技术领先地位使得国际条约体系的有效性面临挑战，尤其是在应对现代太空军事化问题时。风险评级为“高”，因为技术竞争可能导致国际关系紧张，并削弱现有条约的约束力&lt;a href=&quot;http://www.oliannews.com/caijing/2023/11-01/383699.shtml&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;17&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-54"><a id="__codelineno-5-54" name="__codelineno-5-54" href="#__codelineno-5-54"></a>
+</span><span id="__span-5-55"><a id="__codelineno-5-55" name="__codelineno-5-55" href="#__codelineno-5-55"></a>4.2 中观层面的风险评级
+</span><span id="__span-5-56"><a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a>
+</span><span id="__span-5-57"><a id="__codelineno-5-57" name="__codelineno-5-57" href="#__codelineno-5-57"></a>低轨道卫星的军事化应用和反卫星武器技术的发展路线图表明，中美俄在技术竞争中持续加剧。低轨道卫星的军事化应用可能导致全球技术竞争进一步升级，而反卫星武器的研发则增加了太空冲突的可能性。风险评级为“中”，因为尽管技术竞争激烈，但国际合作仍有可能缓解部分冲突&lt;a href=&quot;http://www.china.com.cn/node_7235570.htm&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;18&lt;/sup&gt;&lt;/a&gt;&lt;p&gt;&lt;img src=&quot;http://images.china.cn/site1000/2025-04/10/117816057_b5a91ae3-a00b-4e78-9ce2-806276b62076.jpg&quot;&gt;&lt;/p&gt;。
+</span><span id="__span-5-58"><a id="__codelineno-5-58" name="__codelineno-5-58" href="#__codelineno-5-58"></a>
+</span><span id="__span-5-59"><a id="__codelineno-5-59" name="__codelineno-5-59" href="#__codelineno-5-59"></a>4.3 微观层面的风险评级
+</span><span id="__span-5-60"><a id="__codelineno-5-60" name="__codelineno-5-60" href="#__codelineno-5-60"></a>
+</span><span id="__span-5-61"><a id="__codelineno-5-61" name="__codelineno-5-61" href="#__codelineno-5-61"></a>SpaceX星链计划的军事合作进展显示出技术领先的优势，但也可能引发其他国家的技术追赶和竞争。星链计划的军事化应用可能进一步强化美国的技术主导地位，同时加剧国际技术竞争。风险评级为“低”，因为星链计划的军事合作主要集中在技术应用层面，尚未引发直接冲突&lt;a href=&quot;http://www.oliannews.com/channel/caijing.html&quot; target=&quot;_blank&quot;&gt;&lt;sup&gt;19&lt;/sup&gt;&lt;/a&gt;。
+</span><span id="__span-5-62"><a id="__codelineno-5-62" name="__codelineno-5-62" href="#__codelineno-5-62"></a>
+</span><span id="__span-5-63"><a id="__codelineno-5-63" name="__codelineno-5-63" href="#__codelineno-5-63"></a><span class="gs">**总结**</span>
+</span><span id="__span-5-64"><a id="__codelineno-5-64" name="__codelineno-5-64" href="#__codelineno-5-64"></a>
+</span><span id="__span-5-65"><a id="__codelineno-5-65" name="__codelineno-5-65" href="#__codelineno-5-65"></a><span class="k">-</span><span class="w"> </span>总结全文关键点
+</span><span id="__span-5-66"><a id="__codelineno-5-66" name="__codelineno-5-66" href="#__codelineno-5-66"></a>
+</span><span id="__span-5-67"><a id="__codelineno-5-67" name="__codelineno-5-67" href="#__codelineno-5-67"></a>本报告全面分析了全球太空军事化发展态势。宏观层面，美国、中国、俄罗斯与欧盟的太空军事能力矩阵展现了显著的技术优势与差距，美国和中国在数字工程设计与人工智能等领域遥遥领先。国际条约体系在太空领域的有效性面临严峻挑战，其执行力因技术竞争和政治局势紧张而受限。中观层面，低轨道卫星被广泛军事化应用，并成为战略核心，各国反卫星武器技术快速发展，但可能造成冲突风险。微观层面的SpaceX星链计划融合了技术领先和军事应用，为全球通信及战略部署提供支持，但也引发潜在竞争。总体风险评级显示宏观层面国际关系紧张局势高风险，中观层面技术竞赛中等风险，微观层面技术应用低风险。此外，三大延伸问题包括太空军事化可能对国际关系的长期影响、太空军备竞赛的应对策略以及未来太空治理路径。
+</span><span id="__span-5-68"><a id="__codelineno-5-68" name="__codelineno-5-68" href="#__codelineno-5-68"></a>
+</span><span id="__span-5-69"><a id="__codelineno-5-69" name="__codelineno-5-69" href="#__codelineno-5-69"></a><span class="k">-</span><span class="w"> </span>结论与展望
+</span><span id="__span-5-70"><a id="__codelineno-5-70" name="__codelineno-5-70" href="#__codelineno-5-70"></a>
+</span><span id="__span-5-71"><a id="__codelineno-5-71" name="__codelineno-5-71" href="#__codelineno-5-71"></a>太空军事化正在成为国际科技竞争的主要战场，各国技术力量的不平衡性对现有国际条约体系构成威胁。未来，多边合作与技术共享可能是缓解风险的关键路径，但同时需要应对潜在的军备竞赛压力。太空领域的监管与治理在未来几十年中将需要全球共同制定更高效的框架，以促进和平发展并防止新型军事威胁的扩散。本报告旨在提供基础性分析，作为未来战略选择的重要依据。
+</span></code></pre></div>
+<hr />
+<h3 id="_1"><strong>二、热点新闻板块</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="1_1"><strong>1. 新闻摘要生成</strong><a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
+<p><strong>技术方法</strong>：
+- 指定**新闻编辑角色**控制风格
+- 使用**倒金字塔结构**（5W1H+影响评级）
+- 附加**时间轴**可视化关键节点</p>
+<p><strong>示例：</strong>
+<strong>用户指令</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">作为路透社值班编辑</span><span class="err">，</span><span class="n">请用以下格式总结24小时内巴以冲突进展</span><span class="err">：</span>  
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="err">【</span><span class="n">核心事件</span><span class="err">】</span><span class="n">单句概括</span><span class="err">（</span><span class="mi">20</span><span class="n">字内</span><span class="err">）</span>  
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="err">【</span><span class="n">关键要素</span><span class="err">】</span><span class="mi">5</span><span class="n">W1H结构化列表</span>  
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="err">【</span><span class="n">影响评级</span><span class="err">】</span><span class="n">军事</span><span class="o">/</span><span class="n">经济</span><span class="o">/</span><span class="n">人道三维度评分</span><span class="err">（</span><span class="mi">1</span><span class="o">-</span><span class="mi">5</span><span class="n">分</span><span class="err">）</span>  
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="err">【</span><span class="n">时间轴</span><span class="err">】</span><span class="n">标注3个关键节点</span><span class="err">（</span><span class="n">精确到分钟</span><span class="err">）</span>  
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">数据源</span><span class="err">：</span><span class="n">优先采用半岛电视台</span><span class="o">/</span><span class="n">耶路撒冷邮报最新报道</span>  
+</span></code></pre></div>
+<p><strong>系统响应示例</strong>
+![[新闻摘要结构.png]]</p>
+<hr />
+<h4 id="2_1"><strong>2. 深度对话分析</strong><a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
+<p><strong>技术方法</strong>：
+- 预设**专家对话路径**（原因-过程-影响-对策）
+- 启用**自动追问机制**挖掘隐藏关联
+- 支持**对比分析**（历史事件/类似案例）</p>
+<p><strong>示例：</strong>
+<strong>用户启动对话</strong>
+"分析2024红海航运危机对全球供应链的影响"
+<strong>系统智能追问</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">为使分析更深入</span><span class="err">，</span><span class="n">请选择延伸方向</span><span class="err">：</span>  
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="mf">1.</span> <span class="n">历史对比</span><span class="err">：</span><span class="n">与2021苏伊士运河堵塞事件的异同</span>  
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="mf">2.</span> <span class="n">行业细分</span><span class="err">：</span><span class="n">汽车</span><span class="o">/</span><span class="n">电子</span><span class="o">/</span><span class="n">能源行业受影响程度差异</span>  
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="mf">3.</span> <span class="n">应对策略</span><span class="err">：</span><span class="n">主要航运公司的航线调整方案</span>  
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="mf">4.</span> <span class="n">地缘关联</span><span class="err">：</span><span class="n">胡塞武装与地区大国关系网络分析</span>  
+</span></code></pre></div>
+<p><strong>用户选择后生成</strong>
+![[深度对话分析示例.gif]]</p>
+<hr />
+<h3 id="_2"><strong>三、组合应用技巧</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="ai_2"><strong>案例：中美AI技术竞争追踪</strong><a class="headerlink" href="#ai_2" title="Permanent link">&para;</a></h4>
+<p><strong>步骤1（简洁模式）</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">生成2024年Q2中美AI领域对比表格</span><span class="err">，</span><span class="n">维度包括</span><span class="err">：</span>  
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="o">-</span> <span class="n">专利数量</span>  
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="o">-</span> <span class="n">风险投资金额</span>  
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="o">-</span> <span class="n">人才流动趋势</span>  
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="o">-</span> <span class="n">政府政策更新</span>  
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">要求</span><span class="err">：</span><span class="n">数据标注来源国别与采集日期</span>  
+</span></code></pre></div>
+<p><strong>步骤2（高级模式）</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">作为MIT技术政策研究员</span><span class="err">，</span><span class="n">请分析</span><span class="err">：</span>  
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="mf">1.</span> <span class="n">美国出口管制对中国AI芯片研发的影响路径</span>  
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="mf">2.</span> <span class="n">中国</span><span class="s2">&quot;数字丝绸之路&quot;</span><span class="n">的替代效应评估</span>  
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">要求</span><span class="err">：</span><span class="n">引用CSIS</span><span class="o">/</span><span class="n">布鲁金斯学会最新报告</span>  
+</span></code></pre></div>
+<p><strong>步骤3（深入模式）</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">生成中美AI竞赛十年预测报告</span><span class="err">，</span><span class="n">需包含</span><span class="err">：</span>  
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="o">-</span> <span class="n">三种可能情景</span><span class="err">（</span><span class="n">温和竞争</span><span class="o">/</span><span class="n">技术脱钩</span><span class="o">/</span><span class="n">合作共存</span><span class="err">）</span>  
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="o">-</span> <span class="n">各情景触发条件与概率评估</span>  
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="o">-</span> <span class="n">对第三方国家</span><span class="err">（</span><span class="n">欧盟</span><span class="o">/</span><span class="n">东盟</span><span class="err">）</span><span class="n">的技术站队压力分析</span>  
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">附加</span><span class="err">：</span><span class="n">自动生成SWOT分析矩阵</span>  
+</span></code></pre></div>
+<p><strong>步骤4（新闻关联）</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">关联最近三个月重大事件</span><span class="err">：</span>  
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="o">-</span> <span class="n">英伟达特供芯片发布</span>  
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="o">-</span> <span class="n">中国大模型备案新规</span>  
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="o">-</span> <span class="n">华盛顿AI安全峰会结果</span>  
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">生成事件影响力关联图谱</span>  
+</span></code></pre></div>
+<hr />
+<h3 id="_3"><strong>四、效率提升技巧</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>模板化指令</strong></li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="o">/</span><span class="n">template</span> <span class="n">军事分析</span>  
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">角色</span><span class="err">：</span><span class="n">国防大学研究员</span>  
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">结构</span><span class="err">：</span><span class="n">威胁评估</span><span class="err">→</span><span class="n">能力对比</span><span class="err">→</span><span class="n">应对建议</span>  
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">格式</span><span class="err">：</span><span class="n">Markdown三级标题</span><span class="o">+</span><span class="n">重点加粗</span>  
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">数据</span><span class="err">：</span><span class="n">优先采用Janes</span><span class="o">/</span><span class="n">IISS军事年鉴</span>  
+</span></code></pre></div>
+<ol>
+<li><strong>智能修正指令</strong></li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">请优化以下提问以获得更专业报告</span><span class="err">：</span>  
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="p">[</span><span class="n">原始问题</span><span class="p">]</span> <span class="n">南海最近有什么冲突</span>  
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">[</span><span class="n">优化建议</span><span class="p">]</span> <span class="n">增加维度</span><span class="err">：</span><span class="n">舰机相遇规则</span><span class="o">/</span><span class="n">岛礁建设进度</span><span class="o">/</span><span class="n">东盟会议立场变化</span>  
+</span></code></pre></div>
+<ol>
+<li><strong>多语言混合查询</strong></li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">搜索关键词</span><span class="err">：</span>  
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="s2">&quot;半导体出口管制&quot;</span> <span class="n">filetype</span><span class="p">:</span><span class="n">pdf</span> <span class="n">site</span><span class="p">:</span><span class="n">gov</span>  
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">附加要求</span><span class="err">：</span>  
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="o">-</span> <span class="n">提取中日韩政策差异</span>  
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="o">-</span> <span class="n">生成中英术语对照表</span>  
+</span></code></pre></div>
+<hr />
+<p>通过以上结构化框架，用户可系统性地提升信息获取效率，在简洁模式中快速定位事实，在高级模式中构建知识图谱，在深入模式中完成战略级分析，最终通过热点新闻模块保持对动态事件的持续追踪与深度解构。</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Born Originally & Die Distinctly.
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/OliverZ11x" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/zhao.shi.yi/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../01attachment/javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
