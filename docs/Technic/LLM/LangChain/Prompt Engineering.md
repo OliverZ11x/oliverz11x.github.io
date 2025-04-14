@@ -1,7 +1,7 @@
 ---
 title: Prompt Engineering
 date created: 2024/7/31 11:15
-date modified: 2024/8/15 14:5
+date modified: 2025/4/14 15:45
 ---
 # Prompt Engineering
 
@@ -122,3 +122,5 @@ Iterative Process
 - 用一批示例改进提示
 
 ---
+
+[提示工程 - 丹尼的分享 --- Prompt Engineering - Danny's Share](https://dannyzheng.me/2025/02/21/prompt-engineering/#8-code-generation-specific-use-leading-words-to-nudge-the-model-toward-a-particular-pattern-source)

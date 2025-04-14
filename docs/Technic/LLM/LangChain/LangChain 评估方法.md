@@ -1,7 +1,7 @@
 ---
 title: LangChain 评估方法
 date created: 2024/7/31 11:15
-date modified: 2024/8/9 14:44
+date modified: 2025/4/11 16:36
 ---
 # LangChain 评估的方法 Evaluation
 

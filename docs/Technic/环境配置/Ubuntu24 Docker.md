@@ -1,6 +1,6 @@
 ---
 date created: 2025/3/17 11:35
-date modified: 2025/4/7 13:34
+date modified: 2025/4/10 10:0
 ---
 
 ![[Azure Flux 环境配置#Ubuntu 安装 cuda 驱动]]
@@ -10,7 +10,7 @@ date modified: 2025/4/7 13:34
 ![[Unsloth 项目安装]]
 
 ```shell
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn src.main:app --host 0.0.0.0 --port 8000
 ```
 
 在 Ubuntu 24 上使用 VS Code 部署 Docker，可以按照以下步骤进行：

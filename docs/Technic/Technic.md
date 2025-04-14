@@ -1,7 +1,7 @@
 ---
 title: Technic
 date created: 2024/8/6 11:19
-date modified: 2025/4/8 10:24
+date modified: 2025/4/8 11:50
 ---
 ## Menu
 
@@ -22,6 +22,7 @@ date modified: 2025/4/8 10:24
 	- [Ubuntu24 Docker](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Ubuntu24%20Docker.md)
 	- [Unsloth 项目安装](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Unsloth%20%E9%A1%B9%E7%9B%AE%E5%AE%89%E8%A3%85.md)
 	- [WSL2-Ubuntu 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
+- [AI Search](./AI%20Search.md)
 - [Docker](./Docker.md)
 - [Kubernetes](./Kubernetes.md)
 - [Linux Ubuntu](./Linux%20Ubuntu.md)

@@ -1,15 +1,15 @@
 ---
 date created: 2025/4/3 15:19
-date modified: 2025/4/8 9:41
+date modified: 2025/4/8 11:52
 ---
 
-[LLM Class — vLLM](https://docs.vllm.ai/en/latest/api/offline_inference/llm.html)
-
-[Quantization — vLLM](https://docs.vllm.ai/en/latest/features/quantization/index.html)
-
-[GPTQModel — vLLM](https://docs.vllm.ai/en/latest/features/quantization/gptqmodel.html)
-
-[ModelCloud/GPTQModel: Production ready LLM model compression/quantization toolkit with hw accelerated inference support for both cpu/gpu via HF, vLLM, and SGLang.](https://github.com/ModelCloud/GPTQModel)
+> [LLM Class — vLLM](https://docs.vllm.ai/en/latest/api/offline_inference/llm.html)
+>
+>  [Quantization — vLLM](https://docs.vllm.ai/en/latest/features/quantization/index.html)
+>
+> [GPTQModel — vLLM](https://docs.vllm.ai/en/latest/features/quantization/gptqmodel.html)
+>
+> [ModelCloud/GPTQModel: Production ready LLM model compression/quantization toolkit with hw accelerated inference support for both cpu/gpu via HF, vLLM, and SGLang.](https://github.com/ModelCloud/GPTQModel)
 
 ## GPTQModel 笔记
 

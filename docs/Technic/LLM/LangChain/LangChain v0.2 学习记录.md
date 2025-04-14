@@ -1,7 +1,7 @@
 ---
 title: LangChain v0.2 学习记录
 date created: 2024/7/31 11:15
-date modified: 2024/8/15 14:5
+date modified: 2025/4/11 16:49
 ---
 # LanguageChain v0.2 学习记录
 
@@ -182,7 +182,7 @@ messages = chat_template.format_messages(name="Bob", user_input="What is your na
 # [SystemMessage(content="You are a helpful assistant that re-writes the user's text to sound more upbeat."), HumanMessage(content="I don't like eating tasty things")]
 ```
 
-其实 `PromptTemplate` 和 `ChatPromptTemplate` 都实现了 `Runnable` 接口, 支持 `LCEL` 的 invoke，ainvoke，stream，astream，batch，abatch，astream\_log 调用：
+其实 `PromptTemplate` 和 `ChatPromptTemplate` 都实现了 `Runnable` 接口, 支持 `LCEL` 的 invoke，ainvoke，stream，astream，batch，abatch，astream_log 调用：
 
 ```python
 from langchain.prompts import PromptTemplate
