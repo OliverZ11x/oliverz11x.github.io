@@ -1,6 +1,6 @@
 ---
 date created: 2025/3/17 11:35
-date modified: 2025/4/10 10:0
+date modified: 2025/4/21 11:48
 ---
 
 ![[Azure Flux 环境配置#Ubuntu 安装 cuda 驱动]]

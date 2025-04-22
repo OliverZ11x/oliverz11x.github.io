@@ -1,7 +1,7 @@
 ---
 title: Technic
 date created: 2024/8/6 11:19
-date modified: 2025/4/8 11:50
+date modified: 2025/4/21 11:25
 ---
 ## Menu
 
@@ -27,6 +27,7 @@ date modified: 2025/4/8 11:50
 - [Kubernetes](./Kubernetes.md)
 - [Linux Ubuntu](./Linux%20Ubuntu.md)
 - **LLM**
+	- [模型自回归训练](./LLM/%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%9B%9E%E5%BD%92%E8%AE%AD%E7%BB%83.md)
 	- **文本分类**
 		- [模型预测](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%A8%A1%E5%9E%8B%E9%A2%84%E6%B5%8B.md)
 		- [文本分类任务 Label Studio 使用指南](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%BB%BB%E5%8A%A1%20Label%20Studio%20%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
