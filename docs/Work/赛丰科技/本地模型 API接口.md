@@ -1,6 +1,6 @@
 ---
 date created: 2025/4/14 9:55
-date modified: 2025/4/15 17:16
+date modified: 2025/4/25 15:16
 ---
 ## 本地模型接口文档（支持涉台、涉藏、通用）
 
@@ -14,9 +14,9 @@ Content-Type: application/json
 
 ### 接口地址
 
-- **涉台接口地址**：`POST http://10.10.10.42:8000/api/chat`
-- **涉藏接口地址**：`POST http://10.10.10.41:8000/api/chat`
-- **通用接口地址**：`POST http://10.10.10.43:8000/api/chat`
+- **通用接口地址**：`POST http://172.32.1.63:8000/api/chat`
+- **涉台接口地址**：`POST http://172.32.1.62:8000/api/chat`
+- **涉藏接口地址**：`POST http://172.32.1.61:8000/api/chat`
 
 ---
 
