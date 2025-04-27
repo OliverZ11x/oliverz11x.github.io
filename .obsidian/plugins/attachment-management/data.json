@@ -1,0 +1,35 @@
+{
+  "attachPath": {
+    "attachmentRoot": "",
+    "saveAttE": "obsFolder",
+    "attachmentPath": "${notepath}/${notename}",
+    "attachFormat": "IMG-${date}",
+    "type": "GLOBAL"
+  },
+  "dateFormat": "YYYY-MM-DD-HH-mm-ss",
+  "excludeExtensionPattern": "",
+  "autoRenameAttachment": true,
+  "excludedPaths": "",
+  "excludePathsArray": [
+    ""
+  ],
+  "excludeSubpaths": false,
+  "originalNameStorage": [],
+  "overridePath": {
+    "README.md": {
+      "attachmentRoot": "",
+      "saveAttE": "obsFolder",
+      "attachmentPath": "${notepath}/${notename}",
+      "attachFormat": "IMG-${date}",
+      "type": "FILE"
+    },
+    "docs/Technic": {
+      "attachmentRoot": "",
+      "saveAttE": "obsFolder",
+      "attachmentPath": "${notepath}/${notename}",
+      "attachFormat": "IMG-${date}",
+      "type": "FOLDER"
+    }
+  },
+  "disableNotification": false
+}

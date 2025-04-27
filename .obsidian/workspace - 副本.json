@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "283aa2ee96c655de",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c6f31939946c145",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ddc69d4f97e10d4b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5fa729bdb4dbd43e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b5f192b751dcb1b",
+        "type": "tabs",
+        "dimension": 72.36363636363636,
+        "children": [
+          {
+            "id": "5854b0bf3810e8b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "7218a281b77e1fae",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "挂载",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "7e97e78bfaf1447d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fdcba2a3f3e032a3",
+        "type": "tabs",
+        "dimension": 27.636363636363637,
+        "children": [
+          {
+            "id": "dbc897f37d05d90a",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 303.49999618530273
+  },
+  "right": {
+    "id": "6c4874e906e83e27",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9db413984f88df2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efb7be886cfe4d66",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "2a9e446470be875e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/Work/赛丰科技/RAG/Lazy Graph RAG.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Lazy Graph RAG 的反向链接列表"
+            }
+          },
+          {
+            "id": "f50c100984c8c2ab",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/Work/赛丰科技/RAG/Lazy Graph RAG.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Lazy Graph RAG 的出链列表"
+            }
+          },
+          {
+            "id": "2897bcc97835d44f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e931720a849ff97c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/Work/赛丰科技/安全测试/模型安全评估api接口.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "模型安全评估api接口 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 319.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "efb7be886cfe4d66",
+  "lastOpenFiles": [
+    "docs/Work/赛丰科技/本地模型 API.md",
+    "docs/Work/赛丰科技/数据集构建.md",
+    "docs/Work/Work.md",
+    "docs/Technic/Docker.md",
+    "docs/Work/赛丰科技/用户输入指导 1.md",
+    "docs/Work/赛丰科技/安全测试/模型上线备案表.md",
+    "docs/01attachment/docs/Work/赛丰科技/安全测试/模型上线备案表",
+    "docs/Work/赛丰科技/安全测试/模型服务协议.md",
+    "docs/Work/赛丰科技/安全测试/模型安全评估.md",
+    "docs/01attachment/docs/Work/赛丰科技/安全测试/模型安全评估",
+    "docs/01attachment/docs/Work/赛丰科技/安全测试",
+    "docs/Work/赛丰科技/安全测试/模型安全评估api接口.md",
+    "docs/Work/赛丰科技/安全测试",
+    "docs/Technic/更新 NVCC.md",
+    "docs/Technic/环境配置/Git 环境变量.md",
+    "docs/Log/2025-04-24.md",
+    "docs/Technic/Technic.md",
+    "docs/Technic/Linux Ubuntu.md",
+    "docs/Work/赛丰科技/示例/示例.md",
+    "docs/index.md",
+    "docs/Research/Research.md",
+    "docs/Research/大论文/基于迁移学习的中心动脉压重构研究.md",
+    "docs/Work/赛丰科技/人事/笔记.md",
+    "docs/Life/Life.md",
+    "Excalidraw/Drawing 2025-04-20 20.04.18.excalidraw.md",
+    "docs/Work/赛丰科技/RAG/Graph RAG.md",
+    "docs/Work/赛丰科技/RAG/Lazy Graph RAG.md",
+    "docs/Work/赛丰科技/RAG/GraphRAG 知识图谱提取和增强流程.md",
+    "docs/Work/赛丰科技/RAG/RAG 方案对大模型的优化.md",
+    "docs/Technic/环境配置/LangChain 环境配置.md",
+    "docs/01attachment/docs/Work/赛丰科技/安全测试/模型安全评估/IMG-2025-04-25-10-27-59-1.png",
+    "docs/01attachment/docs/Work/赛丰科技/模型安全评估",
+    "docs/01attachment/docs/Work/赛丰科技/安全测试/模型安全评估/IMG-2025-04-25-10-27-59.png",
+    "docs/Work/赛丰科技/RAG/Retrieval-Augmented Generation with Graphs.pdf",
+    "docs/Work/赛丰科技/pdf/Graph RAG.pdf",
+    "docs/Work/赛丰科技/RAG/From Local to Global_A GraphRAG Approach to Query-Focused Summarization.pdf",
+    "Excalidraw",
+    "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-20-19-56-47.png",
+    "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-20-18-45-56.png",
+    "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-20-18-46-02.png",
+    "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-17-16-09-23.png",
+    "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-17-11-42-23.png",
+    "docs/Work/赛丰科技/RAG/From Local to Global_A GraphRAG Approach to Query-Focused Summarization.pdf.crdownload",
+    "docs/01attachment/docs/Work/赛丰科技/用户输入指导 1/IMG-2025-04-10-10-32-59.png",
+    "docs/01attachment/docs/Log/2025-04-03/IMG-2025-04-03-15-07-07.png",
+    "docs/01attachment/docs/Log/2025-04-03/IMG-2025-04-03-15-04-13.png"
+  ]
+}

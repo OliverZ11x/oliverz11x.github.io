@@ -1,0 +1,11 @@
+{
+  "accentColor": "",
+  "theme": "moonstone",
+  "baseFontSize": 14,
+  "baseFontSizeAction": true,
+  "cssTheme": "Blue Topaz",
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "enabledCssSnippets": [],
+  "showRibbon": true
+}

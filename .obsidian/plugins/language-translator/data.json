@@ -1,0 +1,17 @@
+{
+  "targetLanguage": {
+    "text": "Chinese Simplified",
+    "code": "zh-Hans"
+  },
+  "apiType": {
+    "text": "Azure",
+    "value": "1"
+  },
+  "translateApiUrl": "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0",
+  "maxCharacters": 2000,
+  "token": "3a54e2efd8364b4bb5d4e24b9cf44263",
+  "region": {
+    "text": "East Asia",
+    "code": "eastasia"
+  }
+}

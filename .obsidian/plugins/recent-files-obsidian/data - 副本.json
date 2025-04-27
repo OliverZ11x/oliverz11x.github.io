@@ -1,0 +1,86 @@
+{
+  "recentFiles": [
+    {
+      "basename": "模型安全评估api接口",
+      "path": "docs/Work/赛丰科技/安全测试/模型安全评估api接口.md"
+    },
+    {
+      "basename": "模型上线备案表",
+      "path": "docs/Work/赛丰科技/安全测试/模型上线备案表.md"
+    },
+    {
+      "basename": "模型服务协议",
+      "path": "docs/Work/赛丰科技/安全测试/模型服务协议.md"
+    },
+    {
+      "basename": "模型安全评估",
+      "path": "docs/Work/赛丰科技/安全测试/模型安全评估.md"
+    },
+    {
+      "basename": "示例",
+      "path": "docs/Work/赛丰科技/示例/示例.md"
+    },
+    {
+      "basename": "笔记",
+      "path": "docs/Work/赛丰科技/人事/笔记.md"
+    },
+    {
+      "basename": "Graph RAG",
+      "path": "docs/Work/赛丰科技/RAG/Graph RAG.md"
+    },
+    {
+      "basename": "Lazy Graph RAG",
+      "path": "docs/Work/赛丰科技/RAG/Lazy Graph RAG.md"
+    },
+    {
+      "basename": "GraphRAG 知识图谱提取和增强流程",
+      "path": "docs/Work/赛丰科技/RAG/GraphRAG 知识图谱提取和增强流程.md"
+    },
+    {
+      "basename": "RAG 方案对大模型的优化",
+      "path": "docs/Work/赛丰科技/RAG/RAG 方案对大模型的优化.md"
+    },
+    {
+      "basename": "Retrieval-Augmented Generation with Graphs",
+      "path": "docs/Work/赛丰科技/RAG/Retrieval-Augmented Generation with Graphs.pdf"
+    },
+    {
+      "basename": "From Local to Global_A GraphRAG Approach to Query-Focused Summarization",
+      "path": "docs/Work/赛丰科技/RAG/From Local to Global_A GraphRAG Approach to Query-Focused Summarization.pdf"
+    },
+    {
+      "basename": "IMG-2025-04-20-18-45-56",
+      "path": "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-20-18-45-56.png"
+    },
+    {
+      "basename": "IMG-2025-04-20-18-46-02",
+      "path": "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-20-18-46-02.png"
+    },
+    {
+      "basename": "IMG-2025-04-17-16-09-23",
+      "path": "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-17-16-09-23.png"
+    },
+    {
+      "basename": "IMG-2025-04-17-11-42-23",
+      "path": "docs/01attachment/docs/Work/赛丰科技/RAG/Graph RAG/IMG-2025-04-17-11-42-23.png"
+    },
+    {
+      "basename": "SQLAgent 模型知识扩展",
+      "path": "docs/Work/高科数聚/SQLAgent/SQLAgent 模型知识扩展.md"
+    },
+    {
+      "basename": "车智见",
+      "path": "docs/Work/高科数聚/SQLAgent/车智见.md"
+    },
+    {
+      "basename": "车通汇数据探查与分析",
+      "path": "docs/Work/高科数聚/SQLAgent/车通汇数据探查与分析.md"
+    }
+  ],
+  "omittedPaths": [
+    ""
+  ],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
