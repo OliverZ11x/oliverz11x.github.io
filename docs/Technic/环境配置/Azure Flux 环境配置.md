@@ -1,6 +1,6 @@
 ---
 date created: 2025/3/13 10:33
-date modified: 2025/4/2 10:11
+date modified: 2025/5/6 11:47
 ---
 ### Ubuntu 安装 cuda 驱动
 
@@ -104,3 +104,13 @@ screen -r
 
 1. 训练医学推理大语言模型。
 2. 制作 Deepseek-r 1-distill 的数据集，包含 reasoning 用于蒸馏模型的微调。
+
+### 5. 强制删除 screen 会话
+
+如果 screen 会话无法正常关闭，可以用：
+
+```shell
+screen -S 12345 -X quit
+```
+
+（12345 是会话编号）

@@ -1,24 +1,192 @@
 {
   "recentFiles": [
     {
+      "basename": "任务",
+      "path": "docs/Work/赛丰科技/任务.md"
+    },
+    {
+      "basename": "涉台报告生成prompt",
+      "path": "docs/Work/赛丰科技/涉台报告生成prompt.md"
+    },
+    {
+      "basename": "GraphRAG提示词模板优化策略",
+      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略.md"
+    },
+    {
+      "basename": "提示词优化",
+      "path": "docs/Work/赛丰科技/提示词优化/提示词优化.md"
+    },
+    {
+      "basename": "提示词模板结构",
+      "path": "docs/Work/赛丰科技/提示词优化/提示词模板结构.md"
+    },
+    {
+      "basename": "DeepSeek-R1微调数据集",
+      "path": "docs/Work/赛丰科技/DeepSeek-R1微调数据集.md"
+    },
+    {
+      "basename": "DBeaver",
+      "path": "docs/Work/高科数聚/DBeaver/DBeaver.md"
+    },
+    {
+      "basename": "GraphRAG提示词模板",
+      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md"
+    },
+    {
+      "basename": "minio",
+      "path": "docs/Work/赛丰科技/minio.md"
+    },
+    {
+      "basename": "Qwen2.5-7B-Instruct 微调",
+      "path": "docs/Work/赛丰科技/Qwen2.5-7B-Instruct 微调.md"
+    },
+    {
       "basename": "本地模型 API接口",
       "path": "docs/Work/赛丰科技/本地模型 API接口.md"
+    },
+    {
+      "basename": "Comet",
+      "path": "docs/Work/赛丰科技/文献/Comet.md"
+    },
+    {
+      "basename": "LangChain v0.2 学习记录",
+      "path": "docs/Technic/LLM/LangChain/LangChain v0.2 学习记录.md"
+    },
+    {
+      "basename": "LangChain 源码分析",
+      "path": "docs/Technic/LLM/LangChain/LangChain 源码分析.md"
+    },
+    {
+      "basename": "数据集构建",
+      "path": "docs/Work/赛丰科技/数据集构建.md"
+    },
+    {
+      "basename": "用户输入指导",
+      "path": "docs/Work/赛丰科技/用户输入指导.md"
+    },
+    {
+      "basename": "用户输入指导 1",
+      "path": "docs/Work/赛丰科技/用户输入指导 1.md"
+    },
+    {
+      "basename": "2025-05-06",
+      "path": "docs/Log/2025-05-06.md"
+    },
+    {
+      "basename": "Ubuntu24 Docker",
+      "path": "docs/Technic/环境配置/Ubuntu24 Docker.md"
+    },
+    {
+      "basename": "Azure Flux 环境配置",
+      "path": "docs/Technic/环境配置/Azure Flux 环境配置.md"
     },
     {
       "basename": "模型训练",
       "path": "docs/Work/赛丰科技/模型训练.md"
     },
     {
+      "basename": "2025-04-29",
+      "path": "docs/Log/2025-04-29.md"
+    },
+    {
+      "basename": "2025-03-12",
+      "path": "docs/Log/2025-03-12.md"
+    },
+    {
+      "basename": "Qwen3测试",
+      "path": "docs/Work/赛丰科技/Qwen3测试.md"
+    },
+    {
+      "basename": "2025-04-30",
+      "path": "docs/Log/2025-04-30.md"
+    },
+    {
+      "basename": "更新 NVCC",
+      "path": "docs/Technic/更新 NVCC.md"
+    },
+    {
+      "basename": "SQLAgent 流式输出",
+      "path": "docs/Technic/LLM/LangChain/SQLAgent 流式输出.md"
+    },
+    {
+      "basename": "AI Search",
+      "path": "docs/Technic/AI Search.md"
+    },
+    {
+      "basename": "2025-04-01",
+      "path": "docs/Log/2025-04-01.md"
+    },
+    {
+      "basename": "paddlepaddle 安装",
+      "path": "docs/Technic/环境配置/paddlepaddle 安装.md"
+    },
+    {
+      "basename": "Unsloth 项目安装",
+      "path": "docs/Technic/环境配置/Unsloth 项目安装.md"
+    },
+    {
+      "basename": "WSL2-Ubuntu 环境配置",
+      "path": "docs/Technic/环境配置/WSL2-Ubuntu 环境配置.md"
+    },
+    {
+      "basename": "Linux Ubuntu",
+      "path": "docs/Technic/Linux Ubuntu.md"
+    },
+    {
+      "basename": "NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）",
+      "path": "docs/Technic/NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）.md"
+    },
+    {
+      "basename": "vLLM 双卡A6000部署",
+      "path": "docs/Technic/vLLM 双卡A6000部署.md"
+    },
+    {
+      "basename": "Kubernetes",
+      "path": "docs/Technic/Kubernetes.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "docs/Technic/Docker.md"
+    },
+    {
+      "basename": "conda 虚拟环境",
+      "path": "docs/Technic/环境配置/conda 虚拟环境.md"
+    },
+    {
+      "basename": "LangChain 评估方法",
+      "path": "docs/Technic/LLM/LangChain/LangChain 评估方法.md"
+    },
+    {
+      "basename": "LangChain 工具自定义",
+      "path": "docs/Technic/LLM/LangChain/LangChain 工具自定义.md"
+    },
+    {
+      "basename": "LangChain 从模型返回结构化数据",
+      "path": "docs/Technic/LLM/LangChain/LangChain 从模型返回结构化数据.md"
+    },
+    {
+      "basename": "Manus AI",
+      "path": "docs/Technic/LLM/Manus AI.md"
+    },
+    {
+      "basename": "2025-04-28",
+      "path": "docs/Log/2025-04-28.md"
+    },
+    {
+      "basename": "2025-04-27",
+      "path": "docs/Log/2025-04-27.md"
+    },
+    {
       "basename": "计算资源",
       "path": "docs/Work/赛丰科技/计算资源.md"
     },
     {
-      "basename": "记账",
-      "path": "docs/Life/记账/记账.md"
+      "basename": "车智见",
+      "path": "docs/Work/高科数聚/SQLAgent/车智见.md"
     },
     {
-      "basename": "数据集构建",
-      "path": "docs/Work/赛丰科技/数据集构建.md"
+      "basename": "记账",
+      "path": "docs/Life/记账/记账.md"
     },
     {
       "basename": "Research",
@@ -31,174 +199,6 @@
     {
       "basename": "Titlelabel1.1",
       "path": "pdf/Titlelabel1.1.pdf"
-    },
-    {
-      "basename": "SQLAgent 测试",
-      "path": "docs/Work/高科数聚/SQLAgent/SQLAgent 测试.md"
-    },
-    {
-      "basename": "SQLAgent 模型知识扩展",
-      "path": "docs/Work/高科数聚/SQLAgent/SQLAgent 模型知识扩展.md"
-    },
-    {
-      "basename": "2025-03-11",
-      "path": "docs/Log/2025-03-11.md"
-    },
-    {
-      "basename": "LangSmith 学习记录",
-      "path": "docs/Technic/LLM/LangChain/LangSmith 学习记录.md"
-    },
-    {
-      "basename": "车智见",
-      "path": "docs/Work/高科数聚/SQLAgent/车智见.md"
-    },
-    {
-      "basename": "LangChain v0.2 学习记录",
-      "path": "docs/Technic/LLM/LangChain/LangChain v0.2 学习记录.md"
-    },
-    {
-      "basename": "LangChain 从模型返回结构化数据",
-      "path": "docs/Technic/LLM/LangChain/LangChain 从模型返回结构化数据.md"
-    },
-    {
-      "basename": "LangChain 工具自定义",
-      "path": "docs/Technic/LLM/LangChain/LangChain 工具自定义.md"
-    },
-    {
-      "basename": "零样本文本分类应用：基于UTC的舆情样本分类",
-      "path": "docs/Work/高科数聚/舆情分析/零样本文本分类应用：基于UTC的舆情样本分类.md"
-    },
-    {
-      "basename": "车通汇数据探查与分析",
-      "path": "docs/Work/高科数聚/SQLAgent/车通汇数据探查与分析.md"
-    },
-    {
-      "basename": "Supersonic",
-      "path": "docs/Work/高科数聚/SQLAgent/Supersonic.md"
-    },
-    {
-      "basename": "RAG 增强 SQLAgent",
-      "path": "docs/Technic/LLM/LangChain/RAG 增强 SQLAgent.md"
-    },
-    {
-      "basename": "IMG-2024-08-07-17-54",
-      "path": "docs/01attachment/docs/Technic/LLM/LangChain/LangSmith 学习记录/IMG-2024-08-07-17-54.png"
-    },
-    {
-      "basename": "Prompt Engineering",
-      "path": "docs/Technic/LLM/LangChain/Prompt Engineering.md"
-    },
-    {
-      "basename": "LangChain 评估方法",
-      "path": "docs/Technic/LLM/LangChain/LangChain 评估方法.md"
-    },
-    {
-      "basename": "SQLAgent 流式输出",
-      "path": "docs/Technic/LLM/LangChain/SQLAgent 流式输出.md"
-    },
-    {
-      "basename": "SQLAgent based GLM",
-      "path": "docs/Technic/LLM/LangChain/SQLAgent based GLM.md"
-    },
-    {
-      "basename": "Manus AI",
-      "path": "docs/Technic/LLM/Manus AI.md"
-    },
-    {
-      "basename": "基于检索的多层次文本分类",
-      "path": "docs/Work/高科数聚/舆情分析/基于检索的多层次文本分类.md"
-    },
-    {
-      "basename": "LangChain 源码分析",
-      "path": "docs/Technic/LLM/LangChain/LangChain 源码分析.md"
-    },
-    {
-      "basename": "预测模型点位选取-CJ库存-0731",
-      "path": "docs/Work/高科数聚/DBeaver/预测模型点位选取-CJ库存-0731.md"
-    },
-    {
-      "basename": "DBeaver",
-      "path": "docs/Work/高科数聚/DBeaver/DBeaver.md"
-    },
-    {
-      "basename": "重庆鉴越科技有限公司-春招复习",
-      "path": "docs/Work/求职知识储备/重庆鉴越科技有限公司-春招复习.md"
-    },
-    {
-      "basename": "重庆鉴越科技有限公司-春招复习",
-      "path": "pdf/travel/重庆鉴越科技有限公司-春招复习.pdf"
-    },
-    {
-      "basename": "赵时逸简历",
-      "path": "docs/Work/求职知识储备/赵时逸简历.pdf"
-    },
-    {
-      "basename": "Hugging Face Transformers",
-      "path": "docs/Technic/LLM/NLP/Hugging Face Transformers.md"
-    },
-    {
-      "basename": "Technic",
-      "path": "docs/Technic/Technic.md"
-    },
-    {
-      "basename": "Transformer 模型",
-      "path": "docs/Technic/LLM/NLP/Transformer 模型.md"
-    },
-    {
-      "basename": "方法探查",
-      "path": "docs/Work/高科数聚/舆情分析/方法探查.md"
-    },
-    {
-      "basename": "fastAPI",
-      "path": "docs/Work/求职知识储备/fastAPI.pdf"
-    },
-    {
-      "basename": "面试复习要点",
-      "path": "docs/Work/求职知识储备/面试复习要点.md"
-    },
-    {
-      "basename": "面试技巧",
-      "path": "docs/Work/求职知识储备/面试技巧.md"
-    },
-    {
-      "basename": "面试算法",
-      "path": "docs/Work/求职知识储备/面试算法.md"
-    },
-    {
-      "basename": "秋招",
-      "path": "docs/Work/求职知识储备/秋招.md"
-    },
-    {
-      "basename": "DeepSeek",
-      "path": "docs/Work/求职知识储备/DeepSeek.md"
-    },
-    {
-      "basename": "文本编码",
-      "path": "docs/Work/求职知识储备/文本编码.md"
-    },
-    {
-      "basename": "conda 虚拟环境",
-      "path": "docs/Technic/环境配置/conda 虚拟环境.md"
-    },
-    {
-      "basename": "求职",
-      "path": "docs/Work/求职知识储备/求职.md"
-    },
-    {
-      "basename": "2025-01-16",
-      "path": "docs/Log/2025-01-16.md"
-    },
-    {
-      "basename": "2025-02-17",
-      "path": "docs/Log/2025-02-17.md"
-    },
-    {
-      "basename": "2025-01-27",
-      "path": "docs/Log/2025-01-27.md"
-    },
-    {
-      "basename": "云南",
-      "path": "docs/Life/旅游/云南.md"
     }
   ],
   "omittedPaths": [

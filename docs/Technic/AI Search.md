@@ -1,6 +1,6 @@
 ---
 date created: 2025/4/8 11:50
-date modified: 2025/4/10 16:47
+date modified: 2025/4/30 10:12
 ---
 
 OliverZ 11 x: @terminal /explain (basic) C:\Users\zhaoshiyi\Documents\GitHub\Enhancing-Character-Mining-System-Based-on-Artificial-Intelligence>python -m backend. Main
@@ -769,6 +769,7 @@ Request headers:
 	'x-ms-client-request-id': '9 d 561 ceb-15 bb-11 f 0-b 80 f-a 8 e 2910 a 400 d'
 
 	'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.10.16 (Windows-10-10.0.26100-SP 0)'      
+
 A body is sent with the request
 
 2025-04-10 11:26:40,020 - azure. Core. Pipeline. Policies. Http_logging_policy - INFO - Response status: 200
@@ -817,6 +818,7 @@ Request headers:
 	'x-ms-client-request-id': '9 ddfbffb-15 bb-11 f 0-bbe 9-a 8 e 2910 a 400 d'
 
 	'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.10.16 (Windows-10-10.0.26100-SP 0)'      
+
 A body is sent with the request
 
 2025-04-10 11:26:41,088 - azure. Core. Pipeline. Policies. Http_logging_policy - INFO - Response status: 200
@@ -867,6 +869,7 @@ Request headers:
 	'x-ms-client-request-id': '9 e 828 b 94-15 bb-11 f 0-bdd 5-a 8 e 2910 a 400 d'
 
 	'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.10.16 (Windows-10-10.0.26100-SP 0)'      
+
 A body is sent with the request
 
 2025-04-10 11:26:41,397 - azure. Core. Pipeline. Policies. Http_logging_policy - INFO - Response status: 200
@@ -917,6 +920,7 @@ Request headers:
 	'x-ms-client-request-id': '9 eb 21 c 7 d-15 bb-11 f 0-83 d 7-a 8 e 2910 a 400 d'
 
 	'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.10.16 (Windows-10-10.0.26100-SP 0)'      
+
 A body is sent with the request
 
 2025-04-10 11:26:42,847 - azure. Core. Pipeline. Policies. Http_logging_policy - INFO - Response status: 200
@@ -1121,9 +1125,9 @@ GitHub Copilot: 根据描述，使用 `launch.json` 调试时出现 `ERROR: Appl
 
 OliverZ 11 x: (AIsearch) c:\Users\zhaoshiyi\Documents\GitHub\Enhancing-Character-Mining-System-Based-on-Artificial-Intelligence> c: && cd c:\Users\zhaoshiyi\Documents\GitHub\Enhancing-Character-Mining-System-Based-on-Artificial-Intelligence && cmd /C "D:\Anaconda\envs\AIsearch\python. Exe c:\Users\zhaoshiyi\. Vscode\extensions\ms-python. Debugpy-2025.6.0-win 32-x 64\bundled\libs\debugpy\launcher 51409 -- -m uvicorn backend. Main: app --host 0.0.0.0 --port 8000 --reload "
 
-INFO:     Will watch for changes in these directories: ['c:\\Users\\zhaoshiyi\\Documents\\GitHub\\Enhancing-Character-Mining-System-Based-on-Artificial-Intelligence']
+INFO: Will watch for changes in these directories: ['c:\\Users\\zhaoshiyi\\Documents\\GitHub\\Enhancing-Character-Mining-System-Based-on-Artificial-Intelligence']
 
-INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 
 INFO: Started reloader process [29136] using StatReload
 
@@ -1712,9 +1716,9 @@ Processing_jobs[job_id]["message"] = f"处理失败: {str (e)}"
 
 通过这些断点，您可以完整跟踪文件上传、解析、AI 分析、数据库存储以及任务状态更新的整个流程。
 
-OliverZ 11 x: INFO:     Application startup complete.
+OliverZ 11 x: INFO: Application startup complete.
 
-INFO:     127.0.0.1:61574 - "GET /api/files/upload HTTP/1.1" 405 Method Not Allowed
+INFO: 127.0.0.1:61574 - "GET /api/files/upload HTTP/1.1" 405 Method Not Allowed
 
 GitHub Copilot: 从日志中可以看到，您在访问 `/api/files/upload` 时遇到了 `405 Method Not Allowed` 错误。这通常是由于以下原因之一导致的：
 
@@ -1811,7 +1815,7 @@ Content-Type: multipart/form-data
 
 通过以上步骤，您应该能够解决 `405 Method Not Allowed` 的问题。如果问题仍然存在，请提供更多上下文信息，我可以进一步协助分析。
 
-OliverZ 11 x: INFO:     127.0.0.1:61590 - "POST /api/files/upload HTTP/1.1" 422 Unprocessable Entity
+OliverZ 11 x: INFO: 127.0.0.1:61590 - "POST /api/files/upload HTTP/1.1" 422 Unprocessable Entity
 
 {
 
@@ -2001,7 +2005,7 @@ GitHub Copilot: 要通过 Postman 测试 entity_routes. Py 中的服务，可以
 确保后端服务已经启动，并监听默认端口 `8000`。如果使用的是 FastAPI，默认情况下可以通过以下命令启动：
 
 ```bash
-Uvicorn backend. Main: app --host 0.0.0.0 --port 8000 --reload
+uvicorn backend.main:app --host 0.0.0.0 --port 8000
 ```
 
 ---
@@ -2275,7 +2279,7 @@ Uvicorn backend. Main: app --host 0.0.0.0 --port 8000 --reload
 
 通过以上步骤，您可以使用 Postman 测试 entity_routes. Py 中的所有功能。如果遇到问题，请提供具体的错误信息，我可以进一步协助分析。
 
-OliverZ 11 x:     def search_entities (self, search_text: str, filter_condition: str = None, top: int = 50) -> List[Dict[str, Any]]:
+OliverZ 11 x: def search_entities (self, search_text: str, filter_condition: str = None, top: int = 50) -> List[Dict[str, Any]]:
 
 		"""搜索实体"""
 

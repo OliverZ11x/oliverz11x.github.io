@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Work/赛丰科技/本地模型 API接口.md",
+                "file": "docs/Work/赛丰科技/任务.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "本地模型 API接口"
+              "title": "任务"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"docs/Work/赛丰科技/提示词优化/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.49999618530273
+    "width": 343.5
   },
   "right": {
     "id": "6c4874e906e83e27",
@@ -162,17 +162,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Work/赛丰科技/本地模型 API接口.md",
+                "file": "docs/Work/赛丰科技/任务.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "本地模型 API接口 的大纲"
+              "title": "任务 的大纲"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -190,44 +189,51 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "605d1a602302b659",
+  "active": "efb7be886cfe4d66",
   "lastOpenFiles": [
-    "docs/Work/赛丰科技/模型训练.md",
-    "docs/Work/赛丰科技/计算资源.md",
+    "docs/Work/赛丰科技/涉台报告生成prompt.md",
+    "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略.md",
+    "docs/Work/赛丰科技/提示词优化/提示词优化.md",
+    "docs/Work/赛丰科技/提示词优化/提示词模板结构.md",
+    "docs/Work/赛丰科技/DeepSeek-R1微调数据集.md",
+    "docs/Work/高科数聚/DBeaver/DBeaver.md",
+    "docs/Work/赛丰科技/任务.md",
+    "docs/Work/赛丰科技/提示词优化/Prompt 测试与优化反馈表.xlsx",
+    "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md",
+    "docs/01attachment/Pasted image 20250507085944.png",
+    "docs/Work/赛丰科技/提示词优化/D310DC30",
+    "docs/01attachment/docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略",
+    "docs/01attachment/docs/Work/赛丰科技/提示词优化/RAG提示词模板优化策略/IMG-2025-05-07-08-59-38.png",
+    "docs/01attachment/docs/Work/赛丰科技/提示词优化/RAG提示词模板优化策略",
+    "docs/01attachment/docs/Work/赛丰科技/提示词优化",
+    "docs/01attachment/docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略/IMG-2025-05-07-10-17-50.png",
+    "docs/Work/赛丰科技/minio.md",
+    "docs/Work/赛丰科技/Qwen2.5-7B-Instruct 微调.md",
     "docs/Work/赛丰科技/本地模型 API接口.md",
-    "docs/Life/记账/记账.md",
-    "docs/Work/赛丰科技/数据集构建.md",
-    "docs/Research/Research.md",
-    "pdf/Titlelabel1.pdf",
-    "pdf/Titlelabel1.1.pdf",
-    "docs/Work/高科数聚/SQLAgent/SQLAgent 测试.md",
-    "docs/Work/高科数聚/SQLAgent/SQLAgent 模型知识扩展.md",
-    "docs/Log/2025-03-11.md",
-    "docs/Technic/LLM/LangChain/LangSmith 学习记录.md",
-    "docs/Work/高科数聚/SQLAgent/车智见.md",
-    "pdf/travel/2025-03-11.pdf",
+    "docs/Work/赛丰科技/文献/Comet.md",
+    "docs/Work/赛丰科技/提示词优化/CE304930",
+    "docs/Work/赛丰科技/提示词优化/AE4E3930",
+    "docs/Work/赛丰科技/提示词优化/未命名",
     "docs/Technic/LLM/LangChain/LangChain v0.2 学习记录.md",
-    "docs/01attachment/Pasted image 20250311150548.png",
-    "docs/Technic/LLM/LangChain/LangChain 从模型返回结构化数据.md",
-    "docs/Technic/LLM/LangChain/LangChain 工具自定义.md",
-    "docs/Work/高科数聚/舆情分析/零样本文本分类应用：基于UTC的舆情样本分类.md",
-    "docs/Work/高科数聚/SQLAgent/车通汇数据探查与分析.md",
-    "docs/Work/高科数聚/SQLAgent/Supersonic.md",
-    "docs/Technic/LLM/LangChain/RAG 增强 SQLAgent.md",
-    "docs/01attachment/docs/Technic/LLM/LangChain/LangSmith 学习记录/IMG-2024-08-07-17-54.png",
-    "docs/Technic/LLM/LangChain/Prompt Engineering.md",
-    "docs/Technic/LLM/LangChain/LangChain 评估方法.md",
-    "docs/Technic/LLM/LangChain/SQLAgent 流式输出.md",
-    "docs/Technic/LLM/LangChain/SQLAgent based GLM.md",
-    "docs/Technic/LLM/Manus AI.md",
-    "docs/Work/高科数聚/舆情分析/基于检索的多层次文本分类.md",
     "docs/Technic/LLM/LangChain/LangChain 源码分析.md",
-    "docs/Work/高科数聚/DBeaver/预测模型点位选取-CJ库存-0731.md",
-    "pdf/travel/重庆鉴越科技有限公司-春招复习.pdf",
-    "docs/Work/求职知识储备/赵时逸简历.pdf",
+    "docs/Work/赛丰科技/提示词优化/AutoGen_GraphRAG_提示词优化模板.csv",
+    "docs/Work/赛丰科技/提示词优化",
+    "docs/Work/赛丰科技/数据集构建.md",
+    "docs/Work/赛丰科技/用户输入指导.md",
+    "docs/Work/赛丰科技/用户输入指导 1.md",
+    "docs/Log/2025-05-06.md",
+    "docs/Technic/环境配置/Ubuntu24 Docker.md",
+    "docs/Technic/环境配置/Azure Flux 环境配置.md",
+    "docs/Work/赛丰科技/模型训练.md",
+    "docs/Log/2025-04-29.md",
+    "docs/Work/未命名.md",
+    "docs/Log/2025-03-12.md",
+    "docs/Work/赛丰科技/Qwen3测试.md",
+    "docs/Log/2025-04-30.md",
+    "docs/01attachment/docs/Technic/LLM/Manus AI/IMG-2025-04-28-17-54-04.png",
+    "docs/01attachment/Pasted image 20250311150548.png",
+    "docs/01attachment/docs/Technic/LLM/LangChain/LangSmith 学习记录/IMG-2024-08-07-17-54.png",
     "docs/01attachment/Pasted image 20250304191635.png",
-    "docs/Work/求职知识储备/fastAPI.pdf",
-    "docs/01attachment/docs/Work/求职知识储备/DeepSeek",
     "docs/01attachment/docs/Work/求职知识储备/DeepSeek/IMG-2025-03-04-14-18-29.png"
   ]
 }

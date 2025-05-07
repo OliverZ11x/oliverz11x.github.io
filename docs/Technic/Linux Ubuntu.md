@@ -1,10 +1,34 @@
 ---
 date created: 2025/4/2 9:38
-date modified: 2025/4/2 10:14
+date modified: 2025/4/29 17:2
 ---
+## 创建进程
+
+```shell
+screen -S rl
+```
+
+Ctrl+A+D 退出该进程
+
+在命令面板输入 `exit` 关闭该进程
+
+进入该进程
+
+```shell
+screen -r
+```
+
 ## Ubuntu 清理空间
 
 ### **1. 检查大文件占用**
+
+```shell
+# 安装ncdu
+apt-get install ncdu
+
+# 使用ncdu扫描根目录
+ncdu /
+```
 
 先查找哪些目录占用的空间最大：
 

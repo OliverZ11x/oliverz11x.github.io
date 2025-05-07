@@ -1,7 +1,7 @@
 ---
 title: DBeaver 数据探查
 date created: 2024/7/31 11:15
-date modified: 2024/8/15 14:5
+date modified: 2025/5/7 16:46
 ---
 # DBeaver进行数据探查
 
