@@ -58,7 +58,9 @@ date modified: 2025/4/21 11:25
 	- [Obsidian 标签](./obsidian/Obsidian%20%E6%A0%87%E7%AD%BE.md)
 	- [Obsidian 网页发布](./obsidian/Obsidian%20%E7%BD%91%E9%A1%B5%E5%8F%91%E5%B8%83.md)
 - [Ubuntu apt](./Ubuntu%20apt.md)
-- [vLLM 双卡A6000部署](./vLLM%20%E5%8F%8C%E5%8D%A1A6000%E9%83%A8%E7%BD%B2.md)
+- **Vllm**
+	- [docker vllm openai 部署](./Vllm/docker%20vllm%20openai%20%E9%83%A8%E7%BD%B2.md)
+	- [vLLM 双卡A6000部署](./Vllm/vLLM%20%E5%8F%8C%E5%8D%A1A6000%E9%83%A8%E7%BD%B2.md)
 - [VScode github copilot使用指南](./VScode%20github%20copilot%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
 
 %% End Waypoint %%

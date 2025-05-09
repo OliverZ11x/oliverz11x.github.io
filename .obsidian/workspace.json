@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Work/赛丰科技/任务.md",
+                "file": "docs/Log/2025-05-09.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "任务"
+              "title": "2025-05-09"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 363.49999618530273
   },
   "right": {
     "id": "6c4874e906e83e27",
@@ -175,7 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 230.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,17 +189,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "efb7be886cfe4d66",
+  "active": "605d1a602302b659",
   "lastOpenFiles": [
-    "docs/Work/赛丰科技/涉台报告生成prompt.md",
-    "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略.md",
-    "docs/Work/赛丰科技/提示词优化/提示词优化.md",
-    "docs/Work/赛丰科技/提示词优化/提示词模板结构.md",
-    "docs/Work/赛丰科技/DeepSeek-R1微调数据集.md",
-    "docs/Work/高科数聚/DBeaver/DBeaver.md",
+    "docs/Technic/环境配置/Ubuntu24 Docker.md",
+    "docs/Log/2025-05-09.md",
+    "docs/Technic/LLM/hf上传模型.md",
+    "docs/Technic/Vllm/docker vllm openai 部署.md",
     "docs/Work/赛丰科技/任务.md",
-    "docs/Work/赛丰科技/提示词优化/Prompt 测试与优化反馈表.xlsx",
+    "docs/Work/赛丰科技/提示词优化/提示词模板结构.md",
+    "docs/Work/赛丰科技/提示词优化/提示词优化.md",
     "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md",
+    "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略.md",
+    "docs/Log/2025-05-08.md",
+    "docs/Technic/环境配置/conda 虚拟环境.md",
+    "docs/Technic/环境配置/Azure Flux 环境配置.md",
+    "docs/Technic/环境配置/Unsloth 项目安装.md",
+    "docs/Technic/环境配置/TimesFM 环境配置.md",
+    "docs/Technic/环境配置/paddlepaddle 安装.md",
+    "docs/Technic/环境配置/Office激活.md",
+    "docs/Technic/环境配置/Mkdocs 环境配置.md",
+    "docs/Technic/环境配置/CUDA 环境配置.md",
+    "docs/Technic/AI Search.md",
+    "docs/Technic/更新 NVCC.md",
+    "docs/Technic/Linux Ubuntu.md",
+    "docs/Technic/Docker.md",
+    "docs/Technic/Kubernetes.md",
+    "docs/Technic/Vllm",
+    "docs/Technic/环境配置/Git 环境变量.md",
+    "docs/Log/2025-05-07.md",
+    "docs/Work/赛丰科技/涉台报告生成prompt.md",
+    "docs/Work/赛丰科技/提示词优化/Prompt 测试与优化反馈表.xlsx",
     "docs/01attachment/Pasted image 20250507085944.png",
     "docs/Work/赛丰科技/提示词优化/D310DC30",
     "docs/01attachment/docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略",
@@ -207,29 +226,10 @@
     "docs/01attachment/docs/Work/赛丰科技/提示词优化/RAG提示词模板优化策略",
     "docs/01attachment/docs/Work/赛丰科技/提示词优化",
     "docs/01attachment/docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略/IMG-2025-05-07-10-17-50.png",
-    "docs/Work/赛丰科技/minio.md",
-    "docs/Work/赛丰科技/Qwen2.5-7B-Instruct 微调.md",
-    "docs/Work/赛丰科技/本地模型 API接口.md",
-    "docs/Work/赛丰科技/文献/Comet.md",
     "docs/Work/赛丰科技/提示词优化/CE304930",
     "docs/Work/赛丰科技/提示词优化/AE4E3930",
     "docs/Work/赛丰科技/提示词优化/未命名",
-    "docs/Technic/LLM/LangChain/LangChain v0.2 学习记录.md",
-    "docs/Technic/LLM/LangChain/LangChain 源码分析.md",
     "docs/Work/赛丰科技/提示词优化/AutoGen_GraphRAG_提示词优化模板.csv",
-    "docs/Work/赛丰科技/提示词优化",
-    "docs/Work/赛丰科技/数据集构建.md",
-    "docs/Work/赛丰科技/用户输入指导.md",
-    "docs/Work/赛丰科技/用户输入指导 1.md",
-    "docs/Log/2025-05-06.md",
-    "docs/Technic/环境配置/Ubuntu24 Docker.md",
-    "docs/Technic/环境配置/Azure Flux 环境配置.md",
-    "docs/Work/赛丰科技/模型训练.md",
-    "docs/Log/2025-04-29.md",
-    "docs/Work/未命名.md",
-    "docs/Log/2025-03-12.md",
-    "docs/Work/赛丰科技/Qwen3测试.md",
-    "docs/Log/2025-04-30.md",
     "docs/01attachment/docs/Technic/LLM/Manus AI/IMG-2025-04-28-17-54-04.png",
     "docs/01attachment/Pasted image 20250311150548.png",
     "docs/01attachment/docs/Technic/LLM/LangChain/LangSmith 学习记录/IMG-2024-08-07-17-54.png",

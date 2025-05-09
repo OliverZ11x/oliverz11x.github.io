@@ -1,24 +1,108 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-05-09",
+      "path": "docs/Log/2025-05-09.md"
+    },
+    {
+      "basename": "Ubuntu24 Docker",
+      "path": "docs/Technic/环境配置/Ubuntu24 Docker.md"
+    },
+    {
+      "basename": "hf上传模型",
+      "path": "docs/Technic/LLM/hf上传模型.md"
+    },
+    {
+      "basename": "docker vllm openai 部署",
+      "path": "docs/Technic/Vllm/docker vllm openai 部署.md"
+    },
+    {
       "basename": "任务",
       "path": "docs/Work/赛丰科技/任务.md"
     },
     {
-      "basename": "涉台报告生成prompt",
-      "path": "docs/Work/赛丰科技/涉台报告生成prompt.md"
-    },
-    {
-      "basename": "GraphRAG提示词模板优化策略",
-      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略.md"
+      "basename": "提示词模板结构",
+      "path": "docs/Work/赛丰科技/提示词优化/提示词模板结构.md"
     },
     {
       "basename": "提示词优化",
       "path": "docs/Work/赛丰科技/提示词优化/提示词优化.md"
     },
     {
-      "basename": "提示词模板结构",
-      "path": "docs/Work/赛丰科技/提示词优化/提示词模板结构.md"
+      "basename": "GraphRAG提示词模板",
+      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md"
+    },
+    {
+      "basename": "GraphRAG提示词模板优化策略",
+      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略.md"
+    },
+    {
+      "basename": "2025-05-08",
+      "path": "docs/Log/2025-05-08.md"
+    },
+    {
+      "basename": "conda 虚拟环境",
+      "path": "docs/Technic/环境配置/conda 虚拟环境.md"
+    },
+    {
+      "basename": "Azure Flux 环境配置",
+      "path": "docs/Technic/环境配置/Azure Flux 环境配置.md"
+    },
+    {
+      "basename": "Unsloth 项目安装",
+      "path": "docs/Technic/环境配置/Unsloth 项目安装.md"
+    },
+    {
+      "basename": "TimesFM 环境配置",
+      "path": "docs/Technic/环境配置/TimesFM 环境配置.md"
+    },
+    {
+      "basename": "paddlepaddle 安装",
+      "path": "docs/Technic/环境配置/paddlepaddle 安装.md"
+    },
+    {
+      "basename": "Office激活",
+      "path": "docs/Technic/环境配置/Office激活.md"
+    },
+    {
+      "basename": "Mkdocs 环境配置",
+      "path": "docs/Technic/环境配置/Mkdocs 环境配置.md"
+    },
+    {
+      "basename": "CUDA 环境配置",
+      "path": "docs/Technic/环境配置/CUDA 环境配置.md"
+    },
+    {
+      "basename": "AI Search",
+      "path": "docs/Technic/AI Search.md"
+    },
+    {
+      "basename": "更新 NVCC",
+      "path": "docs/Technic/更新 NVCC.md"
+    },
+    {
+      "basename": "Linux Ubuntu",
+      "path": "docs/Technic/Linux Ubuntu.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "docs/Technic/Docker.md"
+    },
+    {
+      "basename": "Kubernetes",
+      "path": "docs/Technic/Kubernetes.md"
+    },
+    {
+      "basename": "Git 环境变量",
+      "path": "docs/Technic/环境配置/Git 环境变量.md"
+    },
+    {
+      "basename": "2025-05-07",
+      "path": "docs/Log/2025-05-07.md"
+    },
+    {
+      "basename": "涉台报告生成prompt",
+      "path": "docs/Work/赛丰科技/涉台报告生成prompt.md"
     },
     {
       "basename": "DeepSeek-R1微调数据集",
@@ -27,10 +111,6 @@
     {
       "basename": "DBeaver",
       "path": "docs/Work/高科数聚/DBeaver/DBeaver.md"
-    },
-    {
-      "basename": "GraphRAG提示词模板",
-      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md"
     },
     {
       "basename": "minio",
@@ -73,14 +153,6 @@
       "path": "docs/Log/2025-05-06.md"
     },
     {
-      "basename": "Ubuntu24 Docker",
-      "path": "docs/Technic/环境配置/Ubuntu24 Docker.md"
-    },
-    {
-      "basename": "Azure Flux 环境配置",
-      "path": "docs/Technic/环境配置/Azure Flux 环境配置.md"
-    },
-    {
       "basename": "模型训练",
       "path": "docs/Work/赛丰科技/模型训练.md"
     },
@@ -101,36 +173,16 @@
       "path": "docs/Log/2025-04-30.md"
     },
     {
-      "basename": "更新 NVCC",
-      "path": "docs/Technic/更新 NVCC.md"
-    },
-    {
       "basename": "SQLAgent 流式输出",
       "path": "docs/Technic/LLM/LangChain/SQLAgent 流式输出.md"
-    },
-    {
-      "basename": "AI Search",
-      "path": "docs/Technic/AI Search.md"
     },
     {
       "basename": "2025-04-01",
       "path": "docs/Log/2025-04-01.md"
     },
     {
-      "basename": "paddlepaddle 安装",
-      "path": "docs/Technic/环境配置/paddlepaddle 安装.md"
-    },
-    {
-      "basename": "Unsloth 项目安装",
-      "path": "docs/Technic/环境配置/Unsloth 项目安装.md"
-    },
-    {
       "basename": "WSL2-Ubuntu 环境配置",
       "path": "docs/Technic/环境配置/WSL2-Ubuntu 环境配置.md"
-    },
-    {
-      "basename": "Linux Ubuntu",
-      "path": "docs/Technic/Linux Ubuntu.md"
     },
     {
       "basename": "NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）",
@@ -138,19 +190,7 @@
     },
     {
       "basename": "vLLM 双卡A6000部署",
-      "path": "docs/Technic/vLLM 双卡A6000部署.md"
-    },
-    {
-      "basename": "Kubernetes",
-      "path": "docs/Technic/Kubernetes.md"
-    },
-    {
-      "basename": "Docker",
-      "path": "docs/Technic/Docker.md"
-    },
-    {
-      "basename": "conda 虚拟环境",
-      "path": "docs/Technic/环境配置/conda 虚拟环境.md"
+      "path": "docs/Technic/Vllm/vLLM 双卡A6000部署.md"
     },
     {
       "basename": "LangChain 评估方法",
@@ -159,46 +199,6 @@
     {
       "basename": "LangChain 工具自定义",
       "path": "docs/Technic/LLM/LangChain/LangChain 工具自定义.md"
-    },
-    {
-      "basename": "LangChain 从模型返回结构化数据",
-      "path": "docs/Technic/LLM/LangChain/LangChain 从模型返回结构化数据.md"
-    },
-    {
-      "basename": "Manus AI",
-      "path": "docs/Technic/LLM/Manus AI.md"
-    },
-    {
-      "basename": "2025-04-28",
-      "path": "docs/Log/2025-04-28.md"
-    },
-    {
-      "basename": "2025-04-27",
-      "path": "docs/Log/2025-04-27.md"
-    },
-    {
-      "basename": "计算资源",
-      "path": "docs/Work/赛丰科技/计算资源.md"
-    },
-    {
-      "basename": "车智见",
-      "path": "docs/Work/高科数聚/SQLAgent/车智见.md"
-    },
-    {
-      "basename": "记账",
-      "path": "docs/Life/记账/记账.md"
-    },
-    {
-      "basename": "Research",
-      "path": "docs/Research/Research.md"
-    },
-    {
-      "basename": "Titlelabel1",
-      "path": "pdf/Titlelabel1.pdf"
-    },
-    {
-      "basename": "Titlelabel1.1",
-      "path": "pdf/Titlelabel1.1.pdf"
     }
   ],
   "omittedPaths": [
