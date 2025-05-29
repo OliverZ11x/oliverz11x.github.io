@@ -1,6 +1,6 @@
 ---
 date created: 2025/3/13 10:33
-date modified: 2025/5/6 11:47
+date modified: 2025/5/26 11:11
 ---
 ### Ubuntu 安装 cuda 驱动
 
@@ -107,10 +107,27 @@ screen -r
 
 ### 5. 强制删除 screen 会话
 
-如果 screen 会话无法正常关闭，可以用：
+要强制关闭 screen 会话，您可以使用以下命令：
 
-```shell
-screen -S 12345 -X quit
+```bash
+screen -X -S [会话ID] quit
 ```
 
-（12345 是会话编号）
+或者更简单的方法是：
+
+1. 先按 `Ctrl + A` 然后按 `K`，会提示 "Really kill this window [y/n]"
+2. 输入 `y` 确认
+
+如果您不确定会话 ID，可以先列出所有会话：
+
+```bash
+screen -ls
+```
+
+然后使用对应的会话 ID 强制关闭：
+
+```bash
+screen -X -S [会话ID] quit
+```
+
+这样就可以强制关闭 screen 会话了。
