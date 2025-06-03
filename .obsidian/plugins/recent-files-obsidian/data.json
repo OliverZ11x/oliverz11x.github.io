@@ -1,32 +1,72 @@
 {
   "recentFiles": [
     {
-      "basename": "test",
-      "path": "docs/Work/赛丰科技/basicSR/test.md"
+      "basename": "2025-06-03",
+      "path": "docs/Log/2025-06-03.md"
     },
     {
-      "basename": "提示词模板结构",
-      "path": "docs/Work/赛丰科技/提示词优化/提示词模板结构.md"
+      "basename": "BasicSR 框架与视频图像超分模型",
+      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
     },
     {
-      "basename": "GraphRAG提示词模板",
-      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md"
+      "basename": "语音修复",
+      "path": "docs/Work/赛丰科技/basicSR/语音修复.md"
     },
     {
-      "basename": "提示词优化",
-      "path": "docs/Work/赛丰科技/提示词优化/提示词优化.md"
+      "basename": "服务端开发",
+      "path": "docs/Work/赛丰科技/MCP/MCP/服务端开发.md"
     },
     {
       "basename": "热点新闻提示词",
       "path": "docs/Work/赛丰科技/提示词优化/热点新闻提示词.md"
     },
     {
+      "basename": "RealtimeSTT",
+      "path": "docs/Work/赛丰科技/basicSR/RealtimeSTT.md"
+    },
+    {
+      "basename": "GraphRAG提示词模板",
+      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md"
+    },
+    {
+      "basename": "2025-05-30",
+      "path": "docs/Log/2025-05-30.md"
+    },
+    {
+      "basename": "提示词模板结构",
+      "path": "docs/Work/赛丰科技/提示词优化/提示词模板结构.md"
+    },
+    {
+      "basename": "提示词优化",
+      "path": "docs/Work/赛丰科技/提示词优化/提示词优化.md"
+    },
+    {
+      "basename": "探查",
+      "path": "docs/Work/赛丰科技/具身智能/探查.md"
+    },
+    {
+      "basename": "计算资源",
+      "path": "docs/Work/赛丰科技/计算资源.md"
+    },
+    {
+      "basename": "任务",
+      "path": "docs/Work/赛丰科技/任务.md"
+    },
+    {
+      "basename": "涉台报告生成prompt",
+      "path": "docs/Work/赛丰科技/涉台报告生成prompt.md"
+    },
+    {
+      "basename": "Linux Ubuntu",
+      "path": "docs/Technic/Linux Ubuntu.md"
+    },
+    {
       "basename": "GraphRAG提示词模板优化策略",
       "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略.md"
     },
     {
-      "basename": "BasicSR 框架与视频图像超分模型",
-      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
+      "basename": "客户端",
+      "path": "docs/Work/赛丰科技/MCP/MCP/客户端.md"
     },
     {
       "basename": "本地模型 openai API 接口",
@@ -109,16 +149,8 @@
       "path": "pdf/BasicSR 框架与视频图像超分模型.pdf"
     },
     {
-      "basename": "计算资源",
-      "path": "docs/Work/赛丰科技/计算资源.md"
-    },
-    {
       "basename": "模型训练",
       "path": "docs/Work/赛丰科技/模型训练.md"
-    },
-    {
-      "basename": "Linux Ubuntu",
-      "path": "docs/Technic/Linux Ubuntu.md"
     },
     {
       "basename": "什么是MCP",
@@ -141,16 +173,8 @@
       "path": "docs/Work/赛丰科技/MCP/MCP.md"
     },
     {
-      "basename": "客户端",
-      "path": "docs/Work/赛丰科技/MCP/MCP/客户端.md"
-    },
-    {
       "basename": "服务端API接口",
       "path": "docs/Work/赛丰科技/MCP/MCP/服务端API接口.md"
-    },
-    {
-      "basename": "服务端开发",
-      "path": "docs/Work/赛丰科技/MCP/MCP/服务端开发.md"
     },
     {
       "basename": "社媒MCP服务端",
@@ -175,30 +199,6 @@
     {
       "basename": "Azure Flux 环境配置",
       "path": "docs/Technic/环境配置/Azure Flux 环境配置.md"
-    },
-    {
-      "basename": "任务",
-      "path": "docs/Work/赛丰科技/任务.md"
-    },
-    {
-      "basename": "面试复习要点",
-      "path": "docs/Work/求职知识储备/面试复习要点.md"
-    },
-    {
-      "basename": "涉台报告生成prompt",
-      "path": "docs/Work/赛丰科技/涉台报告生成prompt.md"
-    },
-    {
-      "basename": "Ubuntu apt",
-      "path": "docs/Technic/Ubuntu apt.md"
-    },
-    {
-      "basename": "conda 虚拟环境",
-      "path": "docs/Technic/环境配置/conda 虚拟环境.md"
-    },
-    {
-      "basename": "LangChain 环境配置",
-      "path": "docs/Technic/环境配置/LangChain 环境配置.md"
     }
   ],
   "omittedPaths": [

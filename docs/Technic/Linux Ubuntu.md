@@ -1,6 +1,6 @@
 ---
 date created: 2025/4/2 9:38
-date modified: 2025/4/29 17:2
+date modified: 2025/5/29 15:8
 ---
 ## 创建进程
 
@@ -125,10 +125,10 @@ df -h
 
 ## Ubuntu 创建 python 虚拟环境
 
-|方式|创建环境|进入环境|退出环境|
-|---|---|---|---|
-|**Conda**|`conda create -n myenv python=3.11 -y`|`conda activate myenv`|`conda deactivate`|
-|**venv**|`python3 -m venv myenv`|`source myenv/bin/activate`|`deactivate`|
+| 方式        | 创建环境                                   | 进入环境                        | 退出环境               |
+| --------- | -------------------------------------- | --------------------------- | ------------------ |
+| **Conda** | `conda create -n myenv python=3.11 -y` | `conda activate myenv`      | `conda deactivate` |
+| **venv**  | `python3 -m venv myenv`                | `source myenv/bin/activate` | `deactivate`       |
 
 在 **Ubuntu 22.04** 上，你可以使用 `conda` 或 `venv` 创建新的 Python 虚拟环境。以下是两种方法：
 

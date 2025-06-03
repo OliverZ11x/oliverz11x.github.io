@@ -64,8 +64,9 @@ date modified: 2025/4/23 16:29
 	- [用户输入指导](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%8C%87%E5%AF%BC.md)
 	- [重要安排](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/%E9%87%8D%E8%A6%81%E5%AE%89%E6%8E%92.md)
 	- **basicSR**
+		- [语音修复](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/basicSR/%E8%AF%AD%E9%9F%B3%E4%BF%AE%E5%A4%8D.md)
 		- [BasicSR 框架与视频图像超分模型](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/basicSR/BasicSR%20%E6%A1%86%E6%9E%B6%E4%B8%8E%E8%A7%86%E9%A2%91%E5%9B%BE%E5%83%8F%E8%B6%85%E5%88%86%E6%A8%A1%E5%9E%8B.md)
-		- [test](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/basicSR/test.md)
+		- [RealtimeSTT](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/basicSR/RealtimeSTT.md)
 	- [basicSR](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/basicSR.md)
 	- [DeepSeek-R1微调数据集](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/DeepSeek-R1%E5%BE%AE%E8%B0%83%E6%95%B0%E6%8D%AE%E9%9B%86.md)
 	- [huggingface企业版](./%E8%B5%9B%E4%B8%B0%E7%A7%91%E6%8A%80/huggingface%E4%BC%81%E4%B8%9A%E7%89%88.md)
