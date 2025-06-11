@@ -1,7 +1,7 @@
 ---
 title: Technic
 date created: 2024/8/6 11:19
-date modified: 2025/5/19 10:22
+date modified: 2025/6/6 17:1
 ---
 ## Menu
 
@@ -27,6 +27,7 @@ date modified: 2025/5/19 10:22
 - [Kubernetes](./Kubernetes.md)
 - [Linux Ubuntu](./Linux%20Ubuntu.md)
 - **LLM**
+	- [大语言模型基准指标排行榜](./LLM/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%9F%BA%E5%87%86%E6%8C%87%E6%A0%87%E6%8E%92%E8%A1%8C%E6%A6%9C.md)
 	- [模型自回归训练](./LLM/%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%9B%9E%E5%BD%92%E8%AE%AD%E7%BB%83.md)
 	- **文本分类**
 		- [模型预测](./LLM/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/%E6%A8%A1%E5%9E%8B%E9%A2%84%E6%B5%8B.md)

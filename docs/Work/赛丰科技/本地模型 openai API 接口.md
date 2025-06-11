@@ -1,6 +1,6 @@
 ---
 date created: 2025/5/23 14:0
-date modified: 2025/5/28 9:40
+date modified: 2025/6/9 9:59
 ---
 ## 概述
 
@@ -10,9 +10,9 @@ date modified: 2025/5/28 9:40
 
 ### 服务地址
 
-- **通用模型**：`http://172.32.1.63:8000/v1`
-- **涉台专用模型**：`http://172.32.1.62:8000/v1`
-- **涉藏专用模型**：`http://172.32.1.61:8000/v1`
+- **通用模型**：`http://172.32.1.163:8000/v1`
+- **涉台专用模型**：`http://172.32.1.162:8000/v1`
+- **涉藏专用模型**：`http://172.32.1.161:8000/v1`
 
 ### 认证方式
 
@@ -22,11 +22,11 @@ date modified: 2025/5/28 9:40
 Authorization: Bearer token-abc123
 ```
 
-| 模型类型   | 模型名                  | 适用场景                       |
-| ------ | -------------------- | -------------------------- |
-| 通用模型   | `Qwen/Qwen3-14B`     | 适用于一般场景的通用对话和任务            |
-| 涉台专用模型 | `model/model_taiwan` | 专注于涉台相关内容的理解和生成，提供更精准的语义处理 |
-| 涉藏专用模型 | `model/model_xizang` | 专注于涉藏相关内容的理解和生成，提供更精准的语义处理 |
+| 模型类型   | 模型名                   | 适用场景                       |
+| ------ | --------------------- | -------------------------- |
+| 通用模型   | `/Qwen/Qwen3-14B`     | 适用于一般场景的通用对话和任务            |
+| 涉台专用模型 | `/model/model_taiwan` | 专注于涉台相关内容的理解和生成，提供更精准的语义处理 |
+| 涉藏专用模型 | `/model/model_xizang` | 专注于涉藏相关内容的理解和生成，提供更精准的语义处理 |
 
 ### 响应格式
 
@@ -52,6 +52,7 @@ Authorization: Bearer token-abc123
 | max_tokens      | integer | 否    | 最大生成令牌数                                                         |
 | stream          | boolean | 否    | 是否流式返回，默认 false                                                 |
 | enable_thinking | boolean | 否    | 是否开启 think 模式，默认 true                                           |
+| include_usage   | boolean | 否    | 是否在最后一个流式块返回 usage 信息                                           |
 
 **示例请求**:
 
@@ -61,12 +62,12 @@ from openai import OpenAI
 
 # 选择模型对应的端口
 client = OpenAI(
-    base_url="http://172.32.1.63:8000/v1",  # 通用模型
+    base_url="http://172.32.1.161:8000/v1",  # 涉藏模型
     api_key="token-abc123",
 )
 
 response = client.chat.completions.create(
-    model="Qwen/Qwen3-14B",
+    model="/model/model_xizang",
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "What's the weather today?"}
@@ -76,6 +77,33 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
+
+# 流式请求
+
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="http://172.32.1.161:8000/v1",
+    api_key="token-abc123",
+)
+
+response = client.chat.completions.create(
+    model="/model/model_xizang",
+    messages=[
+        {"role": "system", "content": "你是一个AI助手，请用中文回答用户的问题。"},
+        {"role": "user", "content": """你好！"""}
+    ],
+    stream=True,
+    extra_body={"chat_template_kwargs": {"enable_thinking": False},
+                "stream_options": {"include_usage": True}
+                }
+)
+
+for chunk in response:
+    print(chunk.choices[0].delta.content, end="", flush=True)
+
+
 ```
 
 **响应参数**:
@@ -104,7 +132,7 @@ print(response.choices[0].message.content)
     "id": "chatcmpl-123456",
     "object": "chat.completion",
     "created": 1693764729,
-    "model": "Qwen/Qwen3-14B",
+    "model": "/Qwen/Qwen3-14B",
     "choices": [
         {
             "index": 0,
@@ -153,7 +181,7 @@ API 可能返回以下错误码：
 
 ```python
 client = OpenAI(
-    base_url="http://172.32.1.63:8000/v1",
+    base_url="http://172.32.1.163:8000/v1",
     api_key="token-abc123",
 )
 ```
@@ -162,7 +190,7 @@ client = OpenAI(
 
 ```python
 client = OpenAI(
-    base_url="http://172.32.1.62:8000/v1",
+    base_url="http://172.32.1.162:8000/v1",
     api_key="token-abc123",
 )
 ```
@@ -171,7 +199,7 @@ client = OpenAI(
 
 ```python
 client = OpenAI(
-    base_url="http://172.32.1.61:8000/v1",
+    base_url="http://172.32.1.161:8000/v1",
     api_key="token-abc123",
 )
 ```

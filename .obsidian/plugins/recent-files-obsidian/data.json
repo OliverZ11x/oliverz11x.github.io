@@ -1,204 +1,196 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-06-03",
-      "path": "docs/Log/2025-06-03.md"
-    },
-    {
-      "basename": "BasicSR 框架与视频图像超分模型",
-      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
-    },
-    {
-      "basename": "语音修复",
-      "path": "docs/Work/赛丰科技/basicSR/语音修复.md"
-    },
-    {
-      "basename": "服务端开发",
-      "path": "docs/Work/赛丰科技/MCP/MCP/服务端开发.md"
-    },
-    {
-      "basename": "热点新闻提示词",
-      "path": "docs/Work/赛丰科技/提示词优化/热点新闻提示词.md"
+      "basename": "重要安排",
+      "path": "docs/Work/赛丰科技/重要安排.md"
     },
     {
       "basename": "RealtimeSTT",
       "path": "docs/Work/赛丰科技/basicSR/RealtimeSTT.md"
     },
     {
-      "basename": "GraphRAG提示词模板",
-      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md"
+      "basename": "BasicSR 框架与视频图像超分模型",
+      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
     },
     {
-      "basename": "2025-05-30",
-      "path": "docs/Log/2025-05-30.md"
+      "basename": "deepface",
+      "path": "docs/Work/赛丰科技/basicSR/deepface.md"
     },
     {
-      "basename": "提示词模板结构",
-      "path": "docs/Work/赛丰科技/提示词优化/提示词模板结构.md"
+      "basename": "模型",
+      "path": "docs/Work/赛丰科技/basicSR/模型.md"
     },
     {
-      "basename": "提示词优化",
-      "path": "docs/Work/赛丰科技/提示词优化/提示词优化.md"
+      "basename": "2025-06-10",
+      "path": "docs/Log/2025-06-10.md"
     },
     {
-      "basename": "探查",
-      "path": "docs/Work/赛丰科技/具身智能/探查.md"
+      "basename": "2025-06-11",
+      "path": "docs/Log/2025-06-11.md"
     },
     {
-      "basename": "计算资源",
-      "path": "docs/Work/赛丰科技/计算资源.md"
+      "basename": "语音修复",
+      "path": "docs/Work/赛丰科技/basicSR/语音修复.md"
     },
     {
-      "basename": "任务",
-      "path": "docs/Work/赛丰科技/任务.md"
+      "basename": "hf上传模型",
+      "path": "docs/Technic/LLM/hf上传模型.md"
     },
     {
-      "basename": "涉台报告生成prompt",
-      "path": "docs/Work/赛丰科技/涉台报告生成prompt.md"
+      "basename": "模型自回归训练",
+      "path": "docs/Technic/LLM/模型自回归训练.md"
     },
     {
-      "basename": "Linux Ubuntu",
-      "path": "docs/Technic/Linux Ubuntu.md"
+      "basename": "大语言模型基准指标排行榜",
+      "path": "docs/Technic/LLM/大语言模型基准指标排行榜.md"
     },
     {
-      "basename": "GraphRAG提示词模板优化策略",
-      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板优化策略.md"
+      "basename": "闭源数据翻译模型 API 文档",
+      "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型 API 文档.md"
     },
     {
-      "basename": "客户端",
-      "path": "docs/Work/赛丰科技/MCP/MCP/客户端.md"
+      "basename": "闭源数据翻译模型探查",
+      "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型探查.md"
     },
     {
       "basename": "本地模型 openai API 接口",
       "path": "docs/Work/赛丰科技/本地模型 openai API 接口.md"
     },
     {
-      "basename": "2025-05-28",
-      "path": "docs/Log/2025-05-28.md"
-    },
-    {
-      "basename": "2025-05-06",
-      "path": "docs/Log/2025-05-06.md"
-    },
-    {
-      "basename": "2025-05-07",
-      "path": "docs/Log/2025-05-07.md"
-    },
-    {
-      "basename": "2025-05-08",
-      "path": "docs/Log/2025-05-08.md"
-    },
-    {
-      "basename": "2025-05-09",
-      "path": "docs/Log/2025-05-09.md"
-    },
-    {
-      "basename": "2025-05-12",
-      "path": "docs/Log/2025-05-12.md"
-    },
-    {
-      "basename": "2025-05-13",
-      "path": "docs/Log/2025-05-13.md"
-    },
-    {
-      "basename": "2025-05-16",
-      "path": "docs/Log/2025-05-16.md"
-    },
-    {
-      "basename": "2025-05-14",
-      "path": "docs/Log/2025-05-14.md"
-    },
-    {
-      "basename": "2025-05-15",
-      "path": "docs/Log/2025-05-15.md"
-    },
-    {
-      "basename": "2025-05-20",
-      "path": "docs/Log/2025-05-20.md"
-    },
-    {
-      "basename": "2025-05-27",
-      "path": "docs/Log/2025-05-27.md"
-    },
-    {
-      "basename": "IMG-2025-05-27-16-56-13",
-      "path": "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13.png"
-    },
-    {
-      "basename": "IMG-2025-05-27-16-56-13-5",
-      "path": "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13-5.mp4"
-    },
-    {
-      "basename": "IMG-2025-05-27-16-56-13-6",
-      "path": "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13-6.mp4"
-    },
-    {
-      "basename": "IMG-2025-05-27-16-56-13-7",
-      "path": "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13-7.mp4"
-    },
-    {
-      "basename": "Comet",
-      "path": "docs/Work/赛丰科技/文献/Comet.md"
-    },
-    {
       "basename": "本地模型 API 接口",
       "path": "docs/Work/赛丰科技/本地模型 API 接口.md"
     },
     {
-      "basename": "BasicSR 框架与视频图像超分模型",
-      "path": "pdf/BasicSR 框架与视频图像超分模型.pdf"
+      "basename": "闭源数据处理",
+      "path": "docs/Work/赛丰科技/闭源数据/闭源数据处理.md"
     },
     {
-      "basename": "模型训练",
-      "path": "docs/Work/赛丰科技/模型训练.md"
+      "basename": "任务",
+      "path": "docs/Work/赛丰科技/任务.md"
     },
     {
-      "basename": "什么是MCP",
-      "path": "docs/Work/赛丰科技/MCP/MCP/什么是MCP.md"
+      "basename": "数据集构建",
+      "path": "docs/Work/赛丰科技/数据集构建.md"
+    },
+    {
+      "basename": "用户输入指导",
+      "path": "docs/Work/赛丰科技/用户输入指导.md"
+    },
+    {
+      "basename": "用户输入指导 1",
+      "path": "docs/Work/赛丰科技/用户输入指导 1.md"
     },
     {
       "basename": "basicSR",
       "path": "docs/Work/赛丰科技/basicSR.md"
     },
     {
-      "basename": "重要安排",
-      "path": "docs/Work/赛丰科技/重要安排.md"
+      "basename": "Microsoft资格认证",
+      "path": "docs/Work/赛丰科技/Microsoft资格认证.md"
     },
     {
-      "basename": "内容理解",
-      "path": "docs/Work/赛丰科技/MCP/azure/内容理解.md"
+      "basename": "DeepSeek-R1微调数据集",
+      "path": "docs/Work/赛丰科技/DeepSeek-R1微调数据集.md"
+    },
+    {
+      "basename": "docker vllm openai 部署",
+      "path": "docs/Technic/Vllm/docker vllm openai 部署.md"
+    },
+    {
+      "basename": "vLLM 双卡A6000部署",
+      "path": "docs/Technic/Vllm/vLLM 双卡A6000部署.md"
+    },
+    {
+      "basename": "Linux Ubuntu",
+      "path": "docs/Technic/Linux Ubuntu.md"
+    },
+    {
+      "basename": "2025-06-09",
+      "path": "docs/Log/2025-06-09.md"
+    },
+    {
+      "basename": "云南",
+      "path": "pdf/travel/云南.pdf"
+    },
+    {
+      "basename": "Lazy Graph RAG",
+      "path": "docs/Work/赛丰科技/RAG/Lazy Graph RAG.md"
+    },
+    {
+      "basename": "Retrieval-Augmented Generation with Graphs",
+      "path": "docs/Work/赛丰科技/RAG/Retrieval-Augmented Generation with Graphs.pdf"
+    },
+    {
+      "basename": "RAG 方案对大模型的优化",
+      "path": "docs/Work/赛丰科技/RAG/RAG 方案对大模型的优化.md"
+    },
+    {
+      "basename": "NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）",
+      "path": "docs/Technic/NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）.md"
+    },
+    {
+      "basename": "Technic",
+      "path": "docs/Technic/Technic.md"
+    },
+    {
+      "basename": "Ubuntu apt",
+      "path": "docs/Technic/Ubuntu apt.md"
+    },
+    {
+      "basename": "2025-06-06",
+      "path": "docs/Log/2025-06-06.md"
+    },
+    {
+      "basename": "2025-06-05",
+      "path": "docs/Log/2025-06-05.md"
+    },
+    {
+      "basename": "Graph RAG",
+      "path": "docs/Work/赛丰科技/RAG/Graph RAG.md"
+    },
+    {
+      "basename": "AI Search",
+      "path": "docs/Technic/AI Search.md"
+    },
+    {
+      "basename": "更新 NVCC",
+      "path": "docs/Technic/更新 NVCC.md"
+    },
+    {
+      "basename": "VScode github copilot使用指南",
+      "path": "docs/Technic/VScode github copilot使用指南.md"
     },
     {
       "basename": "MCP",
       "path": "docs/Work/赛丰科技/MCP/MCP.md"
     },
     {
+      "basename": "MCP流程",
+      "path": "docs/Work/赛丰科技/MCP/MCP流程.md"
+    },
+    {
+      "basename": "探查",
+      "path": "docs/Work/赛丰科技/具身智能/探查.md"
+    },
+    {
+      "basename": "LangChain 工具自定义",
+      "path": "docs/Technic/LLM/LangChain/LangChain 工具自定义.md"
+    },
+    {
+      "basename": "LangChain v0.2 学习记录",
+      "path": "docs/Technic/LLM/LangChain/LangChain v0.2 学习记录.md"
+    },
+    {
+      "basename": "2025-06-03",
+      "path": "docs/Log/2025-06-03.md"
+    },
+    {
       "basename": "服务端API接口",
       "path": "docs/Work/赛丰科技/MCP/MCP/服务端API接口.md"
     },
     {
-      "basename": "社媒MCP服务端",
-      "path": "docs/Work/赛丰科技/MCP/MCP/fzno1/社媒MCP服务端.md"
-    },
-    {
-      "basename": "客户端",
-      "path": "docs/Work/赛丰科技/MCP/MCP/fzno1/客户端.md"
-    },
-    {
-      "basename": "Ubuntu24 Docker",
-      "path": "docs/Technic/环境配置/Ubuntu24 Docker.md"
-    },
-    {
-      "basename": "TimesFM 环境配置",
-      "path": "docs/Technic/环境配置/TimesFM 环境配置.md"
-    },
-    {
-      "basename": "Unsloth 项目安装",
-      "path": "docs/Technic/环境配置/Unsloth 项目安装.md"
-    },
-    {
-      "basename": "Azure Flux 环境配置",
-      "path": "docs/Technic/环境配置/Azure Flux 环境配置.md"
+      "basename": "提示词模板结构",
+      "path": "docs/Work/赛丰科技/提示词优化/提示词模板结构.md"
     }
   ],
   "omittedPaths": [

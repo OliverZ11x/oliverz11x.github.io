@@ -1,0 +1,20 @@
+---
+date created: 2025/6/11 15:5
+date modified: 2025/6/11 15:6
+---
+
+[serengil/deepface：一个轻量级的人脸识别和面部属性分析（年龄，性别，情感和种族）库 --- serengil/deepface: A Lightweight Face Recognition and Facial Attribute Analysis (Age, Gender, Emotion and Race) Library for Python](https://github.com/serengil/deepface/tree/master)
+
+| 功能      | 模型    | 支持的检测种类                    | 参数量    | GPU 显存要求                                               | 速率           |
+| ------- | ----- | -------------------------- | ------ | ------------------------------------------------------ | ------------ |
+| 人脸检测与识别 | MTCNN | 默认支持人脸检测，适用于多种人脸姿态、遮挡和光照条件 | 约 2-3M | 640×640 分辨率：<br>Batch=1：约 300MB~600MB- Batch=4：约 1~2GB | `0.7S/frame` |
+
+### 说明：
+
+- **功能**：MTCNN（Multi-task Cascaded Convolutional Networks）主要用于人脸检测与对齐，常用于人脸识别任务中的预处理步骤，能精准提取人脸区域并返回关键点。
+- **支持的检测种类**：默认支持人脸检测，适用于多种人脸姿态、遮挡和光照条件
+- **参数量**：约 2-3 百万参数，轻量化设计，适合嵌入式系统或实时人脸检测场景。
+- **GPU 显存需求**：
+	- 单张图像检测显存占用约 300MB~600MB；
+	- 批量检测时 Batch Size=4，显存需求约 1~2GB；
+	- 在 `DeepFace` 框架中，MTCNN 作为 `detector_backend` 提供高精度检测支持，适用于 face extract、find、verify 等任务。

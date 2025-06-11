@@ -1,7 +1,11 @@
 ---
 date created: 2025/5/8 11:40
-date modified: 2025/5/8 11:54
+date modified: 2025/6/6 17:1
 ---
+
+[vLLM - vLLM](https://docs.vllm.ai/en/latest/)
+
+AskAI
 
 以下是 `vllm serve` 命令的中文参数说明：
 
