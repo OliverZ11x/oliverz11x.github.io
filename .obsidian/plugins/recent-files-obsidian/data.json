@@ -1,48 +1,136 @@
 {
   "recentFiles": [
     {
-      "basename": "重要安排",
-      "path": "docs/Work/赛丰科技/重要安排.md"
+      "basename": "2025-06-17",
+      "path": "docs/Log/2025-06-17.md"
     },
     {
-      "basename": "RealtimeSTT",
-      "path": "docs/Work/赛丰科技/basicSR/RealtimeSTT.md"
+      "basename": "2025-06-16",
+      "path": "docs/Log/2025-06-16.md"
     },
     {
-      "basename": "BasicSR 框架与视频图像超分模型",
-      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
+      "basename": "文本分类任务 Label Studio 使用指南",
+      "path": "docs/Technic/LLM/文本分类/文本分类任务 Label Studio 使用指南.md"
     },
     {
-      "basename": "deepface",
-      "path": "docs/Work/赛丰科技/basicSR/deepface.md"
+      "basename": "模型预测",
+      "path": "docs/Technic/LLM/文本分类/模型预测.md"
     },
     {
-      "basename": "模型",
-      "path": "docs/Work/赛丰科技/basicSR/模型.md"
+      "basename": "docker vllm openai 部署",
+      "path": "docs/Technic/Vllm/docker vllm openai 部署.md"
+    },
+    {
+      "basename": "vLLM 双卡A6000部署",
+      "path": "docs/Technic/Vllm/vLLM 双卡A6000部署.md"
+    },
+    {
+      "basename": "conda 虚拟环境",
+      "path": "docs/Technic/环境配置/conda 虚拟环境.md"
+    },
+    {
+      "basename": "Linux Ubuntu",
+      "path": "docs/Technic/Linux Ubuntu.md"
+    },
+    {
+      "basename": "2025-06-13",
+      "path": "docs/Log/2025-06-13.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "docs/Technic/Docker.md"
+    },
+    {
+      "basename": "Kubernetes",
+      "path": "docs/Technic/Kubernetes.md"
+    },
+    {
+      "basename": "AI Search",
+      "path": "docs/Technic/AI Search.md"
+    },
+    {
+      "basename": "本地模型 openai API 接口",
+      "path": "docs/Work/赛丰科技/本地模型 openai API 接口.md"
+    },
+    {
+      "basename": "Azure Flux 环境配置",
+      "path": "docs/Technic/环境配置/Azure Flux 环境配置.md"
+    },
+    {
+      "basename": "Unsloth 项目安装",
+      "path": "docs/Technic/环境配置/Unsloth 项目安装.md"
+    },
+    {
+      "basename": "大语言模型基准指标排行榜",
+      "path": "docs/Technic/LLM/大语言模型基准指标排行榜.md"
+    },
+    {
+      "basename": "2025-06-12",
+      "path": "docs/Log/2025-06-12.md"
     },
     {
       "basename": "2025-06-10",
       "path": "docs/Log/2025-06-10.md"
     },
     {
-      "basename": "2025-06-11",
-      "path": "docs/Log/2025-06-11.md"
+      "basename": "国际传播体系与话语权构建 ：以2025年印巴冲突舆论战为镜，探索中国全球话语权提升路径及台湾问题应对策略",
+      "path": "pdf/国际传播体系与话语权构建 ：以2025年印巴冲突舆论战为镜，探索中国全球话语权提升路径及台湾问题应对策略.pdf"
     },
     {
-      "basename": "语音修复",
-      "path": "docs/Work/赛丰科技/basicSR/语音修复.md"
+      "basename": "闭源数据翻译模型 API 文档",
+      "path": "pdf/闭源数据翻译模型 API 文档.pdf"
     },
     {
-      "basename": "hf上传模型",
-      "path": "docs/Technic/LLM/hf上传模型.md"
+      "basename": "国际传播体系与中国话语权构建 ：以2025年印巴冲突舆论战及两岸关系为镜鉴",
+      "path": "pdf/国际传播体系与中国话语权构建 ：以2025年印巴冲突舆论战及两岸关系为镜鉴.pdf"
+    },
+    {
+      "basename": "文本数据标注 doccano",
+      "path": "docs/Technic/LLM/文本分类/文本数据标注 doccano.md"
     },
     {
       "basename": "模型自回归训练",
       "path": "docs/Technic/LLM/模型自回归训练.md"
     },
     {
-      "basename": "大语言模型基准指标排行榜",
-      "path": "docs/Technic/LLM/大语言模型基准指标排行榜.md"
+      "basename": "hf上传模型",
+      "path": "docs/Technic/LLM/hf上传模型.md"
+    },
+    {
+      "basename": "Manus AI",
+      "path": "docs/Technic/LLM/Manus AI.md"
+    },
+    {
+      "basename": "更新 NVCC",
+      "path": "docs/Technic/更新 NVCC.md"
+    },
+    {
+      "basename": "文本清洗和文本分割",
+      "path": "docs/Technic/LLM/文本分类/文本清洗和文本分割.md"
+    },
+    {
+      "basename": "RealtimeSTT",
+      "path": "docs/Work/赛丰科技/basicSR/RealtimeSTT.md"
+    },
+    {
+      "basename": "deepface",
+      "path": "docs/Work/赛丰科技/basicSR/deepface.md"
+    },
+    {
+      "basename": "BasicSR 框架与视频图像超分模型",
+      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
+    },
+    {
+      "basename": "重要安排",
+      "path": "docs/Work/赛丰科技/重要安排.md"
+    },
+    {
+      "basename": "模型",
+      "path": "docs/Work/赛丰科技/basicSR/模型.md"
+    },
+    {
+      "basename": "语音修复",
+      "path": "docs/Work/赛丰科技/basicSR/语音修复.md"
     },
     {
       "basename": "闭源数据翻译模型 API 文档",
@@ -51,10 +139,6 @@
     {
       "basename": "闭源数据翻译模型探查",
       "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型探查.md"
-    },
-    {
-      "basename": "本地模型 openai API 接口",
-      "path": "docs/Work/赛丰科技/本地模型 openai API 接口.md"
     },
     {
       "basename": "本地模型 API 接口",
@@ -93,18 +177,6 @@
       "path": "docs/Work/赛丰科技/DeepSeek-R1微调数据集.md"
     },
     {
-      "basename": "docker vllm openai 部署",
-      "path": "docs/Technic/Vllm/docker vllm openai 部署.md"
-    },
-    {
-      "basename": "vLLM 双卡A6000部署",
-      "path": "docs/Technic/Vllm/vLLM 双卡A6000部署.md"
-    },
-    {
-      "basename": "Linux Ubuntu",
-      "path": "docs/Technic/Linux Ubuntu.md"
-    },
-    {
       "basename": "2025-06-09",
       "path": "docs/Log/2025-06-09.md"
     },
@@ -123,74 +195,6 @@
     {
       "basename": "RAG 方案对大模型的优化",
       "path": "docs/Work/赛丰科技/RAG/RAG 方案对大模型的优化.md"
-    },
-    {
-      "basename": "NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）",
-      "path": "docs/Technic/NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）.md"
-    },
-    {
-      "basename": "Technic",
-      "path": "docs/Technic/Technic.md"
-    },
-    {
-      "basename": "Ubuntu apt",
-      "path": "docs/Technic/Ubuntu apt.md"
-    },
-    {
-      "basename": "2025-06-06",
-      "path": "docs/Log/2025-06-06.md"
-    },
-    {
-      "basename": "2025-06-05",
-      "path": "docs/Log/2025-06-05.md"
-    },
-    {
-      "basename": "Graph RAG",
-      "path": "docs/Work/赛丰科技/RAG/Graph RAG.md"
-    },
-    {
-      "basename": "AI Search",
-      "path": "docs/Technic/AI Search.md"
-    },
-    {
-      "basename": "更新 NVCC",
-      "path": "docs/Technic/更新 NVCC.md"
-    },
-    {
-      "basename": "VScode github copilot使用指南",
-      "path": "docs/Technic/VScode github copilot使用指南.md"
-    },
-    {
-      "basename": "MCP",
-      "path": "docs/Work/赛丰科技/MCP/MCP.md"
-    },
-    {
-      "basename": "MCP流程",
-      "path": "docs/Work/赛丰科技/MCP/MCP流程.md"
-    },
-    {
-      "basename": "探查",
-      "path": "docs/Work/赛丰科技/具身智能/探查.md"
-    },
-    {
-      "basename": "LangChain 工具自定义",
-      "path": "docs/Technic/LLM/LangChain/LangChain 工具自定义.md"
-    },
-    {
-      "basename": "LangChain v0.2 学习记录",
-      "path": "docs/Technic/LLM/LangChain/LangChain v0.2 学习记录.md"
-    },
-    {
-      "basename": "2025-06-03",
-      "path": "docs/Log/2025-06-03.md"
-    },
-    {
-      "basename": "服务端API接口",
-      "path": "docs/Work/赛丰科技/MCP/MCP/服务端API接口.md"
-    },
-    {
-      "basename": "提示词模板结构",
-      "path": "docs/Work/赛丰科技/提示词优化/提示词模板结构.md"
     }
   ],
   "omittedPaths": [

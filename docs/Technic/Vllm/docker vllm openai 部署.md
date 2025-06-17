@@ -1,11 +1,13 @@
 ---
 date created: 2025/5/8 11:40
-date modified: 2025/6/6 17:1
+date modified: 2025/6/17 15:49
 ---
 
 [vLLM - vLLM](https://docs.vllm.ai/en/latest/)
 
 AskAI
+
+[vLLM - Qwen](https://qwen.readthedocs.io/zh-cn/latest/deployment/vllm.html#api-service)
 
 以下是 `vllm serve` 命令的中文参数说明：
 

@@ -1,6 +1,6 @@
 ---
 date created: 2025/4/2 9:40
-date modified: 2025/4/8 9:29
+date modified: 2025/6/16 16:18
 ---
 ## Docker 命令总结
 
@@ -76,7 +76,7 @@ docker logs --tail 100 <container_id>  # 仅查看最近 100 行日志
 
 ```bash
 docker logs --since 30m <container_id>  # 查看最近 30 分钟的日志
-docker logs --since "2024-04-01T12:00:00" <container_id>  # 查看指定时间后的日志
+docker logs --since "2025-06-16T12:00:00" <container_id>  # 查看指定时间后的日志
 ```
 
 ### 结合 `grep` 进行日志筛选
@@ -202,3 +202,93 @@ docker network connect <network_name> <container_name>
 # 从网络中移除容器
 docker network disconnect <network_name> <container_name>
 ```
+
+---
+
+对于 json-file 驱动的日志，有以下几种查看方式：
+
+1. 使用 `docker logs` 命令查看：
+
+```bash
+# 查看容器日志
+docker logs <container_id>
+
+# 实时查看日志（类似 tail -f）
+docker logs -f <container_id>
+
+# 查看最后 100 行日志
+docker logs --tail 100 <container_id>
+
+# 查看特定时间段的日志
+docker logs --since "2024-03-20T10:00:00" <container_id>
+```
+
+2. 直接查看日志文件位置：
+json-file 驱动的日志文件默认存储在：
+
+```bash
+/var/lib/docker/containers/<container_id>/<container_id>-json.log
+```
+
+要找到您的容器 ID，可以使用：
+
+```bash
+# 查看运行中的容器
+docker ps | grep vllm
+
+# 或者查看所有容器（包括已停止的）
+docker ps -a | grep vllm
+```
+
+3. 查看日志文件内容：
+
+```bash
+# 使用 tail 命令查看
+sudo tail -f /var/lib/docker/containers/<container_id>/<container_id>-json.log
+
+# 使用 less 命令查看
+sudo less /var/lib/docker/containers/<container_id>/<container_id>-json.log
+```
+
+4. 如果配置了日志轮转（max-size 和 max-file），日志文件会按照以下格式命名：
+
+```python
+<container_id>-json.log
+<container_id>-json.log.1
+<container_id>-json.log.2
+```
+
+5. 查看日志文件权限和大小：
+
+```bash
+# 查看日志文件信息
+ls -lh /var/lib/docker/containers/<container_id>/
+```
+
+注意事项：
+
+1. 需要 root 权限或 sudo 才能直接访问日志文件
+2. 建议使用 `docker logs` 命令而不是直接访问文件
+3. 如果日志文件很大，可以使用 `grep` 进行过滤：
+
+```bash
+docker logs <container_id> | grep "error"
+```
+
+4. 如果需要清理日志文件：
+
+```bash
+# 清理日志文件（需要停止容器）
+docker stop <container_id>
+sudo sh -c 'truncate -s 0 /var/lib/docker/containers/<container_id>/<container_id>-json.log'
+docker start <container_id>
+```
+
+5. 监控日志文件大小：
+
+```bash
+# 查看日志文件大小
+du -h /var/lib/docker/containers/<container_id>/<container_id>-json.log
+```
+
+这些方法可以帮助您有效地管理和查看 Docker 容器的日志。根据您的具体需求，选择最适合的查看方式。
