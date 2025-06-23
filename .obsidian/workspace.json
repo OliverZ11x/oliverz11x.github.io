@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Log/2025-06-17.md",
+                "file": "docs/Log/2025-06-23.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-17"
+              "title": "2025-06-23"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "conda remove",
+                "query": "office",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -204,8 +204,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "efb7be886cfe4d66",
+  "active": "b535b4e0b07b15c7",
   "lastOpenFiles": [
+    "docs/Log/2025-06-20.md",
+    "docs/Log/2025-06-23.md",
+    "docs/Log/2025-06-19.md",
+    "docs/Technic/更新 NVCC.md",
+    "docs/Work/赛丰科技/本地模型 API 接口.md",
+    "docs/Technic/AI Search.md",
+    "docs/Work/赛丰科技/basicSR/deepface.md",
+    "docs/Work/赛丰科技/basicSR/RealtimeSTT.md",
+    "docs/Work/赛丰科技/basicSR/模型.md",
+    "docs/Work/赛丰科技/basicSR/语音修复.md",
+    "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md",
+    "docs/Log/2025-06-18.md",
+    "docs/Technic/环境配置/Office激活.md",
+    "docs/Technic/Technic.md",
     "docs/Log/2025-06-16.md",
     "docs/Log/2025-06-17.md",
     "docs/Technic/LLM/文本分类/文本分类任务 Label Studio 使用指南.md",
@@ -218,24 +232,10 @@
     "docs/Log/2025-06-13.md",
     "docs/Technic/Docker.md",
     "docs/Technic/Kubernetes.md",
-    "docs/Technic/AI Search.md",
-    "docs/Work/赛丰科技/本地模型 openai API 接口.md",
-    "docs/Technic/环境配置/Azure Flux 环境配置.md",
-    "docs/Technic/环境配置/Unsloth 项目安装.md",
-    "docs/Technic/LLM/大语言模型基准指标排行榜.md",
     "pdf/中国应对国际舆论攻势的协同机制构建与实践路径研究.pdf",
-    "docs/Log/2025-06-12.md",
-    "docs/Log/2025-06-10.md",
     "pdf/国际传播体系与话语权构建 ：以2025年印巴冲突舆论战为镜，探索中国全球话语权提升路径及台湾问题应对策略.pdf",
     "pdf/闭源数据翻译模型 API 文档.pdf",
     "pdf/国际传播体系与中国话语权构建 ：以2025年印巴冲突舆论战及两岸关系为镜鉴.pdf",
-    "docs/Technic/LLM/文本分类/文本数据标注 doccano.md",
-    "docs/Log/国际传播体系与话语权构建 ：以2025年印巴冲突舆论战为镜，探索中国全球话语权提升路径及台湾问题应对策略.md",
-    "docs/Log/国际传播体系与中国话语权构建 ：以2025年印巴冲突舆论战及两岸关系为镜鉴.md",
-    "docs/Technic/LLM/模型自回归训练.md",
-    "docs/Technic/LLM/hf上传模型.md",
-    "docs/Technic/LLM/Manus AI.md",
-    "docs/Technic/更新 NVCC.md",
     "docs/Log/新建文件夹",
     "pdf/travel/云南.pdf",
     "pdf/印度-巴基斯坦水资源冲突与地缘政治分析.pdf",
