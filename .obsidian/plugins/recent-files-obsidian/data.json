@@ -1,8 +1,108 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-06-27",
+      "path": "docs/Log/2025-06-27.md"
+    },
+    {
+      "basename": "2025-06-26",
+      "path": "docs/Log/2025-06-26.md"
+    },
+    {
+      "basename": "引用列表",
+      "path": "docs/Work/赛丰科技/提示词优化/引用列表.md"
+    },
+    {
+      "basename": "提示词优化",
+      "path": "docs/Work/赛丰科技/提示词优化/提示词优化.md"
+    },
+    {
+      "basename": "GraphRAG提示词模板",
+      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md"
+    },
+    {
+      "basename": "计算资源",
+      "path": "docs/Work/赛丰科技/计算资源.md"
+    },
+    {
+      "basename": "本地模型 openai API 接口",
+      "path": "docs/Work/赛丰科技/本地模型 openai API 接口.md"
+    },
+    {
+      "basename": "模型安全评估api接口",
+      "path": "docs/Work/赛丰科技/安全测试/模型安全评估api接口.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "docs/Technic/Docker.md"
+    },
+    {
+      "basename": "大语言模型基准指标排行榜",
+      "path": "docs/Technic/LLM/大语言模型基准指标排行榜.md"
+    },
+    {
+      "basename": "模型自回归训练",
+      "path": "docs/Technic/LLM/模型自回归训练.md"
+    },
+    {
+      "basename": "hf上传模型",
+      "path": "docs/Technic/LLM/hf上传模型.md"
+    },
+    {
+      "basename": "Manus AI",
+      "path": "docs/Technic/LLM/Manus AI.md"
+    },
+    {
+      "basename": "vllm模型部署吞吐量",
+      "path": "docs/Technic/LLM/vllm模型部署吞吐量.md"
+    },
+    {
+      "basename": "2025-06-13",
+      "path": "docs/Log/2025-06-13.md"
+    },
+    {
+      "basename": "2025-06-24",
+      "path": "docs/Log/2025-06-24.md"
+    },
+    {
+      "basename": "2025-06-25",
+      "path": "docs/Log/2025-06-25.md"
+    },
+    {
       "basename": "2025-06-23",
       "path": "docs/Log/2025-06-23.md"
+    },
+    {
+      "basename": "2025-06-03",
+      "path": "docs/Log/2025-06-03.md"
+    },
+    {
+      "basename": "语料和生成内容测试",
+      "path": "docs/Work/赛丰科技/安全测试/语料和生成内容测试.md"
+    },
+    {
+      "basename": "大模型的Embedding层和独立的Embedding模型有什么区别？",
+      "path": "docs/Technic/LLM/大模型的Embedding层和独立的Embedding模型有什么区别？.md"
+    },
+    {
+      "basename": "闭源数据处理",
+      "path": "docs/Work/赛丰科技/闭源数据/闭源数据处理.md"
+    },
+    {
+      "basename": "闭源数据翻译模型 API 文档",
+      "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型 API 文档.md"
+    },
+    {
+      "basename": "中国应对国际舆论攻势的协同机制构建与实践路径研究",
+      "path": "pdf/中国应对国际舆论攻势的协同机制构建与实践路径研究.pdf"
+    },
+    {
+      "basename": "闭源数据翻译模型探查",
+      "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型探查.md"
+    },
+    {
+      "basename": "Linux Ubuntu",
+      "path": "docs/Technic/Linux Ubuntu.md"
     },
     {
       "basename": "2025-06-20",
@@ -85,24 +185,8 @@
       "path": "docs/Technic/环境配置/conda 虚拟环境.md"
     },
     {
-      "basename": "Linux Ubuntu",
-      "path": "docs/Technic/Linux Ubuntu.md"
-    },
-    {
-      "basename": "2025-06-13",
-      "path": "docs/Log/2025-06-13.md"
-    },
-    {
-      "basename": "Docker",
-      "path": "docs/Technic/Docker.md"
-    },
-    {
       "basename": "Kubernetes",
       "path": "docs/Technic/Kubernetes.md"
-    },
-    {
-      "basename": "本地模型 openai API 接口",
-      "path": "docs/Work/赛丰科技/本地模型 openai API 接口.md"
     },
     {
       "basename": "Azure Flux 环境配置",
@@ -113,92 +197,8 @@
       "path": "docs/Technic/环境配置/Unsloth 项目安装.md"
     },
     {
-      "basename": "大语言模型基准指标排行榜",
-      "path": "docs/Technic/LLM/大语言模型基准指标排行榜.md"
-    },
-    {
       "basename": "2025-06-12",
       "path": "docs/Log/2025-06-12.md"
-    },
-    {
-      "basename": "2025-06-10",
-      "path": "docs/Log/2025-06-10.md"
-    },
-    {
-      "basename": "国际传播体系与话语权构建 ：以2025年印巴冲突舆论战为镜，探索中国全球话语权提升路径及台湾问题应对策略",
-      "path": "pdf/国际传播体系与话语权构建 ：以2025年印巴冲突舆论战为镜，探索中国全球话语权提升路径及台湾问题应对策略.pdf"
-    },
-    {
-      "basename": "闭源数据翻译模型 API 文档",
-      "path": "pdf/闭源数据翻译模型 API 文档.pdf"
-    },
-    {
-      "basename": "国际传播体系与中国话语权构建 ：以2025年印巴冲突舆论战及两岸关系为镜鉴",
-      "path": "pdf/国际传播体系与中国话语权构建 ：以2025年印巴冲突舆论战及两岸关系为镜鉴.pdf"
-    },
-    {
-      "basename": "文本数据标注 doccano",
-      "path": "docs/Technic/LLM/文本分类/文本数据标注 doccano.md"
-    },
-    {
-      "basename": "模型自回归训练",
-      "path": "docs/Technic/LLM/模型自回归训练.md"
-    },
-    {
-      "basename": "hf上传模型",
-      "path": "docs/Technic/LLM/hf上传模型.md"
-    },
-    {
-      "basename": "Manus AI",
-      "path": "docs/Technic/LLM/Manus AI.md"
-    },
-    {
-      "basename": "文本清洗和文本分割",
-      "path": "docs/Technic/LLM/文本分类/文本清洗和文本分割.md"
-    },
-    {
-      "basename": "重要安排",
-      "path": "docs/Work/赛丰科技/重要安排.md"
-    },
-    {
-      "basename": "闭源数据翻译模型 API 文档",
-      "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型 API 文档.md"
-    },
-    {
-      "basename": "闭源数据翻译模型探查",
-      "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型探查.md"
-    },
-    {
-      "basename": "闭源数据处理",
-      "path": "docs/Work/赛丰科技/闭源数据/闭源数据处理.md"
-    },
-    {
-      "basename": "任务",
-      "path": "docs/Work/赛丰科技/任务.md"
-    },
-    {
-      "basename": "数据集构建",
-      "path": "docs/Work/赛丰科技/数据集构建.md"
-    },
-    {
-      "basename": "用户输入指导",
-      "path": "docs/Work/赛丰科技/用户输入指导.md"
-    },
-    {
-      "basename": "用户输入指导 1",
-      "path": "docs/Work/赛丰科技/用户输入指导 1.md"
-    },
-    {
-      "basename": "basicSR",
-      "path": "docs/Work/赛丰科技/basicSR.md"
-    },
-    {
-      "basename": "Microsoft资格认证",
-      "path": "docs/Work/赛丰科技/Microsoft资格认证.md"
-    },
-    {
-      "basename": "DeepSeek-R1微调数据集",
-      "path": "docs/Work/赛丰科技/DeepSeek-R1微调数据集.md"
     }
   ],
   "omittedPaths": [

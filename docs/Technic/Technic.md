@@ -27,6 +27,7 @@ date modified: 2025/6/18 13:44
 - [Kubernetes](./Kubernetes.md)
 - [Linux Ubuntu](./Linux%20Ubuntu.md)
 - **LLM**
+	- [大模型的Embedding层和独立的Embedding模型有什么区别？](./LLM/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84Embedding%E5%B1%82%E5%92%8C%E7%8B%AC%E7%AB%8B%E7%9A%84Embedding%E6%A8%A1%E5%9E%8B%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F.md)
 	- [大语言模型基准指标排行榜](./LLM/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%9F%BA%E5%87%86%E6%8C%87%E6%A0%87%E6%8E%92%E8%A1%8C%E6%A6%9C.md)
 	- [模型自回归训练](./LLM/%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%9B%9E%E5%BD%92%E8%AE%AD%E7%BB%83.md)
 	- **文本分类**
@@ -50,6 +51,7 @@ date modified: 2025/6/18 13:44
 	- **NLP**
 		- [Hugging Face Transformers](./LLM/NLP/Hugging%20Face%20Transformers.md)
 		- [Transformer 模型](./LLM/NLP/Transformer%20%E6%A8%A1%E5%9E%8B.md)
+	- [vllm模型部署吞吐量](./LLM/vllm%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2%E5%90%9E%E5%90%90%E9%87%8F.md)
 - [NVIDIA 驱动、CUDA Toolkit 与 NVCC 全面理解笔记（Ubuntu 系统）](./NVIDIA%20%E9%A9%B1%E5%8A%A8%E3%80%81CUDA%20Toolkit%20%E4%B8%8E%20NVCC%20%E5%85%A8%E9%9D%A2%E7%90%86%E8%A7%A3%E7%AC%94%E8%AE%B0%EF%BC%88Ubuntu%20%E7%B3%BB%E7%BB%9F%EF%BC%89.md)
 - **obsidian**
 	- [保存知识](./obsidian/%E4%BF%9D%E5%AD%98%E7%9F%A5%E8%AF%86.md)

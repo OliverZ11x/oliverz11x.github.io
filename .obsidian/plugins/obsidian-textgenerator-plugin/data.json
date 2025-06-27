@@ -1,10 +1,10 @@
 {
-  "version": "0.7.28",
-  "endpoint": "https://api.openai.com/v1",
+  "version": "0.7.50",
+  "endpoint": "http://172.32.1.161:8000/v1",
   "models": [],
   "api_key": "",
   "encrypt_keys": false,
-  "selectedProvider": "Azure OpenAI Chat (Langchain)",
+  "selectedProvider": "OpenAI Chat (Langchain)",
   "max_tokens": 500,
   "temperature": 0.7,
   "frequency_penalty": 0.5,
@@ -62,6 +62,7 @@
   "autoSuggestOptions": {
     "customInstructEnabled": true,
     "customInstruct": "Continue the follwing text:\nTitle: {{title}}\n{{query}}",
+    "systemPrompt": "",
     "isEnabled": false,
     "allowInNewLine": false,
     "delay": 300,
@@ -93,7 +94,9 @@
       "model": "whisper-1"
     },
     "OpenAI Chat (Langchain)": {
-      "basePath": "https://api.openai.com/v1"
+      "basePath": "http://172.32.1.161:8000/v1",
+      "api_key": "",
+      "model": "/model/model_xizang"
     },
     "Azure OpenAI Chat (Langchain)": {
       "api_key": "",
@@ -102,10 +105,15 @@
       "azureOpenAIApiDeploymentName": "gpt-4o",
       "model": "gpt-4o",
       "azureOpenAIApiVersion": "2023-03-15-preview"
+    },
+    "OpenAI Instruct (Langchain)": {
+      "basePath": "https://api.openai.com/v1",
+      "model": "gpt-3.5-turbo-instruct"
     }
   },
   "LLMProviderOptionsKeysHashed": {
-    "Azure OpenAI Chat (Langchain).api_key": "__@#key_prefix#@__1140131bf4f94e75b3927e82589058af"
+    "Azure OpenAI Chat (Langchain).api_key": "__@#key_prefix#@__1140131bf4f94e75b3927e82589058af",
+    "OpenAI Chat (Langchain).api_key": "__@#key_prefix#@__token-abc123"
   },
-  "api_key_encrypted": "__@#key_prefix#@__"
+  "api_key_encrypted": "__@#key_prefix#@__token-abc123"
 }
