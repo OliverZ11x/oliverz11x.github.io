@@ -1,7 +1,7 @@
 ---
 title: LangSmith 学习记录
 date created: 2024/7/31 11:15
-date modified: 2025/4/11 16:36
+date modified: 2025/7/14 10:42
 ---
 # LangSmith：评估 LLM 应用能力的工具
 
@@ -189,8 +189,6 @@ experiment_results = evaluate(
 ```
 
 在工作台查看评估结果：
-
-![[docs/01attachment/docs/Log/日志/2024-07-18-4/IMG-2024-07-31-15-52.png]]
 
 ## 评估 SQLAgent based LangGraph
 

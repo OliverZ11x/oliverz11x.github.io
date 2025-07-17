@@ -1,6 +1,6 @@
 ---
 date created: 2025/5/23 14:0
-date modified: 2025/6/9 9:59
+date modified: 2025/7/16 17:44
 ---
 ## 概述
 
@@ -10,9 +10,9 @@ date modified: 2025/6/9 9:59
 
 ### 服务地址
 
-- **通用模型**：`http://172.32.1.163:8000/v1`
-- **涉台专用模型**：`http://172.32.1.162:8000/v1`
-- **涉藏专用模型**：`http://172.32.1.161:8000/v1`
+- **通用模型**：`http://172.32.1.163:8000/v1` `http://gpu3.xmcloud.local:8000/v1
+- **涉台专用模型**：`http://172.32.1.162:8000/v1` `http://gpu2.xmcloud.local:8000/v1`
+- **涉藏专用模型**：`http://172.32.1.161:8000/v1` `http://gpu1.xmcloud.local:8000/v1`
 
 ### 认证方式
 
@@ -42,17 +42,17 @@ Authorization: Bearer token-abc123
 
 **请求参数**:
 
-| 参数名             | 类型      | 是否必需 | 描述                                                              |
-| --------------- | ------- | ---- | --------------------------------------------------------------- |
-| model           | string  | 是    | 模型名称，`Qwen/Qwen3-14B`，`model/model_taiwan`，`model/model_xizang` |
-| messages        | array   | 是    | 聊天消息数组，每个消息包含 `role` (system/user/assistant) 和 `content`        |
-| temperature     | float   | 否    | 控制随机性，范围 0-2，默认 0.7                                             |
-| top_p           | float   | 否    | 核采样参数，范围 0-1，默认 1                                               |
-| n               | integer | 否    | 每个提示生成的回复数量，默认 1                                                |
-| max_tokens      | integer | 否    | 最大生成令牌数                                                         |
-| stream          | boolean | 否    | 是否流式返回，默认 false                                                 |
-| enable_thinking | boolean | 否    | 是否开启 think 模式，默认 true                                           |
-| include_usage   | boolean | 否    | 是否在最后一个流式块返回 usage 信息                                           |
+| 参数名             | 类型      | 是否必需 | 描述                                                                 |
+| --------------- | ------- | ---- | ------------------------------------------------------------------ |
+| model           | string  | 是    | 模型名称，`/Qwen/Qwen3-14B`，`/model/model_taiwan`，`/model/model_xizang` |
+| messages        | array   | 是    | 聊天消息数组，每个消息包含 `role` (system/user/assistant) 和 `content`           |
+| temperature     | float   | 否    | 控制随机性，范围 0-2，默认 0.7                                                |
+| top_p           | float   | 否    | 核采样参数，范围 0-1，默认 1                                                  |
+| n               | integer | 否    | 每个提示生成的回复数量，默认 1                                                   |
+| max_tokens      | integer | 否    | 最大生成令牌数                                                            |
+| stream          | boolean | 否    | 是否流式返回，默认 false                                                    |
+| enable_thinking | boolean | 否    | 是否开启 think 模式，默认 true                                              |
+| include_usage   | boolean | 否    | 是否在最后一个流式块返回 usage 信息                                              |
 
 **示例请求**:
 

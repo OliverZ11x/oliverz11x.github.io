@@ -18,7 +18,7 @@
   "mistralApiKey": "",
   "deepseekApiKey": "",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "gpt-4.1|openai",
+  "defaultModelKey": "/model/model_xizang|openai",
   "embeddingModelKey": "text-embedding-3-small|openai",
   "temperature": 0.1,
   "maxTokens": 6000,
@@ -109,13 +109,25 @@
       ]
     },
     {
+      "name": "/model/model_xizang",
+      "provider": "openai",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "http://172.32.1.161:8000/v1",
+      "apiKey": "token-abc123",
+      "isEmbeddingModel": false,
+      "capabilities": [],
+      "stream": true,
+      "openAIOrgId": ""
+    },
+    {
       "name": "claude-sonnet-4-20250514",
       "provider": "anthropic",
       "enabled": true,
       "isBuiltIn": true,
       "capabilities": [
-        "vision",
-        "reasoning"
+        "reasoning",
+        "vision"
       ]
     },
     {
@@ -124,8 +136,8 @@
       "enabled": true,
       "isBuiltIn": true,
       "capabilities": [
-        "vision",
-        "reasoning"
+        "reasoning",
+        "vision"
       ]
     },
     {

@@ -1,7 +1,7 @@
 ---
 title: LangChain v0.2 学习记录
 date created: 2024/7/31 11:15
-date modified: 2025/4/11 16:49
+date modified: 2025/7/10 13:23
 ---
 # LanguageChain v0.2 学习记录
 
@@ -694,7 +694,7 @@ Agent 可以看做在 Chain 的基础上，进一步整合 Tool 的高级模�
 
 ![image](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/eYVOLwL4WLGmqpz2/img/89749408-1fc5-4fe7-906b-666e8c2010c6.png)
 
-LangChain 中的 SQL Agent 的类型为 ReAct Agent。
+LangChain 中的 SQLAgent 的类型为 ReAct Agent。
 
 使用 `LLM`、`Prompts` 和 `Tools` 来初始化 Agent。Agent 负责接收输入并决定采取什么操作。至关重要的是，Agent 不执行这些操作，这是由 AgentExecutor 完成的（下一步）。
 

@@ -4,24 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "1c5645c1c8f81e1e",
+        "id": "0338c45b5476a6f3",
         "type": "tabs",
         "children": [
           {
-            "id": "5504ebbc92a9c1c9",
+            "id": "5aedca2f5b2707be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Log/2025-06-27.md",
+                "file": "docs/Log/2025-07-17.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-27"
+              "title": "2025-07-17"
+            }
+          },
+          {
+            "id": "4ea1efde4fbf07b2",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "pdf/闭源数据翻译模型 API 文档.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "闭源数据翻译模型 API 文档"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"docs/Technic/\" ",
+                "query": "ubuntu 清理",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,13 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Log/2025-06-26.md",
+                "file": "pdf/闭源数据翻译模型 API 文档.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-06-26 的大纲"
+              "title": "闭源数据翻译模型 API 文档 的大纲"
             }
           },
           {
@@ -185,7 +198,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5
+    "width": 578.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,56 +210,56 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "obsidian-git:Open Git source control": false,
-      "coco-askai:AskAi History": false
+      "copilot:Open Copilot Chat": false
     }
   },
   "active": "efb7be886cfe4d66",
   "lastOpenFiles": [
-    "docs/Log/2025-06-26.md",
-    "docs/Log/2025-06-27.md",
-    "docs/Work/赛丰科技/提示词优化/引用列表.md",
-    "docs/Work/赛丰科技/提示词优化/提示词优化.md",
-    "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md",
-    "docs/Work/赛丰科技/计算资源.md",
-    "docs/Work/赛丰科技/本地模型 openai API 接口.md",
-    "docs/Work/赛丰科技/安全测试/模型安全评估api接口.md",
-    "docs/Technic/Docker.md",
-    "docs/Technic/LLM/大语言模型基准指标排行榜.md",
-    "docs/Technic/LLM/模型自回归训练.md",
-    "docs/Technic/LLM/hf上传模型.md",
-    "docs/Technic/LLM/Manus AI.md",
-    "docs/Technic/LLM/vllm模型部署吞吐量.md",
+    "docs/index.md",
+    "README.md",
+    "pdf/Titlelabel1.1.pdf",
     "DefaultTemplate.md",
-    "docs/Log/2025-06-13.md",
-    "docs/Log/2025-06-24.md",
-    "docs/Log/2025-06-25.md",
-    "docs/Log/2025-06-23.md",
-    "docs/Log/2025-06-03.md",
-    "docs/Work/赛丰科技/安全测试/语料和生成内容测试.md",
+    "pdf/Titlelabel1.pdf",
+    "docs/Log/阿里webagent测试.md",
+    "pdf/全能神教会在境内外的炒作热点、组织动向及国家安全影响分析报告.pdf",
+    "pdf/东突厥斯坦伊斯兰党境外动向与反华宣传策略分析报告.pdf",
+    "pdf/阿塔珠尔特志愿者组织动向与炒作策略分析及中国应对建议.pdf",
+    "docs/Log/北戴河数据源.md",
+    "docs/Log/中国出租车与货运司机群体停运、维权事件分析及对北戴河暑期安保的潜在风险评估与防控对策.md",
+    "docs/Log/字节跳动.md",
+    "docs/Log/PPO.md",
+    "docs/Log/2025-07-17.md",
+    "docs/Log/舆情分析报告：社交媒体上的议题演化与情感动向.md",
+    "docs/Log/联合国人权理事会第五十九届会议分析报告.md",
+    "docs/Log/人权理事会草稿.md",
+    "docs/Work/Work.md",
+    "docs/Technic/Linux Ubuntu.md",
     "docs/Technic/LLM/大模型的Embedding层和独立的Embedding模型有什么区别？.md",
-    "docs/Work/赛丰科技/闭源数据/闭源数据处理.md",
-    "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型 API 文档.md",
-    "pdf/中国应对国际舆论攻势的协同机制构建与实践路径研究.pdf",
-    "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型探查.md",
-    "docs/Log/未命名.md",
-    "pdf/国际传播体系与话语权构建 ：以2025年印巴冲突舆论战为镜，探索中国全球话语权提升路径及台湾问题应对策略.pdf",
-    "pdf/闭源数据翻译模型 API 文档.pdf",
-    "pdf/国际传播体系与中国话语权构建 ：以2025年印巴冲突舆论战及两岸关系为镜鉴.pdf",
-    "docs/Log/新建文件夹",
-    "pdf/travel/云南.pdf",
-    "pdf/印度-巴基斯坦水资源冲突与地缘政治分析.pdf",
-    "pdf/地缘政治与产业合作：土耳其与阿拉伯国家国防工业合作及日本与台湾金融安全议题分析.pdf",
-    "docs/01attachment/docs/Log/2025-06-09",
+    "docs/Log/2025-07-11.md",
+    "docs/Work/求职知识储备/LLM 模型学习概述.md",
+    "docs/Log/2025-07-16.md",
+    "docs/Work/赛丰科技/本地模型 openai API 接口.md",
+    "docs/Log/2025-07-12.md",
+    "docs/Work/赛丰科技/本地模型 API 接口.md",
+    "docs/Work/赛丰科技/提示词优化/Claude 提示词技巧（好用）.md",
+    "docs/Work/赛丰科技/重要安排.md",
+    "docs/Work/赛丰科技/basicSR/语音修复.md",
+    "docs/Work/赛丰科技/basicSR/模型.md",
+    "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13.mp4",
+    "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.zip",
+    "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md",
+    "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13.png",
+    "docs/01attachment/docs/Log/字节跳动",
+    "docs/01attachment/docs/Technic/LLM/LangChain/LangSmith 学习记录/IMG-2025-03-26-11-58-35.png",
+    "docs/01attachment/docs/Log/日志/2024-07-18-4",
+    "docs/01attachment/docs/Log/日志",
+    "docs/01attachment/docs/Log/字节跳动/IMG-2025-07-14-14-29-39.png",
+    "docs/01attachment/docs/Log/2025-07-09/IMG-2025-07-10-10-11-42.png",
+    "docs/01attachment/docs/Log/2025-07-04/IMG-2025-07-04-16-10-21.png",
     "docs/01attachment/docs/Log/2025-06-09/IMG-2025-06-09-09-35-29.png",
-    "docs/Work/赛丰科技/RAG/Retrieval-Augmented Generation with Graphs.pdf",
     "docs/01attachment/docs/Log/2025-06-05/IMG-2025-06-05-10-12-38.png",
     "docs/01attachment/docs/Log/2025-06-03/IMG-2025-06-03-10-58-58.png",
     "docs/01attachment/docs/Work/赛丰科技/basicSR/语音修复/IMG-2025-05-29-10-37-56-1.png",
-    "docs/01attachment/docs/Work/赛丰科技/basicSR/语音修复/IMG-2025-05-29-10-37-56.png",
-    "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13.png",
-    "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13-5.png",
-    "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13-3.png",
-    "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13-4.png",
-    "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13-2.png"
+    "docs/01attachment/docs/Work/赛丰科技/basicSR/语音修复/IMG-2025-05-29-10-37-56.png"
   ]
 }

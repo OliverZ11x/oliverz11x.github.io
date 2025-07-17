@@ -1,128 +1,104 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-06-27",
-      "path": "docs/Log/2025-06-27.md"
-    },
-    {
-      "basename": "2025-06-26",
-      "path": "docs/Log/2025-06-26.md"
-    },
-    {
-      "basename": "引用列表",
-      "path": "docs/Work/赛丰科技/提示词优化/引用列表.md"
-    },
-    {
-      "basename": "提示词优化",
-      "path": "docs/Work/赛丰科技/提示词优化/提示词优化.md"
-    },
-    {
-      "basename": "GraphRAG提示词模板",
-      "path": "docs/Work/赛丰科技/提示词优化/GraphRAG提示词模板.md"
-    },
-    {
-      "basename": "计算资源",
-      "path": "docs/Work/赛丰科技/计算资源.md"
-    },
-    {
-      "basename": "本地模型 openai API 接口",
-      "path": "docs/Work/赛丰科技/本地模型 openai API 接口.md"
-    },
-    {
-      "basename": "模型安全评估api接口",
-      "path": "docs/Work/赛丰科技/安全测试/模型安全评估api接口.md"
-    },
-    {
-      "basename": "Docker",
-      "path": "docs/Technic/Docker.md"
-    },
-    {
-      "basename": "大语言模型基准指标排行榜",
-      "path": "docs/Technic/LLM/大语言模型基准指标排行榜.md"
-    },
-    {
-      "basename": "模型自回归训练",
-      "path": "docs/Technic/LLM/模型自回归训练.md"
-    },
-    {
-      "basename": "hf上传模型",
-      "path": "docs/Technic/LLM/hf上传模型.md"
-    },
-    {
-      "basename": "Manus AI",
-      "path": "docs/Technic/LLM/Manus AI.md"
-    },
-    {
-      "basename": "vllm模型部署吞吐量",
-      "path": "docs/Technic/LLM/vllm模型部署吞吐量.md"
-    },
-    {
-      "basename": "2025-06-13",
-      "path": "docs/Log/2025-06-13.md"
-    },
-    {
-      "basename": "2025-06-24",
-      "path": "docs/Log/2025-06-24.md"
-    },
-    {
-      "basename": "2025-06-25",
-      "path": "docs/Log/2025-06-25.md"
-    },
-    {
-      "basename": "2025-06-23",
-      "path": "docs/Log/2025-06-23.md"
-    },
-    {
-      "basename": "2025-06-03",
-      "path": "docs/Log/2025-06-03.md"
-    },
-    {
-      "basename": "语料和生成内容测试",
-      "path": "docs/Work/赛丰科技/安全测试/语料和生成内容测试.md"
-    },
-    {
-      "basename": "大模型的Embedding层和独立的Embedding模型有什么区别？",
-      "path": "docs/Technic/LLM/大模型的Embedding层和独立的Embedding模型有什么区别？.md"
-    },
-    {
-      "basename": "闭源数据处理",
-      "path": "docs/Work/赛丰科技/闭源数据/闭源数据处理.md"
-    },
-    {
       "basename": "闭源数据翻译模型 API 文档",
-      "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型 API 文档.md"
+      "path": "pdf/闭源数据翻译模型 API 文档.pdf"
     },
     {
-      "basename": "中国应对国际舆论攻势的协同机制构建与实践路径研究",
-      "path": "pdf/中国应对国际舆论攻势的协同机制构建与实践路径研究.pdf"
+      "basename": "index",
+      "path": "docs/index.md"
     },
     {
-      "basename": "闭源数据翻译模型探查",
-      "path": "docs/Work/赛丰科技/闭源数据/闭源数据翻译模型探查.md"
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Titlelabel1.1",
+      "path": "pdf/Titlelabel1.1.pdf"
+    },
+    {
+      "basename": "Titlelabel1",
+      "path": "pdf/Titlelabel1.pdf"
+    },
+    {
+      "basename": "阿里webagent测试",
+      "path": "docs/Log/阿里webagent测试.md"
+    },
+    {
+      "basename": "字节跳动",
+      "path": "docs/Log/字节跳动.md"
+    },
+    {
+      "basename": "PPO",
+      "path": "docs/Log/PPO.md"
+    },
+    {
+      "basename": "2025-07-17",
+      "path": "docs/Log/2025-07-17.md"
+    },
+    {
+      "basename": "Work",
+      "path": "docs/Work/Work.md"
     },
     {
       "basename": "Linux Ubuntu",
       "path": "docs/Technic/Linux Ubuntu.md"
     },
     {
-      "basename": "2025-06-20",
-      "path": "docs/Log/2025-06-20.md"
+      "basename": "大模型的Embedding层和独立的Embedding模型有什么区别？",
+      "path": "docs/Technic/LLM/大模型的Embedding层和独立的Embedding模型有什么区别？.md"
     },
     {
-      "basename": "2025-06-19",
-      "path": "docs/Log/2025-06-19.md"
+      "basename": "2025-07-11",
+      "path": "docs/Log/2025-07-11.md"
     },
     {
-      "basename": "更新 NVCC",
-      "path": "docs/Technic/更新 NVCC.md"
+      "basename": "LLM 模型学习概述",
+      "path": "docs/Work/求职知识储备/LLM 模型学习概述.md"
+    },
+    {
+      "basename": "2025-07-16",
+      "path": "docs/Log/2025-07-16.md"
+    },
+    {
+      "basename": "本地模型 openai API 接口",
+      "path": "docs/Work/赛丰科技/本地模型 openai API 接口.md"
+    },
+    {
+      "basename": "2025-07-12",
+      "path": "docs/Log/2025-07-12.md"
     },
     {
       "basename": "本地模型 API 接口",
       "path": "docs/Work/赛丰科技/本地模型 API 接口.md"
     },
     {
-      "basename": "AI Search",
-      "path": "docs/Technic/AI Search.md"
+      "basename": "Claude 提示词技巧（好用）",
+      "path": "docs/Work/赛丰科技/提示词优化/Claude 提示词技巧（好用）.md"
+    },
+    {
+      "basename": "重要安排",
+      "path": "docs/Work/赛丰科技/重要安排.md"
+    },
+    {
+      "basename": "语音修复",
+      "path": "docs/Work/赛丰科技/basicSR/语音修复.md"
+    },
+    {
+      "basename": "模型",
+      "path": "docs/Work/赛丰科技/basicSR/模型.md"
+    },
+    {
+      "basename": "IMG-2025-05-27-16-56-13",
+      "path": "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13.mp4"
+    },
+    {
+      "basename": "BasicSR 框架与视频图像超分模型",
+      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
+    },
+    {
+      "basename": "IMG-2025-05-27-16-56-13",
+      "path": "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13.png"
     },
     {
       "basename": "deepface",
@@ -133,72 +109,92 @@
       "path": "docs/Work/赛丰科技/basicSR/RealtimeSTT.md"
     },
     {
-      "basename": "模型",
-      "path": "docs/Work/赛丰科技/basicSR/模型.md"
+      "basename": "SQLAgent 模型知识扩展",
+      "path": "docs/Work/高科数聚/SQLAgent/SQLAgent 模型知识扩展.md"
     },
     {
-      "basename": "语音修复",
-      "path": "docs/Work/赛丰科技/basicSR/语音修复.md"
+      "basename": "车智见",
+      "path": "docs/Work/高科数聚/SQLAgent/车智见.md"
     },
     {
-      "basename": "BasicSR 框架与视频图像超分模型",
-      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
+      "basename": "SQLAgent 测试",
+      "path": "docs/Work/高科数聚/SQLAgent/SQLAgent 测试.md"
     },
     {
-      "basename": "2025-06-18",
-      "path": "docs/Log/2025-06-18.md"
+      "basename": "2025-06-30",
+      "path": "docs/Log/2025-06-30.md"
     },
     {
-      "basename": "Office激活",
-      "path": "docs/Technic/环境配置/Office激活.md"
+      "basename": "2025-07-01",
+      "path": "docs/Log/2025-07-01.md"
     },
     {
-      "basename": "Technic",
-      "path": "docs/Technic/Technic.md"
+      "basename": "2025-07-02",
+      "path": "docs/Log/2025-07-02.md"
     },
     {
-      "basename": "2025-06-16",
-      "path": "docs/Log/2025-06-16.md"
+      "basename": "2025-07-04",
+      "path": "docs/Log/2025-07-04.md"
     },
     {
-      "basename": "2025-06-17",
-      "path": "docs/Log/2025-06-17.md"
+      "basename": "2025-07-07",
+      "path": "docs/Log/2025-07-07.md"
     },
     {
-      "basename": "文本分类任务 Label Studio 使用指南",
-      "path": "docs/Technic/LLM/文本分类/文本分类任务 Label Studio 使用指南.md"
+      "basename": "计算资源",
+      "path": "docs/Work/赛丰科技/计算资源.md"
     },
     {
-      "basename": "模型预测",
-      "path": "docs/Technic/LLM/文本分类/模型预测.md"
+      "basename": "2025-07-10",
+      "path": "docs/Log/2025-07-10.md"
     },
     {
-      "basename": "docker vllm openai 部署",
-      "path": "docs/Technic/Vllm/docker vllm openai 部署.md"
-    },
-    {
-      "basename": "vLLM 双卡A6000部署",
-      "path": "docs/Technic/Vllm/vLLM 双卡A6000部署.md"
-    },
-    {
-      "basename": "conda 虚拟环境",
-      "path": "docs/Technic/环境配置/conda 虚拟环境.md"
-    },
-    {
-      "basename": "Kubernetes",
-      "path": "docs/Technic/Kubernetes.md"
+      "basename": "DeepSeek-R1微调数据集",
+      "path": "docs/Work/赛丰科技/DeepSeek-R1微调数据集.md"
     },
     {
       "basename": "Azure Flux 环境配置",
       "path": "docs/Technic/环境配置/Azure Flux 环境配置.md"
     },
     {
-      "basename": "Unsloth 项目安装",
-      "path": "docs/Technic/环境配置/Unsloth 项目安装.md"
+      "basename": "2025年上半年工作总结与下半年工作计划",
+      "path": "docs/Work/赛丰科技/人事/2025年上半年工作总结与下半年工作计划.md"
     },
     {
-      "basename": "2025-06-12",
-      "path": "docs/Log/2025-06-12.md"
+      "basename": "LangChain v0.2 学习记录",
+      "path": "docs/Technic/LLM/LangChain/LangChain v0.2 学习记录.md"
+    },
+    {
+      "basename": "LangSmith 学习记录",
+      "path": "docs/Technic/LLM/LangChain/LangSmith 学习记录.md"
+    },
+    {
+      "basename": "IMG-2025-03-26-11-58-35",
+      "path": "docs/01attachment/docs/Technic/LLM/LangChain/LangSmith 学习记录/IMG-2025-03-26-11-58-35.png"
+    },
+    {
+      "basename": "Transformer 模型",
+      "path": "docs/Technic/LLM/NLP/Transformer 模型.md"
+    },
+    {
+      "basename": "大语言模型基准指标排行榜",
+      "path": "docs/Technic/LLM/大语言模型基准指标排行榜.md"
+    },
+    {
+      "basename": "vLLM 双卡A6000部署",
+      "path": "docs/Technic/Vllm/vLLM 双卡A6000部署.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "docs/Technic/Docker.md"
+    },
+    {
+      "basename": "docker vllm openai 部署",
+      "path": "docs/Technic/Vllm/docker vllm openai 部署.md"
+    },
+    {
+      "basename": "车通汇数据探查与分析",
+      "path": "docs/Work/高科数聚/SQLAgent/车通汇数据探查与分析.md"
     }
   ],
   "omittedPaths": [

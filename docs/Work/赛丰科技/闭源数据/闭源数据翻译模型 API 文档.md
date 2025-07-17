@@ -1,6 +1,6 @@
 ---
 date created: 2025/6/10 16:22
-date modified: 2025/6/11 11:7
+date modified: 2025/7/7 10:54
 ---
 ## 概述
 
@@ -23,7 +23,7 @@ date modified: 2025/6/11 11:7
 
 ### 服务地址
 
-- **翻译模型地址**：`http://172.32.1.162:9000/v1`
+- **翻译模型地址**：`http://192.168.48.25:8000/v1`
 
 ### 认证方式
 
@@ -33,9 +33,9 @@ date modified: 2025/6/11 11:7
 Authorization: Bearer token-abc123
 ```
 
-| 模型类型   | 模型名               | 适用场景              |
-| ------ | ----------------- | ----------------- |
-| 通用翻译模型 | `model/translate` | 适用于大多数语言场景的通用翻译任务 |
+| 模型类型   | 模型名                | 适用场景              |
+| ------ | ------------------ | ----------------- |
+| 通用翻译模型 | `/model/translate` | 适用于大多数语言场景的通用翻译任务 |
 
 ### 响应格式
 
@@ -45,7 +45,7 @@ Authorization: Bearer token-abc123
 
 ### 创建翻译请求 (Translation Request)
 
-**URL**: `http://172.32.1.162:9000/v1`
+**URL**: `http://192.168.48.25:8000/v1`
 
 **Method**: `POST`
 
@@ -70,20 +70,21 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="http://172.32.1.162:9000/v1",
+    base_url="http://192.168.48.25:8000/v1",
     api_key="token-abc123",
 )
 
 response = client.chat.completions.create(
     model="/model/translate",
     messages=[
+	    {"role": "system", "content": """
+	        你是一个AI助手
+	         """}
         {"role": "user", "content": """
-        the translation content.
+        the summary content.
          """}
-
     ],
     stream=True,
-    extra_body={"chat_template_kwargs": {"enable_thinking": False}}
 )
 
 for chunk in response:
