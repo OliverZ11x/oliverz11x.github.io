@@ -1,6 +1,130 @@
 {
   "recentFiles": [
     {
+      "basename": "VScode github copilot使用指南",
+      "path": "docs/Technic/VScode github copilot使用指南.md"
+    },
+    {
+      "basename": "更新 NVCC",
+      "path": "docs/Technic/更新 NVCC.md"
+    },
+    {
+      "basename": "AI Search",
+      "path": "docs/Technic/AI Search.md"
+    },
+    {
+      "basename": "计算资源",
+      "path": "docs/Work/赛丰科技/本地模型/计算资源.md"
+    },
+    {
+      "basename": "模型训练",
+      "path": "docs/Work/赛丰科技/本地模型/模型训练.md"
+    },
+    {
+      "basename": "涉台报告生成prompt",
+      "path": "docs/Work/赛丰科技/本地模型/涉台报告生成prompt.md"
+    },
+    {
+      "basename": "数据集构建",
+      "path": "docs/Work/赛丰科技/本地模型/数据集构建.md"
+    },
+    {
+      "basename": "热点新闻提示词",
+      "path": "docs/Technic/提示词优化/热点新闻提示词.md"
+    },
+    {
+      "basename": "提示词模板结构",
+      "path": "docs/Technic/提示词优化/提示词模板结构.md"
+    },
+    {
+      "basename": "提示词优化",
+      "path": "docs/Technic/提示词优化/提示词优化.md"
+    },
+    {
+      "basename": "引用列表",
+      "path": "docs/Technic/提示词优化/引用列表.md"
+    },
+    {
+      "basename": "Claude 提示词技巧（好用）",
+      "path": "docs/Technic/提示词优化/Claude 提示词技巧（好用）.md"
+    },
+    {
+      "basename": "GraphRAG提示词模板",
+      "path": "docs/Technic/提示词优化/GraphRAG提示词模板.md"
+    },
+    {
+      "basename": "GraphRAG提示词模板优化策略",
+      "path": "docs/Technic/提示词优化/GraphRAG提示词模板优化策略.md"
+    },
+    {
+      "basename": "模型",
+      "path": "docs/Work/赛丰科技/视音频修复识别/模型.md"
+    },
+    {
+      "basename": "人脸识别、声音修复、声纹识别、语音转录与图像增强交接",
+      "path": "docs/Work/赛丰科技/视音频修复识别/人脸识别、声音修复、声纹识别、语音转录与图像增强交接.md"
+    },
+    {
+      "basename": "DeepSeek-R1微调数据集",
+      "path": "docs/Work/赛丰科技/本地模型/DeepSeek-R1微调数据集.md"
+    },
+    {
+      "basename": "huggingface企业版",
+      "path": "docs/Work/赛丰科技/本地模型/huggingface企业版.md"
+    },
+    {
+      "basename": "Qwen3测试",
+      "path": "docs/Work/赛丰科技/本地模型/Qwen3测试.md"
+    },
+    {
+      "basename": "本地模型 API 接口",
+      "path": "docs/Work/赛丰科技/本地模型/本地模型 API 接口.md"
+    },
+    {
+      "basename": "PPO",
+      "path": "docs/Work/求职知识储备/字节/PPO.md"
+    },
+    {
+      "basename": "字节跳动",
+      "path": "docs/Work/求职知识储备/字节/字节跳动.md"
+    },
+    {
+      "basename": "2025-07-18",
+      "path": "docs/Log/2025-07-18.md"
+    },
+    {
+      "basename": "语音修复",
+      "path": "docs/Work/赛丰科技/视音频修复识别/语音修复.md"
+    },
+    {
+      "basename": "RealtimeSTT",
+      "path": "docs/Work/赛丰科技/视音频修复识别/RealtimeSTT.md"
+    },
+    {
+      "basename": "deepface",
+      "path": "docs/Work/赛丰科技/视音频修复识别/deepface.md"
+    },
+    {
+      "basename": "BasicSR 框架与视频图像超分模型",
+      "path": "docs/Work/赛丰科技/视音频修复识别/BasicSR 框架与视频图像超分模型.md"
+    },
+    {
+      "basename": "本地模型部署_交接文档",
+      "path": "docs/Work/赛丰科技/本地模型/本地模型部署_交接文档.md"
+    },
+    {
+      "basename": "basicSR",
+      "path": "docs/Work/赛丰科技/视音频修复识别/basicSR.md"
+    },
+    {
+      "basename": "本地模型 openai API 接口",
+      "path": "docs/Work/赛丰科技/本地模型/本地模型 openai API 接口.md"
+    },
+    {
+      "basename": "Work",
+      "path": "docs/Work/Work.md"
+    },
+    {
       "basename": "闭源数据翻译模型 API 文档",
       "path": "pdf/闭源数据翻译模型 API 文档.pdf"
     },
@@ -21,24 +145,8 @@
       "path": "pdf/Titlelabel1.pdf"
     },
     {
-      "basename": "阿里webagent测试",
-      "path": "docs/Log/阿里webagent测试.md"
-    },
-    {
-      "basename": "字节跳动",
-      "path": "docs/Log/字节跳动.md"
-    },
-    {
-      "basename": "PPO",
-      "path": "docs/Log/PPO.md"
-    },
-    {
       "basename": "2025-07-17",
       "path": "docs/Log/2025-07-17.md"
-    },
-    {
-      "basename": "Work",
-      "path": "docs/Work/Work.md"
     },
     {
       "basename": "Linux Ubuntu",
@@ -61,52 +169,16 @@
       "path": "docs/Log/2025-07-16.md"
     },
     {
-      "basename": "本地模型 openai API 接口",
-      "path": "docs/Work/赛丰科技/本地模型 openai API 接口.md"
-    },
-    {
       "basename": "2025-07-12",
       "path": "docs/Log/2025-07-12.md"
     },
     {
-      "basename": "本地模型 API 接口",
-      "path": "docs/Work/赛丰科技/本地模型 API 接口.md"
+      "basename": "IMG-2025-07-18-16-52-39",
+      "path": "docs/01attachment/docs/Work/赛丰科技/视音频修复识别/BasicSR 框架与视频图像超分模型/IMG-2025-07-18-16-52-39.mp4"
     },
     {
-      "basename": "Claude 提示词技巧（好用）",
-      "path": "docs/Work/赛丰科技/提示词优化/Claude 提示词技巧（好用）.md"
-    },
-    {
-      "basename": "重要安排",
-      "path": "docs/Work/赛丰科技/重要安排.md"
-    },
-    {
-      "basename": "语音修复",
-      "path": "docs/Work/赛丰科技/basicSR/语音修复.md"
-    },
-    {
-      "basename": "模型",
-      "path": "docs/Work/赛丰科技/basicSR/模型.md"
-    },
-    {
-      "basename": "IMG-2025-05-27-16-56-13",
-      "path": "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13.mp4"
-    },
-    {
-      "basename": "BasicSR 框架与视频图像超分模型",
-      "path": "docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型.md"
-    },
-    {
-      "basename": "IMG-2025-05-27-16-56-13",
-      "path": "docs/01attachment/docs/Work/赛丰科技/basicSR/BasicSR 框架与视频图像超分模型/IMG-2025-05-27-16-56-13.png"
-    },
-    {
-      "basename": "deepface",
-      "path": "docs/Work/赛丰科技/basicSR/deepface.md"
-    },
-    {
-      "basename": "RealtimeSTT",
-      "path": "docs/Work/赛丰科技/basicSR/RealtimeSTT.md"
+      "basename": "IMG-2025-07-18-16-52-39",
+      "path": "docs/01attachment/docs/Work/赛丰科技/视音频修复识别/BasicSR 框架与视频图像超分模型/IMG-2025-07-18-16-52-39.png"
     },
     {
       "basename": "SQLAgent 模型知识扩展",
@@ -121,80 +193,12 @@
       "path": "docs/Work/高科数聚/SQLAgent/SQLAgent 测试.md"
     },
     {
-      "basename": "2025-06-30",
-      "path": "docs/Log/2025-06-30.md"
-    },
-    {
-      "basename": "2025-07-01",
-      "path": "docs/Log/2025-07-01.md"
-    },
-    {
-      "basename": "2025-07-02",
-      "path": "docs/Log/2025-07-02.md"
-    },
-    {
-      "basename": "2025-07-04",
-      "path": "docs/Log/2025-07-04.md"
-    },
-    {
-      "basename": "2025-07-07",
-      "path": "docs/Log/2025-07-07.md"
-    },
-    {
-      "basename": "计算资源",
-      "path": "docs/Work/赛丰科技/计算资源.md"
-    },
-    {
       "basename": "2025-07-10",
       "path": "docs/Log/2025-07-10.md"
     },
     {
-      "basename": "DeepSeek-R1微调数据集",
-      "path": "docs/Work/赛丰科技/DeepSeek-R1微调数据集.md"
-    },
-    {
       "basename": "Azure Flux 环境配置",
       "path": "docs/Technic/环境配置/Azure Flux 环境配置.md"
-    },
-    {
-      "basename": "2025年上半年工作总结与下半年工作计划",
-      "path": "docs/Work/赛丰科技/人事/2025年上半年工作总结与下半年工作计划.md"
-    },
-    {
-      "basename": "LangChain v0.2 学习记录",
-      "path": "docs/Technic/LLM/LangChain/LangChain v0.2 学习记录.md"
-    },
-    {
-      "basename": "LangSmith 学习记录",
-      "path": "docs/Technic/LLM/LangChain/LangSmith 学习记录.md"
-    },
-    {
-      "basename": "IMG-2025-03-26-11-58-35",
-      "path": "docs/01attachment/docs/Technic/LLM/LangChain/LangSmith 学习记录/IMG-2025-03-26-11-58-35.png"
-    },
-    {
-      "basename": "Transformer 模型",
-      "path": "docs/Technic/LLM/NLP/Transformer 模型.md"
-    },
-    {
-      "basename": "大语言模型基准指标排行榜",
-      "path": "docs/Technic/LLM/大语言模型基准指标排行榜.md"
-    },
-    {
-      "basename": "vLLM 双卡A6000部署",
-      "path": "docs/Technic/Vllm/vLLM 双卡A6000部署.md"
-    },
-    {
-      "basename": "Docker",
-      "path": "docs/Technic/Docker.md"
-    },
-    {
-      "basename": "docker vllm openai 部署",
-      "path": "docs/Technic/Vllm/docker vllm openai 部署.md"
-    },
-    {
-      "basename": "车通汇数据探查与分析",
-      "path": "docs/Work/高科数聚/SQLAgent/车通汇数据探查与分析.md"
     }
   ],
   "omittedPaths": [

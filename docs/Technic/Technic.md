@@ -22,6 +22,15 @@ date modified: 2025/6/18 13:44
 	- [Ubuntu24 Docker](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Ubuntu24%20Docker.md)
 	- [Unsloth 项目安装](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Unsloth%20%E9%A1%B9%E7%9B%AE%E5%AE%89%E8%A3%85.md)
 	- [WSL2-Ubuntu 环境配置](./%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/WSL2-Ubuntu%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
+- **[提示词优化](./%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96/%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96.md)**
+	- [热点新闻提示词](./%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96/%E7%83%AD%E7%82%B9%E6%96%B0%E9%97%BB%E6%8F%90%E7%A4%BA%E8%AF%8D.md)
+	- **[示例](./%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96/%E7%A4%BA%E4%BE%8B/%E7%A4%BA%E4%BE%8B.md)**
+
+	- [提示词模板结构](./%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A8%A1%E6%9D%BF%E7%BB%93%E6%9E%84.md)
+	- [引用列表](./%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96/%E5%BC%95%E7%94%A8%E5%88%97%E8%A1%A8.md)
+	- [Claude 提示词技巧（好用）](./%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96/Claude%20%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8A%80%E5%B7%A7%EF%BC%88%E5%A5%BD%E7%94%A8%EF%BC%89.md)
+	- [GraphRAG提示词模板](./%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96/GraphRAG%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A8%A1%E6%9D%BF.md)
+	- [GraphRAG提示词模板优化策略](./%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96/GraphRAG%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A8%A1%E6%9D%BF%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5.md)
 - [AI Search](./AI%20Search.md)
 - [Docker](./Docker.md)
 - [Kubernetes](./Kubernetes.md)
